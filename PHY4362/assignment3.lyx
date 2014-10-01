@@ -82,6 +82,231 @@ PHY4362
 \end_inset
 
 Assignment 3
+\begin_inset Newline newline
+\end_inset
+
+Mohammed Chamma 6379153
+\end_layout
+
+\begin_layout Problem
+\paragraph_spacing onehalf
+Give the expected shell-model spin and parity assignment for the ground
+ states of 
+\begin_inset Formula $^{7}$
+\end_inset
+
+Li, 
+\begin_inset Formula $^{11}$
+\end_inset
+
+B, 
+\begin_inset Formula $^{15}$
+\end_inset
+
+C and 
+\begin_inset Formula $^{17}$
+\end_inset
+
+F.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing double
+\begin_inset Formula $^{7}$
+\end_inset
+
+Li: Z = 3, so N = 4.
+ The unpaired proton determines the spin-parity assignment.
+ The configuration of the protons are 2 in the 1s
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+ level, and 1 in the 1p
+\begin_inset Formula $_{3/2}$
+\end_inset
+
+ level, or simply (1s
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{3/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{1}$
+\end_inset
+
+.
+ The p sublevel corresponds to 
+\begin_inset Formula $l=1$
+\end_inset
+
+.
+ The parity is 
+\begin_inset Formula $=(-1)^{l}=(-1)^{3}=-1$
+\end_inset
+
+.
+ The spin is of the uncoupled proton, 3/2.
+ The spin-parity assignment for 
+\begin_inset Formula $^{7}$
+\end_inset
+
+Li is (3/2)
+\begin_inset Formula $^{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing double
+\begin_inset Formula $^{11}$
+\end_inset
+
+B: Z = 5, so N = 6.
+ The unpaired proton determines the spin-parity assignment.
+ The configuration of the protons is (1s
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{3/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{3}$
+\end_inset
+
+.
+ The spin-parity assignment is (3/2)
+\begin_inset Formula $^{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing double
+\begin_inset Formula $^{15}$
+\end_inset
+
+C: Z = 6, so N = 9.
+ The unpaired neutron determines the spin-parity assignment.
+ The configuration of the neutrons is (1s
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{3/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{4}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1d
+\begin_inset Formula $_{5/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{1}$
+\end_inset
+
+.
+ The spin-parity assignment is (5/2)
+\begin_inset Formula $^{+}$
+\end_inset
+
+ since 
+\begin_inset Formula $l=d=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing double
+\begin_inset Formula $^{17}$
+\end_inset
+
+F: Z = 9, so N = 8.
+ The unpaired proton determines the spin-parity assignment.
+ The configuration of the protons is (1s
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{3/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{4}$
+\end_inset
+
+(1p
+\begin_inset Formula $_{1/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+(1d
+\begin_inset Formula $_{5/2}$
+\end_inset
+
+)
+\begin_inset Formula $^{1}$
+\end_inset
+
+.
+ The spin-parity assignment is (5/2)
+\begin_inset Formula $^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Compute the mass defects of 
+\begin_inset Formula $^{32}$
+\end_inset
+
+S, 
+\begin_inset Formula $^{20}$
+\end_inset
+
+F, and 
+\begin_inset Formula $^{238}$
+\end_inset
+
+U.
 \end_layout
 
 \begin_layout Standard
