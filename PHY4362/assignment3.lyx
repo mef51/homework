@@ -310,6 +310,91 @@ U.
 \end_layout
 
 \begin_layout Standard
+The mass defect is calculated as 
+\begin_inset Formula $\triangle m=(m-A)c^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $^{32}$
+\end_inset
+
+S: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m=31.972071$
+\end_inset
+
+, 
+\begin_inset Formula $A=32$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\triangle m=(31.972071-32)c^{2}=-0.027929c^{2}=-0.027929*931.5=-26.02\, MeV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $^{20}$
+\end_inset
+
+F:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m=19.999981$
+\end_inset
+
+, 
+\begin_inset Formula $A=20$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\triangle m=(19.999981-20)c^{2}=-0.000019c^{2}=-0.0177\, MeV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $^{238}$
+\end_inset
+
+U:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m=238.050785$
+\end_inset
+
+, 
+\begin_inset Formula $A=238$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\triangle m=(238.050785-238)c^{2}=0.050785c^{2}=47.3\, MeV$
+\end_inset
+
 
 \end_layout
 
