@@ -647,12 +647,55 @@ For alpha particles, z=2.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{d\sigma}{d\Omega}=\Big(9*10^{9}(2)(79)(1.6*10^{-19})^{2}\Big)^{2}\Big(\frac{1}{4(1.6*10^{-12})}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{1^{\circ}}{2}\big)}
+\frac{d\sigma}{d\Omega}=\Big(9*10^{9}(2)(79)(1.6*10^{-19})^{2}\Big)^{2}\Big(\frac{1}{4(1.6*10^{-12})}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{1^{\circ}}{2}\big)}=5.58*10^{-21}m^{2}/sr
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\theta=5^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\sigma}{d\Omega}=\Big(9*10^{9}(2)(79)(1.6*10^{-19})^{2}\Big)^{2}\Big(\frac{1}{4(1.6*10^{-12})}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{5^{\circ}}{2}\big)}=8.94*10^{-24}m^{2}/sr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\theta=20^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\sigma}{d\Omega}=\Big(9*10^{9}(2)(79)(1.6*10^{-19})^{2}\Big)^{2}\Big(\frac{1}{4(1.6*10^{-12})}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{20^{\circ}}{2}\big)}=3.56*10^{-26}m^{2}/sr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+List and briefly explain the experimental methods used in establishing the
+ nuclear charge radius.
 \end_layout
 
 \end_body
