@@ -6,7 +6,7 @@
 \begin_preamble
 \usepackage{graphicx}
 \usepackage{pdflscape}
-\usepackage{eulervm}
+%\usepackage{eulervm}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -527,6 +527,132 @@ For the scattering of 10MeV alpha particles from Au nuclei, calculate the
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\pi Z^{2}\Big(\frac{ke^{2}}{KE}\Big)^{2}\Big(\frac{1+\cos\theta}{1-\cos\theta}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Au nuclei implies 
+\begin_inset Formula $Z=79$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k=9*10^{9}\frac{Nm^{2}}{C^{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $KE=10MeV=1.6*10^{-12}J$
+\end_inset
+
+.
+ 
+\begin_inset Formula $e=1.6*10^{-19}C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For angles >
+\begin_inset Formula $\theta=1^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\pi(79)^{2}\Big(\frac{9*10^{9}(1.6*10^{-19})^{2}}{1.6*10^{-12}}\Big)^{2}\Big(\frac{1+cos(1)}{1-cos(1)}\Big)=5.338*10^{-24}m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, for angles > 
+\begin_inset Formula $\theta=5^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\pi(79)^{2}\Big(\frac{9*10^{9}(1.6*10^{-19})^{2}}{1.6*10^{-12}}\Big)^{2}\Big(\frac{1+cos(5)}{1-cos(5)}\Big)=2.13*10^{-25}m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for angles >
+\begin_inset Formula $\theta=20^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\pi(79)^{2}\Big(\frac{9*10^{9}(1.6*10^{-19})^{2}}{1.6*10^{-12}}\Big)^{2}\Big(\frac{1+cos(20)}{1-cos(20)}\Big)=1.308*10^{-26}m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, the differential scattering cross-section is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\sigma}{d\Omega}=\Big(kzZe^{2}\Big)^{2}\Big(\frac{1}{4T_{\alpha}}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{\theta}{2}\big)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For alpha particles, z=2.
+ For 
+\begin_inset Formula $\theta=1^{\circ}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\sigma}{d\Omega}=\Big(9*10^{9}(2)(79)(1.6*10^{-19})^{2}\Big)^{2}\Big(\frac{1}{4(1.6*10^{-12})}\Big)^{2}\frac{1}{\sin^{4}\big(\frac{1^{\circ}}{2}\big)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
