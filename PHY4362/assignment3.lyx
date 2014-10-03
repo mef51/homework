@@ -412,8 +412,28 @@ Prove that the electric quadrupole moment of a uniformly charged ellipsoid
 \end_layout
 
 \begin_layout Standard
-First, let's map the x, y, z coordinates of the ellipse to a unit sphere:
- 
+First, we find the charge density 
+\begin_inset Formula $\rho(r)$
+\end_inset
+
+ for the ellipsoid, which has volume 
+\begin_inset Formula $V=\frac{4}{3}\pi a^{2}b$
+\end_inset
+
+.
+ Since it is uniformly charged,
+\begin_inset Formula 
+\[
+\rho(r)=\frac{Q}{V}=\frac{3Ze}{4\pi a^{2}b}=constant
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's map the x, y, z coordinates of the ellipse to a unit sphere: 
 \begin_inset Formula $(x,y,z)=(au,av,bw)$
 \end_inset
 
@@ -443,12 +463,12 @@ The Jacobian of this transformation is
 Now
 \begin_inset Formula 
 \[
-\begin{aligned}eQ & = & e\int\psi^{*}(3z^{2}-r^{2})\psi dV\\
- & = & e\int\psi^{*}(3z^{2}-x^{2}-y^{2}-z^{2})\psi dV\\
- & = & e\int\psi^{*}(2z^{2}-x^{2}-y^{2})\psi dV\\
- & = & ea^{2}b\int\psi^{*}(2b^{2}w^{2}-a^{2}u^{2}-a^{2}v^{2})\psi dV &  &  &  & (change\, coordinates)\\
- & = & ea^{2}b(2b^{2}\int\psi^{*}w^{2}\psi dV-a^{2}\int\psi^{*}u^{2}\psi dV-a^{2}\int\psi^{*}v^{2}\psi dV)\\
- & = & ea^{2}b(2b^{2}<w^{2}>-a^{2}<u^{2}>-a^{2}<v^{2}>) &  &  &  & (expectation\, values)
+\begin{aligned}eQ & = & \int\psi^{*}\rho(r)(3z^{2}-r^{2})\psi dV\\
+ & = & \frac{3Ze}{4\pi a^{2}b}\int\psi^{*}(3z^{2}-x^{2}-y^{2}-z^{2})\psi dV\\
+ & = & \frac{3Ze}{4\pi a^{2}b}\int\psi^{*}(2z^{2}-x^{2}-y^{2})\psi dV\\
+ & = & \frac{3Ze}{4\pi a^{2}b}a^{2}b\int\psi^{*}(2b^{2}w^{2}-a^{2}u^{2}-a^{2}v^{2})\psi dV &  &  &  & (change\, coordinates)\\
+ & = & \frac{3Ze}{4\pi}(2b^{2}\int\psi^{*}w^{2}\psi dV-a^{2}\int\psi^{*}u^{2}\psi dV-a^{2}\int\psi^{*}v^{2}\psi dV)\\
+ & = & \frac{3Ze}{4\pi}(2b^{2}<w^{2}>-a^{2}<u^{2}>-a^{2}<v^{2}>) &  &  &  & (expectation\, values)
 \end{aligned}
 \]
 
@@ -478,25 +498,21 @@ Since
  So,
 \begin_inset Formula 
 \[
-\begin{aligned}eQ & = & ea^{2}b(2b^{2}<w^{2}>-a^{2}<u^{2}>-a^{2}<v^{2}>)\\
- & = & ea^{2}b(2b^{2}-2a^{2})<w^{2}>\\
- & = & 2ea^{2}b(b^{2}-a^{2})<w^{2}>\\
- & = & 2ea^{2}b(b^{2}-a^{2})\int\psi^{*}w^{2}\psi d^{3}u &  & (d^{3}u=r^{2}\sin\phi drd\theta d\phi)\\
- & = & 2ea^{2}b(b^{2}-a^{2})\int\psi^{*}\psi r^{2}\cos^{2}\phi r^{2}\sin\phi drd\theta d\phi &  & (w=r\cos\phi,\,\phi\in[0,\pi])\\
- & = & 2ea^{2}b(b^{2}-a^{2})\int_{0}^{2\pi}d\theta\int_{0}^{1}r^{4}dr\int_{0}^{\pi}\cos^{2}\phi\sin\phi d\phi\\
- & = & 2ea^{2}b(b^{2}-a^{2})(2\pi)(\frac{1}{5})(-\frac{1}{3}\cos^{3}\phi\vert_{0}^{\pi})\\
- & = & \frac{4\pi ea^{2}b(b^{2}-a^{2})}{5}(-\frac{(-1)}{3}+\frac{1}{3})\\
- & = & \frac{8\pi ea^{2}b(b^{2}-a^{2})}{15}
+\begin{aligned}eQ & = & \frac{3Ze}{4\pi}(2b^{2}<w^{2}>-a^{2}<u^{2}>-a^{2}<v^{2}>)\\
+ & = & \frac{3Ze}{4\pi}(2b^{2}-2a^{2})<w^{2}>\\
+ & = & \frac{3Ze}{4\pi}(b^{2}-a^{2})<w^{2}>\\
+ & = & 2\frac{3Ze}{4\pi}(b^{2}-a^{2})\int\psi^{*}w^{2}\psi d^{3}u &  & (d^{3}u=r^{2}\sin\phi drd\theta d\phi)\\
+ & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int\psi^{*}\psi r^{2}\cos^{2}\phi r^{2}\sin\phi drd\theta d\phi &  & (w=r\cos\phi,\,\phi\in[0,\pi])\\
+ & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int_{0}^{2\pi}d\theta\int_{0}^{1}r^{4}dr\int_{0}^{\pi}\cos^{2}\phi\sin\phi d\phi\\
+ & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})(2\pi)(\frac{1}{5})(-\frac{1}{3}\cos^{3}\phi\vert_{0}^{\pi})\\
+ & = & \frac{3Ze(b^{2}-a^{2})}{5}(-\frac{(-1)}{3}+\frac{1}{3})\\
+ & = & \frac{2}{5}Ze(b^{2}-a^{2}) &  & \square
 \end{aligned}
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-This is not the desired answer...!
 \end_layout
 
 \begin_layout Problem
