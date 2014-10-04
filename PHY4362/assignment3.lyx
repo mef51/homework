@@ -498,11 +498,11 @@ Since
  So,
 \begin_inset Formula 
 \[
-\begin{aligned}eQ & = & \frac{3Ze}{4\pi}(2b^{2}<w^{2}>-a^{2}<u^{2}>-a^{2}<v^{2}>)\\
+\begin{aligned}eQ & = & \frac{3Ze}{4\pi}(2b^{2}<w^{2}>-a^{2}<w^{2}>-a^{2}<w^{2}>)\\
  & = & \frac{3Ze}{4\pi}(2b^{2}-2a^{2})<w^{2}>\\
  & = & 2\frac{3Ze}{4\pi}(b^{2}-a^{2})<w^{2}>\\
  & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int\psi^{*}w^{2}\psi d^{3}u &  & (d^{3}u=r^{2}\sin\phi drd\theta d\phi)\\
- & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int\psi^{*}\psi r^{2}\cos^{2}\phi r^{2}\sin\phi drd\theta d\phi &  & (w=r\cos\phi,\,\phi\in[0,\pi])\\
+ & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int\int\int\psi^{*}\psi r^{2}\cos^{2}\phi r^{2}\sin\phi drd\theta d\phi &  & (w=r\cos\phi,\,\phi\in[0,\pi])\\
  & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})\int_{0}^{2\pi}d\theta\int_{0}^{1}r^{4}dr\int_{0}^{\pi}\cos^{2}\phi\sin\phi d\phi\\
  & = & \frac{3Ze}{2\pi}(b^{2}-a^{2})(2\pi)(\frac{1}{5})(-\frac{1}{3}\cos^{3}\phi\vert_{0}^{\pi})\\
  & = & \frac{3Ze(b^{2}-a^{2})}{5}(-\frac{(-1)}{3}+\frac{1}{3})\\
@@ -719,7 +719,29 @@ The nuclear charge radius is a property of the nucleus.
 \end_layout
 
 \begin_layout Itemize
-alpha particle scattering off gold nuclei
+First experiment that probed the radius of the nucleus was the Geiger-Marsden
+ experiment initiated by Rutherford
+\end_layout
+
+\begin_layout Itemize
+Alpha particles fired at atoms would be scattered by the nucleus of the
+ atom.
+ Geiger and Marsden used gold foil.
+\end_layout
+
+\begin_layout Itemize
+They related the energy of the fired alpha particle to the distance of closest
+ approach.
+ This gives an upper bound on the radius of the nucleus (assuming the alpha
+ particle doesn't penetrate the nucleus).
+\end_layout
+
+\begin_layout Itemize
+For gold, they found the upper bound to be 
+\begin_inset Formula $3.2*10^{-14}m$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -891,9 +913,11 @@ Hf are given in a table
 \begin_layout Standard
 
 \series bold
-1.
+A.
  
-\series default
+\end_layout
+
+\begin_layout Standard
 Calculate the moment of inertia of the nucleus for each of these excited
  states.
 \end_layout
@@ -961,11 +985,15 @@ E(8^{+})=72(\hbar^{2}/2I)\implies I=\frac{72\hbar^{2}}{2E(8^{+})}=\frac{72(6.58*
 \begin_layout Standard
 
 \series bold
-2.
+B.
 
 \series default
- Compare your results with the moment of inertia of the nucleus treated
- as the rigidly rotating sphere.
+ 
+\end_layout
+
+\begin_layout Standard
+Compare your results with the moment of inertia of the nucleus treated as
+ the rigidly rotating sphere.
 \end_layout
 
 \begin_layout Standard
@@ -977,7 +1005,324 @@ The moment of inertia of a rigid rotating sphere is
 \end_layout
 
 \begin_layout Standard
-The mass of
+The mass of 
+\begin_inset Formula $^{170}$
+\end_inset
+
+Hf is 169.94 amu or 
+\begin_inset Formula $m=169.94u*\frac{1.66*10^{-27}kg}{1u}=2.82*10^{-25}kg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can find the atomic radius using the empirical radius formula
+\begin_inset Formula 
+\[
+r=r_{0}A^{1/3}=1.2*10^{-15}*170^{1/3}=6.65*10^{-15}m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we find that the moment of inertia of the rigidly rotating sphere approximati
+ng the 
+\begin_inset Formula $^{170}$
+\end_inset
+
+Hf nucleus is
+\begin_inset Formula 
+\[
+I=\frac{2}{5}mr^{2}=\frac{2}{5}(2.82*10^{-25})(6.65*10^{-15})^{2}=5.0*10^{-54}kg\cdot m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The units are not the same?
+\end_layout
+
+\begin_layout Problem
+Calculate the ground state magnetic moment of 
+\begin_inset Formula $^{7}$
+\end_inset
+
+Li, 
+\begin_inset Formula $^{39}$
+\end_inset
+
+K and 
+\begin_inset Formula $^{45}$
+\end_inset
+
+Sc using equation 
+\begin_inset Formula 
+\[
+\mu_{J}=\gamma_{J}J\hbar=g_{J}\mu_{N}=g_{J}J\mu_{B}\,\, where\,\, g_{J}=\Big(g_{l}\pm\frac{g_{s}-g_{l}}{2l+1}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Where 
+\begin_inset Formula $g_{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+ are orbital and intrinsic g factors for the odd nucleon concerned, 
+\begin_inset Formula $l$
+\end_inset
+
+ is orbital angular momentum and the upper sign is taken for 
+\begin_inset Formula $J=l+\frac{1}{2}$
+\end_inset
+
+.
+ The spin values are 3/2, 3/2 and 7/2 respectively.
+ 
+\begin_inset Formula $\mu_{B}=5.79*10^{-5}$
+\end_inset
+
+
+\begin_inset Formula $\frac{eV}{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+\begin_inset Formula $^{7}$
+\end_inset
+
+Li
+\series default
+\bar default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $Z=3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=4$
+\end_inset
+
+, the odd nucleon is the proton, so
+\begin_inset Formula 
+\[
+g_{s}=5.59,\, g_{l}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(3)+1}\Big)=1.66
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{J}=g_{j}J\mu_{B}=1.66(\frac{3}{2})(5.79*10^{-5})=1.44*10^{-4}\frac{eV}{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+\begin_inset Formula $^{39}$
+\end_inset
+
+K
+\series default
+\bar default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $Z=19$
+\end_inset
+
+ and 
+\begin_inset Formula $N=20$
+\end_inset
+
+, the odd nucleon is the proton, so
+\begin_inset Formula 
+\[
+g_{s}=5.59,\, g_{l}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(3)+1}\Big)=1.66
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{J}=g_{j}J\mu_{B}=1.66(\frac{3}{2})(5.79*10^{-5})=1.44*10^{-4}\frac{eV}{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+\begin_inset Formula $^{45}$
+\end_inset
+
+Sc
+\series default
+\bar default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=7/2\, and\, J=l+1/2\implies l=J-1/2=\frac{7}{2}-\frac{1}{2}=7
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $Z=21$
+\end_inset
+
+ and 
+\begin_inset Formula $N=24$
+\end_inset
+
+, the odd nucleon is the proton, so
+\begin_inset Formula 
+\[
+g_{s}=5.59,\, g_{l}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(7)+1}\Big)=1.31
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{J}=g_{j}J\mu_{B}=1.31(\frac{7}{2})(5.79*10^{-5})=2.65*10^{-4}\frac{eV}{T}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
