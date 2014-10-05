@@ -1119,7 +1119,7 @@ Li
 \begin_layout Standard
 \begin_inset Formula 
 \[
-J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=3
+J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=1
 \]
 
 \end_inset
@@ -1154,7 +1154,7 @@ Now
 \begin_layout Standard
 \begin_inset Formula 
 \[
-g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(3)+1}\Big)=1.66
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(1)+1}\Big)=2.53
 \]
 
 \end_inset
@@ -1169,7 +1169,7 @@ So
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu_{J}=g_{j}J\mu_{B}=1.66(\frac{3}{2})(5.79*10^{-5})=1.44*10^{-4}\frac{eV}{T}
+\mu_{J}=g_{j}J\mu_{B}=2.53(\frac{3}{2})(5.79*10^{-5})=2.20*10^{-4}\frac{eV}{T}
 \]
 
 \end_inset
@@ -1193,7 +1193,7 @@ K
 \begin_layout Standard
 \begin_inset Formula 
 \[
-J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=3
+J=3/2\, and\, J=l+1/2\implies l=J-1/2=\frac{3}{2}-\frac{1}{2}=1
 \]
 
 \end_inset
@@ -1228,7 +1228,7 @@ Now
 \begin_layout Standard
 \begin_inset Formula 
 \[
-g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(3)+1}\Big)=1.66
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(1)+1}\Big)=2.53
 \]
 
 \end_inset
@@ -1243,7 +1243,7 @@ So
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu_{J}=g_{j}J\mu_{B}=1.66(\frac{3}{2})(5.79*10^{-5})=1.44*10^{-4}\frac{eV}{T}
+\mu_{J}=g_{j}J\mu_{B}=2.53(\frac{3}{2})(5.79*10^{-5})=2.20*10^{-4}\frac{eV}{T}
 \]
 
 \end_inset
@@ -1267,7 +1267,7 @@ Sc
 \begin_layout Standard
 \begin_inset Formula 
 \[
-J=7/2\, and\, J=l+1/2\implies l=J-1/2=\frac{7}{2}-\frac{1}{2}=7
+J=7/2\, and\, J=l+1/2\implies l=J-1/2=\frac{7}{2}-\frac{1}{2}=3
 \]
 
 \end_inset
@@ -1302,7 +1302,7 @@ Now
 \begin_layout Standard
 \begin_inset Formula 
 \[
-g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(7)+1}\Big)=1.31
+g_{j}=\Big(g_{l}+\frac{g_{s}-g_{l}}{2l+1}\Big)=\Big(1+\frac{5.59-1}{2(3)+1}\Big)=1.66
 \]
 
 \end_inset
@@ -1317,7 +1317,7 @@ So
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu_{J}=g_{j}J\mu_{B}=1.31(\frac{7}{2})(5.79*10^{-5})=2.65*10^{-4}\frac{eV}{T}
+\mu_{J}=g_{j}J\mu_{B}=1.66(\frac{7}{2})(5.79*10^{-5})=3.36*10^{-4}\frac{eV}{T}
 \]
 
 \end_inset
