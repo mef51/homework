@@ -1046,7 +1046,18 @@ I=\frac{2}{5}mr^{2}=\frac{2}{5}(2.82*10^{-25})(6.65*10^{-15})^{2}=5.0*10^{-54}kg
 \end_layout
 
 \begin_layout Standard
-The units are not the same?
+\begin_inset Formula 
+\[
+I=5.0*10^{-54}kg\cdot m^{2}=3.125*10^{-35}eV\cdot s^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The moment of inertia of the rigid sphere is much smaller.
 \end_layout
 
 \begin_layout Problem
