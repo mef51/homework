@@ -100,7 +100,11 @@ Recent Hubble measurements of Sirius' white dwarf companion show that the
 
  (with uncertainties of 2%) and that spectral features of its light have
  a fractional redshift of about 
-\begin_inset Formula $\frac{\lambda_{D}}{\lambda_{E}}=2.68\times10^{-4}\pm6\%$
+\begin_inset Formula $\frac{\Delta\lambda}{\lambda_{E}}=2.68\times10^{-4}\pm6\%$
+\end_inset
+
+, where 
+\begin_inset Formula $\frac{\Delta\lambda}{\lambda_{E}}=\frac{\lambda_{D}-\lambda_{E}}{\lambda_{E}}=\frac{\lambda_{D}}{\lambda_{E}}-1$
 \end_inset
 
 .
@@ -108,8 +112,8 @@ Recent Hubble measurements of Sirius' white dwarf companion show that the
 \end_layout
 
 \begin_layout Standard
-GR predicts a redshift of 
-\begin_inset Formula $\frac{\lambda_{D}}{\lambda_{E}}=\frac{\sqrt{1-2GM/r_{D}}}{\sqrt{1-2GM/r_{E}}}$
+GR predicts a fractional redshift of 
+\begin_inset Formula $\frac{\Delta\lambda}{\lambda_{E}}=\frac{\lambda_{D}}{\lambda_{E}}-1=\frac{\sqrt{1-2GM/r_{D}}}{\sqrt{1-2GM/r_{E}}}-1$
 \end_inset
 
 .
@@ -121,7 +125,7 @@ GR predicts a redshift of
  Then the predicted gravitational redshift would be:
 \begin_inset Formula 
 \[
-\frac{\lambda_{D}}{\lambda_{E}}=\frac{\sqrt{1-2(6.67\times10^{-11})(1.02)(1.9891\times10^{30})/8.14\times10^{16}}}{\sqrt{1-2(6.67\times10^{-11})(1.02)(1.9891\times10^{30})/5640\times10^{3}}}=8.32\times10^{-6}
+\frac{\Delta\lambda}{\lambda_{E}}=\frac{\sqrt{1-2(1477)(1.02)/8.14\times10^{16}}}{\sqrt{1-2(1477)(1.02)/5640\times10^{3}}}-1=2.67\times10^{-4}
 \]
 
 \end_inset
@@ -154,7 +158,7 @@ So the theoretical redshift falls in the range:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{\lambda_{D}}{\lambda_{E}}=8.24\times10^{-6}\, and\,8.41\times10^{-6}$
+\begin_inset Formula $\frac{\Delta\lambda}{\lambda_{E}}=8.24\times10^{-6}\, and\,8.41\times10^{-6}$
 \end_inset
 
  using 
@@ -172,12 +176,12 @@ So the theoretical redshift falls in the range:
 The measurement falls in the range:
 \begin_inset Formula 
 \[
-\frac{\lambda_{D}}{\lambda_{E}}=2.68\times10^{-4}\pm6\%=2.68\times10^{-4}\pm0.16\times10^{-4}\quad\implies\frac{\lambda_{D}}{\lambda_{E}}\,\, is\, between\,\,2.52\times10^{-4}\, and\,2.84\times10^{-4}
+\frac{\Delta\lambda}{\lambda_{E}}=2.68\times10^{-4}\pm6\%=2.68\times10^{-4}\pm0.16\times10^{-4}\quad\implies\frac{\Delta\lambda}{\lambda_{E}}\,\, is\, between\,\,2.52\times10^{-4}\, and\,2.84\times10^{-4}
 \]
 
 \end_inset
 
-The theoretical value doesn't fall into the range of the measurement.
+The theoretical value easily falls into the range of the measurement.
 \begin_inset Newline newline
 \end_inset
 
@@ -200,7 +204,7 @@ An advanced civilisation constructs two concentric massless shells around
 \end_inset
 
 .
- What is the exact physical distance between the shells?
+ What is the exact physical distance between the shells? 
 \end_layout
 
 \begin_layout Standard
@@ -290,7 +294,149 @@ If the space were flat, this distance would be
 \end_layout
 
 \begin_layout Problem
+Derive equations 10.32 and 10.33.
+ Then do problem 10.9.
+\end_layout
 
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+\end_layout
+
+\begin_layout Standard
+Derive an expression for 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+ using equation 10.11: 
+\begin_inset Formula 
+\[
+r_{c}=\frac{6GM}{1\pm\sqrt{1-12(GM/\ell)^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Starting with the upper 
+\begin_inset Formula $+$
+\end_inset
+
+ sign first:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+r_{c} & = & \frac{6GM}{1+\sqrt{1-12(GM/\ell)^{2}}}\\
+1+\sqrt{1-12(GM/\ell)^{2}} & = & \frac{6GM}{r_{c}}\\
+\sqrt{1-12(GM/\ell)^{2}} & = & \frac{6GM}{r_{c}}-1\\
+1-12(GM/\ell)^{2} & = & \Big(\frac{6GM}{r_{c}}-1\Big)^{2}=\frac{36G^{2}M^{2}}{r_{c}^{2}}-\frac{12GM}{r_{c}}+1\\
+-\frac{12G^{2}M^{2}}{\ell^{2}} & = & \frac{36G^{2}M^{2}}{r_{c}^{2}}-\frac{12GM}{r_{c}}\\
+-\frac{G^{2}M^{2}}{\ell^{2}} & = & \frac{3G^{2}M^{2}}{r_{c}^{2}}-\frac{GM}{r_{c}}=\frac{GM}{r_{c}}\Big(\frac{3GM}{r_{c}}-1\Big)\\
+\frac{G^{2}M^{2}}{\ell^{2}} & = & \frac{GM}{r_{c}}\Big(1-\frac{3GM}{r_{c}}\Big)=\frac{GM}{r_{c}}\Big(\frac{r_{c}-3GM}{r_{c}}\Big)\\
+\ell^{2} & = & \frac{r_{c}^{2}GM}{r_{c}-3GM}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as required.
+ For the lower 
+\begin_inset Formula $-$
+\end_inset
+
+ sign:
+\begin_inset Formula 
+\begin{eqnarray*}
+r_{c} & = & \frac{6GM}{1-\sqrt{1-12(GM/\ell)^{2}}}\\
+1-\sqrt{1-12(GM/\ell)^{2}} & = & \frac{6GM}{r_{c}}\\
+-\sqrt{1-12(GM/\ell)^{2}} & = & \frac{6GM}{r_{c}}-1\\
+1-12(GM/\ell)^{2} & = & \Big(\frac{6GM}{r_{c}}-1\Big)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the argument proceeds exactly the same way.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+\end_layout
+
+\begin_layout Standard
+The effective energy per unit mass 
+\begin_inset Formula $\tilde{E}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+\tilde{E}=\frac{1}{2}\Big(\frac{\partial r}{\partial\tau}\Big)^{2}-\frac{GM}{r}+\frac{\ell^{2}}{2r^{2}}-\frac{GM\ell^{2}}{r^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a circular orbit, 
+\begin_inset Formula $r=r_{c}$
+\end_inset
+
+ and is constant.
+ That is, 
+\begin_inset Formula $\frac{\partial r}{\partial\tau}=0$
+\end_inset
+
+.
+ Using the expression from part A for 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{E} & = & -\frac{GM}{r_{c}}+\frac{\ell^{2}}{2r_{c}^{2}}-\frac{GM\ell^{2}}{r_{c}^{3}}\\
+ & = & -\frac{GM}{r_{c}}+\frac{GMr_{c}^{2}}{2r_{c}^{2}(r_{c}-3GM)}-\frac{G^{2}M^{2}r_{c}^{2}}{r_{c}^{3}(r_{c}-3GM)}\\
+ & = & -\frac{GM}{r_{c}}+\frac{GM}{2(r_{c}-3GM)}-\frac{G^{2}M^{2}}{r_{c}(r_{c}-3GM)}\\
+ & = & -GM\Big(\frac{1}{r_{c}}-\frac{1}{2(r_{c}-3GM)}-\frac{GM}{r_{c}(r_{c}-3GM)}\Big)\\
+ & = & -GM\Big(\frac{2(r_{c}-3GM)-r_{c}+2GM}{2r_{c}(r_{c}-3GM)}\Big)\\
+ & = & \frac{-GM}{2r_{c}(r_{c}-3GM)}\Big(2r_{c}-6GM-r_{c}+2GM\Big)\\
+ & = & \frac{-GM}{2r_{c}(r_{c}-3GM)}\Big(r_{c}-4GM\Big)\\
+ & = & \frac{-GMr_{c}}{2r_{c}(r_{c}-3GM)}\Big(1-\frac{4GM}{r_{c}}\Big)\\
+\tilde{E} & = & \frac{-GM}{2r_{c}}\Big(1-\frac{3GM}{r_{c}}\Big)^{-1}\Big(1-\frac{4GM}{r_{c}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as required.
 \end_layout
 
 \end_body
