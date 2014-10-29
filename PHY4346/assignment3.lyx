@@ -437,6 +437,137 @@ For a circular orbit,
 
 \begin_layout Standard
 as required.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+C.
+\end_layout
+
+\begin_layout Standard
+A spaceship is in a stable circular orbit at a Schwarzschild radial coordinate
+ of 
+\begin_inset Formula $r=10GM$
+\end_inset
+
+ around a supermassive black hole whose mass is 
+\begin_inset Formula $10^{6}$
+\end_inset
+
+ solar masses.
+\end_layout
+
+\begin_layout Itemize
+What is this orbit's circumference in km?
+\begin_inset Formula 
+\[
+C=2\pi r=2\pi(10)GM=20\pi(1477)(10^{6})=9.28\times10^{10}m=9.28\times10^{7}km
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+What are 
+\begin_inset Formula $\tilde{E}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ell$
+\end_inset
+
+ for this orbit?
+\begin_inset Formula 
+\[
+\ell=\sqrt{\frac{GMr_{c}^{2}}{r_{c}-3GM}}=\sqrt{\frac{G^{3}M^{3}(100)}{10GM-3GM}}=\sqrt{\frac{100G^{2}M^{2}}{7}}=\frac{10(1477)(10^{6})}{\sqrt{7}}=5.58\times10^{9}m/kg
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{E}=\frac{-GM}{2r_{c}}\Big(1-\frac{3GM}{r_{c}}\Big)^{-1}\Big(1-\frac{4GM}{r_{c}}\Big)=\frac{-GM}{20GM}\Big(1-\frac{3GM}{10GM}\Big)^{-1}\Big(1-\frac{4GM}{10GM}\Big)=\frac{-1}{20}\Big(\frac{10}{7}\Big)\Big(\frac{6}{10}\Big)=-0.043
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+What is the period of the spaceship's orbit according to its own clock?
+\begin_inset Newline newline
+\end_inset
+
+The period as seen from an observer far away is given by
+\begin_inset Formula 
+\[
+T=\frac{2\pi}{\sqrt{GM}}\sqrt{r_{c}^{3}}=\frac{2\pi}{\sqrt{1477(10^{6})}}=\sqrt{1000(1477)^{3}(10^{6})^{3}}=2.93\times10^{11}m
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+We should be able to transform this result to the reference frame of the
+ spaceship.
+ We need to know what 
+\begin_inset Formula $\frac{\partial t}{\partial\tau}$
+\end_inset
+
+ is.
+\begin_inset Formula 
+\[
+\tilde{E}=\frac{1}{2}(e^{2}-1)\,\implies e=\sqrt{2\tilde{E}+1}=\sqrt{2(-0.043)+1}=0.96
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+e & = & \Big(1-\frac{2GM}{r}\Big)\frac{dt}{d\tau}\\
+\frac{dt}{d\tau} & = & \frac{e}{1-\frac{2GM}{r}}=\frac{0.96}{1-1/5}=1.2\,\implies\frac{d\tau}{dt}=\frac{1}{1.2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+So,
+\begin_inset Formula 
+\[
+\Delta\tau=\frac{d\tau}{dt}\Delta T=\frac{1}{1.2}(2.93\times10^{11})=2.44\times10^{11}m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The rest is incomplete.
 \end_layout
 
 \end_body
