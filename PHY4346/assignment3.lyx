@@ -53,12 +53,12 @@ figs-within-sections
 \color #008000
 \end_index
 \leftmargin 1.5cm
-\topmargin 1.5cm
+\topmargin 2.5cm
 \rightmargin 1.5cm
 \bottommargin 1.5cm
 \headheight 0cm
-\headsep 0cm
-\footskip 0cm
+\headsep 1.5cm
+\footskip 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -178,6 +178,115 @@ The measurement falls in the range:
 \end_inset
 
 The theoretical value doesn't fall into the range of the measurement.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+An advanced civilisation constructs two concentric massless shells around
+ a neutron star of mass 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ The inner shell has a circumference of 
+\begin_inset Formula $6\pi GM$
+\end_inset
+
+ and the outer shell has a circumference of 
+\begin_inset Formula $20\pi GM$
+\end_inset
+
+.
+ What is the exact physical distance between the shells?
+\end_layout
+
+\begin_layout Standard
+We can get the radii of the two shells with 
+\begin_inset Formula $C=2\pi r$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+6\pi GM & = & 2\pi r_{1}\implies r_{1}=3GM\\
+20\pi GM & = & 2\pi r_{2}\implies r_{2}=10GM
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the metric to find the distance, noting that 
+\begin_inset Formula $dt=d\theta=d\phi=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+ds^{2} & = & \frac{dr^{2}}{1-\frac{2GM}{r}}\\
+ds & = & \frac{dr}{\sqrt{1-\frac{2GM}{r}}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the distance is given by
+\begin_inset Formula 
+\[
+\Delta s=\int ds=\int_{r_{1}}^{r_{2}}\frac{dr}{\sqrt{1-\frac{2GM}{r}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the change of coordinates 
+\begin_inset Formula $u=\frac{2GM}{r}$
+\end_inset
+
+, 
+\begin_inset Formula $du=\frac{-2GM}{r^{2}}dr\,\implies dr=\frac{-r^{2}}{2GM}=\frac{-2GM}{u^{2}}du$
+\end_inset
+
+, and noting that 
+\begin_inset Formula $u_{1}=\frac{2}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{2}=\frac{1}{5}$
+\end_inset
+
+, we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta s & = & \int_{r_{1}}^{r_{2}}\frac{dr}{\sqrt{1-\frac{2GM}{r}}}=\int_{u_{1}}^{u_{2}}\frac{-2GM}{u^{2}\sqrt{1-u}}du\\
+ & = & -2GM\int_{u_{1}}^{u_{2}}\frac{1}{u^{2}\sqrt{1-u}}du=-2GM\Big(\frac{-\sqrt{1-u}}{u}-\tanh^{-1}(\sqrt{1-u})\Big)\Bigg|_{u_{1}}^{u_{2}}\\
+ & = & -2GM\Big(\frac{-\sqrt{4/5}}{1/5}-\tanh^{-1}(\sqrt{4/5})+\frac{\sqrt{1/3}}{2/3}+\tanh^{-1}(\sqrt{1/3})\Big)\\
+ & = & -2GM\Big(-4.47-1.44+0.87+0.66)\\
+\Delta s & = & 8.76GM
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the space were flat, this distance would be 
+\begin_inset Formula $7GM$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
