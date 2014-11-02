@@ -1,0 +1,402 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY3750
+\begin_inset Newline newline
+\end_inset
+
+Devoir 3
+\begin_inset Newline newline
+\end_inset
+
+Mohammed Chamma 6379153
+\end_layout
+
+\begin_layout Date
+November 2nd 2014
+\end_layout
+
+\begin_layout Problem
+(7.5) Calculer la différence d'entropie entre 1g d'azote à température 
+\begin_inset Formula $T_{2}=20°C=293K$
+\end_inset
+
+ et pression 1 atm, et 1g d'azote liquide à température 
+\begin_inset Formula $T_{1}=–196°C=77K$
+\end_inset
+
+ (le point d'ébullition de l'azote), sous la même pression de 1 atm.
+ La chaleur latente de vaporisation de l'azote à pression atmosphérique
+ est 200 kJ/kg.
+ Considérer l'azote comme un gaz parfait à poids moléculaire 28 et de chaleur
+ spécifique molaire de 29.3 J/mol.K indépendante de la température.
+\end_layout
+
+\begin_layout Standard
+First consider the entropy change 
+\begin_inset Formula $\Delta S_{H}$
+\end_inset
+
+ of the heating process from –196°C to 20°C.
+ For an ideal gas 
+\begin_inset Formula $PV=nRT$
+\end_inset
+
+ implies: 
+\begin_inset Formula 
+\begin{eqnarray*}
+dS_{H} & = & \frac{ncdT}{T}+\frac{P}{T}dV=\frac{ncdT}{T}+\frac{nR}{V}dV\\
+\Delta S_{H} & = & nc\int\frac{dT}{T}+nR\int\frac{dV}{V}\\
+\Delta S_{H} & = & nc\ln\Big(\frac{T_{2}}{T_{1}}\Big)+nR\ln\Big(\frac{V_{2}}{V_{1}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+Now consider the entropy change 
+\begin_inset Formula $\Delta S_{B}$
+\end_inset
+
+ of the boiling process:
+\begin_inset Formula 
+\[
+\Delta S_{B}=\frac{nl^{'}}{T_{1}}=\frac{ml}{T_{1}}=\frac{(0.001kg)(200kJ/kg)}{77K}=0.0026\frac{kJ}{K}=2.6\frac{J}{K}
+\]
+
+\end_inset
+
+The number of moles of nitrogen gas 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+n=\frac{m}{M}=\frac{1g}{28g/mol}=\frac{1}{28}
+\]
+
+\end_inset
+
+We can find the two volumes using the state equation 
+\begin_inset Formula $V=\frac{nRT}{P}$
+\end_inset
+
+ noting that the pressure is constant:
+\begin_inset Formula 
+\begin{eqnarray*}
+V_{1} & = & \frac{nRT_{1}}{P}=\frac{(\frac{1}{28})8.31(77)}{101.3\times10^{3}}=2.26\times10^{-4}m^{3}\\
+V_{2} & = & \frac{nRT_{2}}{P}=\frac{(\frac{1}{28})8.31(293)}{101.3\times10^{3}}=8.58\times10^{-4}m^{3}
+\end{eqnarray*}
+
+\end_inset
+
+So the total entropy difference is
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta S & = & \Delta S_{B}+\Delta S_{H}\\
+ & = & 2.6+nc\ln\Big(\frac{T_{2}}{T_{1}}\Big)+nR\ln\Big(\frac{V_{2}}{V_{1}}\Big)\\
+ & = & 2.6+\frac{1}{28}(29.3)\ln\Big(\frac{293}{77}\Big)+\frac{1}{28}(8.31)\ln\Big(\frac{8.58}{2.26}\Big)\\
+ & = & 2.6+1.40+0.40\\
+\Delta S & = & 4.4\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Calculer le changement d'entropie de l'Univers résultant des processus suivants.
+ La chaleur spécifique du cuivre à pression constante est 385 J kg–1 K–1.
+ Dans chaque situation on s'attend suffisamment longtemps pour que le système
+ atteint l'équilibre thermique.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Un bloc de cuivre de masse 0.4 kg et température 
+\begin_inset Formula $T_{1}=100ºC=373K$
+\end_inset
+
+ est mis dans un lac à température 
+\begin_inset Formula $T_{2}=10ºC=283K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assume that the lake is large enough so that the final temperature of the
+ block is 
+\begin_inset Formula $T_{2}=283K$
+\end_inset
+
+.
+ The entropy change in the block of copper is then 
+\begin_inset Formula 
+\begin{eqnarray*}
+dS_{Cu} & = & \frac{\delta Q}{T}=\frac{mcdT}{T}\\
+\Delta S_{Cu} & = & mc\int\frac{dT}{T}=mc\ln\Big(\frac{T_{2}}{T_{1}}\Big)\\
+\Delta S_{Cu} & = & (0.4)(385)\ln\Big(\frac{283}{373}\Big)=-42.5\,\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+The lake absorbs heat in an (approximately) isothermal process so the entropy
+ change in the lake is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta S_{lake} & = & \frac{-Q}{T_{2}}=\frac{-mc}{T_{2}}\int_{T_{1}}^{T_{2}}dT=\frac{mc(T_{1}-T_{2})}{T_{2}}\\
+\Delta S_{lake} & = & \frac{0.4(385)(373-283)}{283}=49.0\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+This means that the entropy change in the universe is
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta S_{universe} & = & \Delta S_{lake}+\Delta S_{Cu}\\
+ & = & 49.0-42.5\\
+\Delta S_{universe} & = & +6.5\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\bar under
+B.
+
+\bar default
+ 
+\series default
+Le même bloc à 
+\begin_inset Formula $T_{1}=10ºC=283K$
+\end_inset
+
+ est laissé tomber dans le lac d'une hauteur de 
+\begin_inset Formula $h=100m$
+\end_inset
+
+.
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that no heat is exchanged between the block and the surrounding lake.
+ Thus for the block, 
+\begin_inset Formula 
+\[
+dS_{Cu}=\frac{\delta Q}{T}=0\,\implies\Delta S_{Cu}=0
+\]
+
+\end_inset
+
+However, the lake absorbs the kinetic energy of the block.
+ Assuming the lake is much larger than the block, it experiences no change
+ in internal energy.
+ The entropy change of the lake is then
+\begin_inset Formula 
+\begin{eqnarray*}
+dS_{lake} & = & \frac{\delta Q}{T}=\frac{dU+\delta W}{T}=\frac{\delta W}{T}\\
+\Delta S_{lake} & = & \frac{W}{T}=\frac{mgh}{T}\\
+\Delta S_{lake} & = & \frac{(0.4)(9.8)(100)}{283}=+1.39\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+The entropy change in the universe is then
+\begin_inset Formula 
+\[
+\Delta S_{universe}=\Delta S_{lake}+0=1.39\frac{J}{K}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\bar under
+C.
+
+\series default
+\bar default
+ Deux blocs identiques à températures 
+\begin_inset Formula $T_{A}=100ºC=373K$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{B}=10ºC=283K$
+\end_inset
+
+ sont mis en contact dans une enceinte adiabatique isobare de capacité thermique
+ négligeable.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The two blocks are isolated from their surroundings, so 
+\begin_inset Formula 
+\[
+\Delta S_{universe}=0+\Delta S_{system}
+\]
+
+\end_inset
+
+Heat flows from block A to block B:
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta S_{system} & = & \Delta S_{A}+\Delta S_{B}\\
+ & = & \frac{-Q}{T_{A}}+\frac{Q}{T_{B}}=-Q\Big(\frac{1}{T_{A}}-\frac{1}{T_{B}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+Where 
+\begin_inset Formula $Q=|Q_{A}|=|Q_{B}|$
+\end_inset
+
+.
+ We can find 
+\begin_inset Formula $Q$
+\end_inset
+
+ by using the fact that
+\begin_inset Formula 
+\begin{eqnarray*}
+|Q_{A}| & = & |Q_{B}|\\
+mc(T_{A}-T_{F}) & = & mc(T_{F}-T_{B})\\
+T_{A}-T_{F} & = & T_{F}-T_{B}\\
+T_{F} & = & \frac{T_{A}+T_{B}}{2}=\frac{373+283}{2}=328K
+\end{eqnarray*}
+
+\end_inset
+
+Then,
+\begin_inset Formula 
+\[
+Q=|Q_{A}|=mc(T_{A}-T_{F})=0.4(385)(373-328)=6930J
+\]
+
+\end_inset
+
+and so
+\begin_inset Formula 
+\[
+\Delta S_{universe}=-Q\Big(\frac{1}{T_{A}}-\frac{1}{T_{B}}\Big)=-6390\Big(\frac{1}{373}-\frac{1}{283}\Big)=5.45\frac{J}{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+
+\end_layout
+
+\end_body
+\end_document
