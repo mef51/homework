@@ -181,7 +181,8 @@ So the total entropy difference is
 \end_layout
 
 \begin_layout Problem
-Calculer le changement d'entropie de l'Univers résultant des processus suivants.
+(7.8) Calculer le changement d'entropie de l'Univers résultant des processus
+ suivants.
  La chaleur spécifique du cuivre à pression constante est 385 J kg–1 K–1.
  Dans chaque situation on s'attend suffisamment longtemps pour que le système
  atteint l'équilibre thermique.
@@ -272,7 +273,6 @@ Le même bloc à
 \end_inset
 
 .
-
 \begin_inset Newline newline
 \end_inset
 
@@ -395,7 +395,212 @@ and so
 \end_layout
 
 \begin_layout Problem
+(8.1) Les équations d'état pour un système thermodynamique sont 
+\begin_inset Formula $P=aT-b(V-V_{0})$
+\end_inset
 
+ et 
+\begin_inset Formula $U=\frac{b}{2}(V-V_{0})^{2}+cT$
+\end_inset
+
+ où 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ et 
+\begin_inset Formula $c$
+\end_inset
+
+ sont des constantes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Démontrer que ces équations sont consistantes avec les lois de la thermodynamiq
+ue (qu'elles satisfont les conditions de consistance).
+\end_layout
+
+\begin_layout Standard
+First we require that 
+\begin_inset Formula 
+\[
+\Big(\frac{\partial U}{\partial V}\Big)_{T}=T\Big(\frac{\partial P}{\partial T}\Big)_{V}-P
+\]
+
+\end_inset
+
+Note that 
+\begin_inset Formula $\Big(\frac{\partial U}{\partial V}\Big)_{T}=b(V-V_{0})$
+\end_inset
+
+ and 
+\begin_inset Formula $\Big(\frac{\partial P}{\partial T}\Big)_{V}=a$
+\end_inset
+
+.
+ So the right side becomes
+\begin_inset Formula 
+\[
+T\Big(\frac{\partial P}{\partial T}\Big)_{V}-P=aT-aT+b(V-V_{0})=b(V-V_{0})=\Big(\frac{\partial U}{\partial V}\Big)_{T}
+\]
+
+\end_inset
+
+as needed.
+ Now, we calculate 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ using
+\begin_inset Formula 
+\[
+C_{V}=\Big(\frac{\partial U}{\partial T}\Big)_{V}=c=constant
+\]
+
+\end_inset
+
+Noting that 
+\begin_inset Formula $\Big(\frac{\partial C_{V}}{\partial P}\Big)_{T}=0$
+\end_inset
+
+, we want the following condition to be satisfied:
+\begin_inset Formula 
+\[
+T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}=\Big(\frac{\partial C_{V}}{\partial P}\Big)_{T}=0
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant, 
+\begin_inset Formula $\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}=0$
+\end_inset
+
+, so that condition is satisfied.
+ There are no other consistency conditions for this system.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+
+\series default
+\bar default
+ Trouver l'entropie du système.
+\end_layout
+
+\begin_layout Standard
+We know that
+\begin_inset Formula 
+\[
+\Big(\frac{\partial S}{\partial T}\Big)_{V}=\frac{1}{T}\Big(\frac{\partial U}{\partial T}\Big)_{V}=\frac{c}{T}
+\]
+
+\end_inset
+
+We also know that
+\begin_inset Formula 
+\[
+\Big(\frac{\partial S}{\partial V}\Big)_{T}=\frac{1}{T}\Bigg(\Big(\frac{\partial U}{\partial V}\Big)_{T}+P\Bigg)=\frac{1}{T}\Big(b(V-V_{0})+aT-b(V-V_{0})\Big)=\frac{aT}{T}=a
+\]
+
+\end_inset
+
+Now, the entropy 
+\begin_inset Formula $S$
+\end_inset
+
+ is a function 
+\begin_inset Formula $S(T,V)$
+\end_inset
+
+, so
+\begin_inset Formula 
+\begin{eqnarray*}
+dS & = & \Big(\frac{\partial S}{\partial T}\Big)_{V}dT+\Big(\frac{\partial S}{\partial V}\Big)_{T}dV\\
+dS & = & \frac{c}{T}dT+adV\\
+S & = & c\int\frac{dT}{T}+a\int dV\\
+S(T,V) & = & c\ln(T)+aV+S_{0}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+C.
+
+\series default
+\bar default
+ Est-ce que ces équations peuvent être valides à basses températures ? Justifier
+ votre réponse.
+\end_layout
+
+\begin_layout Standard
+The third law of thermodynamics requires that for systems in thermal equilibrium
+ 
+\begin_inset Formula $(T_{1}=T_{2})$
+\end_inset
+
+, the following condition holds: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\lim_{T\rightarrow0}(S_{2}-S_{1})=0.
+\]
+
+\end_inset
+
+Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{T\rightarrow0}(S_{2}-S_{1}) & = & \lim_{T\rightarrow0}\Big(c\ln\Big(\frac{T_{2}}{T_{1}}\Big)+a(V_{2}-V_{1})\Big)\\
+ & = & \lim_{T\rightarrow0}\Big(c\ln(1)+a(V_{2}-V_{1})\Big)\\
+ & = & a(V_{2}-V_{1})
+\end{eqnarray*}
+
+\end_inset
+
+Since this term does not necessarily go to zero as the temperature drops
+ the equations are not valid for very low temperatures.
 \end_layout
 
 \end_body
