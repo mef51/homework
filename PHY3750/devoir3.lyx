@@ -6,6 +6,7 @@
 \begin_preamble
 \usepackage{graphicx}
 \usepackage{pdflscape}
+\usepackage{cancel}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -90,6 +91,15 @@ Mohammed Chamma 6379153
 
 \begin_layout Date
 November 2nd 2014
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pderv}[3]{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
+{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -470,13 +480,13 @@ C_{V}=\Big(\frac{\partial U}{\partial T}\Big)_{V}=c=constant
 \end_inset
 
 Noting that 
-\begin_inset Formula $\Big(\frac{\partial C_{V}}{\partial P}\Big)_{T}=0$
+\begin_inset Formula $\Big(\frac{\partial C_{V}}{\partial V}\Big)_{T}=0$
 \end_inset
 
 , we want the following condition to be satisfied:
 \begin_inset Formula 
 \[
-T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}=\Big(\frac{\partial C_{V}}{\partial P}\Big)_{T}=0
+T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}=\Big(\frac{\partial C_{V}}{\partial V}\Big)_{T}=0
 \]
 
 \end_inset
@@ -539,7 +549,7 @@ Now, the entropy
 dS & = & \Big(\frac{\partial S}{\partial T}\Big)_{V}dT+\Big(\frac{\partial S}{\partial V}\Big)_{T}dV\\
 dS & = & \frac{c}{T}dT+adV\\
 S & = & c\int\frac{dT}{T}+a\int dV\\
-S(T,V) & = & c\ln(T)+aV+S_{0}
+S(T,V) & = & c\ln(T)+aV+S_{0}\quad\square
 \end{eqnarray*}
 
 \end_inset
@@ -601,6 +611,996 @@ Now,
 
 Since this term does not necessarily go to zero as the temperature drops
  the equations are not valid for very low temperatures.
+\end_layout
+
+\begin_layout Problem
+(8.3) Un gaz obéit à l'équation d'état Redlich-Kwong 
+\begin_inset Formula $\Big(P+\frac{n^{2}a}{\sqrt{T}V(V+nb)}\Big)(V-nb)=nRT$
+\end_inset
+
+, où 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ sont des constantes caractérisant le gaz.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Démontrer qu'une capacité thermique à volume constante dans la forme 
+\begin_inset Formula $C_{V}=A(T)+\frac{3na}{4bT^{3/2}}\ln\frac{V+nb}{V}$
+\end_inset
+
+, où 
+\begin_inset Formula $A(T)$
+\end_inset
+
+ est une fonction inconnue de la température, est consistante avec l'équation
+ Redlich-Kwong.
+\end_layout
+
+\begin_layout Standard
+We need to check the condition 
+\begin_inset Formula $\Big(\frac{\partial C_{V}}{\partial V}\Big)_{T}=T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Big(\frac{\partial C_{V}}{\partial V}\Big)_{T}=\frac{3na}{4bT^{3/2}}\frac{V}{V+nb}\Big(\frac{-nb}{V^{2}}\Big)=\frac{-3n^{2}a}{4V(V+nb)}T^{-3/2}
+\]
+
+\end_inset
+
+Now, 
+\begin_inset Formula 
+\[
+P=\frac{nRT}{V-nb}-\frac{n^{2}a}{V(V+nb)}T^{-1/2}
+\]
+
+\end_inset
+
+So
+\begin_inset Formula 
+\begin{eqnarray*}
+\Big(\frac{\partial P}{\partial T}\Big)_{V} & = & \frac{nR}{V-nb}+\frac{1}{2}\frac{n^{2}a}{V(V+nb)}T^{-3/2}\\
+\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V} & = & -\frac{3}{2}\frac{1}{2}\frac{n^{2}a}{V(V+nb)}T^{-5/2}=\frac{-3n^{2}a}{4V(V+nb)}T^{-5/2}
+\end{eqnarray*}
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\[
+T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}=\frac{-3n^{2}a}{4V(V+nb)}T^{-5/2}T=\frac{-3n^{2}a}{4V(V+nb)}T^{-3/2}=\Big(\frac{\partial C_{V}}{\partial V}\Big)_{T}
+\]
+
+\end_inset
+
+as required.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+
+\series default
+\bar default
+ Trouver l'énergie interne du gaz en fonction du volume et de la température.
+ Assumer 
+\begin_inset Formula $A(T)=nc$
+\end_inset
+
+, où 
+\begin_inset Formula $c$
+\end_inset
+
+ est une constante.
+\end_layout
+
+\begin_layout Standard
+The partial derivatives of 
+\begin_inset Formula $U=U(T,V)$
+\end_inset
+
+ are
+\begin_inset Formula 
+\[
+\Big(\frac{\partial U}{\partial T}\Big)_{V}=C_{V}=nc+\frac{3na}{4b}\ln\Big(\frac{V+nb}{V}\Big)T^{-3/2}
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{eqnarray*}
+\Big(\frac{\partial U}{\partial V}\Big)_{T} & = & T\Big(\frac{\partial P}{\partial T}\Big)_{V}-P\\
+ & = & T\Big(\frac{nR}{V-nb}+\frac{1}{2}\frac{n^{2}a}{V(V+nb)}T^{-3/2}\Big)-\Big(\frac{nRT}{V-nb}-\frac{n^{2}a}{V(V+nb)}T^{-1/2}\Big)\\
+ & = & \frac{nRT}{V-nb}+\frac{1}{2}\frac{n^{2}a}{V(V+nb)}T^{-1/2}-\frac{nRT}{V-nb}+\frac{n^{2}a}{V(V+nb)}T^{-1/2}\\
+ & = & \frac{3}{2}\frac{n^{2}a}{V(V+nb)}T^{-1/2}=\frac{3}{2}\frac{n^{2}a}{T^{1/2}}\frac{1}{V(V+nb)}
+\end{eqnarray*}
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\begin{eqnarray*}
+dU & = & \Big(\frac{\partial U}{\partial T}\Big)_{V}dT+\Big(\frac{\partial U}{\partial V}\Big)_{T}dV\\
+ & = & \Big(nc+\frac{3na}{4b}\ln\Big(\frac{V+nb}{V}\Big)T^{-3/2}\Big)dT+\frac{3}{2}\frac{n^{2}a}{T^{1/2}}\frac{1}{V(V+nb)}dV\\
+U & = & nc\int dT+\frac{3na}{4b}\ln\Big(\frac{V+nb}{V}\Big)\int T^{-3/2}dT+\frac{3}{2}\frac{n^{2}a}{T^{1/2}}\int\frac{1}{V(V+nb)}dV\\
+ & = & ncT+\frac{3na}{4b}\ln\Big(\frac{V+nb}{V}\Big)(-2T^{-1/2})+\frac{3}{2}\frac{n^{2}a}{T^{1/2}}\int\frac{1}{V(V+nb)}dV\\
+ & = & ncT-\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-1/2}+\frac{3n^{2}a}{2}T^{-1/2}\int\frac{1}{V(V+nb)}dV
+\end{eqnarray*}
+
+\end_inset
+
+To solve the integral, note that 
+\begin_inset Formula $\ln\frac{V+nb}{V}$
+\end_inset
+
+ is the integral of its derivative:
+\begin_inset Formula 
+\begin{eqnarray*}
+\ln\Big(\frac{V+nb}{V}\Big) & = & \int\frac{V}{V+nb}\Big(\frac{1}{V}-\frac{V+nb}{V^{2}}\Big)dV\\
+ & = & \int\Big(\frac{1}{V+nb}-\frac{1}{V}\Big)dV\\
+ & = & \int\Big(\frac{V-V-nb}{V(V+nb)}\Big)dV\\
+ & = & -nb\int\frac{1}{V(V+nb)}dV\\
+\int\frac{1}{V(V+nb)}dV & = & \frac{-1}{nb}\ln\Big(\frac{V+nb}{V}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+Thus,
+\begin_inset Formula 
+\begin{eqnarray*}
+U & = & ncT-\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-1/2}+\frac{3n^{2}a}{2}T^{-1/2}\Big(\frac{-1}{nb}\Big)\ln\Big(\frac{V+nb}{V}\Big)\\
+ & = & ncT-\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-1/2}-\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-1/2}\\
+U(T,V) & = & ncT-\frac{3na}{b}\ln\Big(\frac{V+nb}{V}\Big)T^{-1/2}\quad\square
+\end{eqnarray*}
+
+\end_inset
+
+This method of integrating directly is incorrect since the variables are
+ not separated in the differential...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+C.
+
+\series default
+\bar default
+ Démontrer que l'entropie du gaz sous la supposition en 
+\series bold
+B.
+
+\series default
+ peut être exprimée comme: 
+\begin_inset Formula 
+\[
+S(T,V)=nc\ln T+nR\ln(V-nb)-\frac{na}{2bT^{3/2}}\ln\frac{V+nb}{V}+S_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can compute the derivatives of 
+\begin_inset Formula $S(T,V)$
+\end_inset
+
+ using 
+\begin_inset Formula $U(T,V)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv STV & = & \frac{1}{T}\pderv UTV\\
+ & = & \frac{1}{T}\Big(nc-\frac{3na}{b}\ln\Big(\frac{V+nb}{V}\Big)\Big(\frac{-1}{2}\Big)T^{-3/2}\Big)=\frac{1}{T}\Big(nc+\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-3/2}\Big)\\
+\pderv STV & = & \frac{nc}{T}+\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-5/2}
+\end{eqnarray*}
+
+\end_inset
+
+and:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv SVT & = & \frac{1}{T}\Bigg(\pderv UVT+P\Bigg)\\
+ & = & \frac{1}{T}\Bigg(-\frac{3na}{b}T^{-1/2}\frac{(-nb)}{V(V+nb)}\Bigg)\\
+ & = & \frac{1}{T}\Big(\frac{3n^{2}a}{V(V+nb)}T^{-1/2}\Big)\\
+\pderv SVT & = & \frac{3n^{2}a}{V(V+nb)}T^{-3/2}
+\end{eqnarray*}
+
+\end_inset
+
+Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+dS & = & \pderv STVdT+\pderv SVTdV\\
+ & = & \Big(\frac{nc}{T}+\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)T^{-5/2}\Big)dT+\frac{3n^{2}a}{V(V+nb)}T^{-3/2}dV\\
+S & = & nc\int\frac{dT}{T}+\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)\int T^{-5/2}dT+\frac{3n^{2}a}{T^{3/2}}\int\frac{1}{V(V+nb)}dV\\
+ & = & nc\ln T+\frac{3na}{2b}\ln\Big(\frac{V+nb}{V}\Big)(\frac{-2}{3})T^{-3/2}+\frac{3n^{2}a}{T^{3/2}}(\frac{-1}{nb})\ln\Big(\frac{V+nb}{V}\Big)+S_{0}\\
+ & = & nc\ln T-\frac{na}{bT^{3/2}}\ln\Big(\frac{V+nb}{V}\Big)-\frac{3na}{bT^{3/2}}\ln\Big(\frac{V+nb}{V}\Big)+S_{0}\\
+S(T,V) & = & nc\ln T-\frac{4na}{bT^{3/2}}\ln\Big(\frac{V+nb}{V}\Big)+S_{0}
+\end{eqnarray*}
+
+\end_inset
+
+How to get to the other form? This method of integrating directly is incorrect
+ since the variables are not separated in the differential...
+\end_layout
+
+\begin_layout Problem
+(8.6) Des mesures expérimentales de la capacité thermique à volume constante
+ 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ et la pression 
+\begin_inset Formula $P$
+\end_inset
+
+ dans un système thermodynamique d'un mole ont donné les expressions d'approxima
+tion suivantes:
+\begin_inset Formula 
+\begin{eqnarray*}
+C_{V} & = & \frac{c}{T}-2bVT^{-3}\\
+P & = & \frac{RT}{V}e^{-aV}-\frac{b}{3T^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+où 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ et 
+\begin_inset Formula $c$
+\end_inset
+
+ sont des constantes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Démontrer que ces équations sont consistantes avec les lois de la thermodynamiq
+ue.
+\end_layout
+
+\begin_layout Standard
+We want 
+\begin_inset Formula $\pderv{C_{V}}VT=T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}$
+\end_inset
+
+.
+ Compute the derivatives of 
+\begin_inset Formula $P$
+\end_inset
+
+...
+\begin_inset Formula 
+\begin{eqnarray*}
+\Big(\frac{\partial P}{\partial T}\Big)_{V} & = & \frac{R}{V}e^{-aV}-(-2)\frac{b}{3T^{3}}=\frac{R}{V}e^{-aV}+\frac{2b}{3T^{3}}\\
+\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V} & = & \frac{2b(-3)}{3T^{4}}=\frac{-2b}{T^{4}}
+\end{eqnarray*}
+
+\end_inset
+
+Now the derivative of 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\pderv{C_{V}}VT=\frac{-2b}{T^{3}}=T\frac{-2b}{T^{4}}=T\Big(\frac{\partial^{2}P}{\partial T^{2}}\Big)_{V}
+\]
+
+\end_inset
+
+as needed.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+
+\series default
+\bar default
+ Dériver une expression pour l'énergie interne du système.
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula 
+\[
+\pderv UTV=C_{V}=\frac{c}{T}-2bVT^{-3}
+\]
+
+\end_inset
+
+We also know that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv UVT & = & T\pderv PTV-P\\
+ & = & T\Big(\frac{R}{V}e^{-aV}+\frac{2b}{3T^{3}}\Big)-\frac{RT}{V}e^{-aV}+\frac{b}{3T^{2}}\\
+ & = & \frac{RT}{V}e^{-aV}+\frac{2b}{3T^{2}}-\frac{RT}{V}e^{-aV}+\frac{b}{3T^{2}}\\
+\pderv UVT & = & \frac{b}{T^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv UVT & = & \frac{b}{T^{2}}\implies dU=\frac{b}{T^{2}}dV\\
+U & = & \frac{b}{T^{2}}V+f(T)
+\end{eqnarray*}
+
+\end_inset
+
+Taking the derivative wrt.
+ to 
+\begin_inset Formula $T$
+\end_inset
+
+ of this expression:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv UTV & = & \frac{-2bV}{T^{3}}+\frac{df}{dT}\\
+\frac{-2bV}{T^{3}}+\frac{df}{dT} & = & \frac{c}{T}-2bVT^{-3}\\
+\frac{df}{dT} & = & \frac{c}{T}\\
+f & = & c\ln T+U_{0}
+\end{eqnarray*}
+
+\end_inset
+
+Thus we get an expression for 
+\begin_inset Formula $U(T,V)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+U(T,V)=\frac{b}{T^{2}}V+c\ln T+U_{0}\quad\square
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(8.9) Des mesures expérimentales sur un ressort de longueur naturel 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ à température 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ donnent les résultats suivants : la force élastique augmente linéairement
+ avec l'élongation du ressort (loi de Hooke), et sa longueur augmente linéaireme
+nt avec la température (expansion thermique); où 
+\begin_inset Formula $f$
+\end_inset
+
+ est la force élastique sur le ressort, 
+\begin_inset Formula $x$
+\end_inset
+
+ est sa longueur, 
+\begin_inset Formula $T$
+\end_inset
+
+ est la température et 
+\begin_inset Formula $k$
+\end_inset
+
+ et 
+\begin_inset Formula $a$
+\end_inset
+
+ sont des constantes.
+ La capacité thermique du ressort à longueur constante est aussi mesurée
+ et s'avère aussi constante:
+\begin_inset Formula 
+\[
+\pderv fxT=-k,\quad\pderv xTf=a,\quad\pderv UTx=C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Trouver la force élastique en fonction de 
+\begin_inset Formula $x$
+\end_inset
+
+ et 
+\begin_inset Formula $T$
+\end_inset
+
+: 
+\begin_inset Formula $f(x,T)$
+\end_inset
+
+.
+ Écrire les constantes d'intégration explicitement pour s'assurer que la
+ force est nulle à longueur 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ et température 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Starting from the derivative of 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv fxT & = & -k\\
+df & = & -kdx\\
+f & = & -k(x-x_{0})+g(T)
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $g(T)$
+\end_inset
+
+ is some function of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Since C is constant, 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv CxT & = & 0=T\Big(\frac{\partial^{2}f}{\partial T^{2}}\Big)_{x}\\
+\Big(\frac{\partial^{2}f}{\partial T^{2}}\Big)_{x} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Note that since 
+\begin_inset Formula $\pderv fTx=\frac{dg}{dT}$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+\Big(\frac{\partial^{2}f}{\partial T^{2}}\Big)_{x}=\frac{d^{2}g}{dT^{2}}=0\implies\frac{dg}{dT}=constant
+\]
+
+\end_inset
+
+This implies that 
+\begin_inset Formula $g(T)$
+\end_inset
+
+ is linear in 
+\begin_inset Formula $T$
+\end_inset
+
+ and we write
+\begin_inset Formula 
+\[
+g(T)=b(T-T_{0})
+\]
+
+\end_inset
+
+for some constant 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Now
+\begin_inset Formula 
+\[
+f=-k(x-x_{0})+b(T-T_{0})
+\]
+
+\end_inset
+
+We can find a value for 
+\begin_inset Formula $b$
+\end_inset
+
+ using the derivative on 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & \frac{b(T-T_{0})-f}{k}+x_{0}\\
+\pderv xTf & = & \frac{b}{k}=a\\
+b & = & ak
+\end{eqnarray*}
+
+\end_inset
+
+And so we have 
+\begin_inset Formula 
+\[
+f(x,T)=-k(x-x_{0})+ak(T-T_{0})
+\]
+
+\end_inset
+
+Note that 
+\begin_inset Formula $f(x_{0},T_{0})=-k(x_{0}-x_{0})+ak(T_{0}-T_{0})=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+
+\series default
+\bar default
+ Trouver l'énergie interne du ressort en fonction de 
+\begin_inset Formula $x$
+\end_inset
+
+ et 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We already know that 
+\begin_inset Formula $\pderv UTx=C=constant$
+\end_inset
+
+.
+ We can also find 
+\begin_inset Formula $\pderv UxT$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv UxT & = & T\pderv fTx-f\\
+ & = & T(ak)+k(x-x_{0})-ak(T-T_{0})\\
+ & = & k(x-x_{0})+akT-akT+akT_{0}\\
+\pderv UxT & = & k(x-x_{0})+akT_{0}
+\end{eqnarray*}
+
+\end_inset
+
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\pderv UTx=C$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+U=C(T-T_{0})+h(x)
+\]
+
+\end_inset
+
+for some function 
+\begin_inset Formula $h(x)$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\pderv UxT=\frac{dh}{dx}$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dh}{dx} & = & k(x-x_{0})+akT_{0}\\
+h & = & \frac{1}{2}k(x-x_{0})^{2}+akT_{0}(x-x_{0})
+\end{eqnarray*}
+
+\end_inset
+
+And we get the following expression for the internal energy:
+\begin_inset Formula 
+\[
+U(x,T)=C(T-T_{0})+\frac{1}{2}k(x-x_{0})^{2}+akT_{0}(x-x_{0})\quad\square
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+C.
+
+\series default
+\bar default
+ Trouver l'entropie du ressort en fonction de 
+\begin_inset Formula $x$
+\end_inset
+
+ et 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\pderv STx=\frac{1}{T}\pderv UTx=\frac{1}{T}C
+\]
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv SxT & = & \frac{1}{T}\Bigg(\pderv UxT+f\Bigg)\\
+ & = & \frac{1}{T}\Big(k(x-x_{0})+akT_{0}x+-k(x-x_{0})+ak(T-T_{0})\Big)\\
+ & = & \frac{1}{T}\Big(akT_{0}x+akT-akT_{0}\Big)\\
+ & = & \frac{ak}{T}(T_{0}(x-1)+T)\\
+\pderv SxT & = & \frac{akT_{0}(x-1)}{T}+ak
+\end{eqnarray*}
+
+\end_inset
+
+So
+\begin_inset Formula 
+\[
+\pderv STx=\frac{C}{T}\implies S=C\ln\frac{T}{T_{0}}+j(x)
+\]
+
+\end_inset
+
+for some function 
+\begin_inset Formula $j(x)$
+\end_inset
+
+.
+ Now
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv SxT & = & \frac{dj}{dx}\\
+\frac{dj}{dx} & = & \frac{akT_{0}(x-1)}{T}+ak\\
+j & = & \frac{akT_{0}(x-1)^{2}}{2T}+ak(x-x_{0})+S_{0}
+\end{eqnarray*}
+
+\end_inset
+
+So we get 
+\begin_inset Formula 
+\[
+S(x,T)=C\ln\frac{T}{T_{0}}+\frac{akT_{0}(x-1)^{2}}{2T}+ak(x-x_{0})+S_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+D.
+
+\series default
+\bar default
+ Soit 
+\begin_inset Formula $x_{0}=20cm$
+\end_inset
+
+, 
+\begin_inset Formula $T_{0}=300K$
+\end_inset
+
+, 
+\begin_inset Formula $a=4\times10^{-5}m/K$
+\end_inset
+
+, 
+\begin_inset Formula $k=100N/m$
+\end_inset
+
+ et 
+\begin_inset Formula $C=230J/K$
+\end_inset
+
+.
+ Considérer un extension réversible isotherme à 
+\begin_inset Formula $300K$
+\end_inset
+
+ pour doubler la longueur du ressort à 
+\begin_inset Formula $x_{1}=40cm$
+\end_inset
+
+.
+ Trouver le changement d'entropie, le changement d'énergie interne, le travail
+ effectué par le ressort et la chaleur qu'il reçoit pendant le processus.
+\end_layout
+
+\begin_layout Standard
+The change in entropy is 
+\begin_inset Formula 
+\begin{eqnarray*}
+S(x_{1},T_{0})-S(x_{0},T_{0}) & = & \frac{akT_{0}(x_{1}-1)^{2}}{2T_{0}}+ak(x_{1}-x_{0})-\frac{akT_{0}(x_{0}-1)^{2}}{2T_{0}}-\cancel{ak(x_{0}-x_{0})}\\
+ & = & \frac{ak(x_{1}-1)^{2}}{2}+ak(x_{1}-x_{0})-\frac{ak(x_{0}-1)^{2}}{2}\\
+ & = & ak\Big(\frac{(x_{1}-1)^{2}-(x_{0}-1)^{2}}{2}+(x_{1}-x_{0})\Big)\\
+ & = & 4\times10^{-5}(100)\Big(\frac{(0.4-1)^{2}-(0.2-1)^{2}}{2}+(0.4-0.2)\Big)=2.4\times10^{-4}\frac{J}{K}
+\end{eqnarray*}
+
+\end_inset
+
+The change in internal energy is
+\begin_inset Formula 
+\begin{eqnarray*}
+U(x_{1},T_{0})-U(x_{0},T_{0}) & = & \frac{1}{2}k(x_{1}-x_{0})^{2}+akT_{0}(x_{1}-x_{0})-\frac{1}{2}k(x_{0}-x_{0})^{2}-akT_{0}(x_{0}-x_{0})\\
+ & = & \frac{1}{2}k(x_{1}-x_{0})^{2}+akT_{0}(x_{1}-x_{0})\\
+ & = & \frac{1}{2}(100)(0.4-0.2)^{2}+4\times10^{-5}(100)(300)(0.4-0.2)\\
+ & = & 2.24J
+\end{eqnarray*}
+
+\end_inset
+
+The work done is
+\begin_inset Formula 
+\begin{eqnarray*}
+W & = & \int_{x_{0}}^{x_{1}}fdx\\
+ & = & \int_{x_{0}}^{x_{1}}-k(x-x_{0})+ak(T-T_{0})dx\\
+ & = & \frac{-1}{2}k(x_{1}-x_{0})^{2}+\cancel{ak(T_{0}-T_{0})(x_{1}-x_{0})}\\
+ & = & \frac{-1}{2}(100)(0.2)^{2}=-2J
+\end{eqnarray*}
+
+\end_inset
+
+The work is done 
+\emph on
+on
+\emph default
+ the system.
+ Using conservation of enervy the change in heat is
+\begin_inset Formula 
+\[
+Q=\Delta U+W=2.24-2=0.24J
+\]
+
+\end_inset
+
+The rod gains heat.
+\end_layout
+
+\begin_layout Problem
+(9.2) L'énergie de Helmholtz pour un système thermodynamique est donnée par
+\begin_inset Formula 
+\[
+F=nc_{V}T(1-\ln T)-nRT\ln(V-nb)-\frac{n^{2}a}{V}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+A.
+
+\series default
+\bar default
+ Est-ce une équation fondamentale pour ce système? Pourquoi?
+\end_layout
+
+\begin_layout Standard
+Yes, since 
+\begin_inset Formula $F=F(T,V)=U-TS$
+\end_inset
+
+ it completely describes the system.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+B.
+
+\series default
+\bar default
+ Calculer l'entropie du système 
+\begin_inset Formula $S=S(T,V)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The entropy is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+S & = & -\pderv FTV\\
+ & = & -\Big(nc_{V}(1-\ln T)+nc_{V}T\Big(-\frac{1}{T}\Big)-nR\ln(V-nb)\Big)\\
+ & = & -\Big(nc_{V}(1-\ln T)-nc_{V}-nR\ln(V-nb)\Big)\\
+S(T,V) & = & nc_{V}+nR\ln(V-nb)-nc_{V}(1-\ln T)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+C.
+
+\series default
+\bar default
+ Calculer les équations d'état 
+\begin_inset Formula $U=U(T,V)$
+\end_inset
+
+ et 
+\begin_inset Formula $P=P(T,V)$
+\end_inset
+
+ du système.
+\end_layout
+
+\begin_layout Standard
+The pressure is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+P & = & -\pderv FVT\\
+ & = & -\Big(\frac{-nRT}{V-nb}+\frac{n^{2}a}{V^{2}}\Big)\\
+P(T,V) & = & \frac{nRT}{V-nb}-\frac{n^{2}a}{V^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+The internal energy is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+U & = & F+TS\\
+ & = & nc_{V}T(1-\ln T)-nRT\ln(V-nb)-\frac{n^{2}a}{V}+T\Big(nc_{V}+nR\ln(V-nb)-nc_{V}(1-\ln T)\Big)\\
+ & = & nc_{V}T(1-\ln T)-\frac{n^{2}a}{V}+nc_{V}T-nc_{V}T(1-\ln T)\\
+U(T,V) & = & nc_{V}T-\frac{n^{2}a}{V}\quad\square
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
