@@ -146,7 +146,7 @@ T_{P_{1}}(f):T_{P}S_{1}\rightarrow T_{f(P)}S_{2}
 defined by
 \begin_inset Formula 
 \[
-T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)
+T_{P}(f)(w)=\frac{d(f\circ\gamma)}{dt}(0)
 \]
 
 \end_inset
@@ -167,7 +167,11 @@ where
 \end_layout
 
 \begin_layout Standard
-a) Show that 
+
+\series bold
+a)
+\series default
+ Show that 
 \begin_inset Formula $T_{P_{1}}(f)$
 \end_inset
 
@@ -175,10 +179,6 @@ a) Show that
 \begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Note that since 
 \begin_inset Formula $f$
 \end_inset
@@ -196,7 +196,28 @@ T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)=J(f)|_{\gamma(0)}\dot{\gamma}(0)=J_{f}(P)w
 
 \end_inset
 
-Let 
+Where 
+\begin_inset Formula $J_{f}(P)$
+\end_inset
+
+ is the Jacobian of 
+\begin_inset Formula $f$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $P$
+\end_inset
+
+, and the matrix product is used between 
+\begin_inset Formula $J_{f}(P)$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Let 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -217,19 +238,75 @@ Let
 \end_inset
 
 .
- Then, by 
-\emph on
-Q5(d)
-\emph default
- from the midterm we have 
+ We can show that the tangent map 
+\begin_inset Formula $T_{p}(f)(w)$
+\end_inset
+
+ gives the same result regardless of whether we construct it with 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ or 
+\begin_inset Formula $\eta$
+\end_inset
+
+.
+ That is, we can show 
+\begin_inset Formula $\frac{d(f\circ\gamma)}{dt}(0)=\frac{d(f\circ\eta)}{dt}(0)$
+\end_inset
+
+:
 \begin_inset Formula 
 \[
-\frac{d(}{}
+\frac{d(f\circ\gamma)}{dt}(0)=J_{f}(\gamma(0))\dot{\gamma}(0)=J_{f}(\eta(0))\dot{\eta}(0)=\frac{d(f\circ\eta)}{dt}(0)\equiv T_{p}(f)(w)
 \]
 
 \end_inset
 
+Conversely, if we require that the tangent map give unique results, and
+ assume only that we have two curves 
+\begin_inset Formula $\gamma$
+\end_inset
 
+ and 
+\begin_inset Formula $\eta$
+\end_inset
+
+ going through the same point 
+\begin_inset Formula $\gamma(0)=\eta(0)=P$
+\end_inset
+
+, with 
+\begin_inset Formula $\dot{\gamma}(0)=w$
+\end_inset
+
+, we can deduce that 
+\begin_inset Formula $\dot{\eta}(0)=\dot{\gamma}(0)=w$
+\end_inset
+
+.
+ We require that
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d(f\circ\gamma)}{dt}(0) & = & \frac{d(f\circ\eta)}{dt}(0)\\
+J_{f}(\gamma(0))\dot{\gamma}(0) & = & J_{f}(\eta(0))\dot{\eta}(0)\\
+J_{f}(P)\dot{\gamma}(0) & = & J_{f}(P)\dot{\eta}(0)\\
+J_{f}^{-1}(P)J_{f}(P)\dot{\gamma}(0) & = & J_{f}^{-1}(P)J_{f}(P)\dot{\eta}(0)\\
+\mathbf{I}\dot{\gamma}(0) & = & \mathbf{I}\dot{\eta}(0)\\
+\dot{\gamma}(0) & = & \dot{\eta}(0)\equiv w
+\end{eqnarray*}
+
+\end_inset
+
+We conclude that we can use any curve to construct the tangent map of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $P$
+\end_inset
+
+.
 \begin_inset Newline newline
 \end_inset
 
