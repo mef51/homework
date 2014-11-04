@@ -189,15 +189,48 @@ Note that since
 
  are smooth, their derivatives exist.
  So,
-\begin_inset Newline newline
+\begin_inset Formula 
+\[
+T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)=J(f)|_{\gamma(0)}\dot{\gamma}(0)=J_{f}(P)w
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta$
+\end_inset
+
+ be smooth curves in 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ with 
+\begin_inset Formula $\dot{\gamma}(0)=\dot{\eta}(0)=w$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma(0)=\eta(0)=P$
+\end_inset
+
+.
+ Then, by 
+\emph on
+Q5(d)
+\emph default
+ from the midterm we have 
+\begin_inset Formula 
+\[
+\frac{d(}{}
+\]
+
 \end_inset
 
 
-\begin_inset Formula 
-\[
-T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)=\frac{df}{dt}\Big(\gamma(0)\Big)\dot{\gamma}(0)=w\dot{f}(P)
-\]
-
+\begin_inset Newline newline
 \end_inset
 
 
