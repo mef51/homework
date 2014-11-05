@@ -663,6 +663,10 @@ Let
 \begin_inset Formula $\beta(0)=f(P)$
 \end_inset
 
+ and 
+\begin_inset Formula $\dot{\beta}(0)=v$
+\end_inset
+
 .
  Consider the composition 
 \begin_inset Formula $f^{-1}\beta:(-1,1)\rightarrow S_{1}$
@@ -690,13 +694,73 @@ Now calculate the map
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{d(f^{-1}\beta)}{dt} & = & \frac{d(\sigma(\sigma^{-1}f^{-1}\tau)\tau^{-1}\beta)}{dt}\\
- & = & J(\sigma)J((\sigma^{-1}f\tau)\tau^{-1}\beta)\\
- & = & J(\sigma)J(\sigma^{-1}f\tau)\frac{d(\tau^{-1}\beta)}{dt}
+ & = & J(\sigma)J((\sigma^{-1}f^{-1}\tau)\tau^{-1}\beta)\\
+ & = & J(\sigma)J(\sigma^{-1}f^{-1}\tau)\frac{d(\tau^{-1}\beta)}{dt}
 \end{eqnarray*}
 
 \end_inset
 
 
+\series default
+Let's evaulate this at 
+\begin_inset Formula $\beta(0)=f(P)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d(f^{-1}\beta)}{dt}(0) & = & \Big(J(\sigma)(\sigma^{-1}(P))\Big)\Big(J(\sigma^{-1}f^{-1}\tau)(\tau^{-1}(f(P))\Big)\frac{d(\tau^{-1}\beta)}{dt}(0)\\
+ & = & \Big(J(\sigma)(\sigma^{-1}(P))\Big)\Big(J(\sigma^{-1}f^{-1}\tau)(\tau^{-1}(f(P)))\Big)\Big(J(\tau^{-1})(f(P))\Big)v
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the composition of 
+\begin_inset Formula $T_{P}(f)(w)$
+\end_inset
+
+ with 
+\begin_inset Formula $\frac{d(f^{-1}\beta)}{dt}(0)$
+\end_inset
+
+ (leaving out the evaluated point 
+\begin_inset Formula $P$
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{P}(f)\Big(\frac{d(f^{-1}\beta)}{dt}(0)\Big) & = & T_{P}(f)\Big(J(\sigma)J(\sigma^{-1}f^{-1}\tau)J(\tau^{-1})v\Big)\\
+ & = & J(\tau)J(\tau^{-1}f\sigma)J(\sigma^{-1})J(\sigma)J(\sigma^{-1}f^{-1}\tau)J(\tau^{-1})v
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $J(\psi^{-1})=J(\psi)^{-1}$
+\end_inset
+
+ for any smooth map 
+\begin_inset Formula $\psi$
+\end_inset
+
+ that has an inverse, we have
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{P}(f)\Big(\frac{d(f^{-1}\beta)}{dt}(0)\Big) & = & J(\tau)J(\tau^{-1}f\sigma)J(\sigma^{-1})J(\sigma)J(\sigma^{-1}f^{-1}\tau)J(\tau^{-1})v\\
+ & = & J(\tau)J(\tau^{-1}f\sigma)J(\sigma)^{-1}J(\sigma)J(\tau^{-1}f\sigma)^{-1}J(\tau)^{-1}v\\
+ & = & J(\tau)J(\tau^{-1}f\sigma)IJ(\tau^{-1}f\sigma)^{-1}J(\tau)^{-1}v\\
+ & = & J(\tau)J(\tau)^{-1}v\\
+ & = & v=\dot{\beta}(0)
+\end{eqnarray*}
+
+\end_inset
+
+ 
 \end_layout
 
 \end_body
