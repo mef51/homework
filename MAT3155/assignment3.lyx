@@ -146,7 +146,7 @@ T_{P_{1}}(f):T_{P}S_{1}\rightarrow T_{f(P)}S_{2}
 defined by
 \begin_inset Formula 
 \[
-T_{P}(f)(w)=\frac{d(f\circ\gamma)}{dt}(0)
+T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)
 \]
 
 \end_inset
@@ -179,92 +179,160 @@ a)
 \begin_inset Newline newline
 \end_inset
 
-Note that since 
-\begin_inset Formula $f$
-\end_inset
 
- and 
+\end_layout
+
+\begin_layout Standard
+Let 
 \begin_inset Formula $\gamma$
 \end_inset
 
- are smooth, their derivatives exist.
- So,
-\begin_inset Formula 
-\[
-T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)=J(f)|_{\gamma(0)}\dot{\gamma}(0)=J_{f}(P)w
-\]
-
-\end_inset
-
-Where 
-\begin_inset Formula $J_{f}(P)$
-\end_inset
-
- is the Jacobian of 
-\begin_inset Formula $f$
-\end_inset
-
- evaluated at 
-\begin_inset Formula $P$
-\end_inset
-
-, and the matrix product is used between 
-\begin_inset Formula $J_{f}(P)$
-\end_inset
-
  and 
-\begin_inset Formula $w$
+\begin_inset Formula $\eta$
+\end_inset
+
+ be smooth curves 
+\begin_inset Formula $(-1,1)\rightarrow S_{1}$
 \end_inset
 
 .
  Let 
-\begin_inset Formula $\gamma$
+\begin_inset Formula $\sigma:U_{1}\rightarrow S_{1}$
 \end_inset
 
- and 
-\begin_inset Formula $\eta$
+ be a r.s.p 
+\begin_inset Formula $(\sigma,U_{1},S_{1})$
 \end_inset
 
- be smooth curves in 
-\begin_inset Formula $S_{1}$
+ covering 
+\begin_inset Formula $P$
 \end_inset
 
- with 
-\begin_inset Formula $\dot{\gamma}(0)=\dot{\eta}(0)=w$
+ and let 
+\begin_inset Formula $\tau:U_{2}\rightarrow S_{2}$
 \end_inset
 
- and 
-\begin_inset Formula $\gamma(0)=\eta(0)=P$
+ be an r.s.p 
+\begin_inset Formula $(\tau,U_{2},S_{2})$
 \end_inset
 
-.
- We can show that the tangent map 
-\begin_inset Formula $T_{p}(f)(w)$
-\end_inset
-
- gives the same result regardless of whether we construct it with 
-\begin_inset Formula $\gamma$
-\end_inset
-
- or 
-\begin_inset Formula $\eta$
+ covering 
+\begin_inset Formula $f(P)$
 \end_inset
 
 .
- That is, we can show 
-\begin_inset Formula $\frac{d(f\circ\gamma)}{dt}(0)=\frac{d(f\circ\eta)}{dt}(0)$
+ Consider the composition 
+\begin_inset Formula $f\gamma:(-1,1)\rightarrow S_{2}$
 \end_inset
 
-:
+.
+ Note that 
+\begin_inset Formula $f\gamma=\tau(\tau^{-1}f\sigma)\sigma^{-1}\gamma$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is smooth, we know that the map 
+\begin_inset Formula $\tau^{-1}f\sigma:U_{1}\rightarrow U_{1}$
+\end_inset
+
+ is smooth.
+\end_layout
+
+\begin_layout Standard
+Now, using the chain rule
+\series bold
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d(f\gamma)}{dt} & = & \frac{d(\tau(\tau^{-1}f\sigma)\sigma^{-1}\gamma)}{dt}\\
+ & = & J(\tau)J((\tau^{-1}f\sigma)\sigma^{-1}\gamma)\\
+ & = & J(\tau)J(\tau^{-1}f\sigma)\frac{d(\sigma^{-1}\gamma)}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+
+\series default
+Evaluated at 
+\begin_inset Formula $\gamma(0)=P$
+\end_inset
+
+, we get the tangent map
 \begin_inset Formula 
 \[
-\frac{d(f\circ\gamma)}{dt}(0)=J_{f}(\gamma(0))\dot{\gamma}(0)=J_{f}(\eta(0))\dot{\eta}(0)=\frac{d(f\circ\eta)}{dt}(0)\equiv T_{p}(f)(w)
+T_{P}(f)(w)=\frac{d(f\gamma)}{dt}(0)=\Big(J(\tau)(\tau^{-1}(f(P))\Big)\Big(J(\tau^{-1}f\sigma)(\sigma^{-1}(P))\Big)\frac{d(\sigma^{-1}\gamma)}{dt}(0)
 \]
 
 \end_inset
 
-Conversely, if we require that the tangent map give unique results, and
- assume only that we have two curves 
+Note that 
+\begin_inset Formula 
+\[
+\frac{d(\sigma^{-1}\gamma)}{dt}(0)=J(\sigma^{-1})(\gamma(0))\dot{\gamma}(0)=\Big(J(\sigma^{-1})(P)\Big)w
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\eta$
+\end_inset
+
+ be a curve distinct from 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ but such that, locally they are the same.
+ That is, 
+\begin_inset Formula $\eta(0)=P$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\eta}(0)=\dot{\gamma}(0)=w$
+\end_inset
+
+.
+ If we want to construct 
+\begin_inset Formula $T_{p}(f)(w)$
+\end_inset
+
+ using 
+\begin_inset Formula $\eta$
+\end_inset
+
+, we expect that 
+\begin_inset Formula $\frac{d(\sigma^{-1}\gamma)}{dt}(0)=\frac{d(\sigma^{-1}\eta)}{dt}(0)$
+\end_inset
+
+.
+ Indeed we have:
+\begin_inset Formula 
+\[
+\frac{d(\sigma^{-1}\gamma)}{dt}(0)=J(\sigma^{-1})(\gamma(0))\dot{\gamma}(0)=J(\sigma^{-1})(\eta(0))\dot{\eta}(0)=\frac{d(\sigma^{-1}\eta)}{dt}
+\]
+
+\end_inset
+
+This implies
+\begin_inset Formula 
+\[
+\frac{d(f\gamma)}{dt}(0)=\frac{d(f\eta)}{dt}(0)\equiv T_{P}(f)(w)
+\]
+
+\end_inset
+
+Conversely, we can require that the tangent map be unique at a point 
+\begin_inset Formula $P$
+\end_inset
+
+ and a tangent vector 
+\begin_inset Formula $w$
+\end_inset
+
+ given two curves 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -272,11 +340,11 @@ Conversely, if we require that the tangent map give unique results, and
 \begin_inset Formula $\eta$
 \end_inset
 
- going through the same point 
+ and only knowing that 
 \begin_inset Formula $\gamma(0)=\eta(0)=P$
 \end_inset
 
-, with 
+ and 
 \begin_inset Formula $\dot{\gamma}(0)=w$
 \end_inset
 
@@ -285,28 +353,59 @@ Conversely, if we require that the tangent map give unique results, and
 \end_inset
 
 .
- We require that
+ Assuming 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\frac{d(f\gamma)}{dt}(0)=\frac{d(f\eta)}{dt}(0)$
+\end_inset
+
+, we have
 \begin_inset Formula 
 \begin{eqnarray*}
-\frac{d(f\circ\gamma)}{dt}(0) & = & \frac{d(f\circ\eta)}{dt}(0)\\
-J_{f}(\gamma(0))\dot{\gamma}(0) & = & J_{f}(\eta(0))\dot{\eta}(0)\\
-J_{f}(P)\dot{\gamma}(0) & = & J_{f}(P)\dot{\eta}(0)\\
-J_{f}^{-1}(P)J_{f}(P)\dot{\gamma}(0) & = & J_{f}^{-1}(P)J_{f}(P)\dot{\eta}(0)\\
-\mathbf{I}\dot{\gamma}(0) & = & \mathbf{I}\dot{\eta}(0)\\
-\dot{\gamma}(0) & = & \dot{\eta}(0)\equiv w
+\frac{d(\sigma^{-1}\gamma)}{dt}(0) & = & \frac{d(\sigma^{-1}\eta)}{dt}\\
+J(\sigma^{-1})(P)\dot{\gamma}(0) & = & J(\sigma^{-1})(P)\dot{\eta}(0)\\
+\dot{\gamma}(0) & = & \dot{\eta}(0)
 \end{eqnarray*}
 
 \end_inset
 
-We conclude that we can use any curve to construct the tangent map of 
-\begin_inset Formula $f$
-\end_inset
-
- at 
+The point of all this is that only the local properties of the chosen curve
+ matter when constructing the tangent map.
+ Thus for any curve and any two surface patches covering 
 \begin_inset Formula $P$
 \end_inset
 
-.
+ and 
+\begin_inset Formula $f(P)$
+\end_inset
+
+, 
+\begin_inset Formula $T_{P}(f)(w)$
+\end_inset
+
+ is uniquely defined by 
+\begin_inset Formula $P$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+, and 
+\begin_inset Formula $w$
+\end_inset
+
+ only.
 \begin_inset Newline newline
 \end_inset
 
@@ -314,7 +413,11 @@ We conclude that we can use any curve to construct the tangent map of
 \end_layout
 
 \begin_layout Standard
-b) Let 
+
+\series bold
+b)
+\series default
+ Let 
 \begin_inset Formula $(\sigma,U_{1},W_{1})$
 \end_inset
 
