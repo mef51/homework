@@ -464,6 +464,154 @@ b
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\gamma:(-1,1)\rightarrow S_{1}$
+\end_inset
+
+ be a smooth curve st.
+ 
+\begin_inset Formula $\gamma(0)=P$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\gamma}(0)=v$
+\end_inset
+
+.
+ From part (a) we know 
+\begin_inset Formula 
+\[
+T_{P_{1}}(f)(v)=\Big(J(\tau)(\tau^{-1}(f(P))\Big)\Big(J(\tau^{-1}f\sigma)(\sigma^{-1}(P))\Big)\frac{d(\sigma^{-1}\gamma)}{dt}(0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting 
+\begin_inset Formula $\sigma^{-1}(P)=(0,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau^{-1}(f(P))=(0,0)$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\[
+T_{P_{1}}(f)(v)=\Big(J(\tau)(0,0)\Big)\Big(J(\tau^{-1}f\sigma)(0,0)\Big)\frac{d(\sigma^{-1}\gamma)}{dt}(0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let 
+\begin_inset Formula $\gamma(t)=\sigma(at,bt)$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\gamma(0)=\sigma(0,0)=P$
+\end_inset
+
+ as required and also that 
+\begin_inset Formula 
+\[
+\dot{\gamma}(0)=\left[\begin{array}{cc}
+\sigma_{u}(0,0) & \sigma_{v}(0,0)\end{array}\right]\left[\begin{array}{c}
+a\\
+b
+\end{array}\right]=a\sigma_{u}(0,0)+b\sigma_{v}(0,0)=v
+\]
+
+\end_inset
+
+by the chain rule.
+ We can use this curve to construct the tangent map because it fits the
+ local properties and beyond that the choice of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is arbitrary, as shown in part (a).
+ Now consider the composition of 
+\begin_inset Formula $\sigma^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma^{-1}\gamma=\sigma^{-1}\sigma(at,bt)=(at,bt)
+\]
+
+\end_inset
+
+So the derivative is then
+\begin_inset Formula 
+\[
+\frac{d(\sigma^{-1}\gamma)}{dt}(0)=\frac{d(at,bt)}{dt}(0)=\left[\begin{array}{c}
+a\\
+b
+\end{array}\right]
+\]
+
+\end_inset
+
+and we get the result
+\begin_inset Formula 
+\[
+T_{P_{1}}(f)(v)=\Big(J(\tau)(0,0)\Big)\Big(J(\tau^{-1}f\sigma)(0,0)\Big)\left[\begin{array}{c}
+a\\
+b
+\end{array}\right]\qquad\square
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is a diffeomorphism, then 
+\begin_inset Formula $T_{P_{1}}(f)$
+\end_inset
+
+ is invertible for all 
+\begin_inset Formula $P_{1}\in S_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
