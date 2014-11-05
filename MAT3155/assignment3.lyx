@@ -908,7 +908,15 @@ Locally, however,
 \end_inset
 
  is invertible by part (c).
- 
+\end_layout
+
+\begin_layout Problem
+Computer the first fundamental form of 
+\begin_inset Formula $\mathbf{S}^{2}\backslash\{N\}$
+\end_inset
+
+ using the r.s.p.
+ given by the inverse of the stereographic projection.
 \end_layout
 
 \end_body
