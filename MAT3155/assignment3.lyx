@@ -62,7 +62,7 @@ figs-within-sections
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0bp
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -200,7 +200,7 @@ Let
 \begin_inset Formula $\sigma:U_{1}\rightarrow S_{1}$
 \end_inset
 
- be a r.s.p 
+ be an r.s.p 
 \begin_inset Formula $(\sigma,U_{1},S_{1})$
 \end_inset
 
@@ -611,6 +611,91 @@ c)
 \end_layout
 
 \begin_layout Standard
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is a diffeomorphism, it's inverse 
+\begin_inset Formula $f^{-1}:S_{2}\rightarrow S_{1}$
+\end_inset
+
+ exists and is smooth.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\sigma:U_{1}\rightarrow S_{1}$
+\end_inset
+
+ be an r.s.p 
+\begin_inset Formula $(\sigma,U_{1},S_{1})$
+\end_inset
+
+ covering 
+\begin_inset Formula $P$
+\end_inset
+
+ and let 
+\begin_inset Formula $\tau:U_{2}\rightarrow S_{2}$
+\end_inset
+
+ be an r.s.p 
+\begin_inset Formula $(\tau,U_{2},S_{2})$
+\end_inset
+
+ covering 
+\begin_inset Formula $f(P)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\beta:(-1,1)\rightarrow S_{2}$
+\end_inset
+
+ be a curve in 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\beta(0)=f(P)$
+\end_inset
+
+.
+ Consider the composition 
+\begin_inset Formula $f^{-1}\beta:(-1,1)\rightarrow S_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f^{-1}\beta=\sigma(\sigma^{-1}f^{-1}\tau)\tau^{-1}\beta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now calculate the map 
+\begin_inset Formula $\frac{d(f^{-1}\beta)}{dt}(0)$
+\end_inset
+
+ analagously to part (a):
+\series bold
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d(f^{-1}\beta)}{dt} & = & \frac{d(\sigma(\sigma^{-1}f^{-1}\tau)\tau^{-1}\beta)}{dt}\\
+ & = & J(\sigma)J((\sigma^{-1}f\tau)\tau^{-1}\beta)\\
+ & = & J(\sigma)J(\sigma^{-1}f\tau)\frac{d(\tau^{-1}\beta)}{dt}
+\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
