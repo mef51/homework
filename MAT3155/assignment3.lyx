@@ -930,8 +930,66 @@ The r.s.p given by the inverse of the stereographic projection is
 
 The derivatives of the r.s.p are given by
 \begin_inset Formula 
+\begin{eqnarray*}
+\sigma_{u}(u,v) & = & \Bigg(\frac{2}{u^{2}+v^{2}+1}-\frac{4u^{2}}{(u^{2}+v^{2}+1)^{2}},-\frac{4uv}{(u^{2}+v^{2}+1)^{2}},\frac{2u}{u^{2}+v^{2}+1}-\frac{2u(u^{2}+v^{2}-1)}{(u^{2}+v^{2}+1)^{2}}\Bigg)\\
+ & = & \Bigg(\frac{2(v^{2}-u^{2}+1)}{(u^{2}+v^{2}+1)^{2}},\frac{-4uv}{(u^{2}+v^{2}+1)^{2}},\frac{4u}{(u^{2}+v^{2}+1)^{2}}\Bigg)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \[
-\sigma_{u}(u,v)=\Bigg(\frac{2}{u^{2}+v^{2}+1}-\frac{4u^{2}}{(u^{2}+v^{2}+1)^{2}}
+\sigma_{v}(u,v)=\Bigg(\frac{-4uv}{(u^{2}+v^{2}+1)^{2}},\frac{2(u^{2}-v^{2}+1)}{(u^{2}+v^{2}+1)^{2}},\frac{4v}{(u^{2}+v^{2}+1)^{2}}\Bigg)
+\]
+
+\end_inset
+
+The first fundamental form is given by 
+\begin_inset Formula $E=\sigma_{u}\cdot\sigma_{u}$
+\end_inset
+
+, 
+\begin_inset Formula $F=\sigma_{u}\cdot\sigma_{v}$
+\end_inset
+
+, and 
+\begin_inset Formula $G=\sigma_{v}\cdot\sigma_{v}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+E & = & \frac{4(v^{2}-u^{2}+1)^{2}}{(u^{2}+v^{2}+1)^{4}}+\frac{16u^{2}v^{2}}{(u^{2}+v^{2}+1)^{4}}+\frac{16u^{2}}{(u^{2}+v^{2}+1)^{4}}\\
+ & = & \frac{4}{(u^{2}+v^{2}+1)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+F & = & \frac{-8uv(v^{2}-u^{2}+1)}{(u^{2}+v^{2}+1)^{4}}-\frac{8uv(u^{2}-v^{2}+1)}{(u^{2}+v^{2}+1)^{4}}+\frac{16uv}{(u^{2}+v^{2}+1)^{4}}\\
+ & = & \frac{-8uv(v^{2}-u^{2}+1+u^{2}-v^{2}+1-2)}{(u^{2}+v^{2}+1)^{4}}=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\frac{4}{(u^{2}+v^{2}+1)^{2}}
+\]
+
+\end_inset
+
+So the first fundamental form is 
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+\frac{4}{(u^{2}+v^{2}+1)^{2}} & 0\\
+0 & \frac{4}{(u^{2}+v^{2}+1)^{2}}
+\end{array}\right]
 \]
 
 \end_inset
