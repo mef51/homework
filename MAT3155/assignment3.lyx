@@ -911,12 +911,32 @@ Locally, however,
 \end_layout
 
 \begin_layout Problem
-Computer the first fundamental form of 
+Compute the first fundamental form of 
 \begin_inset Formula $\mathbf{S}^{2}\backslash\{N\}$
 \end_inset
 
  using the r.s.p.
  given by the inverse of the stereographic projection.
+\end_layout
+
+\begin_layout Standard
+The r.s.p given by the inverse of the stereographic projection is 
+\begin_inset Formula 
+\[
+\sigma(u,v)=\Bigg(\frac{2u}{u^{2}+v^{2}+1},\frac{2v}{u^{2}+v^{2}+1},\frac{u^{2}+v^{2}-1}{u^{2}+v^{2}+1}\Bigg)
+\]
+
+\end_inset
+
+The derivatives of the r.s.p are given by
+\begin_inset Formula 
+\[
+\sigma_{u}(u,v)=\Bigg(\frac{2}{u^{2}+v^{2}+1}-\frac{4u^{2}}{(u^{2}+v^{2}+1)^{2}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
