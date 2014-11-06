@@ -529,7 +529,7 @@ Now let
  as required and also that 
 \begin_inset Formula 
 \[
-\dot{\gamma}(0)=\left[\begin{array}{cc}
+\dot{\gamma}(0)=\Big(J(\sigma)(0,0)\Big)\frac{d(at,bt)}{dt}=\left[\begin{array}{cc}
 \sigma_{u}(0,0) & \sigma_{v}(0,0)\end{array}\right]\left[\begin{array}{c}
 a\\
 b
@@ -995,6 +995,22 @@ So the first fundamental form is
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Prove that 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ is orientable using the definition.
 \end_layout
 
 \end_body
