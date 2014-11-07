@@ -311,7 +311,7 @@ Let
  Indeed we have:
 \begin_inset Formula 
 \[
-\frac{d(\sigma^{-1}\gamma)}{dt}(0)=J(\sigma^{-1})(\gamma(0))\dot{\gamma}(0)=J(\sigma^{-1})(\eta(0))\dot{\eta}(0)=\frac{d(\sigma^{-1}\eta)}{dt}
+\frac{d(\sigma^{-1}\gamma)}{dt}(0)=\Big(J(\sigma^{-1})(\gamma(0))\Big)\dot{\gamma}(0)=\Big(J(\sigma^{-1})(\eta(0))\Big)\dot{\eta}(0)=\frac{d(\sigma^{-1}\eta)}{dt}
 \]
 
 \end_inset
@@ -826,17 +826,34 @@ d)
 \end_layout
 
 \begin_layout Standard
-Assume 
-\begin_inset Formula $T_{P}(f)(w)$
+The converse to (c) is not true.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $S_{1}$
 \end_inset
 
- is invertible.
- Then it is not necessary for 
-\begin_inset Formula $f$
+ be the open disc in the 
+\begin_inset Formula $xy$
 \end_inset
 
- to be a diffeomorphism to construct 
-\begin_inset Formula $T_{P}(f)(w)$
+-plane 
+\begin_inset Formula $S_{1}=\{(x,y,0)|x^{2}+y^{2}<1\}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ be the 
+\begin_inset Formula $xy$
+\end_inset
+
+-plane.
+ Note that 
+\begin_inset Formula $S_{1}\subset S_{2}$
 \end_inset
 
 .
@@ -844,70 +861,86 @@ Assume
 
 \begin_layout Standard
 Let 
-\begin_inset Formula $f$
+\begin_inset Formula $f:S_{1}\rightarrow S_{2}$
 \end_inset
 
- be the map
-\begin_inset Formula 
-\[
-f(0,y,z)=(\cos y,\sin y,z)
-\]
-
-\end_inset
-
-This map is a map from the 
-\begin_inset Formula $yz$
-\end_inset
-
--plane to the unit cylinder centered at the origin.
- It wraps lines parralel to the 
-\begin_inset Formula $y$
-\end_inset
-
--axis around the cylinder at height 
-\begin_inset Formula $z$
+ be the map defined by 
+\begin_inset Formula $f(x,y,0)=(x,y,0)$
 \end_inset
 
 .
- It's like taking an infinitely long strip of paper and wrapping it infinitely
- many times around a cylinder.
-\end_layout
-
-\begin_layout Standard
-Note therefore that 
+ Then 
 \begin_inset Formula $f$
 \end_inset
 
- is not a diffeomorphism since it is not injective.
- For any point 
-\begin_inset Formula $(0,y_{0},z_{0})$
+ is not surjective, since it does not map points on the plan that are outside
+ of the open disc.
+ This means 
+\begin_inset Formula $f$
 \end_inset
 
- there is another point 
-\begin_inset Formula $(0,y_{0}+2\pi,z_{0})$
+ is not a diffeomorpism.
+ 
+\end_layout
+
+\begin_layout Standard
+The tangent map 
+\begin_inset Formula $T_{p}(f):T_{P}S_{1}\rightarrow T_{P}S_{2}$
 \end_inset
 
- such that 
-\begin_inset Formula $f(0,y_{0},z_{0})=f(0,y_{0}+2\pi,z_{0})$
+ from 
+\begin_inset Formula $P$
+\end_inset
+
+ to 
+\begin_inset Formula $f(P)=P$
+\end_inset
+
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $T_{P}(f)(w)=w$
+\end_inset
+
+ for some tangent vector 
+\begin_inset Formula $w$
+\end_inset
+
+ of some curve 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{1}$
 \end_inset
 
 .
+ Since 
+\begin_inset Formula $T_{p}(f)(w)$
+\end_inset
+
+ is an identity map, it has an inverse and is invertible.
+ Thus we have an invertible tangent map of 
+\begin_inset Formula $f$
+\end_inset
+
+ even though is not a diffeomorphism.
+ 
 \end_layout
 
 \begin_layout Standard
-Locally, however, 
+Indeed, 
 \begin_inset Formula $f$
 \end_inset
 
- is a diffeomorphism, and so the tangent map 
-\begin_inset Formula $T_{P}(f)$
-\end_inset
-
- constructed with 
-\begin_inset Formula $f$
-\end_inset
-
- is invertible by part (c).
+ is a local diffeomorphism on the open disc and by Proposition 4.4.6 in the
+ book, the tangent map is invertible.
 \end_layout
 
 \begin_layout Problem
