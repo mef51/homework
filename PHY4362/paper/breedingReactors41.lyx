@@ -2,24 +2,15 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass revtex4
-\begin_preamble
-\usepackage{graphicx}
-\usepackage{pdflscape}
-\end_preamble
+\textclass revtex4-1
 \options aps,prl,twocolumn
 \use_default_options false
-\begin_modules
-theorems-ams
-eqs-within-sections
-figs-within-sections
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman ae
 \font_sans default
 \font_typewriter default
 \font_default_family default
@@ -37,7 +28,7 @@ figs-within-sections
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize a4paper
+\papersize default
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
@@ -53,12 +44,12 @@ figs-within-sections
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1.5cm
-\topmargin 2.5cm
-\rightmargin 1.5cm
+\leftmargin 1cm
+\topmargin 1.5cm
+\rightmargin 1cm
 \bottommargin 1.5cm
 \headheight 0cm
-\headsep 1.5cm
+\headsep 0cm
 \footskip 0cm
 \secnumdepth 3
 \tocdepth 3
@@ -78,7 +69,53 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
+PHY4362
+\begin_inset Newline newline
+\end_inset
 
+Breeder Reactors
+\end_layout
+
+\begin_layout Author
+Mohammed A.
+ Chamma
+\end_layout
+
+\begin_layout Date
+November 10, 2014
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+When nuclear reactions were discovered, it became apparent that the heat
+ of the reactions could be harnessed as energy sources.
+ Over the course of the twentieth century, many types of nuclear reactors
+ were designed and built to utilize this energy.
+ The fuel of these reactors are fissionable elements, elements like Uranium,
+ Plutonium, and Thorium.
+ Of these elements, there are isotopes that are 
+\begin_inset Quotes eld
+\end_inset
+
+fissile
+\begin_inset Quotes erd
+\end_inset
+
+, which are isotopes that undergo fission with low-energy neutrons and occur
+ with high probability (like Uranium-235) and isotopes that are simply 
+\begin_inset Quotes eld
+\end_inset
+
+fissionable
+\begin_inset Quotes erd
+\end_inset
+
+, that is, they undergo fission, but require high-energy neutrons and occur
+ with low probability (like Uranium-238).
+ 
 \end_layout
 
 \end_body
