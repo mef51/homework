@@ -119,7 +119,97 @@ fissionable
 \end_layout
 
 \begin_layout Standard
-Early on it was clear that natural Uranium consisted primarily non-siff
+Early on it was clear that natural Uranium consisted primarily of non-fissile
+ Uranium-238 and only contained a very minute amount of fissile Uranium-235.
+ Light-water reactors, a reactor design that could generate electricity,
+ required U
+\begin_inset Formula $^{235}$
+\end_inset
+
+ as its fuel.
+ Before more Uranium reserves were found, it was feared that we would run
+ out of U
+\begin_inset Formula $^{235}$
+\end_inset
+
+ to use as fuel.
+ Thus there was interest in reactions that produced fissile material out
+ of the common U
+\begin_inset Formula $^{238}$
+\end_inset
+
+ isotope, and reactors were designed that produced more fissile material
+ than they consumed.
+ These reactors were called breeder reactors, because they 
+\begin_inset Quotes eld
+\end_inset
+
+bred
+\begin_inset Quotes erd
+\end_inset
+
+ fissile material.
+ 
+\end_layout
+
+\begin_layout Standard
+There are two main types of breeder reactors: those that convert U
+\begin_inset Formula $^{238}$
+\end_inset
+
+ into fissile material, and reactors that convert Thorium-232 (Th
+\begin_inset Formula $^{232}$
+\end_inset
+
+) into fissile material.
+ The U
+\begin_inset Formula $^{238}$
+\end_inset
+
+ reactors are more common and are called 'fast breeder reactors', as they
+ require fast neutrons for the reaction.
+ Thorium-232 breeder reactors can use slow (or 'thermal' neutrons) in the
+ reaction and are called 'slow breeder reactors'.
+\end_layout
+
+\begin_layout Standard
+In addition to producing fissile material, breeder reactors can be used
+ to reduce waste by bombarding heavy elements (actinides) with fast neutrons,
+ thus reducing them to lighter fission products.
+\end_layout
+
+\begin_layout Standard
+Despite the theoretical benefits of breeder reactors, these types of reactors
+ have been criticized as more expensive than light-water reactors, dangerous
+ because of the coolants involved, and unnecessary once more reserves of
+ Uranium (and thus, U
+\begin_inset Formula $^{235}$
+\end_inset
+
+) were found.
+ Moreoever, since these breeder reactors produce large quantities of fissile
+ material, there have always been fears of proliferation of dangerous material
+ through theft or mismanagement.
+\end_layout
+
+\begin_layout Standard
+This paper will examine the nuclear reactions at the heart of breeder reactors,
+ some designs of breeder reactors, and a history of constructed breeder
+ reactors, as well as a discussion of the future of breeder reactors, in
+ light of the current state of the technology and its criticisms.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Nuclear Reactions in Breeders
+\end_layout
+
+\begin_layout Standard
+So here wwe are a.
 \end_layout
 
 \end_body
