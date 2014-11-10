@@ -401,5 +401,83 @@ Pa is a significant neutron absorber, it slows and can halt the reaction.
 Reactor Design
 \end_layout
 
+\begin_layout Standard
+A breeder reactor at its simplest is a reactor that creates more fissile
+ material than it consumes.
+ This necessarily means that these types of reactors are designed to have
+ a very high neutron economy to increase breeding.
+\end_layout
+
+\begin_layout Standard
+Breeder reactors are different from the usual light-water reactors in several
+ ways.
+ Firstly, the core of a breeder reactor usually consists of some fissile
+ material blanketed by the element to be converted.
+ For example, placing a core of Uranium enriched with the fissile 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U and then surrounding, or 
+\begin_inset Quotes eld
+\end_inset
+
+blanketing
+\begin_inset Quotes erd
+\end_inset
+
+ it with the non-fissile 
+\begin_inset Formula $^{238}$
+\end_inset
+
+U will breed 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu.
+\end_layout
+
+\begin_layout Standard
+In the case of Uranium-238, which is the usual breeding material, water
+ cannot be used as the primary coolant.
+ As mentioned earlier, Uranium-238 requires fast neutrons to undergo a reaction,
+ and water slows neutrons down.
+ Thus a different way of cooling must be designed.
+ 
+\end_layout
+
+\begin_layout Standard
+The central core of a breeder breeding from Uranium-238 must be enriched
+ to a higher proportion of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U than in light-water reactors because the fission of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U is less likely to occur with fast neutrons.
+ Increasing the proportion of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U ensures that the fission of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U atoms can sustain itself.
+ This is not the case when using Thorium-232 as the breeding material, which
+ requires slow, or thermal, neutrons.
+\end_layout
+
+\begin_layout Standard
+With these general requirements in mind, there are a few varying designs
+ of breeder reactors, including the Liquid Metal Fast Breeder Reactor (LMFBR),
+ the Gas-Cooled Fast Reactor (GFR), and the integral fast reactor.
+\end_layout
+
+\begin_layout Subsubsection*
+Liquid Metal Fast Breeder Reactor (LMFBR)
+\end_layout
+
 \end_body
 \end_document
