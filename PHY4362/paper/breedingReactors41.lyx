@@ -29,7 +29,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -79,6 +79,10 @@ Breeder Reactors
 \begin_layout Author
 Mohammed A.
  Chamma
+\begin_inset Newline newline
+\end_inset
+
+6379153
 \end_layout
 
 \begin_layout Date
@@ -94,7 +98,7 @@ When nuclear reactions were discovered, it became apparent that the heat
  of the reactions could be harnessed as energy sources.
  Over the course of the twentieth century, many types of nuclear reactors
  were designed and built to utilize this energy.
- The fuel of these reactors are fissionable elements, elements like Uranium,
+ The fuel of these reactors are fissionable elements; elements like Uranium,
  Plutonium, and Thorium.
  Of these elements, there are isotopes that are 
 \begin_inset Quotes eld
@@ -122,23 +126,23 @@ fissionable
 Early on it was clear that natural Uranium consisted primarily of non-fissile
  Uranium-238 and only contained a very minute amount of fissile Uranium-235.
  Light-water reactors, a reactor design that could generate electricity,
- required U
+ required 
 \begin_inset Formula $^{235}$
 \end_inset
 
- as its fuel.
+U as its fuel.
  Before more Uranium reserves were found, it was feared that we would run
- out of U
+ out of 
 \begin_inset Formula $^{235}$
 \end_inset
 
- to use as fuel.
+U to use as fuel.
  Thus there was interest in reactions that produced fissile material out
- of the common U
+ of the common 
 \begin_inset Formula $^{238}$
 \end_inset
 
- isotope, and reactors were designed that produced more fissile material
+U isotope, and reactors were designed that produced more fissile material
  than they consumed.
  These reactors were called breeder reactors, because they 
 \begin_inset Quotes eld
@@ -153,20 +157,20 @@ bred
 \end_layout
 
 \begin_layout Standard
-There are two main types of breeder reactors: those that convert U
+There are two main types of breeder reactors: those that convert 
 \begin_inset Formula $^{238}$
 \end_inset
 
- into fissile material, and reactors that convert Thorium-232 (Th
+U into fissile material, and reactors that convert Thorium-232 (
 \begin_inset Formula $^{232}$
 \end_inset
 
-) into fissile material.
- The U
+Th) into fissile material.
+ The 
 \begin_inset Formula $^{238}$
 \end_inset
 
- reactors are more common and are called 'fast breeder reactors', as they
+U reactors are more common and are called 'fast breeder reactors', as they
  require fast neutrons for the reaction.
  Thorium-232 breeder reactors can use slow (or 'thermal' neutrons) in the
  reaction and are called 'slow breeder reactors'.
@@ -182,21 +186,21 @@ In addition to producing fissile material, breeder reactors can be used
 Despite the theoretical benefits of breeder reactors, these types of reactors
  have been criticized as more expensive than light-water reactors, dangerous
  because of the coolants involved, and unnecessary once more reserves of
- Uranium (and thus, U
+ Uranium (and thus, 
 \begin_inset Formula $^{235}$
 \end_inset
 
-) were found.
+U) were found.
  Moreoever, since these breeder reactors produce large quantities of fissile
  material, there have always been fears of proliferation of dangerous material
  through theft or mismanagement.
 \end_layout
 
 \begin_layout Standard
-This paper will examine the nuclear reactions at the heart of breeder reactors,
- some designs of breeder reactors, and a history of constructed breeder
- reactors, as well as a discussion of the future of breeder reactors, in
- light of the current state of the technology and its criticisms.
+This paper will examine the nuclear reactions that are used to breed fissile
+ material, some designs of breeder reactors, and a history of constructed
+ breeder reactors, as well as a discussion of their future, in light of
+ the current state of the technology and its criticisms.
  
 \begin_inset Newline newline
 \end_inset
@@ -208,8 +212,193 @@ This paper will examine the nuclear reactions at the heart of breeder reactors,
 Nuclear Reactions in Breeders
 \end_layout
 
+\begin_layout Subsubsection*
+Uranium-238
+\end_layout
+
 \begin_layout Standard
-So here wwe are a.
+The most common reaction used in breeder reactors is the conversion of the
+ non-fissile, but abundant, 
+\begin_inset Formula $^{238}$
+\end_inset
+
+U to fissile Plutonium-239 (
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu).
+ This reaction occurs through the absorption of a fast neutron:
+\begin_inset Formula 
+\begin{eqnarray*}
+^{238}\mathrm{U}+\mathrm{n} & \longrightarrow & ^{239}\mathrm{U}\\
+^{239}\mathrm{U} & \longrightarrow & ^{239}\mathrm{Np}+e^{-}+\bar{\nu}_{e}\\
+^{239}\mathrm{Np} & \longrightarrow & ^{239}\mathrm{Pu}+e^{-}+\bar{\nu}_{e}
+\end{eqnarray*}
+
+\end_inset
+
+An atom of 
+\begin_inset Formula $^{238}$
+\end_inset
+
+U absorbs a neutron to become 
+\begin_inset Formula $^{239}$
+\end_inset
+
+U.
+ This atom then undergoes beta decay and produces 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Np, which then also undergoes beta decay to form 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu.
+ The half-life of 
+\begin_inset Formula $^{239}$
+\end_inset
+
+U is only 23.5 minutes.
+ The half-life of 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Np is about 2 days.
+ The half-life of the the 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu is about 24000 years, thus effectively, it is the final product.
+ 
+\end_layout
+
+\begin_layout Standard
+The source of neutrons comes from the fission of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U, thus some fissile material is consumed.
+ On average, the fission of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U produces 2.4 neutrons.
+ Note that these are generally fast neutrons.
+ This means that you need a larger ratio of 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U (or 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu) to sustain a chain reaction, since 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U is less likely to undergo fission with fast neutrons.
+ 
+\end_layout
+
+\begin_layout Standard
+Typically, non-fissionable 
+\begin_inset Formula $^{238}$
+\end_inset
+
+U surrounds a core of enriched uranium and absorbs neutrons from the core.
+ No moderator is needed to slow down the neutrons, as this would stop the
+ production of Plutonium.
+ Since water is a typical moderator in reactors, this means that water cannot
+ be used as a coolant in breeder reactors exploiting this reaction.
+\end_layout
+
+\begin_layout Subsubsection*
+Thorium-232
+\end_layout
+
+\begin_layout Standard
+Though not used as much in practice, Thorium-232 (
+\begin_inset Formula $^{232}$
+\end_inset
+
+Th) can be used to breed 
+\begin_inset Formula $^{233}$
+\end_inset
+
+U, which can be used as fuel in a reactor.
+ The breeding of Uranium-233 from Thorium-232 is analogous to the case with
+ Uranium-238:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+^{232}\mathrm{Th}+n & \longrightarrow & ^{233}\mathrm{Th}\\
+^{233}\mathrm{Th} & \longrightarrow & ^{233}\mathrm{Pa}+e^{-}+\bar{\nu}_{e}\\
+^{233}\mathrm{Pa} & \longrightarrow & ^{233}\mathrm{U}+e^{-}+\bar{\nu}_{e}
+\end{eqnarray*}
+
+\end_inset
+
+The half-lives of 
+\begin_inset Formula $^{233}$
+\end_inset
+
+Th, 
+\begin_inset Formula $^{233}$
+\end_inset
+
+Pa, and 
+\begin_inset Formula $^{233}$
+\end_inset
+
+U are 22 minutes, 27 days, and 159,200 years, respectively.
+\end_layout
+
+\begin_layout Standard
+The main drawback with using Thorium-232 is its lack of a fissile isotope
+ in a sample.
+ While Uranium can be enriched until Uranium-235 can drive the reaction,
+ Thorium-232 needs fissile material like 
+\begin_inset Formula $^{235}$
+\end_inset
+
+U or 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu to be added for the reaction to sustain itself.
+ 
+\end_layout
+
+\begin_layout Standard
+Another drawback is the long lifetime of the intermediate product 
+\begin_inset Formula $^{233}$
+\end_inset
+
+Pa, which is an order of magnitude greater than the 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Np present in the breeding of 
+\begin_inset Formula $^{239}$
+\end_inset
+
+Pu.
+ Because of this long lifetime, large amounts of 
+\begin_inset Formula $^{233}$
+\end_inset
+
+Pa build up during the breeding process, and, since 
+\begin_inset Formula $^{233}$
+\end_inset
+
+Pa is a significant neutron absorber, it slows and can halt the reaction.
+\end_layout
+
+\begin_layout Section
+Reactor Design
 \end_layout
 
 \end_body
