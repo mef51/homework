@@ -20,3 +20,5 @@ Sources
 Images
 ======
 ![](http://upload.wikimedia.org/wikipedia/commons/c/c2/Ebr1core.png)
+![](http://static.panoramio.com/photos/large/24221230.jpg)
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/LMFBR_schematics2.svg/1000px-LMFBR_schematics2.svg.png)

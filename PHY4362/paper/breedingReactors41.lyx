@@ -834,7 +834,131 @@ In this paper we have examined an overview of the field of breeder reactors
  that breeder reactors pose.
  Nonetheless, there is still active research in the design of next generation
  reactors, where breeder reactors and integral fast breeders play an almost
- exlusive role.
+ exclusive role.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{widetext}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "krane"
+
+\end_inset
+
+Krane, Kenneth S.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Introductory Nuclear Physics
+\begin_inset Quotes erd
+\end_inset
+
+.
+ John Wiley and Sons.
+ 1987.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "hyperphysics"
+
+\end_inset
+
+Nave, Carl R.
+ “Hyperphysics”.
+ Department of Physics and Astronomy, GSU.
+ Retrieved 10 November 2014.
+ http://hyperphysics.phy-astr.gsu.edu/hbase/nucene/fasbre.html.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "neutronreactions"
+
+\end_inset
+
+"Neutron Reaction & Beam Reaction Rates".
+ UNENE University Network of Excellence in Nuclear Engineering.
+ Retrieved 10 November 2014.
+ https://unene.ca/wp-content/uploads/file/courses/un802/1_neutron_reactions_&_bea
+m_reaction_rates.pdf
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "breeders"
+
+\end_inset
+
+Waltar, Alan E.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Fast Breeder Reactors
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Alan Edward Waltar.
+ 1981.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-13"
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Breeder Reactor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Wikipedia.
+ Retrieved November 10 2014.
+ http://en.wikipedia.org/wiki/Breeder_reactor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{widetext}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
