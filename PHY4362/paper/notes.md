@@ -15,6 +15,7 @@ Sources
 =======
 * "Slides-Part one: Kinetics". UNENE University Network of Excellence in Nuclear Engineering. Retrieved 3 January 2013. [Link](https://unene.ca/wp-content/uploads/file/courses/un802/1_neutron_reactions_&_beam_reaction_rates.pdf)
 * Hyperphysics [Link](http://hyperphysics.phy-astr.gsu.edu/hbase/nucene/fasbre.html)
+* Might be fun to talk about passive safety in Integral Fast Reactors in the presentation [Link](http://en.wikipedia.org/wiki/Integral_fast_reactor#Passive_safety)
 
 Images
 ======

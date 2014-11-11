@@ -417,7 +417,7 @@ Breeder reactors are different from the usual light-water reactors in several
 \begin_inset Formula $^{235}$
 \end_inset
 
-U and then surrounding, or 
+U and then surrounding --or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -425,7 +425,7 @@ blanketing
 \begin_inset Quotes erd
 \end_inset
 
- it with the non-fissile 
+-- it with the non-fissile 
 \begin_inset Formula $^{238}$
 \end_inset
 
@@ -433,7 +433,7 @@ U will breed
 \begin_inset Formula $^{239}$
 \end_inset
 
-Pu.
+Pu in the blanketing material.
 \end_layout
 
 \begin_layout Standard
@@ -477,6 +477,364 @@ With these general requirements in mind, there are a few varying designs
 
 \begin_layout Subsubsection*
 Liquid Metal Fast Breeder Reactor (LMFBR)
+\end_layout
+
+\begin_layout Standard
+To achieve fast neutrons, liquid water coolant is switched out for liquid
+ metal coolant.
+ Water is a strong moderator of neutrons, and slows them down.
+ A liquid metal coolant will not slow down neutrons.
+ 
+\end_layout
+
+\begin_layout Standard
+Fast breeders have a high power density due to the fast neutrons, and a
+ water coolant would boil quickly.
+ The water can be pressurized to not boil, but this complicates the design.
+ Liquid metal has a high heat capacity making it an efficient coolant.
+ Moreover, fast breeders regularly operate safely within the melting and
+ boiling points of a liquid metal, meaning there is little risk of the coolant
+ freezing or boiling away.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mercury 
+\series default
+was the first metal to be used as liquid coolant since it was already liquid
+ at room temperature.
+ It quickly fell out of favor because of the toxic fumes it produced and
+ the relatively low boiling temperature.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Liquid lead
+\series default
+ was considered a good choice because it is highly reflective to neutrons,
+ as well as an effective radiation shield to gamma rays.
+ Its extremely high boiling point means it can cool the reactor efficiently,
+ but at the same time its high melting point (around 327
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+C) makes the reactor very difficult to service and refuel.
+ Sometimes bismuth is mixed with the lead to lower the melting point, but
+ the alloy is corrosive to the metals used in the surrounding structure.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Liquid sodium
+\series default
+ has a much lower melting temperature that is easier to manage and is still
+ below the operating temperature of the reactor, so it won't freeze and
+ will effectively cool the reactor.
+ Using sodium as the coolant would also avoid the structural problems that
+ lead poses, since the liquid sodium is not corrosive.
+ There are some concerns with using liquid sodium however.
+ The sodium is highly reactive to air and water so it must be tightly contained.
+ Any leaks could quickly cause a fire or explosion.
+ Moreoever while the reactor is in operation, neutrons will activate the
+ sodium and the coolant will become highly radioactive, thus, it must be
+ contained by some kind of biological shield during operation.
+ Fortunately, the half-life of this activated sodium is only 15 hours, so
+ using liquid sodium as a coolant does not create an additional nuclear
+ waste problem.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Liquid tin
+\series default
+, though useless for a functioning or long-term reactor because it forms
+ a crust, is instead quite useful in the case of a coolant accident or disaster.
+ It is an effective coolant and in the case of disaster, if dumped on a
+ reactor, will cool the reactor and at the same time form a crust above
+ the liquid tin beneath.
+ This crust will help contain any dangerous material, contrary to dumping
+ lead which would release dangerous fumes or dumping sodium, which would
+ explode.
+ Water would quickly vaporize and carry away radioactive material.
+\end_layout
+
+\begin_layout Standard
+Most large-scale liquid metal fast breeder reactors use liquid sodium as
+ their coolant.
+ A schematic of an example LMFBR using liquid sodium is shown in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lmfbr"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename LMFBR.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lmfbr"
+
+\end_inset
+
+Diagram of an LMFBR Reactor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the LMFBR, the fissile core is surrounded by a breeder blanket and is
+ then immersed in liquid coolant.
+ All of this is placed inside a tank with radiation-shielding walls.
+ The core heats the sodium which then flows into a heat exchanger.
+ In the heat exchanger, a pipe carrying heated sodium from the core flows
+ snakelike through a separate tank also filled with liquid sodium.
+ The hot sodium from the core heats the sodium in the heat exchanger.
+ This heat is then used to boil water in the steam generator, which can
+ be used to turn a turbine that generates electricity.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+gas-cooled fast reactor 
+\series default
+is the same idea but uses helium or carbon dioxide gas as the coolant.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Integral Fast Reactor (IFR)
+\end_layout
+
+\begin_layout Standard
+The Integral Fast Reactor is a next generation design that combines a breeder
+ reactor with a waste reprocessing facility nearby.
+ The reactor breeds material which is then quickly reprocessed to extract
+ material that can be used in the inner core (like Uranium-235 and Plutonium-239
+).
+ The reactor's core is then replenished and the breeding continues.
+ This allows almost the entirety of a Uranium sample to be used to generate
+ electricity, which is a huge increase in energy output compared to just
+ using the Uranium-235 in a sample.
+ Uranium-235 comprises less than 1% of natural Uranium.
+\end_layout
+
+\begin_layout Standard
+The onsite processing of material is what makes the reactor 
+\emph on
+integral
+\emph default
+.
+ It allows for the complete use of a fissionable sample and turns what would
+ normally be considered as waste into a source of energy.
+ IFRs also reduce the risk of nuclear proliferation by consuming fissile
+ material and leaving only decay products lighter than Uranium.
+ Since the processing of material is meant to be done on site, no material
+ containing Plutonium or Uranium need be transported from the site.
+\end_layout
+
+\begin_layout Standard
+The reprocessing of material happens with a pyroprocessing unit at the reactor
+ site.
+\end_layout
+
+\begin_layout Section
+History and Discussion
+\end_layout
+
+\begin_layout Standard
+Since the 1950s many countries have worked to construct commercial fast
+ breeder reactors that lived up to the promises of the designs.
+ The reactors have been plagued with problems and setbacks and many shut
+ down due to high costs and a distrust of the technology.
+ 
+\end_layout
+
+\begin_layout Standard
+In 1951 the USA built the Experimental Breeder Reactor-1 (EBR-I) and demonstrate
+d that it could generate electricity by powering the building it was housed
+ in.
+ They decommissioned it in 1964 and replaced it with EBR-II, which was meant
+ to be a prototype of the Integral Fast Reactor, and was cooled with liquid
+ sodium.
+ It was shut down in 1994 when the US Congress withdrew funding for it three
+ years before the completion of the program, despite the very positive results
+ coming out of the project.
+\end_layout
+
+\begin_layout Standard
+France first built an experimental fast breeder reactor in 1967 called 
+\emph on
+Rapsodie
+\emph default
+.
+ It generated 40MW of heat but had not electrical generation facilities,
+ and closed in 1983.
+ France followed this up with a small-scale prototype sodium-cooled reactor
+ called 
+\emph on
+Phénix 
+\emph default
+that both generated electricity and reprocessed nuclear waste.
+ It was shut down in 2009.
+ 
+\emph on
+Phénix 
+\emph default
+was meant as a demonstration of a larger fast breeder reactor called 
+\emph on
+Superphénix
+\emph default
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:superphenix"
+
+\end_inset
+
+),
+\emph on
+ 
+\emph default
+which opened and started producing electricity in 1986.
+ The construction, which started in 1968, heavily overran its budget and
+ provoked public protests.
+ In 1982 five RPG rockets were fired at the building by a group that doubted
+ the safety of such a reactor.
+ Though designed to output 1.20GW of electricity, it almost always operated
+ between 0 and 33% of its max output, only reaching 90% power in December
+ 1996, less than a year before its closure in 1997.
+ During its operation the plant shut down for long periods of repairs to
+ the liquid sodium cooling system, which leaked.
+ In 1997 a newly-elected Prime Minister shut down the reactor due to its
+ excessive costs.
+ It was to date the largest fast breeder reactor in the world.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename superphenix.jpg
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:superphenix"
+
+\end_inset
+
+The 
+\emph on
+Superphénix 
+\emph default
+Reactor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+India is deeply interested and invested in breeder reactors because they
+ possess the world's largest Thorium reserves.
+ India first activated an experimental fast breeder reactor in 1985, and
+ is currently building the 
+\begin_inset Quotes eld
+\end_inset
+
+Prototype Fast Breeder Reactor
+\begin_inset Quotes erd
+\end_inset
+
+, a 500MW reactor also using liquid sodium, and is expected to reach criticality
+ in March 2015.
+ India has enough Thorium to power itself for the next 10,000 years, and
+ is planning more reactors to tap into this potential.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+In this paper we have examined an overview of the field of breeder reactors
+ including the nuclear reactions that make it possible, the more important
+ designs of breeder reactors and the types of cooling they utilize, and
+ a brief history of the efforts over the last 60 years of building a commercial
+ breeder reactor.
+ Despite the very significant energy and nuclear waste benefits that breeder
+ reactors offer, their development has been slowed in favor of the more
+ tested light-water reactors, especially with the discovery of more Uranium
+ reserves.
+ The costs of breeder reactors have made them unpopular among governments
+ and the public remains suspicious of the benefits and fearful of the risks
+ that breeder reactors pose.
+ Nonetheless, there is still active research in the design of next generation
+ reactors, where breeder reactors and integral fast breeders play an almost
+ exlusive role.
 \end_layout
 
 \end_body
