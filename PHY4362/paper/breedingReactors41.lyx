@@ -131,8 +131,8 @@ Early on it was clear that natural Uranium consisted primarily of non-fissile
 \end_inset
 
 U as its fuel.
- Before more Uranium reserves were found, it was feared that we would run
- out of 
+ Before more Uranium reserves were found, it was feared that the world would
+ run out of 
 \begin_inset Formula $^{235}$
 \end_inset
 
@@ -677,7 +677,7 @@ The reprocessing of material happens with a pyroprocessing unit at the reactor
 \end_layout
 
 \begin_layout Section
-History and Discussion
+History
 \end_layout
 
 \begin_layout Standard
@@ -685,6 +685,21 @@ Since the 1950s many countries have worked to construct commercial fast
  breeder reactors that lived up to the promises of the designs.
  The reactors have been plagued with problems and setbacks and many shut
  down due to high costs and a distrust of the technology.
+ 
+\end_layout
+
+\begin_layout Standard
+At the beginning it was expected that a shortage of Uranium fuel would become
+ a problem.
+ This was the stimulating factor in research into breeder reactors.
+ When more Uranium reserves were discovered, light-water reactors became
+ more prevalent and breeder reactors became a sort of unnecessary investment.
+ 
+\end_layout
+
+\begin_layout Standard
+Still, interest remained since breeder reactors recycle most of their waste
+ and effectively deal with one of the largest problems of nuclear power.
  
 \end_layout
 
@@ -832,7 +847,11 @@ In this paper we have examined an overview of the field of breeder reactors
  The costs of breeder reactors have made them unpopular among governments
  and the public remains suspicious of the benefits and fearful of the risks
  that breeder reactors pose.
- Nonetheless, there is still active research in the design of next generation
+ 
+\end_layout
+
+\begin_layout Standard
+Nonetheless, there is still active research in the design of next generation
  reactors, where breeder reactors and integral fast breeders play an almost
  exclusive role.
 \begin_inset Newline newline
@@ -927,7 +946,7 @@ Fast Breeder Reactors
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-13"
+key "wiki"
 
 \end_inset
 
