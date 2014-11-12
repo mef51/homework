@@ -115,9 +115,6 @@ We know that by definition
 
 .
  So,
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \pdev{\mathbf{e}^{\alpha}}{x^{\beta}} & = & \pdev{g^{\alpha\nu}\mathbf{e}_{\nu}}{x^{\beta}}=g^{\alpha\nu}\pdev{\mathbf{e}_{\nu}}{x^{\beta}}\qquad\because(\partial_{\beta}g^{\alpha\nu}=0)\\
@@ -151,9 +148,6 @@ Prove the covariant derivative of a vector
 \end_inset
 
  is a second-rank tensor.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \nabla_{\mu'}A^{\nu'} & = & \pdev{A^{\nu'}}{x^{\mu'}}+\Gamma_{\mu'\delta^{'}}^{\nu'}A^{\delta'}\\
@@ -162,33 +156,200 @@ Prove the covariant derivative of a vector
 
 \end_inset
 
-Note that the Christoffel Symbol transforms as:
+Note that the Christoffel Symbol 
+\begin_inset Formula $\Gamma_{\mu'\delta^{'}}^{\nu'}$
+\end_inset
+
+ and the vector 
+\begin_inset Formula $A^{\delta'}$
+\end_inset
+
+ transforms as:
 \begin_inset Formula 
 \[
-\Gamma_{\mu'\delta^{'}}^{\nu'}=\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}
+\Gamma_{\mu'\delta^{'}}^{\nu'}=\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\qquad\mathrm{and}\qquad A^{\delta'}=\pdev{x^{\delta'}}{x^{\tau}}A^{\tau}
 \]
 
 \end_inset
 
-So,
+Let's transform each term separately...
 \begin_inset Formula 
 \begin{eqnarray*}
-\nabla_{\mu'}A^{\nu'} & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\Big(\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\pdev{x^{\delta'}}{x^{\gamma}}A^{\gamma}\\
- & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\delta'}}{x^{\gamma}}A^{\gamma}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\delta'}}{x^{\gamma}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
- & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
- & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\pdev{}{x^{\alpha}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\qquad(\mathrm{group\, similar\, terms)}\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Big(\pdev{A^{\beta}}{x^{\alpha}}+\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\Big)\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}(\nabla_{\alpha}A^{\beta})\\
- & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\alpha}\partial x^{\mu'}}A^{\alpha}
+\pdev{A^{\nu'}}{x^{\mu'}} & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\pdev{}{x^{\alpha}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}
+\end{eqnarray*}
+
+\end_inset
+
+and the other term:
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma_{\mu'\delta^{'}}^{\nu'}A^{\delta'} & = & \Big(\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\Big(\pdev{x^{\delta'}}{x^{\tau}}A^{\tau}\Big)\\
+ & = & \pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\delta'}}{x^{\tau}}A^{\tau}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\pdev{x^{\delta'}}{x^{\tau}}A^{\tau}\\
+ & = & \pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\qquad(\mathrm{set\,\,}\tau=\gamma)\\
+ & = & \pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
+ & = & \pdev{x^{\nu'}}{x^{\alpha}}\frac{\partial^{2}x^{\alpha}}{\partial x^{\beta}\partial x^{\mu'}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\qquad(\mathrm{rename\, indices\, in\, first\, term)}
+\end{eqnarray*}
+
+\end_inset
+
+Now, combining the two
+\begin_inset Formula 
+\begin{eqnarray*}
+\pdev{A^{\nu'}}{x^{\mu'}}+\Gamma_{\mu'\delta^{'}}^{\nu'}A^{\delta'} & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\alpha}}\frac{\partial^{2}x^{\alpha}}{\partial x^{\beta}\partial x^{\mu'}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\alpha}}\frac{\partial^{2}x^{\alpha}}{\partial x^{\beta}\partial x^{\mu'}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\alpha}}\frac{\partial^{2}x^{\alpha}}{\partial x^{\beta}\partial x^{\mu'}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Big(\pdev{A^{\beta}}{x^{\alpha}}+\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\alpha}}\frac{\partial^{2}x^{\alpha}}{\partial x^{\beta}\partial x^{\mu'}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Big(\nabla_{\alpha}A^{\beta}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+If the second-order terms were zero, then we would have the required transformat
+ion rule.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ ...
+\end_layout
+
+\begin_layout Problem
+Prove that 
+\begin_inset Formula $\nabla_{\alpha}g_{\mu\nu}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Start from the general definition of the absolute gradient and then use
+ the fact that 
+\begin_inset Formula $\Gamma_{\mu\nu}^{\alpha}=\frac{1}{2}g^{\alpha\sigma}[\partial_{\mu}g_{\nu\sigma}+\partial_{\nu}g_{\sigma\mu}-\partial_{\sigma}g_{\mu\nu}]$
+\end_inset
+
+ and the fact that 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+ is symmetric:
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla_{\alpha}g_{\mu\nu} & = & \partial_{\alpha}g_{\mu\nu}-\Gamma_{\alpha\mu}^{\beta}g_{\beta\nu}-\Gamma_{\alpha\nu}^{\delta}g_{\mu\delta}\\
+ & = & \partial_{\alpha}g_{\mu\nu}-\frac{1}{2}(g^{\beta\sigma}[\partial_{\alpha}g_{\mu\sigma}+\partial_{\mu}g_{\sigma\alpha}-\partial_{\sigma}g_{\alpha\mu}])g_{\beta\nu}-\frac{1}{2}(g^{\delta\tau}[\partial_{\alpha}g_{\nu\tau}+\partial_{\nu}g_{\tau\alpha}-\partial_{\tau}g_{\alpha\nu}])g_{\mu\delta}\\
+ & = & \partial_{\alpha}g_{\mu\nu}-\frac{1}{2}\delta_{\nu}^{\sigma}[\partial_{\alpha}g_{\mu\sigma}+\partial_{\mu}g_{\sigma\alpha}-\partial_{\sigma}g_{\alpha\mu}]-\frac{1}{2}\delta_{\mu}^{\tau}[\partial_{\alpha}g_{\nu\tau}+\partial_{\nu}g_{\tau\alpha}-\partial_{\tau}g_{\alpha\nu}]\\
+ & = & \partial_{\alpha}g_{\mu\nu}-\frac{1}{2}[\partial_{\alpha}g_{\mu\nu}+\partial_{\mu}g_{\nu\alpha}-\partial_{\nu}g_{\alpha\mu}]-\frac{1}{2}[\partial_{\alpha}g_{\nu\mu}+\partial_{\nu}g_{\mu\alpha}-\partial_{\mu}g_{\alpha\nu}]\\
+ & = & \partial_{\alpha}g_{\mu\nu}-\partial_{\alpha}g_{\mu\nu}-\frac{1}{2}\partial_{\mu}g_{\nu\alpha}+\frac{1}{2}\partial_{\mu}g_{\nu\alpha}+\frac{1}{2}\partial_{\nu}g_{\alpha\mu}-\frac{1}{2}\partial_{\nu}g_{\alpha\mu}\\
+\nabla_{\alpha}g_{\mu\nu} & = & 0\\
+ &  & \square
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Problem
+Prove that the Riemann tensor 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}$
+\end_inset
+
+ has 20 independent components.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}=-R_{\beta\alpha\mu\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}=-R_{\alpha\beta\nu\mu}$
+\end_inset
+
+, the only nonzero terms are when 
+\begin_inset Formula $\alpha\neq\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu\neq\nu$
+\end_inset
+
+.
+ The only unique terms are when the pairs 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu\nu$
+\end_inset
+
+ take on one of the six numerically distinct pairs 01, 02, 03, 12, 13, or
+ 23 (the 10 term is related to 01, 20 related to 02, etc.).
+ This means there are no more than 
+\begin_inset Formula $6\times6=36$
+\end_inset
+
+ independent values.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now imagine a 
+\begin_inset Formula $6\times6$
+\end_inset
+
+ matrix of these 36 values.
+ The symmetry 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}=R_{\mu\nu\alpha\beta}$
+\end_inset
+
+ implies that this 
+\begin_inset Formula $6\times6$
+\end_inset
+
+ matrix is symmetric.
+ This means that all the components above the diagonal, not including the
+ diagonal, are not independent.
+ There 
+\begin_inset Formula $5+4+3+2+1=15$
+\end_inset
+
+ components above the diagonal, so that means there are no more than 
+\begin_inset Formula $36-15=21$
+\end_inset
+
+ independent components of the Riemann tensor.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The final symmetry equation 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}+R_{\alpha\nu\beta\mu}+R_{\alpha\mu\nu\beta}=0$
+\end_inset
+
+ eliminates one of the 21 components where all the indices are unique so
+ we're left with 20 independent components.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 2 dimensions
 \end_layout
 
 \end_body
