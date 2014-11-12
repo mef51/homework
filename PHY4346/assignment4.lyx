@@ -349,7 +349,55 @@ The final symmetry equation
 \end_layout
 
 \begin_layout Standard
-In 2 dimensions
+In 2 dimensions, there are a total of 
+\begin_inset Formula $4^{2}=16$
+\end_inset
+
+ components.
+ The first and second symmetry 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}=-R_{\beta\alpha\mu\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{\alpha\beta\mu\nu}=-R_{\alpha\beta\nu\mu}$
+\end_inset
+
+ imply that the only non-zero terms are where 
+\begin_inset Formula $\alpha\neq\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu\neq\nu$
+\end_inset
+
+ and so, analogous to above, the only unique non-zero term is 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+, since 
+\begin_inset Formula $R_{1001}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{0110}$
+\end_inset
+
+, and 
+\begin_inset Formula $R_{1010}$
+\end_inset
+
+ are all related to 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+ through the symmetry relations.
+ You can't have less than one independent component so the Riemann tensor's
+ only independent component in 2 dimensions is 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+.
+ There is only 1 independent component in this case.
 \end_layout
 
 \end_body
