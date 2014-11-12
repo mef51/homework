@@ -134,5 +134,62 @@ We know that by definition
 But where is the negative sign?
 \end_layout
 
+\begin_layout Problem
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\series default
+Prove the covariant derivative of a vector 
+\begin_inset Formula $A^{\alpha}$
+\end_inset
+
+ is a second-rank tensor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla_{\mu'}A^{\nu'} & = & \pdev{A^{\nu'}}{x^{\mu'}}+\Gamma_{\mu'\delta^{'}}^{\nu'}A^{\delta'}\\
+ & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\Gamma_{\mu'\delta^{'}}^{\nu'}\pdev{x^{\delta'}}{x^{\gamma}}A^{\gamma}
+\end{eqnarray*}
+
+\end_inset
+
+Note that the Christoffel Symbol transforms as:
+\begin_inset Formula 
+\[
+\Gamma_{\mu'\delta^{'}}^{\nu'}=\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}
+\]
+
+\end_inset
+
+So,
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla_{\mu'}A^{\nu'} & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\Big(\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\pdev{x^{\delta'}}{x^{\gamma}}A^{\gamma}\\
+ & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\delta'}}{x^{\gamma}}A^{\gamma}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\gamma}}{x^{\delta'}}\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\delta'}}{x^{\gamma}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
+ & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\\
+ & = & \pdev{}{x^{\mu'}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\pdev{}{x^{\alpha}}\Big(\pdev{x^{\nu'}}{x^{\beta}}A^{\beta}\Big)+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\Big(\partial_{\gamma}\pdev{x^{\beta}}{x^{\mu'}}+\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}+\pdev{x^{\nu'}}{x^{\beta}}A^{\gamma}\pdev{x^{\alpha}}{x^{\mu'}}\Gamma_{\alpha\gamma}^{\beta}\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\pdev{A^{\beta}}{x^{\alpha}}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\qquad(\mathrm{group\, similar\, terms)}\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}\Big(\pdev{A^{\beta}}{x^{\alpha}}+\Gamma_{\alpha\gamma}^{\beta}A^{\gamma}\Big)\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\gamma}\partial x^{\mu'}}A^{\gamma}+\pdev{x^{\alpha}}{x^{\mu'}}\pdev{x^{\nu'}}{x^{\beta}}(\nabla_{\alpha}A^{\beta})\\
+ & = & \pdev{x^{\alpha}}{x^{\mu'}}\frac{\partial^{2}x^{\nu'}}{\partial x^{\alpha}\partial x^{\beta}}A^{\beta}+\pdev{x^{\nu'}}{x^{\beta}}\frac{\partial^{2}x^{\beta}}{\partial x^{\alpha}\partial x^{\mu'}}A^{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
