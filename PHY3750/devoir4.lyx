@@ -218,6 +218,37 @@ d)
 
 \begin_layout Standard
 We know that 
+\begin_inset Formula $S=-\pderv FTV$
+\end_inset
+
+, so
+\begin_inset Formula 
+\[
+F=-\int SdT+g(V)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $g(V)$
+\end_inset
+
+ is some function of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Now
+\begin_inset Formula 
+\begin{eqnarray*}
+-\int SdT & = & -\int-nR\ln\frac{nRT}{P_{0}(V+A)}dT\\
+ & = & nR\int\ln\frac{nRT}{P_{0}(V+A)}dT\\
+ & = & nR\Big(\int\ln\frac{nR}{P_{0}(V+A)}dT+\int\ln TdT\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
