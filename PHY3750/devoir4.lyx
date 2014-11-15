@@ -253,17 +253,48 @@ where
 So we have 
 \begin_inset Formula 
 \[
-F=nRT\Big(\ln\frac{nRT}{P_{0}(V+A)}-1\Big)+g(V)+F_{0}
+F=nRT\Big(\ln\frac{nRT}{P_{0}(V+A)}-1\Big)+g(V)+F'_{0}
 \]
 
 \end_inset
 
 For some constant 
-\begin_inset Formula $F_{0}$
+\begin_inset Formula $F'_{0}$
 \end_inset
 
 .
- 
+ Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+-P & = & \pderv FVT\\
+\frac{-nRT}{V+A} & = & nRT\Big(\frac{P_{0}(V+A)}{nRT}\frac{nRT}{P_{0}}\Big(-\frac{1}{(V+A)^{2}}\Big)\Big)+\frac{\partial g}{\partial V}\\
+\frac{-nRT}{V+A} & = & \frac{-nRT}{V+A}+\frac{\partial g}{\partial V}\\
+\frac{\partial g}{\partial V} & = & 0\implies g=\mathrm{constant}
+\end{eqnarray*}
+
+\end_inset
+
+Now that we know 
+\begin_inset Formula $g(V)$
+\end_inset
+
+ is constant, we can write
+\begin_inset Formula 
+\[
+F(V,T)=nRT\Big(\ln\frac{nRT}{P_{0}(V+A)}-1\Big)+F_{0}\qquad\square
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(9.8)
 \end_layout
 
 \end_body
