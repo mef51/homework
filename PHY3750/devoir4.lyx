@@ -94,7 +94,7 @@ November 17, 2014
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\pderv}[3]{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
+\newcommand{\pderv}[3]{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
 \end_inset
 
 
@@ -352,6 +352,273 @@ Since
 
 \end_inset
 
+The temperature difference for the first method is given by 
+\begin_inset Formula 
+\[
+\Delta T_{1}=\int_{P_{i}}^{P_{f}}\pderv TPHdP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(9.12) The state equation of an electromagnetic ray in thermal equilibrium
+ with a box of volume 
+\begin_inset Formula $V$
+\end_inset
+
+ and temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ is 
+\begin_inset Formula $P=aT^{4}/3$
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant.
+ The internal energy is given by 
+\begin_inset Formula $U=aT^{4}V$
+\end_inset
+
+.
+ It was shown that the entropy is 
+\begin_inset Formula $S=4aT^{3}V/3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Find 
+\begin_inset Formula $S(U,V)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let's eliminate 
+\begin_inset Formula $T$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+U & = & aT^{4}V\implies T=\Big(\frac{U}{aV}\Big)^{\frac{1}{4}}\,\,\mathrm{so}\\
+S & = & \frac{4aT^{3}V}{3}=\frac{4a\Big(\frac{U}{aV}\Big)^{\frac{3}{4}}V}{3}\\
+S(U,V) & = & \frac{4(aVU^{3})^{1/4}}{3}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Find the internal energy 
+\begin_inset Formula $U$
+\end_inset
+
+ in variables that yield a fundamental equation.
+\end_layout
+
+\begin_layout Standard
+We want 
+\begin_inset Formula $U(S,V)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+S & = & \frac{4(aVU^{3})^{1/4}}{3}\\
+aVU^{3} & = & \Big(\frac{3S}{4}\Big)^{4}\\
+U^{3} & = & \frac{81}{256}\frac{S^{4}}{aV}\\
+U(S,V) & = & \Big(\frac{81}{256}\Big)^{\frac{1}{3}}\Big(\frac{S^{4}}{aV}\Big)^{\frac{1}{3}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ Find the Helmholtz energy.
+\end_layout
+
+\begin_layout Standard
+We want 
+\begin_inset Formula $F(T,V)$
+\end_inset
+
+ where 
+\begin_inset Formula $F=U-TS$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+F & = & U-TS\\
+ & = & aT^{4}V-T\frac{4aT^{3}V}{3}\\
+ & = & aT^{4}V-\frac{4}{3}aT^{4}V\\
+F(T,V) & = & -\frac{1}{3}aT^{4}V
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+d)
+\series default
+ Find the Gibbs energy and the chemical potential of the photon in blackbody
+ radiation.
+\end_layout
+
+\begin_layout Standard
+We want 
+\begin_inset Formula $G(T,P)$
+\end_inset
+
+ where 
+\begin_inset Formula $G=U-TS+PV=F+PV$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+G & = & F+PV\\
+ & = & -\frac{1}{3}aT^{4}V+PV\\
+ & = & -PV+PV=0
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $G=\mu n$
+\end_inset
+
+, where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the chemical potential, we have that 
+\begin_inset Formula $0=G=\mu n$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+, we must have that 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+.
+ This can also be seen by looking at the differential of 
+\begin_inset Formula $G$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+dG=-SdT+PdV+\mu dn
+\]
+
+\end_inset
+
+In thermal equilibrium we would expect 
+\begin_inset Formula $dT=dV=dG=0=\mu dn$
+\end_inset
+
+.
+ But with photons, the number of photons is not conserved, since a photon
+ can collide with an electron and be absorbed, and then the electron can
+ fall to lower energy states releasing more than one photon.
+ This means that 
+\begin_inset Formula $dn\neq0$
+\end_inset
+
+ and therefore we'd need 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+ to satisfy the condition.
+ 
+\end_layout
+
+\begin_layout Problem
+(9.14) Let a spring obey Hooke's law where the tension 
+\begin_inset Formula $f$
+\end_inset
+
+ is given by 
+\begin_inset Formula $f=-k(l-l_{0})$
+\end_inset
+
+ where 
+\begin_inset Formula $k$
+\end_inset
+
+ is the spring constant, 
+\begin_inset Formula $l$
+\end_inset
+
+ is the length, and 
+\begin_inset Formula $l_{0}$
+\end_inset
+
+ is the (constant) length when 
+\begin_inset Formula $f=0$
+\end_inset
+
+.
+ The spring constant is a function of the temperature: 
+\begin_inset Formula $k(T)$
+\end_inset
+
+.
+ Find the 
+\series bold
+Helmholtz energy
+\series default
+, the 
+\series bold
+internal energy
+\series default
+, and the 
+\series bold
+entropy 
+\series default
+as a function of 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
