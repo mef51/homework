@@ -33,7 +33,7 @@ figs-within-sections
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -94,7 +94,7 @@ November 17, 2014
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\pderv}[3]{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
+\renewcommand{\pderv}[3]{\Big(\frac{\partial#1}{\partial#2}\Big)_{#3}}
 \end_inset
 
 
@@ -168,10 +168,6 @@ P(V,T)=\frac{nRT}{V+A}
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -195,10 +191,6 @@ S & = & -\pderv GTP\\
 S(V,T) & = & -nR\ln\frac{nRT}{P_{0}(V+A)}
 \end{eqnarray*}
 
-\end_inset
-
-
-\begin_inset Newline newline
 \end_inset
 
 
@@ -287,14 +279,80 @@ F(V,T)=nRT\Big(\ln\frac{nRT}{P_{0}(V+A)}-1\Big)+F_{0}\qquad\square
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Problem
 (9.8)
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $c_{p}=\frac{T}{n}\pderv STP$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta=\frac{1}{V}\pderv VTP$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa=-\frac{1}{V}\pderv VPT$
+\end_inset
+
+, for the reversible adiabatic expansion we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv TPS & = & -\pderv SPT\pderv TSP=\frac{-\pderv SPT}{\pderv STP}=\frac{\pderv VTPT}{nc_{P}}\\
+\pderv TPS & = & \frac{\beta VT}{nc_{p}}
+\end{eqnarray*}
+
+\end_inset
+
+For the adiabatic throttling, we note that the Joule-Thomson coefficient
+ is
+\begin_inset Formula $\mu\equiv\pderv TPH$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu>0$
+\end_inset
+
+ when the gas is cooling.
+ Since the process happens at constant enthalpy we have
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & dH=TdS+VdP\\
+0 & = & TdS+VdP
+\end{eqnarray*}
+
+\end_inset
+
+Using 
+\begin_inset Formula $TdS=nc_{p}dT-T\pderv VTPdP=nc_{p}dT-TV\beta dP$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & nc_{p}dT-TV\beta dP+VdP\\
+ & = & nc_{p}dT+V(1-\beta T)dP\\
+\pderv TPH & = & \frac{V}{nc_{p}}(\beta T-1)=\frac{\beta VT}{nc_{p}}-\frac{V}{nc_{p}}
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\frac{V}{nc_{p}}$
+\end_inset
+
+ is always positive we have:
+\begin_inset Formula 
+\[
+\Big(\frac{\partial T}{\partial P}\Big)_{S}>\Big(\frac{\partial T}{\partial P}\Big)_{S}-\frac{V}{nc_{p}}=\Big(\frac{\partial T}{\partial P}\Big)_{H}=\mu>0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
