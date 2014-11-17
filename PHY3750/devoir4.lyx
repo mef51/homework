@@ -352,10 +352,36 @@ Since
 
 \end_inset
 
-The temperature difference for the first method is given by 
+The temperature difference for the first method and for the second method
+ is given by 
 \begin_inset Formula 
 \[
-\Delta T_{1}=\int_{P_{i}}^{P_{f}}\pderv TPHdP
+\Delta T_{1}=\int_{P_{i}}^{P_{f}}\pderv TPHdP\qquad\Delta T_{2}=\int_{P_{i}}^{P_{f}}\pderv TPSdP
+\]
+
+\end_inset
+
+How do you have a reversible adiabatic expansion at constant pressure? Assuming
+ the initial and final pressures are different and since 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\pderv TPS>\pderv TPH$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+\Delta T_{2}>\Delta T_{1}
 \]
 
 \end_inset
@@ -619,6 +645,156 @@ as a function of
 \end_layout
 
 \begin_layout Standard
+The Helmholtz energy is 
+\begin_inset Formula $F=U-TS$
+\end_inset
+
+ and 
+\begin_inset Formula $dF=-SdT-fdl$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula 
+\[
+\pderv FlT=-f=k(l-l_{0})
+\]
+
+\end_inset
+
+Treating 
+\begin_inset Formula $k$
+\end_inset
+
+ as a constant since it only depends on 
+\begin_inset Formula $T$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+F=\frac{1}{2}kl^{2}+g(T)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $g$
+\end_inset
+
+ is some unknown function of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+S=-\pderv FTl=-\frac{1}{2}l^{2}\frac{dk}{dT}-\frac{dg}{dT}
+\]
+
+\end_inset
+
+Let's use 
+\begin_inset Formula $\pderv SlT=\pderv fTl$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv SlT & = & \pderv fTl\\
+-\frac{dk}{dT}l & = & -(l-l_{0})\frac{dk}{dT}=-\frac{dk}{dT}l+\frac{dk}{dT}l_{0}\\
+\frac{dk}{dT}l_{0} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $l_{0}$
+\end_inset
+
+ is not zero (because then the spring wouldn't exist at zero tension!),
+ we conclude that 
+\begin_inset Formula $\frac{dk}{dT}=0$
+\end_inset
+
+, so 
+\begin_inset Formula $k=\mathrm{constant}$
+\end_inset
+
+.
+ This means 
+\begin_inset Formula $S=-\frac{dg}{dT}$
+\end_inset
+
+ and that 
+\begin_inset Formula $S$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now we want to find how the internal energy 
+\begin_inset Formula $U$
+\end_inset
+
+ depends on 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $F=U-TS$
+\end_inset
+
+ and since 
+\begin_inset Formula $S$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $l$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+kl=\pderv FlT=\pderv UlT-T\pderv SlT=\pderv UlT
+\]
+
+\end_inset
+
+This means
+\begin_inset Formula 
+\[
+U=\frac{1}{2}kl^{2}+h(T)
+\]
+
+\end_inset
+
+for some function 
+\begin_inset Formula $h(T)$
+\end_inset
+
+.
+ Similarly,
+\begin_inset Formula 
+\begin{eqnarray*}
+\pderv FTl & = & \pderv UTl-S-T\frac{dS}{dT}\\
+\frac{dg}{dT} & = & \frac{dh}{dT}+\frac{dg}{dT}+T\frac{d^{2}g}{dT^{2}}\\
+\frac{dh}{dT} & = & -T\frac{d^{2}g}{dT^{2}}\\
+-\frac{1}{T}\frac{dh}{dT} & = & \frac{d^{2}g}{dT^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
 
 \end_layout
 
