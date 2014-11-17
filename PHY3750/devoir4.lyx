@@ -791,11 +791,169 @@ for some function
 
 \end_inset
 
+How to evaluate this?
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
 \begin_layout Problem
+(10.3) Find the change of the chemical potential with pressure for adiabatic
+ compression.
+\end_layout
 
+\begin_layout Standard
+The change of chemical potential is given by
+\begin_inset Formula 
+\[
+\Delta\mu=\int_{P_{i}}^{P_{f}}\pderv{\mu}P{S,n}dP
+\]
+
+\end_inset
+
+Start from the Gibbs-Duhem relation 
+\begin_inset Formula $SdT-VdP+nd\mu=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+nd\mu & = & VdP-SdT\\
+\pderv{\mu}P{S,n} & = & \frac{V}{n}-\frac{S}{n}\pderv TP{S,n}\\
+ & = & \frac{V}{n}-\frac{S}{n}\frac{1}{\pderv PTS}\\
+ & = & \frac{V}{n}-\frac{S}{n}\frac{1}{-\pderv PST\pderv STP}\\
+ & = & \frac{V}{n}-\frac{S}{n}\frac{T}{nc_{p}\pderv TVP}\\
+\pderv{\mu}P{S,n} & = & \frac{V}{n}-\frac{S}{n}\frac{T}{nc_{p}V\beta}=\frac{V}{n}-\frac{ST}{n^{2}c_{p}V\beta}
+\end{eqnarray*}
+
+\end_inset
+
+So
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta\mu & = & \int_{P_{i}}^{P_{f}}\pderv{\mu}P{S,n}dP\\
+ & = & \int_{P_{i}}^{P_{f}}\frac{V}{n}-\frac{ST}{n^{2}c_{p}V\beta}dP\\
+ & = & \int_{P_{i}}^{P_{f}}\frac{V}{n}dP-\int_{P_{i}}^{P_{f}}\frac{ST}{n^{2}c_{p}V\beta}dP
+\end{eqnarray*}
+
+\end_inset
+
+Since it is an adiabatic compression, 
+\begin_inset Formula $PV^{\gamma}=P_{i}V_{i}^{\gamma}\implies V=\Big(\frac{P_{i}}{P}\Big)^{1/\gamma}V_{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta\mu & = & \int_{P_{i}}^{P_{f}}\frac{V}{n}dP-\int_{P_{i}}^{P_{f}}\frac{ST}{n^{2}c_{p}V\beta}dP\\
+ & = & \frac{P_{i}^{1/\gamma}V_{i}}{n}\int_{P_{i}}^{P_{f}}\frac{1}{P^{1/\gamma}}dP-\frac{1}{n^{2}c_{p}\beta V_{i}P_{i}^{1/\gamma}}\int_{P_{i}}^{P_{f}}\frac{ST}{P^{1/\gamma}}dP\\
+ & = & \frac{P_{i}^{1/\gamma}V_{i}}{n}\frac{1}{-\frac{1}{\gamma}+1}(P_{f}^{\frac{\gamma-1}{\gamma}}-P_{i}^{\frac{\gamma-1}{\gamma}})-\frac{1}{n^{2}c_{p}\beta V_{i}P_{i}^{1/\gamma}}\int_{P_{i}}^{P_{f}}\frac{ST}{P^{1/\gamma}}dP\\
+\Delta\mu & = & \frac{P_{i}^{1/\gamma}V_{i}}{n}\Big(\frac{\gamma-1}{\gamma}\Big)(P_{f}^{\frac{\gamma-1}{\gamma}}-P_{i}^{\frac{\gamma-1}{\gamma}})-\frac{1}{n^{2}c_{p}\beta V_{i}P_{i}^{1/\gamma}}\int_{P_{i}}^{P_{f}}\frac{ST}{P^{1/\gamma}}dP
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(11.3) Analyze the behaviour of entropy at low temperatures
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\series default
+Of an ideal gas.
+ (
+\begin_inset Formula $PV=nRT$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+For an ideal gas, 
+\begin_inset Formula $S=S_{0}+nc_{V}\ln\frac{T}{T_{0}}+nR\ln\frac{V}{V_{0}}$
+\end_inset
+
+.
+ According to the third law, for two systems in thermal equilibrium (
+\begin_inset Formula $T_{1}=T_{2}\equiv T$
+\end_inset
+
+) we'd expect 
+\begin_inset Formula 
+\[
+\lim_{T\rightarrow0}(S_{2}-S_{1})=0
+\]
+
+\end_inset
+
+Instead we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta S=S_{2}-S_{1} & = & nc_{V}\ln\frac{T}{T_{0}}+nR\ln\frac{V_{2}}{V_{0}}-nc_{V}\ln\frac{T}{T_{0}}-nR\ln\frac{V_{1}}{V_{0}}\\
+ & = & nc_{V}\ln1+nR\ln\frac{V_{2}}{V_{1}}=nR\ln\frac{V_{2}}{V_{1}}\\
+ & = & nR\ln\frac{P_{1}}{P_{2}}
+\end{eqnarray*}
+
+\end_inset
+
+We see that for an ideal gas, the difference in entropy between two states
+ in thermal equilibrium does not depend on the temperature 
+\begin_inset Formula $T$
+\end_inset
+
+, and that 
+\begin_inset Formula $\Delta S$
+\end_inset
+
+ is non-zero independent of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Of a Van der Waals gas.
+ 
+\begin_inset Formula $\Big(P+\frac{n^{2}a}{V^{2}}\Big)(V-nb)=nRT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a Van der Waals gas, we derive the entropy from the 
+\begin_inset Formula $TdS$
+\end_inset
+
+ equation
+\begin_inset Formula 
+\begin{eqnarray*}
+TdS & = & nc_{V}dT+T\pderv PTVdV\\
+dS & = & \frac{nc_{V}}{T}dT+\pderv PTVdV\\
+ & = & \frac{nc_{V}}{T}dT+\frac{nR}{V-nb}dV\\
+S & = & nc_{V}\ln\frac{T}{T_{0}}+nR\ln(V-nb)
+\end{eqnarray*}
+
+\end_inset
+
+The Van der Waals equation does not satisfy the third law similar to the
+ ideal gas law.
 \end_layout
 
 \end_body
