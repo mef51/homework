@@ -1,0 +1,791 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1.5cm
+\footskip 0cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+HIS2160
+\begin_inset Newline newline
+\end_inset
+
+November 12
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exam:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+2 
+\begin_inset Quotes eld
+\end_inset
+
+Thinking
+\begin_inset Quotes erd
+\end_inset
+
+ Questions, pick one.
+ 40%
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Straightforward
+\begin_inset Quotes erd
+\end_inset
+
+ Questions, 4 questions, pick two.
+ 40%
+\end_layout
+
+\begin_layout Itemize
+20 Multiple Choice.
+ 20%
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nov 30 1947: UN Resolution provokes conflict between Jews and Palestinians
+\end_layout
+
+\begin_layout Itemize
+British decided to leave Palestine early
+\end_layout
+
+\begin_layout Itemize
+Nov 30 1947 to May 14 1948 (?) intense fighting between Israelis and Palestinian
+s while the British were still there.
+\end_layout
+
+\begin_layout Itemize
+Arab states encouraging the Palestinians to oppose the Partition Plan.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We'll come help you don't worry!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Abdul Qater Husseini
+\series default
+: a potential leader, but died.
+ The Palestinians were leaderless
+\end_layout
+
+\begin_layout Itemize
+British High Commissioner leaves on midnight of May 14
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Ben Gurion
+\series default
+ and 
+\series bold
+Weizmann
+\series default
+ proclame Israel as a state two minutes past midnight May 15.
+ Ben Gurion becomes Prime Minister and Weizmann becomes President.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+War of 1948-49
+\series default
+: Egypt, Transjordan, and Syria invade, without coordination.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+War of Independence
+\begin_inset Quotes erd
+\end_inset
+
+ to the Israelis, The 
+\begin_inset Quotes eld
+\end_inset
+
+Naqba
+\begin_inset Quotes erd
+\end_inset
+
+ to the Arabs.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prewar, the partition was 55% Israeli, 45% Palestinian.
+ After the war the Palestinians ended up with 22%.
+ This included the West Bank and the Gaza strip.
+ Sorta.
+\end_layout
+
+\begin_layout Itemize
+Egypt claimed the Gaza Strip and Transjordan claimed the West Bank, now
+ called itself Jordan.
+\end_layout
+
+\begin_layout Itemize
+The Arabs lost the war
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The war had many consequences.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Political Consequences of the War
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Created artificial boundaries in a land that was traditionally a single
+ unit.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Many border incidents as properties got artificially cut across the border.
+\end_layout
+
+\begin_layout Itemize
+The border incidents would later lead to larger wars
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Jerusalem was divided between the Israelis and Jordan, the middle of the
+ city was a no-man's land.
+\end_layout
+
+\begin_layout Itemize
+Massive displacement of population
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Between 700,000 and 900,000 Palestinians were kicked out or fled between
+ 1948-1949.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hundreds of villages were destroyed, many Palestinians were afraid of massacre
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Palestinians moved to Gaza, Lebanon, Jordan.
+ This was a large refugee problem.
+ The UN created UNRWA to assist in the refugee camps.
+ The refugees remain an issue today in 2014
+\end_layout
+
+\begin_layout Itemize
+425,000 Palestinians moved to the West Bank, doubling the population.
+ Jordan annexes the West Bank, tripling the population of Jordan.
+\end_layout
+
+\begin_layout Itemize
+225,000 moved to Gaza, a city of 60,000, a tiny area.
+\end_layout
+
+\begin_layout Itemize
+125,000 move to Lebanon.
+ 85,000 moved to Jordan, 85,000 moved to Syria
+\end_layout
+
+\begin_layout Itemize
+Syria immediately assimilated the refugees but other countries had problems.
+\end_layout
+
+\begin_layout Itemize
+11,000 moved to Egypt, only the rich were allowed to enter.
+ Egypt didn't want more people.
+ 4,000 moved to Iraq
+\end_layout
+
+\begin_layout Itemize
+Some Palestinians remained in Israel.
+ 
+\end_layout
+
+\begin_layout Itemize
+In Lebanon the Lebanese worried the refugees would disturb the balance between
+ Christians and Muslims
+\end_layout
+
+\begin_layout Itemize
+The Palestinians were skilled, they opened many businesses and banks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Jewish displacement:
+\series default
+ 129,000 Jews left Iraq and moved to Israel despite being well-established
+ there for centuries.
+ They were made to feel unwelcome after the UN resolution.
+ 4500 left Syria, 6000 left Lebanon, 29525 left Egypt.
+ 66,000 left Tunisia.
+ 14,000 left Algeria.
+ 260,000 left Morocco.
+ ~50,000 left Yemen.
+ Jews had lived in these regions for centuries, but the UN resolution made
+ them unwelcome.
+ These Jews were Arabic speaking, with Arabic culture.
+ On entering Israel they had to adapt and learn Hebrew.
+ These Jews are called the 
+\series bold
+Sephardim
+\series default
+ Jews.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The European Jews are 
+\series bold
+Ashkenazim
+\series default
+ Jews.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Law of Return:
+\series default
+ Passed by the 
+\series bold
+Knesset
+\series default
+.
+ Israel offered citizenship to every Jew who entered the country.
+ Immigration was opened to all Jews.
+ Later some Russians would claim to be Jewish so that they could escape
+ the USSR.
+ The law had to strictly define 
+\begin_inset Quotes eld
+\end_inset
+
+Jewish
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Right-wing considered a person Jewish if their mother was Jewish.
+\end_layout
+
+\begin_layout Itemize
+The official language of Israel was Hebrew, not Yiddish, a German dialect.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conscription:
+\series default
+ Every male Israeli was required to join the army for 2-3 years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Law of Absentee Landowners:
+\series default
+ The State claimed the property of the Palestinians who fled, but those
+ who stayed kept their homes.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Arab Politics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Egypt
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Something about 
+\series bold
+King Farouk
+\series default
+ buying defective weapons for the Egyptian Army.
+\end_layout
+
+\begin_layout Itemize
+1948: Egyptian Army, including 
+\series bold
+Nasser
+\series default
+,
+\series bold
+ 
+\series default
+besieged by Israelis in the 
+\series bold
+Battle of Faluga
+\series default
+.
+ They fought and held the city, but resented the fact that the King gave
+ them defective weapons, and they resolved to overthrow the King.
+\end_layout
+
+\begin_layout Itemize
+1952 Coup: The King is overthrown and replaced with his three year-old son,
+ but by June 1953, the monarchy was abolished and replaced with a 
+\begin_inset Quotes eld
+\end_inset
+
+republic
+\begin_inset Quotes erd
+\end_inset
+
+, which was in effect a military dictatorship.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Syria
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The army also blamed the government, led by 
+\series bold
+President Kuwatly
+\series default
+, for
+\series bold
+ 
+\series default
+not preparing them for the war.
+\end_layout
+
+\begin_layout Itemize
+In 1949 the government was overthrown and a series of coups happened.
+ The military ruled from 1949-1954 when Kuwatly was re-elected.
+ Eventually this government later collapsed.
+\end_layout
+
+\begin_layout Itemize
+The 1948-1949 war provoked the change in government; it was percieved that
+ it was the government's fault that the war went so poorly.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Jordan
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+King Abdullah:
+\series default
+ Invaded and occupied 
+\series bold
+Lydda and Ramleh
+\series default
+, near Tel Aviv, telling the Palestinians that he would protect the city.
+ King Abdullah however had made a secret agreement with Israel to evacuate
+ the city and hand them over to Israel.
+ The next morning Palestinians woke up to Israeli troops marching in.
+ Palestinian felt betrayed.
+\end_layout
+
+\begin_layout Itemize
+July 1951: King Abdullah is assassinated by a Palestinian in Al-Aqsa Mosque.
+ He had ruled from 1921-1951.
+\end_layout
+
+\begin_layout Itemize
+The son of King Abdullah, 
+\series bold
+Prince Talal
+\series default
+, did not get along with his father.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prince Talal 
+\series default
+tells his father to dismiss the British Commander of the Jordanian Army
+ Pasha Glubb.
+ He loses his temper and shoots Glubb in the arm.
+ (This is from a story the Prof heard from the nanny of King Hussein (the
+ grandson) whaaaaaat haha)
+\end_layout
+
+\begin_layout Itemize
+Prince Talal becomes the king, is later declared insane and shipped to Turkey.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+The Arab League 
+\series default
+bans trade with Israel and boycotts them.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The blockade was not very effective, but the boycott went pretty far.
+ 
+\end_layout
+
+\begin_layout Itemize
+(example) Coca-Cola wanted to build a factory in Israel, but the Arab League
+ said 
+\begin_inset Quotes eld
+\end_inset
+
+We'll ban Coca-Cola in Arab countries if you build a plant.
+\begin_inset Quotes erd
+\end_inset
+
+ Israel said if you don't build a plant we'll ban Coca-Cola in movie theaters!
+ (huh?) Coca-Cola built a plant in Israel.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Relations between the US and Arab Nations strained
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In 1951 an organization called 
+\series bold
+METO
+\series default
+ (like NATO) was proposed by the US, who tasked Turkey with establishing
+ it.
+ The Arab nations protested (
+\begin_inset Quotes eld
+\end_inset
+
+you're bringing the ottomans back?! no!
+\begin_inset Quotes erd
+\end_inset
+
+) and METO never happened.
+\end_layout
+
+\begin_layout Itemize
+The US wanted a cordon of friendliness around USSR; 
+\series bold
+Nuri Said, Baghdad Pact, Iran, Pakistan, Turkey, and the UK 
+\series default
+joined the alliance.
+ None of the Arab nations joined because the distrusted the US.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tripartite Declaration:
+\series default
+ The borders of 1948 are 
+\begin_inset Quotes eld
+\end_inset
+
+guarranteed
+\begin_inset Quotes erd
+\end_inset
+
+ by UK, US, and France.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Suez Crisis
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Border conflicts.
+\end_layout
+
+\begin_layout Itemize
+Suez Canal
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Universal Suez Company:
+\series default
+ Created in 1869 as 50% French, 44% Egypt, 6% on the Market.
+ In the contract, it was written down that in 1968, the company would become
+ 100% Egyptian (or at least 94%).
+\end_layout
+
+\begin_layout Itemize
+In 1875 Egypt went bankrupt and Britain bought Egypt's shares, so the company
+ became Anglo-French.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+1888 Constantinople Declaration 
+\series default
+declared the Suez Canal as international waters.
+\end_layout
+
+\begin_layout Itemize
+In 1956 Nasser asked the World Bank for a loan to build the Aswan Dam.
+ The US advised the bank to withdraw the loan, and they did.
+ This angered the government of Egypt and Nasser decided to nationalize
+ the Suez Canal and make it belong to Egypt.
+ This angered a lot of people.
+\end_layout
+
+\begin_layout Itemize
+The French (
+\series bold
+Prime Minister Guy Mollet
+\series default
+, a socialist) didn't like Nasser because he was selling weapons to Algeria
+ who started a rebellion from 1954 to 1962.
+\end_layout
+
+\begin_layout Itemize
+In Britain (
+\series bold
+Prime Minister Eden
+\series default
+) thought he had made peace with Egypt when in 1954 he agreed to remove
+ all British forces from the region.
+ Nasser's move to nationalize the Suez made Eden feel like he was backstabbed.
+ Eden called Nasser the 
+\begin_inset Quotes eld
+\end_inset
+
+Mussolini of the Nile
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Britain and France got together and wanted to fight Nasser.
+ They decided to get Israel (Ben Gurion) to start the fight.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Secret Agreement at Sevres in France and agreed that Israel would attack
+ Egypt, and then the French and British would send an ultimatum to both
+ Israel and Egypt to cease hostilities.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Oct.
+ 31 1956: 
+\series default
+Israel invades the Sinai and reach the west bank of the Suez, and Nasser
+ blows up all the ships.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In Oct.
+ 23 there was a rebellion against the communists in Hungary.
+\end_layout
+
+\begin_layout Itemize
+Nov 1956, Elections were happening in the US.
+\end_layout
+
+\begin_layout Itemize
+November 5th Eisenhower condemns Israel, Britain, and France for violating
+ international law, the day Britain and France invade Egypt.
+\end_layout
+
+\begin_layout Itemize
+Lester B.
+ Pearson (Canada Foreign Minister) goes to the UN and proposes a solution:
+ UNEF (UN Emergency Forces).
+ Says these peacekeepers (blue helmets) will go patrol the border.
+ This is supported by both the USSR and the US.
+\end_layout
+
+\begin_layout Itemize
+UNEF Forces seals the border between Egypt and Israel.
+ Propelled Canada onto the world stage.
+ Lester B.
+ Pearson gets a Nobel Prize and there is peace for 10 years between Egypt
+ and Israel.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+The War of 1967
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Salah Jadid:
+\series default
+ Syrian General takes power in 1965, Maoist, opposed Arab Nationalism, didn't
+ like Nasser.
+ Lots of propaganda against Nasser.
+ Goaded Nasser into attacking Israel.
+\end_layout
+
+\begin_layout Itemize
+Nasser stations forces on the border and tells the UNEF to leave.
+ Nasser was gambling that the Secretary-General U Thant would say come now,
+ let's talk in the UN.
+ But U Thant immediately orders the forces to withdraw.
+\end_layout
+
+\begin_layout Itemize
+There were attempts to calm things down but it didn't work.
+\end_layout
+
+\begin_layout Itemize
+June 4th 1967, Egypt blockaded Sinai and Israel took this as a declaration
+ of war.
+\end_layout
+
+\begin_layout Itemize
+June 5th Israel sneaks by radar and bombs the Egyptian airforce, stranding
+ the Egyption army in Sinai.
+ They also attack Syria.
+ Egypt is defeated, Syria is defeated, Jordan is defeated, and Israel occupies
+ the Gaza Strip and West Bank as Egypt and Jordan withdraw.
+ This is the second Naqba.
+ Palestinians lose faith in their Arab neighbours, and elect Arafat a Palestinia
+n, as the leader of the PLO.
+ 
+\end_layout
+
+\begin_layout Itemize
+Arab Nationalism takes a hard hit.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
