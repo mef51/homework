@@ -185,6 +185,7 @@ Note that
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -195,12 +196,17 @@ Note that
  & = & \nabla_{\mu}\rho_{0}u^{\mu}u^{\nu}+\nabla_{\mu}P_{0}u^{\mu}u^{\nu}+g^{\mu\nu}\nabla_{\mu}P_{0}\\
  & = & u^{\mu}u^{\nu}\nabla_{\mu}\rho_{0}+\rho_{0}u^{\nu}\nabla_{\mu}u^{\mu}+\rho_{0}u^{\mu}\nabla_{\mu}u^{\nu}\\
  &  & +u^{\mu}u^{\nu}\nabla_{\mu}P_{0}+P_{0}u^{\nu}\nabla_{\mu}u^{\mu}+P_{0}u^{\mu}\nabla_{\mu}u^{\nu}+g^{\mu\nu}\nabla_{\mu}P_{0}\\
- & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}+(P_{0}+\rho_{0})u^{\nu}\nabla_{\mu}u^{\mu}+u^{\mu}u^{\nu}\nabla_{\mu}\rho_{0}
+ & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}+(P_{0}+\rho_{0})u^{\nu}\nabla_{\mu}u^{\mu}+u^{\mu}u^{\nu}\nabla_{\mu}\rho_{0}\\
+ & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}\\
+ &  & +P_{0}u^{\nu}\nabla_{\mu}u^{\mu}+\rho_{0}u^{\nu}\nabla_{\mu}u^{\mu}+u^{\mu}u^{\nu}\nabla_{\mu}\rho_{0}\\
+ & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}+u^{\nu}(P_{0}\nabla_{\mu}u^{\mu}+\rho_{0}\nabla_{\mu}u^{\mu}+u^{\mu}\nabla_{\mu}\rho_{0})\\
+ & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}+u^{\nu}(P_{0}\nabla_{\mu}u^{\mu}+\nabla_{\mu}(\rho_{0}u^{\mu}))\\
+0 & = & (u^{\mu}u^{\nu}+g^{\mu\nu})\nabla_{\mu}P_{0}+(P_{0}+\rho_{0})u^{\mu}\nabla_{\mu}u^{\nu}
 \end{eqnarray*}
 
 \end_inset
 
-
+Where the last step uses the result from (a).
 \end_layout
 
 \end_body
