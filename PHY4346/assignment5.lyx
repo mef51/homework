@@ -275,5 +275,51 @@ Now let's see how the Euler equation reduces in the non-relativistic case:
 
 \end_layout
 
+\begin_layout Problem
+Moore, p.
+ 241 Problem 20.5
+\end_layout
+
+\begin_layout Standard
+The Electromagnetic field tensor is 
+\begin_inset Formula 
+\[
+F^{\mu\nu}=\left[\begin{array}{cccc}
+0 & E_{x} & E_{y} & E_{z}\\
+-E_{x} & 0 & B_{z} & -B_{y}\\
+-E_{y} & -B_{z} & 0 & B_{x}\\
+-E_{z} & B_{y} & -B_{x} & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+We first want to prove that 
+\begin_inset Formula $F^{\mu\nu}F_{\mu\nu}=2(B^{2}-E^{2})$
+\end_inset
+
+ where 
+\begin_inset Formula $B^{2}=B_{x}^{2}+B_{y}^{2}+B_{z}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $E^{2}=E_{x}^{2}+E_{y}^{2}+E_{z}^{2}$
+\end_inset
+
+.
+ Now,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F^{\mu\nu}F_{\mu\nu}=0(0)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
