@@ -312,9 +312,13 @@ We first want to prove that
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-F^{\mu\nu}F_{\mu\nu}=0(0)
-\]
+\begin{eqnarray*}
+F_{\mu\nu}F^{\mu\nu} & = & F_{00}F^{00}+F_{01}F^{01}+...+F_{10}F^{10}+F_{11}F^{11}+...+F_{20}F^{20}+F_{21}F^{21}+...+F_{30}F^{30}+F_{31}F^{31}+...\\
+ & = & (E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(E_{x}^{2}+B_{z}^{2}+B_{y}^{2})+(E_{y}^{2}+B_{z}^{2}+B_{x}^{2})+(E_{z}^{2}+B_{y}^{2}+B_{x}^{2})\\
+ & = & E^{2}+(E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(2B_{z}^{2}+2B_{y}^{2}+2B_{x}^{2})\\
+ & = & E^{2}+E^{2}+2B^{2}\\
+F_{\mu\nu}F^{\mu\nu} & = & 2(E^{2}+B^{2})\neq2(B^{2}-E^{2})
+\end{eqnarray*}
 
 \end_inset
 
