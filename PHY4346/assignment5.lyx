@@ -281,7 +281,11 @@ Moore, p.
 \end_layout
 
 \begin_layout Standard
-The Electromagnetic field tensor 
+
+\series bold
+a)
+\series default
+ The Electromagnetic field tensor 
 \begin_inset Formula $F^{\mu\nu}$
 \end_inset
 
@@ -336,6 +340,192 @@ F^{\mu\nu}F_{\mu\nu} & = & 2(B^{2}-E^{2})
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We're aiming for a second-rank symmetric tensor 
+\begin_inset Formula $T^{\mu\nu}$
+\end_inset
+
+ whose 
+\begin_inset Formula $tt$
+\end_inset
+
+ component is 
+\begin_inset Formula 
+\[
+T^{00}=\rho_{E}=\frac{1}{8\pi k}(E^{2}+B^{2})\qquad\mathrm{with\,\,}k=\frac{1}{4\pi\epsilon_{0}}
+\]
+
+\end_inset
+
+We can derive some useful expressions for the 
+\begin_inset Formula $(E^{2}+B^{2})$
+\end_inset
+
+ term.
+ Note that 
+\begin_inset Formula $E^{2}=F^{0\nu}F_{\nu0}$
+\end_inset
+
+.
+ Isolating for 
+\begin_inset Formula $B^{2}$
+\end_inset
+
+ from the expression we proved at the beginning we get
+\begin_inset Formula 
+\[
+B^{2}=\frac{1}{2}F^{\mu\nu}F_{\mu\nu}+E^{2}=\frac{1}{2}F^{\mu\nu}F_{\mu\nu}+F^{0\nu}F_{\nu0}
+\]
+
+\end_inset
+
+So we write an expression for 
+\begin_inset Formula $E^{2}+B^{2}$
+\end_inset
+
+ in terms of tensor products and we get
+\begin_inset Formula 
+\[
+E^{2}+B^{2}=2F^{0\nu}F_{\nu0}+\frac{1}{2}F^{\mu\nu}F_{\mu\nu}
+\]
+
+\end_inset
+
+The first term of the RHS of this expression can be seen as th 
+\begin_inset Formula $tt$
+\end_inset
+
+ component of a second-rank rank tensor but the second term is a scalar.
+ We can make it a second-rank tensor by multiplying it by 
+\begin_inset Formula $-\eta^{00}=1$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\[
+E^{2}+B^{2}=2F^{0\nu}F_{\nu0}-\frac{1}{2}F^{\mu\nu}F_{\mu\nu}\eta^{00}
+\]
+
+\end_inset
+
+Proposing that this expression is the 
+\begin_inset Formula $tt$
+\end_inset
+
+ component of a second rank tensor 
+\begin_inset Formula $8\pi kT^{\alpha\beta}$
+\end_inset
+
+ and placing the free labels we get
+\begin_inset Formula 
+\[
+T^{\alpha\beta}=\frac{1}{8\pi k}\Big(2F^{\alpha\nu}F_{\nu\beta}-\frac{1}{2}F^{\mu\nu}F_{\mu\nu}\eta^{\alpha\beta}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Calculate 
+\begin_inset Formula $T^{tx}=T^{01}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{01} & = & \frac{1}{8\pi k}\Big(2F^{0\nu}F_{\nu1}-\frac{1}{2}F^{\mu\nu}F_{\mu\nu}\eta^{01}\Big)\\
+ & = & \frac{1}{8\pi k}\Big(2F^{0\nu}F_{\nu1}\Big)\\
+ & = & \frac{1}{8\pi k}(2(F^{02}F_{21}+F^{03}F_{31}))\\
+ & = & \frac{1}{8\pi k}(2(E_{z}B_{y}-E_{y}B_{z}))=\frac{1}{4\pi k}(E_{z}B_{y}-E_{y}B_{z})
+\end{eqnarray*}
+
+\end_inset
+
+Note that 
+\begin_inset Formula $T^{01}=\frac{1}{4\pi k}(E_{z}B_{y}-E_{y}B_{z})=\epsilon_{0}(\mathbf{E}\times\mathbf{B})_{x}$
+\end_inset
+
+.
+ This is the x-component of the Poynting vector.
+\end_layout
+
+\begin_layout Problem
+First derive 
+\begin_inset Formula $R_{\mu\nu}=K(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T)+\Lambda g_{\mu\nu}$
+\end_inset
+
+.
+ Then do Moore p.
+ 251 Problem 20.5.
+\end_layout
+
+\begin_layout Standard
+Starting from Einstein's equation with cosmological constant 
+\begin_inset Formula $R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R+\Lambda g_{\mu\nu}=KT_{\mu\nu}$
+\end_inset
+
+ and multiplying by 
+\begin_inset Formula $g^{\nu\alpha}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{\mu\nu}g^{\nu\alpha}-\frac{1}{2}g_{\mu\nu}g^{\nu\alpha}R+\Lambda g_{\mu\nu}g^{\nu\alpha} & = & KT_{\mu\nu}g^{\nu\alpha}\\
+R_{\mu}^{\alpha}-\frac{1}{2}\delta_{\mu}^{\alpha}R+\Lambda\delta_{\mu}^{\alpha} & = & KT_{\mu}^{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+Summing over 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\begin_inset Formula $(\mu=\alpha)$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{eqnarray*}
+R-\frac{1}{2}(4)R+\Lambda(4) & = & KT\\
+R-2R+4\Lambda & = & KT\\
+-R+4\Lambda & = & KT
+\end{eqnarray*}
+
+\end_inset
+
+Multiplying by 
+\begin_inset Formula $-\frac{1}{2}g_{\mu\nu}$
+\end_inset
+
+ we get 
+\begin_inset Formula $\frac{1}{2}g_{\mu\nu}R-2g_{\mu\nu}\Lambda=-\frac{1}{2}g_{\mu\nu}KT$
+\end_inset
+
+.
+ Adding this to Einstein's equation we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R+\Lambda g_{\mu\nu}+\frac{1}{2}g_{\mu\nu}R-2g_{\mu\nu}\Lambda & = & KT_{\mu\nu}-\frac{1}{2}g_{\mu\nu}KT\\
+R_{\mu\nu}-\Lambda g_{\mu\nu} & = & K(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T)\\
+R_{\mu\nu} & = & K(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T)+\Lambda g_{\mu\nu}
+\end{eqnarray*}
+
+\end_inset
+
+As required.
 \end_layout
 
 \end_body
