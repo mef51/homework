@@ -281,7 +281,15 @@ Moore, p.
 \end_layout
 
 \begin_layout Standard
-The Electromagnetic field tensor is 
+The Electromagnetic field tensor 
+\begin_inset Formula $F^{\mu\nu}$
+\end_inset
+
+ and it's covariant form 
+\begin_inset Formula $F_{\mu\nu}=\eta_{\mu\alpha}F^{\alpha\beta}\eta_{\beta\nu}$
+\end_inset
+
+ is 
 \begin_inset Formula 
 \[
 F^{\mu\nu}=\left[\begin{array}{cccc}
@@ -289,6 +297,11 @@ F^{\mu\nu}=\left[\begin{array}{cccc}
 -E_{x} & 0 & B_{z} & -B_{y}\\
 -E_{y} & -B_{z} & 0 & B_{x}\\
 -E_{z} & B_{y} & -B_{x} & 0
+\end{array}\right],\qquad F_{\mu\nu}=\left[\begin{array}{cccc}
+0 & -E_{x} & -E_{y} & -E_{z}\\
+E_{x} & 0 & B_{z} & -B_{y}\\
+E_{y} & -B_{z} & 0 & B_{x}\\
+E_{z} & B_{y} & -B_{x} & 0
 \end{array}\right]
 \]
 
@@ -313,11 +326,11 @@ We first want to prove that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-F_{\mu\nu}F^{\mu\nu} & = & F_{00}F^{00}+F_{01}F^{01}+...+F_{10}F^{10}+F_{11}F^{11}+...+F_{20}F^{20}+F_{21}F^{21}+...+F_{30}F^{30}+F_{31}F^{31}+...\\
- & = & (E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(E_{x}^{2}+B_{z}^{2}+B_{y}^{2})+(E_{y}^{2}+B_{z}^{2}+B_{x}^{2})+(E_{z}^{2}+B_{y}^{2}+B_{x}^{2})\\
- & = & E^{2}+(E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(2B_{z}^{2}+2B_{y}^{2}+2B_{x}^{2})\\
- & = & E^{2}+E^{2}+2B^{2}\\
-F_{\mu\nu}F^{\mu\nu} & = & 2(E^{2}+B^{2})\neq2(B^{2}-E^{2})
+F^{\mu\nu}F_{\mu\nu} & = & F^{00}F_{00}+F^{01}F_{01}+...+F^{10}F_{10}+F^{11}F_{11}+...+F^{20}F_{20}+F^{21}F_{21}+...+F^{30}F_{30}+F^{31}F_{31}+...\\
+ & = & -(E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(-E_{x}^{2}+B_{z}^{2}+B_{y}^{2})+(-E_{y}^{2}+B_{z}^{2}+B_{x}^{2})+(-E_{z}^{2}+B_{y}^{2}+B_{x}^{2})\\
+ & = & -E^{2}-(E_{x}^{2}+E_{y}^{2}+E_{z}^{2})+(2B_{z}^{2}+2B_{y}^{2}+2B_{x}^{2})\\
+ & = & -E^{2}-E^{2}+2B^{2}\\
+F^{\mu\nu}F_{\mu\nu} & = & 2(B^{2}-E^{2})
 \end{eqnarray*}
 
 \end_inset
