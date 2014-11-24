@@ -796,5 +796,79 @@ This implies that in general the metric can be non-diagonal and non-zero.
  always flat regardless of mass and energy distribution.
 \end_layout
 
+\begin_layout Problem
+Moore p.
+ 251 Problem 21.8
+\end_layout
+
+\begin_layout Problem
+Consider the metric 
+\begin_inset Formula 
+\[
+ds^{2}=-e^{2gx}dt^{2}+dx^{2}+dy^{2}+dz^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ The geodesic equation is 
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial\tau}\Big(g_{\alpha\nu}\pdev{x^{\nu}}{\tau}\Big)-\frac{1}{2}(\partial_{\alpha}g_{\mu\nu})\pdev{x^{\mu}}{\tau}\pdev{x^{\nu}}{\tau}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\alpha=0=t$
+\end_inset
+
+ and we get (noting that 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+ is diagonal so 
+\begin_inset Formula $\mu=\nu$
+\end_inset
+
+) 
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & \pdev{}{\tau}\Big(g_{tt}\pdev t{\tau}\Big)-\frac{1}{2}\Big(\pdev{g_{00}}t\pdev{t^{2}}{\tau^{2}}+\pdev{g_{11}}t\pdev{x^{2}}{\tau^{2}}+\pdev{g_{22}}t\pdev{y^{2}}{\tau^{2}}+\pdev{g_{33}}t\pdev{z^{2}}{\tau^{2}}\Big)\\
+ & = & \pdev{}{\tau}\Big(-e^{2gx}\pdev t{\tau}\Big)-\frac{1}{2}\Big(\pdev{(-e^{2gx})}t\pdev{t^{2}}{\tau^{2}}+\pdev 1t\pdev{x^{2}}{\tau^{2}}+\pdev 1t\pdev{y^{2}}{\tau^{2}}+\pdev 1t\pdev{z^{2}}{\tau^{2}}\Big)\\
+ & = & -e^{2gx}\pdev{^{2}t}{\tau^{2}}\quad\implies\quad\pdev{^{2}t}{\tau^{2}}=0\quad\implies\quad\pdev t{\tau}=constant
+\end{eqnarray*}
+
+\end_inset
+
+Letting 
+\begin_inset Formula $\alpha=1=x$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & \frac{\partial}{\partial\tau}\Big(g_{11}\pdev x{\tau}\Big)-\frac{1}{2}\Big(\pdev{g_{00}}x\pdev{t^{2}}{\tau^{2}}+\pdev{g_{11}}x\pdev{x^{2}}{\tau^{2}}+\pdev{g_{22}}x\pdev{y^{2}}{\tau^{2}}+\pdev{g_{33}}x\pdev{z^{2}}{\tau^{2}}\Big)\\
+ & = & \pdev{^{2}x}{\tau^{2}}-\frac{1}{2}\Big(-\pdev{e^{2gx}}x\pdev{t^{2}}{\tau^{2}}+\pdev 1x\pdev{x^{2}}{\tau^{2}}+\pdev 1x\pdev{y^{2}}{\tau^{2}}+\pdev 1x\pdev{z^{2}}{\tau^{2}}\Big)\\
+ & = & \pdev{^{2}x}{\tau^{2}}+\frac{1}{2}(2g)e^{2gx}\pdev{t^{2}}{\tau^{2}}\\
+\pdev{^{2}x}{\tau^{2}} & = & -ge^{2gx}\pdev{t^{2}}{\tau^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
