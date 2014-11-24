@@ -633,14 +633,18 @@ as expected.
 \begin_inset Formula 
 \begin{eqnarray*}
 \Lambda & << & \frac{3GM_{\odot}}{r^{3}}\\
-\Lambda & << & \frac{3(1500m)}{(10^{12}m)^{3}}<<10^{-33}\mathrm{m^{-2}}\\
+\Lambda & << & \frac{3(1500m)}{(10^{12}m)^{3}}<<\frac{10^{3}}{10^{36}}\mathrm{m^{-2}}=10^{-33}\mathrm{m^{-2}}\\
 \frac{\Lambda}{8\pi G} & << & \frac{10^{-33}}{8\pi G}\mathrm{m^{-2}}\mathrm{m^{-1}}\mathrm{kg}\\
-\frac{\Lambda}{8\pi G} & << & 10^{-33}10^{28}\mathrm{\frac{kg}{m^{3}}=10^{-5}\frac{kg}{m^{3}}}
+\frac{\Lambda}{8\pi G} & << & \frac{10^{-33}}{10\times10^{-28}}\mathrm{\frac{kg}{m^{3}}}=\frac{10^{-33}}{10^{-27}}\mathrm{\frac{kg}{m^{3}}}=10^{-6}\mathrm{\frac{kg}{m^{3}}}
 \end{eqnarray*}
 
 \end_inset
 
+Which is kinda close to 
+\begin_inset Formula $10^{-7}$
+\end_inset
 
+...
 \end_layout
 
 \end_body
