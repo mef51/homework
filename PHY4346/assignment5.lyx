@@ -464,10 +464,14 @@ First derive
 
 .
  Then do Moore p.
- 251 Problem 20.5.
+ 251 Problem 21.1.
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+a) 
+\series default
 Starting from Einstein's equation with cosmological constant 
 \begin_inset Formula $R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R+\Lambda g_{\mu\nu}=KT_{\mu\nu}$
 \end_inset
@@ -526,6 +530,117 @@ R_{\mu\nu} & = & K(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T)+\Lambda g_{\mu\nu}
 \end_inset
 
 as required.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Moore p.
+ 251 Problem 21.1
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(i) 
+\series default
+Assume there is a gravitational potential 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ about an arbitrary origin in empty space such that it is spherically symmetric
+ and 
+\begin_inset Formula $\Phi(r=0)=0$
+\end_inset
+
+.
+ The Laplacian of the potential in this case is 
+\begin_inset Formula 
+\[
+\nabla^{2}\Phi=\frac{1}{r^{2}}\frac{d}{dr}\Big(r^{2}\frac{d\Phi}{dr}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prove that the potential in the Newtonian limit is 
+\begin_inset Formula 
+\[
+\vec{g}=-\frac{d\Phi}{dr}=\frac{\Lambda}{3}r
+\]
+
+\end_inset
+
+In the Newtonian limit Einstein's equation reduces to 
+\begin_inset Formula 
+\[
+\nabla^{2}\Phi=\frac{1}{2}K\rho-\Lambda
+\]
+
+\end_inset
+
+Since we're in empty space, the mass-density 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+.
+ So we expect that 
+\begin_inset Formula $\nabla^{2}\Phi=-\Lambda$
+\end_inset
+
+.
+ Plugging 
+\begin_inset Formula $\vec{g}$
+\end_inset
+
+ into the Laplacian:
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla^{2}\Phi & = & \frac{1}{r^{2}}\frac{d}{dr}\Big(r^{2}(-\frac{\Lambda}{3})r\Big)\\
+ & = & -\frac{\Lambda}{3r^{2}}\frac{d}{dr}(r^{3})\\
+ & = & -\frac{\Lambda}{3r^{2}}(3r^{2})=-\Lambda
+\end{eqnarray*}
+
+\end_inset
+
+as expected.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(ii)
+\series default
+ 
+\begin_inset Formula $GM_{\odot}\approx1500m$
+\end_inset
+
+ and 
+\begin_inset Formula $r\sim10^{12}m$
+\end_inset
+
+.
+ Assuming that 
+\begin_inset Formula $\frac{1}{3}\Lambda r<<\frac{GM_{\odot}}{r^{2}}$
+\end_inset
+
+ we see that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\Lambda & << & \frac{3GM_{\odot}}{r^{3}}\\
+\Lambda & << & \frac{3(1500m)}{(10^{12}m)^{3}}<<10^{-33}\mathrm{m^{-2}}\\
+\frac{\Lambda}{8\pi G} & << & \frac{10^{-33}}{8\pi G}\mathrm{m^{-2}}\mathrm{m^{-1}}\mathrm{kg}\\
+\frac{\Lambda}{8\pi G} & << & 10^{-33}10^{28}\mathrm{\frac{kg}{m^{3}}=10^{-5}\frac{kg}{m^{3}}}
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
