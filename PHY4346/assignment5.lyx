@@ -647,5 +647,104 @@ Which is kinda close to
 ...
 \end_layout
 
+\begin_layout Problem
+Moore, p.
+ 251 Problem 21.5
+\end_layout
+
+\begin_layout Standard
+The only independent component of the Riemann tensor in two dimensions of
+ spacetime is the 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+ component.
+ We know that 
+\begin_inset Formula $R^{\mu\nu}=g^{\mu\beta}g^{\nu\sigma}g^{\alpha\gamma}R_{\alpha\beta\gamma\sigma}$
+\end_inset
+
+.
+ Since there are only two dimensions and 
+\begin_inset Formula $R^{\mu\nu}$
+\end_inset
+
+ is symmetric, the components of the Ricci tensor 
+\begin_inset Formula $R^{00}$
+\end_inset
+
+, 
+\begin_inset Formula $R^{10}$
+\end_inset
+
+, and 
+\begin_inset Formula $R^{11}$
+\end_inset
+
+ can be written in terms of 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+.
+ For the first component we've got
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{00} & = & g^{0\beta}g^{0\sigma}g^{\alpha\gamma}R_{\alpha\beta\gamma\sigma}
+\end{eqnarray*}
+
+\end_inset
+
+Knowing that 
+\begin_inset Formula $R_{0101}$
+\end_inset
+
+ is the only independent component we can go ahead and set 
+\begin_inset Formula $\alpha=\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta=\sigma$
+\end_inset
+
+.
+ This gives us:
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{00} & = & g^{0\sigma}g^{0\sigma}g^{\gamma\gamma}R_{\gamma\sigma\gamma\sigma}\\
+ & = & g^{0\sigma}g^{0\sigma}(g^{00}R_{0\sigma0\sigma}+g^{11}R_{1\sigma1\sigma})\\
+ & = & g^{0\sigma}g^{0\sigma}g^{00}R_{0\sigma0\sigma}+g^{0\sigma}g^{0\sigma}g^{11}R_{1\sigma1\sigma}\\
+ & = & g^{00}g^{00}g^{00}R_{0000}+g^{01}g^{01}g^{00}R_{0101}+g^{00}g^{00}g^{11}R_{1010}+g^{01}g^{01}g^{11}R_{1111}
+\end{eqnarray*}
+
+\end_inset
+
+Using the symmetry relations we have that 
+\begin_inset Formula $R_{0000}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{1111}=0$
+\end_inset
+
+.
+ We also have 
+\begin_inset Formula $R_{1010}=-R_{0110}=R_{0101}$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\[
+R^{00}=R^{tt}=g^{tt}((g^{tx})^{2}+g^{tt}g^{xx})R_{0101}
+\]
+
+\end_inset
+
+Similarly, using 
+\begin_inset Formula $R^{\mu\nu}=g^{\mu\sigma}g^{\nu\sigma}g^{\gamma\gamma}R_{\gamma\sigma\gamma\sigma}$
+\end_inset
+
+ we have
+\end_layout
+
 \end_body
 \end_document
