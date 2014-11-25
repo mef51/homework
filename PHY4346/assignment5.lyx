@@ -98,6 +98,11 @@ November 20 2014
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\chris}[3]{\Gamma_{#2#3}^{#1}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -894,6 +899,131 @@ This is saying that a particle initially at rest at any point in this space-time
 
 \series bold
 b)
+\series default
+ Show that the only nonzero Christoffel symbols for this metric are 
+\begin_inset Formula $\chris ttx=\chris txt=g$
+\end_inset
+
+ and 
+\begin_inset Formula $\chris xtt=ge^{2gx}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The Christoffel symbols are given by 
+\begin_inset Formula 
+\[
+\chris{\gamma}{\mu}{\nu}=\frac{1}{2}g^{\gamma\alpha}(\partial_{\mu}g_{\alpha\nu}+\partial_{\nu}g_{\alpha\mu}-\partial_{\alpha}g_{\mu\nu})
+\]
+
+\end_inset
+
+Since the metric is diagonal we must have 
+\begin_inset Formula $\alpha=\gamma$
+\end_inset
+
+ otherwise the symbol is 0.
+ So
+\begin_inset Formula 
+\[
+\chris{\gamma}{\mu}{\nu}=\frac{1}{2}g^{\gamma\gamma}(\partial_{\mu}g_{\gamma\nu}+\partial_{\nu}g_{\gamma\mu}-\partial_{\gamma}g_{\mu\nu})
+\]
+
+\end_inset
+
+For the symbol to be nonzero, either 
+\begin_inset Formula $\mu$
+\end_inset
+
+ or 
+\begin_inset Formula $\nu$
+\end_inset
+
+ must be equal to 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ If each label is different from the other then the symbol is 0 since the
+ metric terms 
+\begin_inset Formula $g_{\gamma\nu}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{\gamma\mu}$
+\end_inset
+
+, and 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+ will simultaneously be 0.
+ One of the labels must be an 
+\begin_inset Formula $x$
+\end_inset
+
+ label since the 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+, and 
+\begin_inset Formula $z$
+\end_inset
+
+ derivatives will always be zero for this metric.
+ There must also be a 
+\begin_inset Formula $t$
+\end_inset
+
+ label since it is the only metric term with an 
+\begin_inset Formula $x$
+\end_inset
+
+-dependence and will not disappear under differentiation w.r.t.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ The last label must therefore be either a 
+\begin_inset Formula $t$
+\end_inset
+
+ or an 
+\begin_inset Formula $x$
+\end_inset
+
+ since the labels cannot be all different from each other.
+ This leaves three possible nonzero and independent components:
+\begin_inset Formula 
+\begin{eqnarray*}
+\chris txx & = & \frac{1}{2}g^{tt}(\partial_{x}g_{tx}+\partial_{x}g_{tx}-\partial_{t}g_{xx})=0\\
+\chris ttx & = & \frac{1}{2}g^{tt}(\partial_{t}g_{tx}+\partial_{x}g_{tt}-\partial_{t}g_{tx})=\frac{1}{2}(-e^{-2gx})\Big(\pdev{(-e^{2gx})}x\Big)\\
+ & = & \frac{1}{2}2ge^{-2gx}e^{2gx}=g=\chris txt\\
+\chris xtt & = & \frac{1}{2}g^{xx}(\partial_{t}g_{xt}+\partial_{t}g_{xt}-\partial_{x}g_{tt})=-\frac{1}{2}\pdev{(-e^{2gx})}x=ge^{2gx}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ Argue that 
+\begin_inset Formula $R_{txtx}$
+\end_inset
+
+ and its permutations are the only nonzero Riemann tensor components.
 \end_layout
 
 \end_body
