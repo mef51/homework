@@ -1057,6 +1057,30 @@ The components must only involve the nonzero Christoffel symbols, so the
 \end_inset
 
 .
+ If three of the labels are 
+\begin_inset Formula $x$
+\end_inset
+
+ then there will always be a Christoffel symbol with two 
+\begin_inset Formula $x$
+\end_inset
+
+ labels in each term, which are zero, and the last term will be 
+\begin_inset Formula $\chris txx$
+\end_inset
+
+ which is zero.
+ Similar argument for if three of the labels are 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ What`s left are 
+\begin_inset Formula $R_{txtx}$
+\end_inset
+
+ and the components related to it by the symmetries.
+ 
 \begin_inset Formula 
 \[
 R_{txtx}=g_{tt}(\partial_{t}\chris txx-\partial_{x}\chris txt+\chris tt{\sigma}\chris{\sigma}xx-\chris tx{\delta}\chris{\delta}xt)
