@@ -1164,5 +1164,98 @@ R_{txtx} & = & g^{2}e^{2gx}
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+d)
+\series default
+ Show 
+\begin_inset Formula $R^{tt}$
+\end_inset
+
+ and 
+\begin_inset Formula $R^{xx}$
+\end_inset
+
+ are the only components.
+\end_layout
+
+\begin_layout Standard
+The Ricci tensor components are given by 
+\begin_inset Formula 
+\[
+R^{\mu\nu}=g^{\mu\beta}g^{\nu\sigma}g^{\alpha\gamma}R_{\alpha\beta\gamma\sigma}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R_{txtx}$
+\end_inset
+
+ is the only independent component, implying
+\begin_inset Formula 
+\[
+R^{\mu\nu}=g^{\mu x}g^{\nu x}g^{tt}R_{txtx}
+\]
+
+\end_inset
+
+Since the metric is symmetric 
+\begin_inset Formula $\mu=\nu=x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{xx} & = & (g^{xx})^{2}g^{tt}R_{txtx}\\
+ & = & -e^{2gx}(g^{2}e^{2gx})=-g^{2}e^{4gx}
+\end{eqnarray*}
+
+\end_inset
+
+By symmetry we have 
+\begin_inset Formula $R_{txtx}=R_{xtxt}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\[
+R^{\mu\nu}=g^{\mu t}g^{\nu t}g^{xx}R_{xtxt}
+\]
+
+\end_inset
+
+Now 
+\begin_inset Formula $\mu=\nu=t$
+\end_inset
+
+ so
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{tt} & = & (g^{tt})^{2}g^{xx}R_{xtxt}\\
+ & = & e^{4gx}g^{2}e^{2gx}=g^{2}e^{6gx}
+\end{eqnarray*}
+
+\end_inset
+
+There are no other components arising from the other symmetries because
+ of the term 
+\begin_inset Formula $g^{\alpha\gamma}$
+\end_inset
+
+.
+ The first and third labels need to be the same.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+e)
+\series default
+ 
+\end_layout
+
 \end_body
 \end_document
