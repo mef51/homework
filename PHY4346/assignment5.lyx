@@ -1026,5 +1026,119 @@ c)
  and its permutations are the only nonzero Riemann tensor components.
 \end_layout
 
+\begin_layout Standard
+The Riemann tensor is given by
+\begin_inset Formula 
+\[
+R_{\alpha\beta\mu\nu}=g_{\alpha\gamma}R_{\beta\mu\nu}^{\gamma}=g_{\alpha\gamma}(\partial_{\mu}\chris{\gamma}{\beta}{\nu}-\partial_{\nu}\chris{\gamma}{\beta}{\mu}+\chris{\gamma}{\mu}{\sigma}\chris{\sigma}{\beta}{\nu}-\chris{\gamma}{\nu}{\delta}\chris{\delta}{\beta}{\mu})
+\]
+
+\end_inset
+
+Right away 
+\begin_inset Formula $\gamma=\alpha$
+\end_inset
+
+ for nonzero terms.
+\begin_inset Formula 
+\[
+R_{\alpha\beta\mu\nu}=g_{\alpha\alpha}(\partial_{\mu}\chris{\alpha}{\beta}{\nu}-\partial_{\nu}\chris{\alpha}{\beta}{\mu}+\chris{\alpha}{\mu}{\sigma}\chris{\sigma}{\beta}{\nu}-\chris{\alpha}{\nu}{\delta}\chris{\delta}{\beta}{\mu})
+\]
+
+\end_inset
+
+The components must only involve the nonzero Christoffel symbols, so the
+ labels can only be 
+\begin_inset Formula $x$
+\end_inset
+
+ or 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+R_{txtx}=g_{tt}(\partial_{t}\chris txx-\partial_{x}\chris txt+\chris tt{\sigma}\chris{\sigma}xx-\chris tx{\delta}\chris{\delta}xt)
+\]
+
+\end_inset
+
+Consider the sum over 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ We already know that the terms with 
+\begin_inset Formula $y$
+\end_inset
+
+ or 
+\begin_inset Formula $z$
+\end_inset
+
+ labels are zero.
+ If the label is 
+\begin_inset Formula $t$
+\end_inset
+
+, then the first term of the sum is 
+\begin_inset Formula $\chris ttt=0$
+\end_inset
+
+.
+ If the label is 
+\begin_inset Formula $x$
+\end_inset
+
+ then the second term of the sum is 
+\begin_inset Formula $\chris xxx=0$
+\end_inset
+
+.
+ So the sum over 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ term is zero.
+\end_layout
+
+\begin_layout Standard
+Now consider the sum over 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ If the label is 
+\begin_inset Formula $x$
+\end_inset
+
+ then the first term of the sum is 
+\begin_inset Formula $\chris txx=0$
+\end_inset
+
+.
+ If the label is 
+\begin_inset Formula $t$
+\end_inset
+
+ then the whole term is 
+\begin_inset Formula $\chris txt\chris txt=g^{2}$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{txtx} & = & g_{tt}(-\partial_{x}\chris txt-g^{2})\\
+ & = & -e^{2gx}(-\partial_{x}g-g^{2})\\
+R_{txtx} & = & g^{2}e^{2gx}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
