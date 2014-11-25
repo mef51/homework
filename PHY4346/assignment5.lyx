@@ -1254,7 +1254,23 @@ There are no other components arising from the other symmetries because
 \series bold
 e)
 \series default
- 
+ Claim: If there is no vacuum energy then 
+\begin_inset Formula $g=0$
+\end_inset
+
+, and there is no gravitational field.
+\end_layout
+
+\begin_layout Standard
+Einstein's vacuum equation is 
+\begin_inset Formula 
+\[
+R^{\mu\nu}=K(T^{\mu\nu}-\frac{1}{2}g^{\mu\nu}T)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
