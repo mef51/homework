@@ -1453,7 +1453,104 @@ This should have been negative! If it were it wouldn't make sense because
  that the pressure would be negative.
 \end_layout
 
+\begin_layout Problem
+Moore, p.
+ 263 Problem 22.2
+\end_layout
+
 \begin_layout Standard
+Take the stress-energy tensor in a vacuum to be 
+\begin_inset Formula $T^{\mu\nu}=-\frac{\Lambda}{8\pi G}g^{\mu\nu}$
+\end_inset
+
+.
+ This means 
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{\mu\nu} & = & g_{\mu\alpha}g_{\nu\beta}T^{\alpha\beta}=-\frac{\Lambda}{8\pi G}g_{\mu\alpha}g_{\nu\beta}g^{\alpha\beta}\\
+ & = & -\frac{\Lambda}{8\pi G}g_{\mu\alpha}\delta_{\nu}^{\alpha}\\
+T_{\mu\nu} & = & -\frac{\Lambda}{8\pi G}g_{\mu\nu}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We find that 
+\begin_inset Formula $T$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & g_{\mu\nu}T^{\mu\nu}=-\frac{\Lambda}{8\pi G}g_{\mu\nu}g^{\mu\nu}=-\frac{\Lambda}{8\pi G}\delta_{\mu}^{\mu}=-\frac{\Lambda}{8\pi G}(4)\\
+T & = & -\frac{\Lambda}{2\pi G}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the gravitoelectric energy density
+\series bold
+ 
+\series default
+we have
+\begin_inset Formula 
+\[
+\rho_{g}=2T_{tt}-\eta_{tt}T
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $T_{tt}$
+\end_inset
+
+ we have 
+\begin_inset Formula $T_{tt}=-\frac{\Lambda}{8\pi G}g_{tt}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\begin{eqnarray*}
+\rho_{g} & = & -2\frac{\Lambda}{8\pi G}g_{tt}+\frac{-\Lambda}{2\pi G}\\
+ & = & -\frac{\Lambda}{4\pi G}g_{tt}-\frac{\Lambda}{2\pi G}\\
+ & = & -\frac{\Lambda}{2\pi G}(\frac{1}{2}g_{tt}+1)\\
+ & = & -\frac{\Lambda}{2\pi G}(\frac{1}{2}(\eta_{tt}+h_{tt})+1)\\
+ & = & -\frac{\Lambda}{2\pi G}(-\frac{1}{2}+\frac{h_{tt}}{2}+1)
+\end{eqnarray*}
+
+\end_inset
+
+For the gravitomagnetic current density we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi_{i} & = & -T_{ti}+\frac{1}{2}\eta_{ti}T\\
+ & = & \frac{\Lambda}{8\pi G}g_{ti}-\frac{1}{2}\eta_{ti}\frac{\Lambda}{2\pi G}\\
+ & = & \frac{\Lambda}{4\pi G}(\frac{1}{2}g_{ti}-\eta_{ti})\\
+ & = & \frac{\Lambda}{4\pi G}(\frac{1}{2}(\eta_{ti}+h_{ti})-\eta_{ti})\\
+ & = & \frac{\Lambda}{4\pi G}(-\frac{1}{2}\eta_{ti}+\frac{h_{ti}}{2})
+\end{eqnarray*}
+
+\end_inset
+
+For the curvature energy density we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\rho_{c} & = & 2T_{ii}-\eta_{ii}T\\
+ & = & -\frac{\Lambda}{4\pi G}g_{ii}-\eta_{ii}(-\frac{\Lambda}{2\pi G})\\
+ & = & -\frac{\Lambda}{4\pi G}g_{ii}+\eta_{ii}\frac{\Lambda}{2\pi G}\\
+ & = & -\frac{\Lambda}{2\pi G}(\frac{1}{2}g_{ii}-\eta_{ii})\\
+ & = & -\frac{\Lambda}{2\pi G}(-\frac{1}{2}\eta_{ii}+\frac{h_{ii}}{2})
+\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
