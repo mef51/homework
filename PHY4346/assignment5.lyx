@@ -1205,11 +1205,15 @@ Since the metric is symmetric
 \begin_inset Formula $\mu=\nu=x$
 \end_inset
 
+ and making sure to use the value after raising the label of 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
 
+:
 \begin_inset Formula 
 \begin{eqnarray*}
 R^{xx} & = & (g^{xx})^{2}g^{tt}R_{txtx}\\
- & = & -e^{2gx}(g^{2}e^{2gx})=-g^{2}e^{4gx}
+ & = & -e^{-2gx}(g^{2}e^{2gx})=-g^{2}
 \end{eqnarray*}
 
 \end_inset
@@ -1234,7 +1238,7 @@ Now
 \begin_inset Formula 
 \begin{eqnarray*}
 R^{tt} & = & (g^{tt})^{2}g^{xx}R_{xtxt}\\
- & = & e^{4gx}g^{2}e^{2gx}=g^{2}e^{6gx}
+ & = & e^{-4gx}g^{2}e^{2gx}=g^{2}e^{-2gx}
 \end{eqnarray*}
 
 \end_inset
@@ -1270,6 +1274,186 @@ R^{\mu\nu}=K(T^{\mu\nu}-\frac{1}{2}g^{\mu\nu}T)
 
 \end_inset
 
+What does equation say for empty space with no stress-energy? 
+\begin_inset Formula $T^{\mu\nu}=T=0$
+\end_inset
+
+.
+ Then we'd expect 
+\begin_inset Formula $R^{\mu\nu}=0$
+\end_inset
+
+.
+ Using 
+\begin_inset Formula $R^{tt}$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & R^{tt}\\
+0 & = & g^{2}e^{-2gx}
+\end{eqnarray*}
+
+\end_inset
+
+But 
+\begin_inset Formula $e^{6gx}$
+\end_inset
+
+ is never 0.
+ This condition will fail unless 
+\begin_inset Formula $g=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+f)
+\series default
+ Can 
+\begin_inset Formula $g$
+\end_inset
+
+ be nonzero inside some kind of fluid?
+\end_layout
+
+\begin_layout Standard
+Assume it is nonzero.
+ Inside a fluid 
+\begin_inset Formula $T^{\mu\nu}\ne0$
+\end_inset
+
+ and 
+\begin_inset Formula $T=g_{\alpha\beta}T^{\alpha\beta}=-e^{2gx}T^{tt}+T^{xx}+T^{yy}+T^{zz}$
+\end_inset
+
+.
+ Using Einstein's equation 
+\begin_inset Formula $R^{\mu\nu}=K(T^{\mu\nu}-\frac{1}{2}g^{\mu\nu}T)$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{tt} & = & g^{2}e^{-2gx}=K(T^{tt}-\frac{1}{2}g^{tt}T)=K(T^{tt}+\frac{1}{2}e^{-2gx}T)\\
+R^{xx} & = & -g^{2}=K(T^{xx}-\frac{1}{2}g^{xx}T)=K(T^{xx}-\frac{1}{2}T)\\
+R^{yy} & = & 0=K(T^{yy}-\frac{1}{2}T)\\
+R^{zz} & = & 0=K(T^{zz}-\frac{1}{2}T)
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $R^{yy}=R^{zz}$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+K(T^{yy}-\frac{1}{2}T) & = & K(T^{zz}-\frac{1}{2}T)\\
+T^{yy} & = & T^{zz}=\frac{T}{2}
+\end{eqnarray*}
+
+\end_inset
+
+Plugging this into our equation for 
+\begin_inset Formula $T$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & -e^{2gx}T^{tt}+T^{xx}+T^{yy}+T^{zz}\\
+T & = & -e^{2gx}T^{tt}+T^{xx}+T\\
+T^{xx}-e^{2gx}T^{tt} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+From the expression for 
+\begin_inset Formula $R^{tt}$
+\end_inset
+
+ we have 
+\begin_inset Formula $g^{2}e^{-2gx}=K(T^{tt}+\frac{1}{2}e^{-2gx}T)$
+\end_inset
+
+.
+ Using the expression for 
+\begin_inset Formula $R^{xx}$
+\end_inset
+
+ we have 
+\begin_inset Formula $g^{2}=-K(T^{xx}-\frac{1}{2}T)$
+\end_inset
+
+.
+ Substituting we get
+\begin_inset Formula 
+\begin{eqnarray*}
+-K(T^{xx}-\frac{1}{2}T)e^{-2gx} & = & K(T^{tt}+\frac{1}{2}e^{-2gx}T)\\
+-e^{-2gx}(T^{xx}-\frac{1}{2}T) & = & T^{tt}+\frac{1}{2}e^{-2gx}T\\
+-e^{-2gx}T^{xx}+\frac{1}{2}e^{-2gx}T & = & T^{tt}+\frac{1}{2}e^{-2gx}T\\
+T^{tt} & = & -e^{-2gx}T^{xx}
+\end{eqnarray*}
+
+\end_inset
+
+Combining this with 
+\begin_inset Formula $T^{xx}-e^{2gx}T^{tt}=0$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{xx} & = & e^{2gx}T^{tt}\\
+ & = & -e^{2gx}e^{-2gx}T^{xx}\\
+T^{xx} & = & -T^{xx}\\
+\implies T^{xx} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $T^{xx}=0$
+\end_inset
+
+ we also have 
+\begin_inset Formula $T^{tt}=0$
+\end_inset
+
+.
+ Now
+\begin_inset Formula 
+\begin{eqnarray*}
+R^{xx} & = & -g^{2}=K(-\frac{1}{2}T)\\
+\implies T & = & \frac{2g^{2}}{K}
+\end{eqnarray*}
+
+\end_inset
+
+This means 
+\begin_inset Formula 
+\[
+T^{zz}=T^{yy}=\frac{T}{2}=\frac{g^{2}}{K}=\frac{g^{2}}{8\pi G}
+\]
+
+\end_inset
+
+This should have been negative! If it were it wouldn't make sense because
+ the 
+\begin_inset Formula $T^{zz}=T^{yy}$
+\end_inset
+
+ components of a fluid correspond to the pressure of the fluid, meaning
+ that the pressure would be negative.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
