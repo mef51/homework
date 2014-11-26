@@ -1554,5 +1554,281 @@ For the curvature energy density we have
 
 \end_layout
 
+\begin_layout Problem
+Moore, p.
+ 263 Problem 22.6
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ In the stationary weak-field approximation we have the metric perturbation
+ is 
+\begin_inset Formula 
+\[
+h_{\mu\nu}=2\int_{src}\frac{G(2T_{\mu\nu}-\eta_{\mu\nu}T)}{|\vec{r}-\vec{r}_{s}|}d\vec{r}_{s}
+\]
+
+\end_inset
+
+Since the wire is on the z-axis and is infinitely long we have 
+\begin_inset Formula $\vec{r}=(x,y,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{r}_{s}=(0,0,z)$
+\end_inset
+
+ so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $|\vec{r}-\vec{r}_{s}|=\sqrt{x^{2}+y^{2}+z^{2}}$
+\end_inset
+
+.
+ Also 
+\begin_inset Formula $dV=dz$
+\end_inset
+
+ and the integral is from 
+\begin_inset Formula $z=-\infty$
+\end_inset
+
+ to 
+\begin_inset Formula $z=\infty$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\[
+h_{\mu\nu}=2\int_{-\infty}^{\infty}\frac{G(2T_{\mu\nu}-\eta_{\mu\nu}T)}{\sqrt{x^{2}+y^{2}+z^{2}}}dz
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $\Phi_{G}=-h_{00}/2$
+\end_inset
+
+,
+\begin_inset Formula $T_{00}-\eta_{00}T=\rho_{g}=\lambda$
+\end_inset
+
+ and the relevant integral is 
+\begin_inset Formula 
+\[
+h_{00}=2G\lambda\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $F_{kj}=\partial_{k}h_{tj}-\partial_{j}h_{tk}$
+\end_inset
+
+.
+ To first order 
+\begin_inset Formula $u_{i}=(1,0,0,V)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Pi_{i}=\lambda u_{i}$
+\end_inset
+
+.
+ The relevant integral is then 
+\begin_inset Formula 
+\[
+h_{tj}=4G\lambda u_{j}\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ For the infinitely long wire on the z-axis, all points on a circle in a
+ plane at some fixed 
+\begin_inset Formula $z$
+\end_inset
+
+ will experience the same 
+\begin_inset Formula $h_{\mu\nu}$
+\end_inset
+
+, so 
+\begin_inset Formula $h_{\mu\nu}$
+\end_inset
+
+ can't depend on 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The gravitoelectric energy density is 
+\begin_inset Formula $\rho_{g}\approx\rho_{0}+3P_{0}\approx\rho_{0}=\lambda$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula $\Phi_{G}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\Phi_{G}=-G\lambda\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz
+\]
+
+\end_inset
+
+The gravitomagnetic aspect 
+\begin_inset Formula $F_{kj}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+F_{kj}=\partial_{k}(h_{tj})-\partial_{j}(h_{tk})
+\]
+
+\end_inset
+
+Because of the 
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ term in 
+\begin_inset Formula $h_{tj}$
+\end_inset
+
+, the only nonzero components are when 
+\begin_inset Formula $j=t$
+\end_inset
+
+ or 
+\begin_inset Formula $j=z$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $D=\sqrt{x^{2}+y^{2}+z^{2}}$
+\end_inset
+
+.
+ Let's compute the derivatives 
+\begin_inset Formula $\partial_{k}(h_{tt})$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{t}(h_{tt}) & = & 0\\
+\partial_{x}(h_{tt}) & = & 4G\lambda\frac{\partial}{\partial x}\Big(\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz\Big)=4G\lambda\frac{x}{D(D+z)}\\
+\partial_{y}(h_{tt}) & = & 4G\lambda\frac{\partial}{\partial y}\Big(\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz\Big)=4G\lambda\frac{y}{D(D+z)}\\
+\partial_{z}(h_{tt}) & = & 4G\lambda\frac{\partial}{\partial y}\Big(\int_{-\infty}^{\infty}\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}dz\Big)=\frac{4G\lambda}{D}
+\end{eqnarray*}
+
+\end_inset
+
+And the derivatives 
+\begin_inset Formula $\partial_{k}(h_{tz})$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{t}(h_{tz}) & = & 0\\
+\partial_{x}(h_{tz}) & = & V\partial_{x}(h_{tt})\\
+\partial_{y}(h_{tz}) & = & V\partial_{y}(h_{tt})\\
+\partial_{z}(h_{tz}) & = & V\partial_{z}(h_{tt})
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\Phi_{G}=\frac{-h_{tt}}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\partial_{k}(\Phi_{G})=-\frac{1}{2}\partial_{k}(h_{tt})$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{x}(\Phi_{G}) & = & -2G\lambda\frac{x}{D(D+z)}\\
+\partial_{y}(\Phi_{G}) & = & -2G\lambda\frac{y}{D(D+z)}\\
+\partial_{z}(\Phi_{G}) & = & -\frac{2G\lambda}{D}
+\end{eqnarray*}
+
+\end_inset
+
+Integrating the derivatives we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\Phi_{G} & = & -2G\lambda\ln(D+z)
+\end{eqnarray*}
+
+\end_inset
+
+But this is not supposed to depend on 
+\begin_inset Formula $z$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $F_{kj}=\partial_{k}(h_{tj})-\partial_{j}(h_{tk})$
+\end_inset
+
+, the only nonzero terms are 
+\begin_inset Formula $F_{zz}$
+\end_inset
+
+, 
+\begin_inset Formula $F_{zt}$
+\end_inset
+
+, and 
+\begin_inset Formula $F_{tz}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+F_{zz} & = & \partial_{z}(h_{tz})-\partial_{z}(h_{tz})=0\\
+F_{zt} & = & \partial_{z}(h_{tt})-\partial_{t}(h_{tz})=\frac{4G\lambda}{D}-0=\frac{4G\lambda}{D}\\
+F_{tz} & = & \partial_{t}(h_{tz})-\partial_{z}(h_{tt})=-F_{zt}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
