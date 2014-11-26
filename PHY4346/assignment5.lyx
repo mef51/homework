@@ -1798,6 +1798,11 @@ But this is not supposed to depend on
 \end_inset
 
 ...
+ And the 
+\begin_inset Formula $z$
+\end_inset
+
+-derivative should always be 0...
 \end_layout
 
 \begin_layout Standard
@@ -1822,12 +1827,79 @@ For
 \begin{eqnarray*}
 F_{zz} & = & \partial_{z}(h_{tz})-\partial_{z}(h_{tz})=0\\
 F_{zt} & = & \partial_{z}(h_{tt})-\partial_{t}(h_{tz})=\frac{4G\lambda}{D}-0=\frac{4G\lambda}{D}\\
-F_{tz} & = & \partial_{t}(h_{tz})-\partial_{z}(h_{tt})=-F_{zt}
+F_{tz} & = & \partial_{t}(h_{tz})-\partial_{z}(h_{tt})=-F_{zt}=-\frac{4G\lambda}{D}
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c) 
+\series default
+Find the 
+\begin_inset Formula $\eta^{ik}\partial_{k}\Phi_{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta^{ik}F_{kj}v^{j}$
+\end_inset
+
+ contributions to a test particle's acceleration moving with 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ where 
+\begin_inset Formula $v<<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given the values above
+\begin_inset Formula 
+\begin{eqnarray*}
+\eta^{1k}\partial_{k}\Phi_{G} & = & \eta^{11}\partial_{1}\Phi_{G}=-2G\lambda\frac{x}{D(D+z)}\\
+\eta^{2k}\partial_{k}\Phi_{G} & = & \eta^{22}\partial_{2}\Phi_{G}=-2G\lambda\frac{y}{D(D+z)}\\
+\eta^{3k}\partial_{k}\Phi_{G} & = & \eta^{33}\partial_{3}\Phi_{G}=-\frac{2G\lambda}{D}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the 
+\begin_inset Formula $\eta^{ik}F_{kj}v^{i}$
+\end_inset
+
+ contributions 
+\begin_inset Formula $i=z$
+\end_inset
+
+ for nonzero terms 
+\begin_inset Formula 
+\begin{eqnarray*}
+j=z\implies\quad\eta^{zk}F_{kz}v^{z} & = & \eta^{zz}F_{zz}v^{z}=0\\
+j=t\implies\quad\eta^{zk}F_{kt}v^{z} & = & \eta^{zz}F_{zt}v^{z}=\frac{4G\lambda}{D}v^{z}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+d)
+\series default
+ ...
 \end_layout
 
 \end_body
