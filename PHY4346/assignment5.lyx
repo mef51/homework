@@ -1902,5 +1902,99 @@ d)
  ...
 \end_layout
 
+\begin_layout Problem
+Moore, p.
+ 276 Problem 23.3
+\end_layout
+
+\begin_layout Problem
+In empty space 
+\begin_inset Formula $R_{\mu\nu}=\Lambda g_{\mu\nu}$
+\end_inset
+
+ which implies 
+\begin_inset Formula $R_{tt}=-A\Lambda$
+\end_inset
+
+, 
+\begin_inset Formula $R_{rr}=B\Lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{\theta\theta}=r^{2}\Lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\series default
+Show 
+\begin_inset Formula $A=\frac{1}{B}=1+\frac{C}{r}-\frac{\Lambda}{3}r^{2}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\frac{1}{A}\frac{\partial A}{\partial r}=-\frac{1}{B}\frac{\partial B}{\partial r}
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $R_{\theta\theta}=r^{2}\Lambda$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+r^{2}\Lambda & = & -\frac{r}{2AB}\frac{\partial A}{\partial r}+\frac{r}{2B^{2}}\frac{\partial B}{\partial r}+1-\frac{1}{B}\\
+r^{2}\Lambda & = & \frac{r}{2B^{2}}\frac{\partial B}{\partial r}+\frac{r}{2B^{2}}\frac{\partial B}{\partial r}+1-\frac{1}{B}=\frac{r}{B^{2}}\frac{\partial B}{\partial r}+1-\frac{1}{B}\\
+\implies1 & = & r^{2}\Lambda-\frac{r}{B^{2}}\frac{\partial B}{\partial r}+\frac{1}{B}=r^{2}\Lambda+\frac{\partial}{\partial r}\Big(\frac{r}{B}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+Integrating we get 
+\begin_inset Formula 
+\begin{eqnarray*}
+\int1dr & = & \Lambda\int r^{2}dr+\frac{r}{B}\\
+r+C & = & \frac{\Lambda r^{3}}{3}+\frac{r}{B}\\
+1+\frac{C}{r} & = & \frac{\Lambda}{3}r^{2}+\frac{1}{B}\\
+\implies\frac{1}{B} & = & 1+\frac{C}{r}-\frac{\Lambda}{3}r^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Assume that there is a large range of 
+\begin_inset Formula $r$
+\end_inset
+
+ such that 
+\begin_inset Formula $1>>\frac{|C|}{r}>>\Lambda r^{2}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\frac{d^{2}r}{d\tau^{2}}=-\frac{1}{2}\frac{\partial A}{\partial r}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
