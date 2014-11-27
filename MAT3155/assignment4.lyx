@@ -467,7 +467,7 @@ Since
 \begin_inset Formula $\gamma(t)$
 \end_inset
 
- for all 
+ for each step of 
 \begin_inset Formula $t$
 \end_inset
 
@@ -538,6 +538,120 @@ implying that the length of a curve
 \end_inset
 
  is an isometry.
+\end_layout
+
+\begin_layout Standard
+Conversely, assume that 
+\begin_inset Formula $f$
+\end_inset
+
+ is an isometry and that the integrals are the same.
+ We know that 
+\begin_inset Formula $T\dot{\gamma}\cdot T\dot{\gamma}=\dot{\gamma}\cdot\dot{\gamma}$
+\end_inset
+
+.
+ Setting 
+\begin_inset Formula $w_{1}=\dot{\gamma}$
+\end_inset
+
+ we've got 
+\begin_inset Formula $Tw_{1}\cdot Tw_{1}=w_{1}\cdot w_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $w_{2}\in T_{P}S_{1}$
+\end_inset
+
+ be any other tangent vector at 
+\begin_inset Formula $P$
+\end_inset
+
+, like 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+ There could be a different curve 
+\begin_inset Formula $\delta$
+\end_inset
+
+ whose tangent is 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, so this means that 
+\begin_inset Formula $Tw_{2}\cdot Tw_{2}=w_{2}\cdot w_{2}$
+\end_inset
+
+ as well.
+ We can add these vectors together to make 
+\begin_inset Formula $w_{1}+w_{2}$
+\end_inset
+
+.
+ There could be another curve whose tangent vector is 
+\begin_inset Formula $w_{1}+w_{2}$
+\end_inset
+
+ (indeed that curve is 
+\begin_inset Formula $\gamma+\delta$
+\end_inset
+
+ since 
+\begin_inset Formula $\dot{(\gamma+\delta)}=\dot{\gamma}+\dot{\delta}$
+\end_inset
+
+) so we also have 
+\begin_inset Formula $T(w_{1}+w_{2})\cdot T(w_{1}+w_{2})=(w_{1}+w_{2})\cdot(w_{1}+w_{2})$
+\end_inset
+
+.
+ Now calculate the dot product of 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+.
+ Expressing it as a quadratic form we get: 
+\begin_inset Formula 
+\begin{eqnarray*}
+w_{1}\cdot w_{2} & = & \frac{1}{2}\Big((w_{1}+w_{2})\cdot(w_{1}+w_{2})-w_{1}\cdot w_{1}-w_{2}\cdot w_{2}\Big)\\
+w_{1}\cdot w_{2} & = & \frac{1}{2}\Big(T(w_{1}+w_{2})\cdot T(w_{1}+w_{2})-Tw_{1}\cdot Tw_{1}-Tw_{2}\cdot Tw_{2}\Big)\\
+w_{1}\cdot w_{2} & = & Tw_{1}\cdot Tw_{2}
+\end{eqnarray*}
+
+\end_inset
+
+Which was what we wanted.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is an equiareal map iff 
+\begin_inset Formula $||Tw_{1}\times Tw_{2}||=||w_{1}\times w_{2}||$
+\end_inset
+
+, for all 
+\begin_inset Formula $w_{1},w_{2}\in T_{P}S_{1}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
