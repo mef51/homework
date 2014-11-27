@@ -14,7 +14,7 @@ figs-within-sections
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman palatino
+\font_roman ae
 \font_sans default
 \font_typewriter default
 \font_default_family default
@@ -29,7 +29,7 @@ figs-within-sections
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -58,7 +58,7 @@ figs-within-sections
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip smallskip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -129,7 +129,11 @@ Suppose
 
 .
  Define maps 
-\begin_inset Formula $J_{\sigma}:\mathbf{R}^{2}\rightarrow T_{f(P)}S_{2}$
+\begin_inset Formula $J_{\sigma}:\mathbf{R}^{2}\rightarrow T_{P}S_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{f\sigma}:\mathbf{R}^{2}\rightarrow T_{f(P)}S_{2}$
 \end_inset
 
  defined respectively by 
@@ -141,7 +145,7 @@ J_{\sigma}(v)=J(\sigma)\cdot v\qquad\mathrm{and}\qquad J_{f\sigma}(v)=J(f\sigma)
 \end_inset
 
 Let 
-\begin_inset Formula $T$
+\begin_inset Formula $T:T_{P}S_{1}\rightarrow T_{f(P)}S_{2}$
 \end_inset
 
  denote the tangent map of 
@@ -157,7 +161,7 @@ Let
 \end_inset
 
  defined by 
-\begin_inset Formula $T_{p}f=\frac{d(f\gamma)}{dt}(0)$
+\begin_inset Formula $T_{P}f=\frac{d(f\gamma)}{dt}(0)$
 \end_inset
 
  for some curve 
@@ -210,7 +214,69 @@ Let
 \end_inset
 
 .
- This
+ This means 
+\begin_inset Formula $\gamma(0)=\sigma(\alpha(0))=\sigma(\sigma^{-1}(P))=P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\dot{\gamma}(0)=w$
+\end_inset
+
+.
+ This vector is a tangent vector at 
+\begin_inset Formula $P$
+\end_inset
+
+ on 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ so 
+\begin_inset Formula $w\in T_{P}S_{1}$
+\end_inset
+
+.
+ Take this vector and apply the tangent map 
+\begin_inset Formula $T$
+\end_inset
+
+ to it
+\begin_inset Formula 
+\begin{eqnarray*}
+T(w) & = & \frac{d(f\circ\gamma)}{dt}(0)=\frac{d(f\circ\sigma\circ\alpha)}{dt}(0)\\
+ & = & J_{f\sigma}(\alpha(0))\cdot\dot{\alpha}(0)
+\end{eqnarray*}
+
+\end_inset
+
+using the chain rule.
+ Note that 
+\begin_inset Formula $w=\dot{\gamma}(0)=\dot{(\sigma\circ\alpha)}=J_{\sigma}(\alpha(0))\cdot\dot{\alpha}(0)$
+\end_inset
+
+.
+ Since both sides are 
+\begin_inset Formula $\in T_{P}S_{1}$
+\end_inset
+
+ let's apply 
+\begin_inset Formula $J_{\sigma}^{-1}$
+\end_inset
+
+ to both sides
+\begin_inset Formula 
+\[
+J_{\sigma}^{-1}(w)=J_{\sigma}^{-1}(J_{\sigma}(\alpha(0))\cdot\dot{\alpha}(0))
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
