@@ -77,7 +77,7 @@ MAT3155
 \begin_inset Newline newline
 \end_inset
 
-Assignment 5
+Assignment 4
 \end_layout
 
 \begin_layout Author
@@ -140,7 +140,77 @@ J_{\sigma}(v)=J(\sigma)\cdot v\qquad\mathrm{and}\qquad J_{f\sigma}(v)=J(f\sigma)
 
 \end_inset
 
+Let 
+\begin_inset Formula $T$
+\end_inset
 
+ denote the tangent map of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\begin_inset Formula $T_{P}f$
+\end_inset
+
+ defined by 
+\begin_inset Formula $T_{p}f=\frac{d(f\gamma)}{dt}(0)$
+\end_inset
+
+ for some curve 
+\begin_inset Formula $\gamma:\mathbf{R}\rightarrow S_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\series default
+Show that 
+\begin_inset Formula $T=J_{f\sigma}J_{\sigma}^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ be a curve on 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\gamma=\sigma\circ\alpha$
+\end_inset
+
+ where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is another curve in 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Pick 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ so that 
+\begin_inset Formula $\alpha(0)=\sigma^{-1}(P)$
+\end_inset
+
+.
+ This
 \end_layout
 
 \end_body
