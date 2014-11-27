@@ -197,7 +197,7 @@ Let
 \end_inset
 
  where 
-\begin_inset Formula $\alpha$
+\begin_inset Formula $\alpha:\mathbf{R}\rightarrow U\subset\mathbf{R}^{2}$
 \end_inset
 
  is another curve in 
@@ -249,34 +249,113 @@ Let
 \begin_inset Formula 
 \begin{eqnarray*}
 T(w) & = & \frac{d(f\circ\gamma)}{dt}(0)=\frac{d(f\circ\sigma\circ\alpha)}{dt}(0)\\
- & = & J_{f\sigma}(\alpha(0))\cdot\dot{\alpha}(0)
+ & = & J(f\sigma)\Big|_{\alpha(0)}\cdot\dot{\alpha}(0)
 \end{eqnarray*}
 
 \end_inset
 
 using the chain rule.
  Note that 
-\begin_inset Formula $w=\dot{\gamma}(0)=\dot{(\sigma\circ\alpha)}=J_{\sigma}(\alpha(0))\cdot\dot{\alpha}(0)$
+\begin_inset Formula $J(f\sigma)\big|_{\alpha(0)}=J(f\sigma)\big|_{\sigma^{-1}(P)}=J_{f\sigma}$
+\end_inset
+
+ since 
+\begin_inset Formula $J(f\sigma)\big|_{\sigma^{-1}(P)}\cdot v$
+\end_inset
+
+ is a map from 
+\begin_inset Formula $\mathbf{R}^{2}\rightarrow T_{f(P)}S_{2}$
+\end_inset
+
+ for some vector 
+\begin_inset Formula $v$
 \end_inset
 
 .
- Since both sides are 
-\begin_inset Formula $\in T_{P}S_{1}$
-\end_inset
-
- let's apply 
-\begin_inset Formula $J_{\sigma}^{-1}$
-\end_inset
-
- to both sides
+ This means
 \begin_inset Formula 
 \[
-J_{\sigma}^{-1}(w)=J_{\sigma}^{-1}(J_{\sigma}(\alpha(0))\cdot\dot{\alpha}(0))
+T(w)=J(f\sigma)\big|_{\alpha(0)}\cdot\dot{\alpha}(0)=J_{f\sigma}(\dot{\alpha}(0))
 \]
 
 \end_inset
 
+This matrix product makes sense becase 
+\begin_inset Formula $J(f\sigma)$
+\end_inset
 
+ is a 3x2 matrix (since 
+\begin_inset Formula $f\sigma:\mathbf{R}^{2}\rightarrow S_{2}\subset\mathbf{R}^{3}$
+\end_inset
+
+) and 
+\begin_inset Formula $\dot{\alpha}(0)$
+\end_inset
+
+ is a 2x1 column vector.
+ The product then gives a 3x1 column vector which is the mapped tangent
+ in 
+\begin_inset Formula $T_{f(P)}S_{2}$
+\end_inset
+
+ as expected.
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $w=\dot{\gamma}(0)=\dot{(\sigma\circ\alpha)}=J(\sigma)\big|_{\alpha(0)}\cdot\dot{\alpha}(0)$
+\end_inset
+
+.
+ Similarly, 
+\begin_inset Formula $J(\sigma)\big|_{\alpha(0)}=J(\sigma)\big|_{\sigma^{-1}(P)}=J_{\sigma}$
+\end_inset
+
+ since 
+\begin_inset Formula $J(\sigma)\big|_{\sigma^{-1}(P)}\cdot v$
+\end_inset
+
+ is a map from 
+\begin_inset Formula $\mathbf{R}^{2}\rightarrow T_{P}S_{1}$
+\end_inset
+
+ for some vector v.
+ So 
+\begin_inset Formula $w=J(\sigma)\big|_{\sigma^{-1}(P)}\cdot\dot{\alpha}(0)=J_{\sigma}(\dot{\alpha}(0))$
+\end_inset
+
+.
+ Assuming the inverse 
+\begin_inset Formula $J_{\sigma}^{-1}$
+\end_inset
+
+ exists, whatever it may be, knowing that it isn't matrix multiplication
+ by the inverse matrix of 
+\begin_inset Formula $J_{\sigma}$
+\end_inset
+
+, we at least know then that 
+\begin_inset Formula $J_{\sigma}^{-1}(w)=J_{\sigma}^{-1}(J_{\sigma}(\dot{\alpha}(0)))=\dot{\alpha}(0)$
+\end_inset
+
+.
+ Substituting this into the previous expression for 
+\begin_inset Formula $T(w)$
+\end_inset
+
+ we see 
+\begin_inset Formula 
+\[
+T(w)=J_{f\sigma}(J_{\sigma}^{-1}(w))=(J_{f\sigma}\circ J_{\sigma}^{-1})(w)
+\]
+
+\end_inset
+
+Or, compactly, 
+\begin_inset Formula $T=J_{f\sigma}J_{\sigma}^{-1}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
