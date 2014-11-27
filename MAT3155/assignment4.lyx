@@ -52,8 +52,8 @@ figs-within-sections
 \topmargin 1.5cm
 \rightmargin 1cm
 \bottommargin 1.5cm
-\headheight 0cm
-\headsep 1.5cm
+\headheight 1cm
+\headsep 0.5cm
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
@@ -356,6 +356,188 @@ Or, compactly,
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b) 
+\series default
+Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is an isometry iff 
+\begin_inset Formula $Tw_{1}\cdot Tw_{2}=w_{1}\cdot w_{2}$
+\end_inset
+
+ for all 
+\begin_inset Formula $w_{1},w_{2}\in T_{P}S_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pick some curve 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ on 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\gamma=\sigma\circ\alpha$
+\end_inset
+
+.
+ Similarly, let there be another curve 
+\begin_inset Formula $\beta$
+\end_inset
+
+ on 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ st.
+ 
+\begin_inset Formula $\beta=f\circ\gamma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The length of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ between endpoints 
+\begin_inset Formula $\gamma(t_{0})$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma(t_{1})$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\int_{t_{0}}^{t_{1}}||\dot{\gamma}||dt=\int_{t_{0}}^{t_{1}}\sqrt{\dot{\gamma}(t)\cdot\dot{\gamma}(t)}dt
+\]
+
+\end_inset
+
+The corresponding length of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ between the same endpoints is 
+\begin_inset Formula 
+\[
+\int_{t_{0}}^{t_{1}}\sqrt{\dot{\beta}(t)\cdot\dot{\beta}(t)}dt
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\beta=f\circ\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{\beta}(t)=\frac{d}{dt'}(f\circ\gamma)(t)$
+\end_inset
+
+ is the tangent map 
+\begin_inset Formula $T$
+\end_inset
+
+ at 
+\begin_inset Formula $P=\gamma(t)\in S_{1}$
+\end_inset
+
+.
+ The integral for the length of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ involves constructing the tangent map at the point 
+\begin_inset Formula $\gamma(t)$
+\end_inset
+
+ for all 
+\begin_inset Formula $t$
+\end_inset
+
+ between 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, mapping the tangent vector 
+\begin_inset Formula $\dot{\gamma}(t)$
+\end_inset
+
+, and computing the integrand.
+ That is 
+\begin_inset Formula $\dot{\beta}(t)=T(w)=T(\dot{\gamma}(t))$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\int_{t_{0}}^{t_{1}}\sqrt{\dot{\beta}(t)\cdot\dot{\beta}(t)}dt=\int_{t_{0}}^{t_{1}}\sqrt{T\dot{\gamma}(t)\cdot T\dot{\gamma}(t)}dt
+\]
+
+\end_inset
+
+If we assume 
+\begin_inset Formula $Tw_{1}\cdot Tw_{2}=w_{1}\cdot w_{2}$
+\end_inset
+
+ for all 
+\begin_inset Formula $w_{1},w_{2}\in T_{P}S_{1}$
+\end_inset
+
+, then, noting that 
+\begin_inset Formula $\dot{\gamma}(t)\in T_{P}S_{1}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $T\dot{\gamma}\cdot T\dot{\gamma}=\dot{\gamma}\cdot\dot{\gamma}$
+\end_inset
+
+ which means
+\begin_inset Formula 
+\[
+=\int_{t_{0}}^{t_{1}}\sqrt{T\dot{\gamma}(t)\cdot T\dot{\gamma}(t)}dt=\int_{t_{0}}^{t_{1}}\sqrt{\dot{\gamma}(t)\cdot\dot{\gamma}(t)}dt
+\]
+
+\end_inset
+
+implying that the length of a curve 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ is preserved by 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ This means 
+\begin_inset Formula $f$
+\end_inset
+
+ is an isometry.
 \end_layout
 
 \end_body
