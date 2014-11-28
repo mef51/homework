@@ -847,11 +847,27 @@ w_{1}\times w_{2}=\lambda_{1}\lambda_{2}\sigma_{u}\times\sigma_{v}....
 
 \end_inset
 
-prove that 
-\begin_inset Formula $\ell$
+prove that the determinant of the first fundamental forms of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\mathbf{S}^{2}\backslash H$
 \end_inset
 
- is equiareal.
+ and 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ are equal.
 \end_layout
 
 \begin_layout Standard
@@ -924,9 +940,11 @@ The first fundamental form of
 
  is 
 \begin_inset Formula 
-\[
-E_{2}=||(\ell\sigma)_{\theta}||=\int
-\]
+\begin{eqnarray*}
+E_{2} & = & ||(\ell\sigma)_{\theta}||=2+2\cos\varphi\\
+F_{2} & = & (\ell\sigma)_{\theta}\cdot(\ell\sigma)_{\varphi}=\sin\theta\cos\theta\sin\varphi-\sin\theta\cos\theta\sin\varphi=0\\
+G_{2} & = & \frac{\sin^{2}\varphi\cos^{2}\theta+\sin^{2}\varphi\sin^{2}\theta}{2+2\cos\varphi}=
+\end{eqnarray*}
 
 \end_inset
 
