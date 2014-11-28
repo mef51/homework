@@ -806,5 +806,132 @@ since
  preserved the area of the region, it is equiareal.
 \end_layout
 
+\begin_layout Standard
+There's another way to do this by doing 
+\begin_inset Formula 
+\[
+w_{1}\times w_{2}=\lambda_{1}\lambda_{2}\sigma_{u}\times\sigma_{v}....
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+
+\emph on
+(Lambert azimuthal equal-area projection: 1772)
+\emph default
+ Let 
+\begin_inset Formula $H=\{(x,0,z)|x\leq0\}$
+\end_inset
+
+, 
+\begin_inset Formula $S$
+\end_inset
+
+ the plane with cartesian equation 
+\begin_inset Formula $z=-1$
+\end_inset
+
+, and define a map 
+\begin_inset Formula $\ell:\mathbf{S}^{2}\backslash H\rightarrow S$
+\end_inset
+
+ by
+\begin_inset Formula 
+\[
+\ell(\cos\theta\sin\varphi,\sin\theta\sin\varphi,\cos\varphi)=\sqrt{2+2\cos\varphi}\Big(\cos\theta,\sin\theta,-\frac{1}{\sqrt{2+2\cos\varphi}}\Big)
+\]
+
+\end_inset
+
+prove that 
+\begin_inset Formula $\ell$
+\end_inset
+
+ is equiareal.
+\end_layout
+
+\begin_layout Standard
+The surface patch of 
+\series bold
+
+\begin_inset Formula $\mathbf{S}^{2}\backslash H$
+\end_inset
+
+ 
+\series default
+is 
+\begin_inset Formula 
+\[
+\sigma(\theta,\varphi)=(\cos\theta\sin\varphi,\sin\theta\sin\varphi,\cos\varphi)
+\]
+
+\end_inset
+
+We want to compute the first fundamental forms of both surfaces using the
+ surface patches 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ for 
+\series bold
+
+\begin_inset Formula $\mathbf{S}^{2}\backslash H$
+\end_inset
+
+
+\series default
+ and 
+\begin_inset Formula $\ell\sigma$
+\end_inset
+
+ for 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma_{\theta} & = & (-\sin\theta\sin\varphi,\cos\theta\sin\varphi,0)\\
+\sigma_{\varphi} & = & (\cos\theta\cos\varphi,\sin\theta\cos\varphi,-\sin\varphi)\\
+(\ell\sigma)_{\theta} & = & \sqrt{2+2\cos\varphi}(-\sin\theta,\cos\theta,0)\\
+(\ell\sigma)_{\varphi} & = & \Big(\frac{-\cos\theta\sin\varphi}{\sqrt{2+2\cos\varphi}},\frac{-\sin\theta\sin\varphi}{\sqrt{2+2\cos\varphi}},0\Big)\\
+ & = & \frac{-\sin\varphi}{\sqrt{2+2\cos\varphi}}(\cos\theta,\sin\theta,0)
+\end{eqnarray*}
+
+\end_inset
+
+The first fundamental form of 
+\begin_inset Formula $\mathbf{S}^{2}\backslash H$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{1} & = & ||\sigma_{\theta}||=\sin^{2}\theta\sin^{2}\varphi+\cos^{2}\theta\sin^{2}\varphi=\sin^{2}\varphi\\
+F_{1} & = & \sigma_{\theta}\cdot\sigma_{\varphi}=-\sin\theta\cos\theta\sin\varphi\cos\varphi+\sin\theta\cos\theta\sin\varphi\cos\varphi+0=0\\
+G_{1} & = & ||\sigma_{\varphi}||=\cos^{2}\theta\cos^{2}\varphi+\sin^{2}\theta\cos^{2}\varphi+\sin^{2}\varphi=1
+\end{eqnarray*}
+
+\end_inset
+
+The first fundamental form of 
+\begin_inset Formula $S$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+E_{2}=||(\ell\sigma)_{\theta}||=\int
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
