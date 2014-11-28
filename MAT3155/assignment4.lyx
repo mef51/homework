@@ -621,11 +621,16 @@ Let
 \end_inset
 
 .
- Expressing it as a quadratic form we get: 
+ Expressing it as a quadratic form we get and using the fact that 
+\begin_inset Formula $T$
+\end_inset
+
+ is linear: 
 \begin_inset Formula 
 \begin{eqnarray*}
 w_{1}\cdot w_{2} & = & \frac{1}{2}\Big((w_{1}+w_{2})\cdot(w_{1}+w_{2})-w_{1}\cdot w_{1}-w_{2}\cdot w_{2}\Big)\\
 w_{1}\cdot w_{2} & = & \frac{1}{2}\Big(T(w_{1}+w_{2})\cdot T(w_{1}+w_{2})-Tw_{1}\cdot Tw_{1}-Tw_{2}\cdot Tw_{2}\Big)\\
+w_{1}\cdot w_{2} & = & \frac{1}{2}\Big((Tw_{1}+Tw_{2})\cdot(Tw_{1}+Tw_{2})-Tw_{1}\cdot Tw_{1}-Tw_{2}\cdot Tw_{2}\Big)\\
 w_{1}\cdot w_{2} & = & Tw_{1}\cdot Tw_{2}
 \end{eqnarray*}
 
