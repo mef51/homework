@@ -934,6 +934,14 @@ G_{1} & = & ||\sigma_{\varphi}||=\cos^{2}\theta\cos^{2}\varphi+\sin^{2}\theta\co
 
 \end_inset
 
+and it's determinant is 
+\begin_inset Formula 
+\[
+E_{1}G_{1}-F_{1}^{2}=\sin^{2}\varphi
+\]
+
+\end_inset
+
 The first fundamental form of 
 \begin_inset Formula $S$
 \end_inset
@@ -943,12 +951,24 @@ The first fundamental form of
 \begin{eqnarray*}
 E_{2} & = & ||(\ell\sigma)_{\theta}||=2+2\cos\varphi\\
 F_{2} & = & (\ell\sigma)_{\theta}\cdot(\ell\sigma)_{\varphi}=\sin\theta\cos\theta\sin\varphi-\sin\theta\cos\theta\sin\varphi=0\\
-G_{2} & = & \frac{\sin^{2}\varphi\cos^{2}\theta+\sin^{2}\varphi\sin^{2}\theta}{2+2\cos\varphi}=
+G_{2} & = & \frac{\sin^{2}\varphi\cos^{2}\theta+\sin^{2}\varphi\sin^{2}\theta}{2+2\cos\varphi}=\frac{\sin^{2}\varphi}{2+2\cos\varphi}
 \end{eqnarray*}
 
 \end_inset
 
+and it's determinant is 
+\begin_inset Formula 
+\[
+E_{2}G_{2}-F_{2}^{2}=\sin^{2}\varphi=E_{1}G_{1}-F_{1}^{2}
+\]
 
+\end_inset
+
+If 
+\begin_inset Formula $\ell$
+\end_inset
+
+ were a diffeo this would imply that it is equiareal.
 \end_layout
 
 \end_body
