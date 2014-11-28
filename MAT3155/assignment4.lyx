@@ -659,5 +659,152 @@ c)
 .
 \end_layout
 
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $||Tw_{1}\times Tw_{2}||=||w_{1}\times w_{2}||$
+\end_inset
+
+, for all 
+\begin_inset Formula $w_{1},w_{2}\in T_{P}S_{1}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\sigma_{u}(0,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{v}(0,0)$
+\end_inset
+
+ are basis vectors of 
+\begin_inset Formula $T_{P}S_{1}$
+\end_inset
+
+, they are elements of 
+\begin_inset Formula $T_{P}S_{1}$
+\end_inset
+
+ and we can set 
+\begin_inset Formula $w_{1}=\sigma_{u}(0,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{2}=\sigma_{v}(0,0)$
+\end_inset
+
+.
+ The map 
+\begin_inset Formula $T$
+\end_inset
+
+ will map basis vectors to basis vectors, and the corresponding basis vectors
+ of 
+\begin_inset Formula $T_{f(P)}S_{2}$
+\end_inset
+
+ are 
+\begin_inset Formula $(f\sigma)_{u}(0,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $(f\sigma)_{v}(0,0)$
+\end_inset
+
+, that is, 
+\begin_inset Formula $Tw_{1}=T\sigma_{u}(0,0)=(f\sigma)_{u}(0,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $Tw_{2}=T\sigma_{v}(0,0)=(f\sigma)_{v}(0,0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Letting the point 
+\begin_inset Formula $\sigma^{-1}(P)$
+\end_inset
+
+ vary over some region 
+\begin_inset Formula $R\subseteq U$
+\end_inset
+
+ we can construct the tangent space at each point 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $\sigma(R)$
+\end_inset
+
+ and, using 
+\begin_inset Formula $\sigma_{u}(u,v)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{v}(u,v)$
+\end_inset
+
+ as basis vectors of the tangent space 
+\begin_inset Formula $T_{\sigma(u,v)}S_{1}$
+\end_inset
+
+, find the area of the region on 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ given by 
+\begin_inset Formula 
+\[
+\mathcal{A}_{\sigma}(R)=\int_{R}||\sigma_{u}\times\sigma_{v}||dudv
+\]
+
+\end_inset
+
+Since the tangent map is defined on each point of 
+\begin_inset Formula $\sigma(R)$
+\end_inset
+
+, setting 
+\begin_inset Formula $w_{1}=\sigma_{u}(u,v)$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{2}=\sigma_{v}(u,v)$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{A}_{\sigma}(R) & = & \int_{R}||\sigma_{u}\times\sigma_{v}||dudv\\
+ & = & \int_{R}||T\sigma_{u}\times T\sigma_{v}||dudv\\
+ & = & \int_{R}||(f\sigma)_{u}\times(f\sigma)_{v}||dudv=\mathcal{A}_{f\sigma}(R)
+\end{eqnarray*}
+
+\end_inset
+
+since 
+\begin_inset Formula $(f\sigma)_{u}(u,v)$
+\end_inset
+
+ and 
+\begin_inset Formula $(f\sigma)_{v}(u,v)$
+\end_inset
+
+ are basis vectors of 
+\begin_inset Formula $T_{f(\sigma(R))}S_{2}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ preserved the area of the region, it is equiareal.
+\end_layout
+
 \end_body
 \end_document
