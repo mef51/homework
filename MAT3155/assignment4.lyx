@@ -1017,91 +1017,146 @@ if its tangent is everywhere a principal vector.
 \end_layout
 
 \begin_layout Standard
-Since 
-\begin_inset Formula $N_{\sigma}$
+Let 
+\begin_inset Formula $\gamma=\sigma\circ\alpha$
 \end_inset
 
- is a unit normal of 
-\begin_inset Formula $\sigma$
+ for some curve 
+\begin_inset Formula $\alpha$
 \end_inset
 
-, let 
-\begin_inset Formula $G$
-\end_inset
-
- be the map from 
-\begin_inset Formula $S$
-\end_inset
-
- to the unit sphere 
-\begin_inset Formula $\mathbf{S}^{2}$
-\end_inset
-
- such that for all points 
-\begin_inset Formula $P\in S$
-\end_inset
-
- covered by the surface patch 
-\begin_inset Formula $\sigma$
-\end_inset
-
-, 
-\begin_inset Formula $G(P)=N_{P}\in\mathbf{S}^{2}$
-\end_inset
-
-, where 
-\begin_inset Formula $N_{P}$
-\end_inset
-
- is the unit normal of 
-\begin_inset Formula $S$
-\end_inset
-
- at 
-\begin_inset Formula $P$
+ in 
+\begin_inset Formula $U\subseteq\mathbf{R}^{2}$
 \end_inset
 
 .
- Consider a tangent plane at 
-\begin_inset Formula $P\in S$
+ Let 
+\begin_inset Formula $N_{\sigma}=N\circ\sigma$
 \end_inset
 
 .
- This plane has a normal 
-\begin_inset Formula $N_{P}$
-\end_inset
-
-.
- For a point 
-\begin_inset Formula $Q=G(P)=N_{P}\in\mathbf{S}^{2}$
-\end_inset
-
- the tangent plane is through the origin and perpendicular to 
-\begin_inset Formula $N_{P}$
-\end_inset
-
-, that is, it is the same tangent space as the tangent space at 
-\begin_inset Formula $P$
-\end_inset
-
-, meaning 
-\begin_inset Formula $T_{Q}\mathbf{S}^{2}=T_{G(P)}\mathbf{S}^{2}=T_{P}S$
-\end_inset
-
-.
- If we take the derivative of 
-\begin_inset Formula $G$
-\end_inset
-
- we'll get a tangent map 
-\begin_inset Formula $T:T_{P}S\rightarrow T_{P}S$
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
-Now now that 
+If 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a line of curvature then 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ is in the principal direction.
+ Since 
+\begin_inset Formula $\dot{\gamma}=J(\sigma)\cdot\dot{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{\alpha}$
+\end_inset
+
+ is an eigenvector of 
+\begin_inset Formula $(\mathcal{F}_{II}-\lambda\mathcal{F}_{I})\dot{\alpha}=0$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{F}_{I}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{F}_{II}$
+\end_inset
+
+ are the first and second fundamental forms, and we see 
+\begin_inset Formula 
+\[
+\mathcal{F}_{II}\cdot\dot{\alpha}=\lambda\mathcal{F}_{I}\cdot\dot{\alpha}
+\]
+
+\end_inset
+
+Now, since 
+\begin_inset Formula $\gamma=\sigma\circ\alpha$
+\end_inset
+
+ we can form the composition 
+\begin_inset Formula $N_{\sigma}=N\circ\sigma\circ\alpha$
+\end_inset
+
+ which is a function of 
+\begin_inset Formula $t$
+\end_inset
+
+ and represents the unit normal along the curve 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ Taking the derivative:
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{N_{\sigma}} & = & J(N\circ\sigma)\dot{\alpha}\\
+ & = & -J(\sigma)\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+Substituting 
+\begin_inset Formula $\mathcal{F}_{II}\cdot\dot{\alpha}=\lambda\mathcal{F}_{I}\cdot\dot{\alpha}$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{N_{\sigma}} & = & -J(\sigma)\mathcal{F}_{I}^{-1}\lambda\mathcal{F}_{I}\cdot\dot{\alpha}\\
+ & = & -\lambda J(\sigma)\mathcal{F}_{I}^{-1}\mathcal{F}_{I}\cdot\dot{\alpha}\\
+ & = & -\lambda J(\sigma)\cdot\dot{\alpha}\\
+\dot{N_{\sigma}} & = & -\lambda\dot{\gamma}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conversely, assuming simply that 
+\begin_inset Formula $\dot{N_{\sigma}}=-\lambda\dot{\gamma}$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{N_{\sigma}} & = & -\lambda\dot{\gamma}\\
+-J(\sigma)\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\alpha} & = & -\lambda J(\sigma)\cdot\dot{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+Multiplication by 
+\begin_inset Formula $J(\sigma)$
+\end_inset
+
+ is injective so we can drop it from both sides:
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\alpha} & = & \lambda\dot{\alpha}\\
+\mathcal{F}_{II}\dot{\alpha} & = & \lambda\mathcal{F}_{I}\dot{\alpha}\\
+\implies(\mathcal{F}_{II}-\lambda\mathcal{F}_{I})\dot{\alpha} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+This means that 
+\begin_inset Formula $J(\sigma)\dot{\alpha}=\dot{\gamma}$
+\end_inset
+
+ is a principal direction at 
+\begin_inset Formula $P$
+\end_inset
+
+.
 \end_layout
 
 \end_body
