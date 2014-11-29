@@ -1177,10 +1177,122 @@ Suppose
 a)
 \series default
  Show that 
-\begin_inset Formula $T_{P}S=T_{N}$
+\begin_inset Formula $T_{P}S=T_{N(P)}\mathbf{S}^{2}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+For a smooth oriented surface we have a regular surface patch 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ For every point 
+\begin_inset Formula $P$
+\end_inset
+
+ there is a smooth unit normal 
+\begin_inset Formula $N_{\sigma}$
+\end_inset
+
+ that is perpendicular to the tangent plane at 
+\begin_inset Formula $P$
+\end_inset
+
+ on 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $T_{P}S$
+\end_inset
+
+.
+ The map 
+\begin_inset Formula $N$
+\end_inset
+
+ takes the unit normal 
+\begin_inset Formula $N_{\sigma}$
+\end_inset
+
+ and places it's tail at the origin of the sphere 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $N(P)\in\mathbf{S}^{2}$
+\end_inset
+
+ is parralel to 
+\begin_inset Formula $N_{\sigma}\in S$
+\end_inset
+
+.
+ For every point 
+\begin_inset Formula $Q=N(P)\in\mathbf{S}^{2}$
+\end_inset
+
+, the tangent plane goes through the origin and the normal is 
+\begin_inset Formula $Q$
+\end_inset
+
+, which is parralel to 
+\begin_inset Formula $N_{\sigma}$
+\end_inset
+
+.
+ Since these are both unit normals these are infact the same vectors: 
+\begin_inset Formula $N_{\sigma}=N(P)=Q$
+\end_inset
+
+.
+ Since a plane is uniquely determined by it's normal, and the tangent plane
+ at 
+\begin_inset Formula $Q$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ (
+\begin_inset Formula $T_{Q}\mathbf{S^{2}}$
+\end_inset
+
+) shares the same normal as the tangent plane at 
+\begin_inset Formula $P$
+\end_inset
+
+ on 
+\begin_inset Formula $S$
+\end_inset
+
+ (
+\begin_inset Formula $T_{P}S$
+\end_inset
+
+), they are the same plane.
+ 
+\begin_inset Formula 
+\[
+T_{P}S=T_{Q}\mathbf{S}^{2}=T_{N(P)}\mathbf{S}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ 
 \end_layout
 
 \end_body
