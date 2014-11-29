@@ -1159,5 +1159,29 @@ This means that
 .
 \end_layout
 
+\begin_layout Problem
+Suppose 
+\begin_inset Formula $S$
+\end_inset
+
+ is smooth oriented surface and that 
+\begin_inset Formula $N:S\rightarrow\mathbf{S}^{2}$
+\end_inset
+
+ is the smooth unit normal.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Show that 
+\begin_inset Formula $T_{P}S=T_{N}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
