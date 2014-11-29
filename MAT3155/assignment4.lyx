@@ -971,5 +971,138 @@ If
  were a diffeo this would imply that it is equiareal.
 \end_layout
 
+\begin_layout Problem
+A regular curve 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ on a surface 
+\begin_inset Formula $S$
+\end_inset
+
+ is a 
+\emph on
+line of curvature 
+\emph default
+if its tangent is everywhere a principal vector.
+ If 
+\begin_inset Formula $N_{\sigma}$
+\end_inset
+
+ is the unit normal of a surface patch 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, show that 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a line of curvate iff 
+\begin_inset Formula $\dot{N_{\sigma}}=-\lambda\dot{\gamma}$
+\end_inset
+
+, for some scalar function 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ with the same domain as 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, and that in this case the corresponding principal curvature is 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $N_{\sigma}$
+\end_inset
+
+ is a unit normal of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, let 
+\begin_inset Formula $G$
+\end_inset
+
+ be the map from 
+\begin_inset Formula $S$
+\end_inset
+
+ to the unit sphere 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ such that for all points 
+\begin_inset Formula $P\in S$
+\end_inset
+
+ covered by the surface patch 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, 
+\begin_inset Formula $G(P)=N_{P}\in\mathbf{S}^{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $N_{P}$
+\end_inset
+
+ is the unit normal of 
+\begin_inset Formula $S$
+\end_inset
+
+ at 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Consider a tangent plane at 
+\begin_inset Formula $P\in S$
+\end_inset
+
+.
+ This plane has a normal 
+\begin_inset Formula $N_{P}$
+\end_inset
+
+.
+ For a point 
+\begin_inset Formula $Q=G(P)=N_{P}\in\mathbf{S}^{2}$
+\end_inset
+
+ the tangent plane is through the origin and perpendicular to 
+\begin_inset Formula $N_{P}$
+\end_inset
+
+, that is, it is the same tangent space as the tangent space at 
+\begin_inset Formula $P$
+\end_inset
+
+, meaning 
+\begin_inset Formula $T_{Q}\mathbf{S}^{2}=T_{G(P)}\mathbf{S}^{2}=T_{P}S$
+\end_inset
+
+.
+ If we take the derivative of 
+\begin_inset Formula $G$
+\end_inset
+
+ we'll get a tangent map 
+\begin_inset Formula $T:T_{P}S\rightarrow T_{P}S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now now that 
+\end_layout
+
 \end_body
 \end_document
