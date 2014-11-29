@@ -1339,19 +1339,39 @@ The
 \end_inset
 
  map is the matrix 
-\begin_inset Formula $\mathcal{F}_{I}^{-1}\mathcal{F}_{II}$
+\begin_inset Formula $-\mathcal{F}_{I}^{-1}\mathcal{F}_{II}$
 \end_inset
 
 , and the determinant is 
 \begin_inset Formula 
 \[
-\det G=\det\mathcal{F}_{I}^{-1}\mathcal{F}_{II}
+\det G=\det-\mathcal{F}_{I}^{-1}\mathcal{F}_{II}=(-1)^{2}\det\mathcal{F}_{I}^{-1}\mathcal{F}_{II}=\det\mathcal{F}_{I}^{-1}\mathcal{F}_{II}
 \]
 
 \end_inset
 
 which is the Gaussian curvature at 
 \begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This would be more convincing if I could write the last line as 
+\begin_inset Formula 
+\[
+-J(\sigma)\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\alpha}=-\mathcal{F}_{I}^{-1}\mathcal{F}_{II}J(\sigma)\dot{\alpha}=-\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\gamma}=-\mathcal{F}_{I}^{-1}\mathcal{F}_{II}w
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $w$
+\end_inset
+
+ is the argument of the map 
+\begin_inset Formula $G$
 \end_inset
 
 .
