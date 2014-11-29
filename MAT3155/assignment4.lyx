@@ -1190,7 +1190,7 @@ For a smooth oriented surface we have a regular surface patch
 
 .
  For every point 
-\begin_inset Formula $P$
+\begin_inset Formula $P\in S$
 \end_inset
 
  there is a smooth unit normal 
@@ -1284,7 +1284,15 @@ T_{P}S=T_{Q}\mathbf{S}^{2}=T_{N(P)}\mathbf{S}^{2}
 
 \end_inset
 
+This means that the tangent map for 
+\begin_inset Formula $N$
+\end_inset
 
+ is a map from 
+\begin_inset Formula $T_{P}S\rightarrow T_{P}S$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1292,7 +1300,61 @@ T_{P}S=T_{Q}\mathbf{S}^{2}=T_{N(P)}\mathbf{S}^{2}
 \series bold
 b)
 \series default
- 
+ By (a), the tangent map 
+\begin_inset Formula $G=T_{P}N$
+\end_inset
+
+ for 
+\begin_inset Formula $N$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $G:T_{P}S\rightarrow T_{P}S$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\det G$
+\end_inset
+
+ is the Gaussian curvature at 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d(N\circ\gamma)}{dt}(0) & = & \frac{d(N\circ\sigma\circ\alpha)}{dt}(0)\\
+ & = & J(N\circ\sigma)\dot{\alpha}\\
+ & = & -J(\sigma)\mathcal{F}_{I}^{-1}\mathcal{F}_{II}\dot{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+The 
+\begin_inset Formula $G$
+\end_inset
+
+ map is the matrix 
+\begin_inset Formula $\mathcal{F}_{I}^{-1}\mathcal{F}_{II}$
+\end_inset
+
+, and the determinant is 
+\begin_inset Formula 
+\[
+\det G=\det\mathcal{F}_{I}^{-1}\mathcal{F}_{II}
+\]
+
+\end_inset
+
+which is the Gaussian curvature at 
+\begin_inset Formula $P$
+\end_inset
+
+.
 \end_layout
 
 \end_body
