@@ -1,0 +1,366 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY3750
+\begin_inset Newline newline
+\end_inset
+
+Devoir 5
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma - 6379153
+\begin_inset Newline newline
+\end_inset
+
+November 29 2014
+\end_layout
+
+\begin_layout Problem
+(12.1) Gibbs Rule: 
+\begin_inset Formula $f=k-\pi+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ What is the maximum number of phases (
+\begin_inset Formula $\pi$
+\end_inset
+
+) that can exist simultaneously in equilibrium in a system composed of two
+ different substances that don't react chemically? 
+\end_layout
+
+\begin_layout Standard
+Two substances means 
+\begin_inset Formula $k=2$
+\end_inset
+
+.
+ Since they are in equilibrium and there are no chemical reactions, Gibbs'
+ rule applies.
+ Since we can't have negative degrees of freedom, we can impose the restriction
+ 
+\begin_inset Formula $f\geq0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & \leq & f=2-\pi+2\\
+0 & \leq & 4-\pi\\
+\pi & \leq & 4
+\end{eqnarray*}
+
+\end_inset
+
+This means that if we have two substances that don't react chemically, they
+ will only be in equilibrium if there are 4 or less phases.
+ Interestingly, Halliwell and Nyburg published a paper in the sixties arguing
+ that negative degrees of freedom made sense:
+\begin_inset Newline newline
+\end_inset
+
+http://www.nature.com/nature/journal/v201/n4924/abs/2011118a0.html
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ In the same system at normal temperature and pressure (300k and 1atm),
+ how many phases can exist simultaneously at equilibrium state?
+\end_layout
+
+\begin_layout Standard
+There could still be up to 4 phases depending on the phase diagram of the
+ two substances.
+\end_layout
+
+\begin_layout Problem
+(12.2)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Determine the range of concentrations for which the liquids are miscible
+ at these conditions.
+\end_layout
+
+\begin_layout Standard
+Drawing a tangent, the liquids are immiscible when 
+\begin_inset Formula $x\in(x^{a},x^{b})$
+\end_inset
+
+ which is about the range 
+\begin_inset Formula $(0.15,0.7)$
+\end_inset
+
+.
+ The liquids are miscible when 
+\begin_inset Formula $x<0.15$
+\end_inset
+
+ and 
+\begin_inset Formula $x>0.7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ If a mixture has 3 moles of liquid A and 2 moles of liquid B, what is the
+ Gibbs energy of the mixture in equilibrium?
+\end_layout
+
+\begin_layout Standard
+The molar fraction of liquid B is 
+\begin_inset Formula 
+\[
+x=\frac{2}{3+2}=0.4
+\]
+
+\end_inset
+
+On the graph, this is an unstable point and lies between 
+\begin_inset Formula $x^{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{b}$
+\end_inset
+
+, so the mixture will seperate into two phases of composition 
+\begin_inset Formula $x_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{b}$
+\end_inset
+
+ whose energies are about, respectively
+\begin_inset Formula 
+\[
+G_{a}=40\mathrm{kJ/mol}\qquad G_{b}=9\mbox{\mathrm{kJ/mol}}
+\]
+
+\end_inset
+
+The total energy is the average of the mixture in equilibrium is 
+\begin_inset Formula 
+\[
+G=\frac{40+9}{2}=24.5\mathrm{kJ/mol}
+\]
+
+\end_inset
+
+which we could have just gotten directly from the tangent line at 
+\begin_inset Formula $x=0.4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ How many phases exist in equilibrium for a mixture of this composition?
+ What is the composition and number of moles for each phase?
+\end_layout
+
+\begin_layout Standard
+There are two phases 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ with compositions of liquid B 
+\begin_inset Formula $x_{B}^{a}=0.15$
+\end_inset
+
+, and 
+\begin_inset Formula $x_{B}^{b}=0.7$
+\end_inset
+
+ when the mixture reaches equilibrium.
+ The starting mixture has a composition of 
+\begin_inset Formula $x_{B}=0.4$
+\end_inset
+
+ with 
+\begin_inset Formula $n_{A}=3\mathrm{mol}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{B}=2\mathrm{mol}$
+\end_inset
+
+.
+ Assuming the number of moles of B and the total number of moles, don't
+ change we know
+\begin_inset Formula 
+\[
+n_{B}=n_{B}^{a}+n_{B}^{b}\qquad n=n^{a}+n^{b}
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $n_{B}=nx_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $n_{B}^{a}=n^{a}x_{B}^{a}$
+\end_inset
+
+, and 
+\begin_inset Formula $n_{B}^{b}=n^{b}x_{B}^{b}$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+nx_{B}=n^{a}x_{B}^{a}+n^{b}x_{B}^{b}
+\]
+
+\end_inset
+
+Eliminating 
+\begin_inset Formula $n^{b}$
+\end_inset
+
+ with 
+\begin_inset Formula $n^{b}=n-n^{a}$
+\end_inset
+
+ we get
+\begin_inset Formula 
+\begin{eqnarray*}
+nx_{B} & = & n^{a}x_{B}^{a}+(n-n^{a})x_{B}^{b}\\
+ & = & n^{a}x_{B}^{a}+nx_{B}^{b}-n^{a}x_{B}^{b}\\
+ & = & n^{a}(x_{B}^{a}-x_{B}^{b})+nx_{B}^{b}\\
+n^{a} & = & \frac{n(x_{B}-x_{B}^{b})}{x_{B}^{a}-x_{B}^{b}}=\frac{5(0.4-0.7)}{0.15-0.7}=2.72\mathrm{mol}
+\end{eqnarray*}
+
+\end_inset
+
+Thus the number of moles in phase 
+\series bold
+
+\begin_inset Formula $b$
+\end_inset
+
+
+\series default
+ is 
+\begin_inset Formula $n^{b}=n-n^{a}=5-2.72=2.28\mathrm{mol}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+d)
+\series default
+ 
+\end_layout
+
+\end_body
+\end_document
