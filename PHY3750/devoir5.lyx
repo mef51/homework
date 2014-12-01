@@ -447,6 +447,8 @@ Gibbs Energy for mixture of liquid A and B
 
 \series bold
 a) 
+\series default
+A phase diagram of a mixture of ethanol and water.
 \end_layout
 
 \begin_layout Standard
@@ -545,6 +547,111 @@ The region between the two curves is 2 phases, liquid and vapor.
 
  is constrained to the line separating the two-phase and the vapor regions
  and to the line separating the two-phase and the liquid regions.
+\end_layout
+
+\begin_layout Problem
+Using the preceding phase diagram, consider a liquid mixture of ethanol
+ and water with 
+\begin_inset Formula $x=10\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Find the boiling temperature.
+\end_layout
+
+\begin_layout Standard
+Based on the diagram the temperature at which boiling starts is 
+\begin_inset Formula $90\mathrm{^{\circ}C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ At 
+\begin_inset Formula $95\mathrm{^{\circ}C}$
+\end_inset
+
+, calculate the compositions of vapor and liquid.
+\end_layout
+
+\begin_layout Standard
+Draw a horizontal line at 
+\begin_inset Formula $95\mathrm{^{\circ}C}$
+\end_inset
+
+ and read off the fractions at the intersections of this horizontal line
+ and the two curves.
+ The percent liquid composition is about 
+\begin_inset Formula $x_{L}=5\%$
+\end_inset
+
+ and the percent vapor composition is about 
+\begin_inset Formula $x_{V}=40\%$
+\end_inset
+
+.
+ The average concentration is 
+\begin_inset Formula $x_{0}=10\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ At 
+\begin_inset Formula $95\mathrm{^{\circ}C}$
+\end_inset
+
+, calculate the fraction of the initial liquid that evaporated.
+\end_layout
+
+\begin_layout Standard
+The amount of stuff that became vapor 
+\begin_inset Formula $n_{V}$
+\end_inset
+
+ is the amount of liquid that evaporated.
+ Using 
+\begin_inset Formula $n=n_{L}+n_{V}$
+\end_inset
+
+, we know
+\begin_inset Formula 
+\begin{eqnarray*}
+n_{L}x_{L}+n_{V}x_{V} & = & nx_{0}\\
+(n-n_{V})x_{L}+n_{V}x_{V} & = & nx_{0}\\
+nx_{L}-n_{V}x_{L}+n_{V}x_{V} & = & nx_{0}\\
+nx_{L}+n_{V}(x_{V}-x_{L}) & = & nx_{0}\\
+n_{V} & = & n\frac{x_{0}-x_{L}}{x_{V}-x_{L}}
+\end{eqnarray*}
+
+\end_inset
+
+The fraction that became vapor then is 
+\begin_inset Formula 
+\[
+\frac{x_{0}-x_{L}}{x_{V}-x_{L}}=\frac{0.1-0.05}{0.4-0.05}=0.14
+\]
+
+\end_inset
+
+14% of the intial liquid evaporated.
 \end_layout
 
 \end_body
