@@ -359,7 +359,84 @@ Thus the number of moles in phase
 \series bold
 d)
 \series default
- 
+ Based on the curve compare the molecular forces of cohesion (A-A and B-B)
+ to the molecular forces of adhesion (A-B).
+\end_layout
+
+\begin_layout Standard
+First off, the Gibbs free energy at pure A (
+\begin_inset Formula $x=0$
+\end_inset
+
+) and pure B (
+\begin_inset Formula $x=1.0$
+\end_inset
+
+) represents the cohesion forces A-A and B-B, respectively.
+ We see that B is more stable since it's Gibbs free energy is lower than
+ that of A.
+\end_layout
+
+\begin_layout Standard
+The A-B adhesive forces are at 
+\begin_inset Formula $x=0.15$
+\end_inset
+
+ and 
+\begin_inset Formula $x=0.7$
+\end_inset
+
+.
+ Both represent a more stable state than A alone.
+ The adhesive forces for the mixture at 
+\begin_inset Formula $x=0.15$
+\end_inset
+
+ are about as strong as the cohesive forces for B-B but the adhesive forces
+ for the mixture at 
+\begin_inset Formula $x=0.7$
+\end_inset
+
+ are stronger than the cohesive forces for B-B.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 12-2graph.jpg
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gibbs Energy for mixture of liquid A and B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
