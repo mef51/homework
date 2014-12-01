@@ -439,5 +439,113 @@ Gibbs Energy for mixture of liquid A and B
 
 \end_layout
 
+\begin_layout Problem
+(12.6)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename phasediagram.PNG
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Phase Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Indicate the number of equilibrium phases in each region of the diagram.
+ Apply Gibbs rule to find the degrees of freedom (the dimensionality) for
+ each region and explain the link between the dimensionality and the diagram.
+\end_layout
+
+\begin_layout Standard
+The region below the two curves is 1 phase, liquid.
+ Using Gibbs rule, 
+\begin_inset Formula $f=2-1+2=3$
+\end_inset
+
+.
+ This represents the freedom to pick 
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+, and 
+\begin_inset Formula $P$
+\end_inset
+
+ freely within that phase.
+\end_layout
+
+\begin_layout Standard
+The region between the two curves is 2 phases, liquid and vapor.
+ Using Gibbs rule, 
+\begin_inset Formula $f=2-2+2=2$
+\end_inset
+
+.
+ This represents the freedom to pick 
+\begin_inset Formula $T$
+\end_inset
+
+, and 
+\begin_inset Formula $P$
+\end_inset
+
+, but not 
+\begin_inset Formula $x$
+\end_inset
+
+, since 
+\begin_inset Formula $x$
+\end_inset
+
+ is constrained to the line separating the two-phase and the vapor regions
+ and to the line separating the two-phase and the liquid regions.
+\end_layout
+
 \end_body
 \end_document
