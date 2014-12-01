@@ -654,5 +654,115 @@ The fraction that became vapor then is
 14% of the intial liquid evaporated.
 \end_layout
 
+\begin_layout Problem
+(12.7)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ See attached for graphs.
+ Write the combination of the equilibrium phases existing in different ranges
+ of composition at each of the six temperatures.
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $T=1100$
+\end_inset
+
+K, the equilibrium phase is a liquid.
+\begin_inset Newline newline
+\end_inset
+
+At 
+\begin_inset Formula $T=1000$
+\end_inset
+
+K, the equilibrium phase is a solid for 
+\begin_inset Formula $x<0.21$
+\end_inset
+
+, is unmixed with solid and liquid phases for 
+\begin_inset Formula $0.21<x<0.52$
+\end_inset
+
+, and is liquid for 
+\begin_inset Formula $0.52<x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+At 
+\begin_inset Formula $T=900$
+\end_inset
+
+K, the equilibrium phase is a solid for 
+\begin_inset Formula $x<0.32$
+\end_inset
+
+, is unmixed with solid and liquid phases for 
+\begin_inset Formula $0.32<x<0.69$
+\end_inset
+
+, and is liquid for 
+\begin_inset Formula $0.69<x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+At 
+\begin_inset Formula $T=800$
+\end_inset
+
+K, the equilibrium phase is a solid for 
+\begin_inset Formula $x<0.42$
+\end_inset
+
+, is unmixed with solid and liquid phases for 
+\begin_inset Formula $0.42<x<0.80$
+\end_inset
+
+, and is liquid for 
+\begin_inset Formula $0.80<x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+At 
+\begin_inset Formula $T=700$
+\end_inset
+
+K, the equilibrium phase is a solid for 
+\begin_inset Formula $x<0.58$
+\end_inset
+
+, is unmixed with solid and liquid phases for 
+\begin_inset Formula $0.58<x<0.91$
+\end_inset
+
+, and is liquid for 
+\begin_inset Formula $0.91<x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+At 
+\begin_inset Formula $T=600$
+\end_inset
+
+K, the equilibrium phase is a solid.
+\end_layout
+
 \end_body
 \end_document
