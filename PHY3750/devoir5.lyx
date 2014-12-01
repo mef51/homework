@@ -764,5 +764,66 @@ At
 K, the equilibrium phase is a solid.
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ DONE
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ OKAY
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+d)
+\series default
+ Identify the different regions of the phase diagram and describe the equilibriu
+m phases in each region.
+\end_layout
+
+\begin_layout Standard
+There are three regions.
+ The region below both curves is a region where all the equilibrium phases
+ are solid.
+ The region between the two curves is a region where the mixture will separate
+ into a solid phase and a liquid phase in equilibrium.
+ The region above the curves is always a liquid phase in equilibrium.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+e)
+\series default
+ Consider isobaric fusion of an alloy with composition 
+\begin_inset Formula $x=0.3$
+\end_inset
+
+.
+ Determine from the diagram the temperature of the start of fusion, the
+ initial composition of the liquid phase, and the temperature at which fusion
+ stops.
+\end_layout
+
+\begin_layout Standard
+From the diagram, fusion starts at about 
+\begin_inset Formula $900$
+\end_inset
+
+K and ends at about 
+\begin_inset Formula $1100$
+\end_inset
+
+K.
+\end_layout
+
 \end_body
 \end_document
