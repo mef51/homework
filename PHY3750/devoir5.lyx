@@ -823,6 +823,111 @@ K and ends at about
 \end_inset
 
 K.
+ The initial composition of the liquid would be 0 since fusion is just starting
+ from the completely solid phase?
+\end_layout
+
+\begin_layout Problem
+(13.2)
+\end_layout
+
+\begin_layout Problem
+The equilibrium constant of the reaction 
+\begin_inset Formula $\mathrm{SO_{3}\iff SO_{2}+\frac{1}{2}O_{2}}$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $171.9\mathrm{Pa^{1/2}}$
+\end_inset
+
+ at 
+\begin_inset Formula $T=1000$
+\end_inset
+
+K.
+ The system contains 2 moles of 
+\begin_inset Formula $\mathrm{SO_{3}}$
+\end_inset
+
+ and 1 mole of 
+\begin_inset Formula $\mathrm{SO_{2}}$
+\end_inset
+
+ in equilibrium, and the pressure in the reactor is 
+\begin_inset Formula $0.4$
+\end_inset
+
+MPa.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Determine the stochiometric coefficients and write the mass action law
+ for this reaction.
+\end_layout
+
+\begin_layout Standard
+The coefficients are 
+\begin_inset Formula $v_{SO_{3}}=-1$
+\end_inset
+
+, 
+\begin_inset Formula $v_{SO_{2}}=1$
+\end_inset
+
+, 
+\begin_inset Formula $v_{O_{2}}=\frac{1}{2}$
+\end_inset
+
+.
+ The mass action law is 
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{SO_{3}}^{-1}x_{SO_{2}}^{1}x_{O_{2}}^{1/2} & = & P^{-(-1+1+\frac{1}{2})}k(T)\\
+\frac{x_{SO_{2}}\sqrt{x_{O_{2}}}}{x_{SO_{3}}} & = & \frac{1}{\sqrt{P}}k(T)=\frac{1}{\sqrt{0.4\times10^{6}}}171.9=0.27
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Calculate the quantity of oxygen in the system at these conditions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+n_{SO_{3}} & = & 2\implies x_{SO_{3}}=\frac{n_{SO_{3}}}{n_{tot}}=\frac{2}{3+n}\\
+n_{SO_{2}} & = & 1\implies x_{SO_{2}}=\frac{1}{3+n}\\
+n_{O_{2}} & = & n\implies x_{O_{2}}=\frac{n}{3+n}
+\end{eqnarray*}
+
+\end_inset
+
+Using the mass action law
+\begin_inset Formula 
+\begin{eqnarray*}
+0.27 & = & \frac{\frac{1}{3+n}\sqrt{\frac{n}{3+n}}}{2}(3+n)=\frac{1}{2}\sqrt{\frac{n}{3+n}}\\
+(0.54)^{2} & = & \frac{n}{3+n}\\
+n & = & \frac{3(0.54)^{2}}{1-(0.54)^{2}}=1.23\mathrm{mol}
+\end{eqnarray*}
+
+\end_inset
+
+There is 1.23mol of oxygen in the system.
+\end_layout
+
+\begin_layout Problem
+(13.4)
 \end_layout
 
 \end_body
