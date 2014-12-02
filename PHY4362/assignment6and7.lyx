@@ -145,6 +145,478 @@ status open
 \begin_layout Problem*
 
 \series bold
+2.
+
+\series default
+ Multipole radiation 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ For the 
+\begin_inset Formula $\frac{9}{2}^{-}\rightarrow\frac{7}{2}^{+}$
+\end_inset
+
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ transition give all permitted multi-pole radiations and indicate which
+ multi-pole might be the most intense in the emitted radiation.
+\end_layout
+
+\begin_layout Standard
+There is a parity change.
+ To find what 
+\begin_inset Formula $L$
+\end_inset
+
+ can be we do:
+\begin_inset Formula 
+\begin{eqnarray*}
+|J_{i}-J_{f}| & \leq & L\leq J_{i}+J_{f}\\
+\big|\frac{9}{2}-\frac{1}{2}-\frac{7}{2}-\frac{1}{2}\big| & \leq & L\leq\frac{9}{2}-\frac{1}{2}+\frac{7}{2}+\frac{1}{2}\\
+0 & \leq & L\leq8
+\end{eqnarray*}
+
+\end_inset
+
+So 
+\begin_inset Formula $L$
+\end_inset
+
+ can be 1, 2, 3, 4, 5, 6, 7, 8.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The allowed transitions are E1, M2, E3, M4, E5, M6, E7, M8
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ The natural linewidth would be about 
+\begin_inset Formula $\Gamma=\frac{\hbar}{\tau}=\frac{1.05\times10^{-34}\mathrm{m^{2}kg/s}}{10^{-17}\mathrm{s}}=1.05\times10^{-17}\mathrm{m^{2}kg/s^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+3.
+
+\series default
+ Calculate the recoil energy for the transitions from the first excited
+ statte to the ground state for the following nuclides (energy given in
+ parentheses) I'm assuming the given energy is the energy of the gamma ray.
+\end_layout
+
+\begin_layout Problem*
+The recoil energy is given by 
+\begin_inset Formula $E_{R}=\frac{E_{\gamma}^{2}}{2Mc^{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $c^{2}=931.5$
+\end_inset
+
+MeV/u
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\begin_inset Formula $^{15}$
+\end_inset
+
+
+\series default
+O (
+\begin_inset Formula $E_{\gamma}=5.183$
+\end_inset
+
+MeV) 
+\begin_inset Formula $E_{R}=\frac{()^{2}}{(931.5)}=$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=15.003065\mathrm{u}\implies E_{R}=\frac{(5.183)^{2}}{2(15.003065)(931.5)}=9.61\times10^{-4}\mathrm{MeV}
+\]
+
+\end_inset
+
+
+\series bold
+b)
+\series default
+ 
+\begin_inset Formula $^{19}$
+\end_inset
+
+O (
+\begin_inset Formula $E_{\gamma}=0.0960$
+\end_inset
+
+MeV)
+\begin_inset Formula 
+\[
+M=19.003577\mathrm{u}\implies E_{R}=\frac{(0.0960)^{2}}{2(19.003577)(931.5)}=2.61\times10^{-7}\mathrm{MeV}
+\]
+
+\end_inset
+
+
+\series bold
+c) 
+\series default
+
+\begin_inset Formula $^{57}$
+\end_inset
+
+Fe (
+\begin_inset Formula $E_{\gamma}=0.0144$
+\end_inset
+
+MeV)
+\begin_inset Formula 
+\[
+M=56.935396\mathrm{u}\implies E_{R}=\frac{(0.0144)^{2}}{2(56.935396)(931.5)}=1.96\times10^{-9}\mathrm{MeV}
+\]
+
+\end_inset
+
+
+\series bold
+d)
+\series default
+ 
+\begin_inset Formula $^{70}$
+\end_inset
+
+Ge (
+\begin_inset Formula $E_{\gamma}=1.0396$
+\end_inset
+
+MeV)
+\begin_inset Formula 
+\[
+M=69.924250\mathrm{u}\implies E_{R}=\frac{(1.0396)^{2}}{2(69.924250)(931.5)}=8.3\times10^{-6}\mathrm{MeV}
+\]
+
+\end_inset
+
+
+\series bold
+e)
+\series default
+ 
+\begin_inset Formula $^{227}$
+\end_inset
+
+Th (
+\begin_inset Formula $E_{\gamma}=0.0093$
+\end_inset
+
+MeV)
+\begin_inset Formula 
+\[
+M=227.0277\mathrm{u}\implies E_{R}=\frac{(0.0093)^{2}}{2(227.0277)(931.5)}=2.05\times10^{-10}\mathrm{MeV}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+4.
+
+\series default
+ From these transitions compute the natural linewidth 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, the Doppler width 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ at room temperature 
+\begin_inset Formula $T=$
+\end_inset
+
+293K, the Doppler width at liquid helium temperature 
+\begin_inset Formula $T=$
+\end_inset
+
+4K and the nuclear recoil energy.
+\end_layout
+
+\begin_layout Standard
+We'll use the following equations:
+\begin_inset Formula 
+\[
+\Gamma=\frac{\hbar}{\tau},\qquad\Delta=2\sqrt{\ln2}E_{\gamma}\sqrt{\frac{2kT}{Mc^{2}}},\qquad E_{R}=\frac{E_{\gamma}^{2}}{2Mc^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $k=8.62\times10^{-11}\mathrm{MeV/K}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ 
+\begin_inset Formula $E_{\gamma}=73\mathrm{keV}=73\times10^{-3}\mathrm{MeV}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=6.3\mathrm{ns}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{^{193}Ir}=192.962917\mathrm{u}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma & = & \frac{\hbar}{\tau}=\frac{1.05\times10^{-34}}{6.3\times10^{-9}}=1.67\times10^{-26}\\
+\Delta_{room} & = & 2\sqrt{\ln2}E_{\gamma}\sqrt{\frac{2kT}{Mc^{2}}}=2\sqrt{\ln2}(73\times10^{-3})\sqrt{\frac{2(8.62\times10^{-11})(293)}{192.962917(931.5)}}=6.44\times10^{-8}\mathrm{MeV}\\
+\Delta_{cold} & = & 2\sqrt{\ln2}(73\times10^{-3})\sqrt{\frac{2(8.62\times10^{-11})(4)}{192.962917(931.5)}}=7.53\times10^{-9}\mathrm{MeV}\\
+E_{R} & = & \frac{E_{\gamma}^{2}}{2Mc^{2}}=\frac{(73\times10^{-3})^{2}}{2(192.962917)(931.5)}=1.48\times10^{-8}\mathrm{MeV}
+\end{eqnarray*}
+
+\end_inset
+
+
+\series bold
+b)
+\series default
+ Same process but with 
+\begin_inset Formula $E_{\gamma}=14.4\mathrm{keV}=14.4\times10^{-3}\mathrm{MeV}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=98\mathrm{ns}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{^{57}Fe}=56.935396\mathrm{u}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma & = & 1.07\times10^{-27}\mathrm{m^{2}kg/s^{2}}\\
+\Delta_{room} & = & 2.34\times10^{-8}\mathrm{MeV}\\
+\Delta_{cold} & = & 2.73\times10^{-9}\mathrm{MeV}\\
+E_{R} & = & 1.95\times10^{-9}\mathrm{MeV}
+\end{eqnarray*}
+
+\end_inset
+
+
+\series bold
+c)
+\series default
+ 
+\begin_inset Formula $E_{\gamma}=6.2\mathrm{keV}=6.2\times10^{-3}\mathrm{MeV}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=6.6\mathrm{\mu s}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{^{181}Ta}=180.947992\mathrm{u}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma & = & 1.59\times10^{-29}\mathrm{m^{2}kg/s^{2}}\\
+\Delta_{room} & = & 5.65\times10^{-9}\mathrm{MeV}\\
+\Delta_{cold} & = & 6.6\times10^{-10}\mathrm{MeV}\\
+E_{R} & = & 1.14\times10^{-10}\mathrm{MeV}
+\end{eqnarray*}
+
+\end_inset
+
+
+\series bold
+d)
+\series default
+ 
+\begin_inset Formula $E_{\gamma}=23.9\mathrm{keV}=23.9\times10^{-3}\mathrm{MeV}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=17.8\mathrm{ns}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{^{119}Sn}=118.903311\mathrm{u}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma & = & 5.90\times10^{-27}\mathrm{m^{2}kg/s^{2}}\\
+\Delta_{room} & = & 2.69\times10^{-8}\mathrm{MeV}\\
+\Delta_{cold} & = & 3.14\times10^{-9}\mathrm{MeV}\\
+E_{R} & = & 2.58\times10^{-9}\mathrm{MeV}
+\end{eqnarray*}
+
+\end_inset
+
+
+\series bold
+e)
+\series default
+ 
+\begin_inset Formula $E_{\gamma}=95\mathrm{keV}=95\times10^{-3}\mathrm{MeV}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=22\mathrm{ps}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{^{165}Ho}=164.930319\mathrm{u}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma & = & 4.77\times10^{-24}\mathrm{m^{2}kg/s^{2}}\\
+\Delta_{room} & = & 9.07\times10^{-8}\mathrm{MeV}\\
+\Delta_{cold} & = & 1.06\times10^{-8}\mathrm{MeV}\\
+E_{R} & = & 2.94\times10^{-8}\mathrm{MeV}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+5.
+ 
+\series default
+Graph the spectral profile of two doppler broadened lines L1 and L2 in 
+\begin_inset Formula $^{19}$
+\end_inset
+
+O centered at 91keV separated by 0.1eV.
+ Take the peak intensity of L1 to be twice the peak intensity of L2.
+\end_layout
+
+\begin_layout Standard
+The energy distribution will look like this
+\begin_inset Formula 
+\[
+f(E_{\gamma})=\exp\Big(-\Big(\frac{mc^{2}}{2kT}\Big)\Big(1-\frac{E_{\gamma}^{'}}{E_{\gamma}}\Big)^{2}\Big)
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $^{19}$
+\end_inset
+
+O we take 
+\begin_inset Formula $m=19.003577$
+\end_inset
+
+u.
+ The constants are 
+\begin_inset Formula $c^{2}=931.5$
+\end_inset
+
+MeV/u, and 
+\begin_inset Formula $k=8.62\times10^{-11}$
+\end_inset
+
+MeV/K.
+ For L1 we'll use 
+\begin_inset Formula $E_{\gamma}^{'}=91-0.0001=90.9999$
+\end_inset
+
+MeV and for L2 we'll use 
+\begin_inset Formula $E_{\gamma}^{'}=91.0001$
+\end_inset
+
+MeV.
+ To make the peak intensity of L1 twice that of L2 we'll just plot 
+\begin_inset Formula $2f(E_{\gamma})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ 
+\begin_inset Formula $T=293K$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+b) 
+\series default
+
+\begin_inset Formula $T=1000K$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+c)
+\series default
+ 
+\begin_inset Formula $T=4K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
 6.
 
 \series default
