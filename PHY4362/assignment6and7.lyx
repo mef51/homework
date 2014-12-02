@@ -91,6 +91,60 @@ Mohammed Chamma - 6379153
 \begin_layout Problem*
 
 \series bold
+1.
+ 
+\series default
+Draw a block diagram representing the important steps in obtaining the angular
+ momentum and parity selection for the E1 radiation interacting with the
+ two level quantum system.
+\end_layout
+
+\begin_layout Standard
+I think I accidentally just did it for Beta decay and now I'm out of time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename selectionrulesblockdiagram.jpg
+	lyxscale 50
+	width 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
 6.
 
 \series default
