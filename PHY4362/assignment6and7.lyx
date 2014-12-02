@@ -1,0 +1,535 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4362
+\begin_inset Newline newline
+\end_inset
+
+Assignment 6 and 7
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma - 6379153
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+6.
+
+\series default
+ Standard Fission Reactor
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ What parameters contribute to the four factor formula and what is its physical
+ meaning?
+\end_layout
+
+\begin_layout Standard
+The four factor formula is 
+\begin_inset Formula $k_{\infty}=\eta fp\epsilon$
+\end_inset
+
+ and represents the criticality of a nuclear chain reaction in an infinite
+ medium.
+ The four factors are called 
+\begin_inset Formula 
+\begin{eqnarray*}
+\eta & : & \mathrm{reproduction\, factor}\\
+f & : & \mathrm{thermal\, utilization\, factor}\\
+p & : & \mathrm{resonance\, escape\, probability}\\
+\epsilon & : & \mathrm{fast\, fission\, factor}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\eta$
+\end_inset
+
+ represents the # of fission neutrons produced per absorption in the fuel.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ is the probability that an absorbed neutron is absorbed in the fuel material.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ is the fraction of fission neutrons that slow down to thermal energies
+ without being absorbed.
+ 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is the ratio of the total number of fission neutrons to the number of thermal
+ fission neutrons (?).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ If 
+\begin_inset Formula $k>1$
+\end_inset
+
+, the reaction is supercritical and will grow exponentially.
+ If 
+\begin_inset Formula $k<1$
+\end_inset
+
+ it is subcritical and will decay exponentially.
+ If 
+\begin_inset Formula $k=1$
+\end_inset
+
+ is it critical and the neutron population remains constant.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ The size of the graphite rods is determined by the diffusion length 
+\begin_inset Formula $L_{d}$
+\end_inset
+
+ which is the distance thermal neutrons travels on average before absorption
+ and the slowing distance 
+\begin_inset Formula $L_{s}$
+\end_inset
+
+ which is the distance a fast neutron travels before slowing down.
+ The size is also determined by 
+\begin_inset Formula $k_{\infty}$
+\end_inset
+
+ and the complete reproduction factor 
+\begin_inset Formula $k$
+\end_inset
+
+ which takes into account the fraction of fast and thermal neutrons that
+ leave the system 
+\begin_inset Formula $\ell_{f}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ell_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+7.
+
+\series default
+ Fission bombs
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ Explain the difference between the first plutonium and uranium bombs.
+\end_layout
+
+\begin_layout Standard
+The first uranium bomb was a gun type bomb where a plug of uranium-235 was
+ fired into a pellet of uranium-235, causing the mass to go supercritical.
+ The first plutonium bomb was an implosion bomb, where a sphere of plutonium
+ is compressed to criticality by chemical explosions surrounding it.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ What is the role of a U238 tamper in the plutonium bomb design?
+\end_layout
+
+\begin_layout Standard
+The U238 tamper surrounds the plutonium mass and reflects neutrons back
+ into the core and provides a little extra neutrons to the reaction.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Which Japanese city was spared the conventional carpet bombing to be a
+ test bed for the destructive power of the nuclear device?
+\end_layout
+
+\begin_layout Standard
+Nagasaki.
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+8.
+
+\series default
+ Fusion bombs
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ What is the 
+\begin_inset Quotes eld
+\end_inset
+
+sloika design
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+It refers to the Russian 'layered' design where fusion and fission fuel
+ are layered
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ What are neutron bombs and salted bombs?
+\end_layout
+
+\begin_layout Standard
+Neutron bombs are meant to primarily release a lethal pulse of neutron radiation
+ as opposed to explosive destruction.
+ This is meant to clear an area of people by killing them with radiation
+ while largely preserving buildings and structures.
+ The fallout and the explosion are relatively small compared to other nuclear
+ weapons and the primary killer is the neutron radiation
+\end_layout
+
+\begin_layout Standard
+Salted bombs are nuclear weapons that maximize nuclear fallout and are used
+ to make an area uninhabitable by 
+\begin_inset Quotes eld
+\end_inset
+
+salting
+\begin_inset Quotes erd
+\end_inset
+
+ it with dangerous radioactive waste.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ What percentage of the destructive power of a typical 10MT nuclear device
+ comes from actual fusion?
+\end_layout
+
+\begin_layout Standard
+Less than half.
+ Most of the power comes from the extra fission of Uranium that the fusion
+ causes.
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+9.
+
+\series default
+ Controlled Fusion
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ What is the laser output radiation used in NIF, and how is it converted
+ first to UV and then to x-rays?
+\end_layout
+
+\begin_layout Standard
+An infrared laser is amplified to energies where it is the converted to
+ an UV beam.
+ The UV beam strikes the hohlraum's inner walls and are re-emitted as xrays.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ What is the difference between the stellatron and tokamak?
+\end_layout
+
+\begin_layout Standard
+The difference between the two is the geometry of the torus.
+ The stellatron manipulates the magnetic fields with external currents while
+ the tokamak manipulates it by driving a current through the plasma.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Explain the meaning and significance of the Lawson criterion.
+\end_layout
+
+\begin_layout Standard
+The Lawson criterion states that for a fusion reactor to reach ignition,
+ the temperature of the plasma heated by the products of the fusion reaction
+ must by high enough to maintain the temperature of the plasma.
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+10.
+
+\series default
+ Stellar nucleo-synthesis
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Draw the evolution diagram for a star of the size of our Sun from its birth
+ to the final stages of its existence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename solarevolution.jpg
+	lyxscale 60
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b) 
+\series default
+What is the source of the forces stabilizing the size of the very massive
+ star at various stages of its existence.
+\end_layout
+
+\begin_layout Standard
+As a normal star hydrogen fusion provides an outward pressure which is balanced
+ by the inward gravitational force.
+ During the red giant phase the star expands because in addition to fusion
+ in the core, there is fusion in the shells.
+ As a white dwarf the star has collected too much mass, collapses on itself,
+ and is held 'up' by electron degeneracy pressure caused by the Pauli exclusion
+ principle.
+ The star resists further compression because all the lower energy electron
+ states are filled.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\series default
+ Explain the conditions necessary for the processes leading to the production
+ of elements heavier than iron to take place.
+\end_layout
+
+\begin_layout Standard
+To make elements heavier than iron you need a red giant to go supernova.
+ In the explosion the neutron densities are theoretically high enough to
+ form the heavier elements.
+\end_layout
+
+\begin_layout Problem*
+
+\series bold
+11.
+
+\series default
+ Describe the idea of the Pound and Rebka experimental measurement of gravitatio
+nal redshift (1960).
+\end_layout
+
+\begin_layout Standard
+A photon falling moving in a gravitational field will have its frequency
+ shifted (blueshifted if towards the center and redshifted if away).
+ Atoms will emit photons of a very specific frequency and can only absorb
+ photons of a very specific frequency since the energy levels are discrete.
+ 
+\end_layout
+
+\begin_layout Standard
+Take two radioactive cobalt atoms.
+ These atoms emit high energy gamma photons and have sharp spectral lines.
+ One of these atoms will emit a photon which can be absorbed by the other.
+ In a gravitational field, this photon is slightly shifted, and, since the
+ energy levels are discrete, the 'absorber' cannot absorb the photon.
+ 
+\end_layout
+
+\begin_layout Standard
+If the emitter is on the ground, photons emitted upward will be redshifted.
+ If the absorber moves towards the source, the photon is blueshifted in
+ the absorber's reference frame, by the special relativistic doppler effect.
+ These two effects can cancel out the shift, and the photon can be absorbed.
+ Measuring the speed necessary for this to happen lets you calculate the
+ gravitational frequency shift, validating a prediction of general relativity.
+\end_layout
+
+\begin_layout Standard
+Atoms that emit photons will experience recoil to conserve momentum.
+ Since the frequency shift is so tiny in the tower that Pound and Rebka
+ did their experiment in, this recoil causes a doppler shift which to counteract
+ would require a shift many orders of magnitude larger than the gravitational
+ shift.
+ 
+\end_layout
+
+\begin_layout Standard
+By embedding the cobalt atoms in a lattice of iron atoms, the cobalt emits
+ photons virtually recoil-free, since the lattice as a whole absorbs the
+ recoil.
+ This is called the Mossbauer effect.
+ Taking all this into account Pound and Rebka were able to find a measurement
+ that agreed within 10% of the prediction, and in subsequent experiments
+ the accuracy was increased to better than 1%.
+\end_layout
+
+\end_body
+\end_document
