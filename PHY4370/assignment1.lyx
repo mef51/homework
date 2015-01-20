@@ -1,0 +1,215 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4370 Assignment 1
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma - 6379153
+\begin_inset Newline newline
+\end_inset
+
+Jan.
+ 22, 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pdev}[2]{\frac{\partial#1}{\partial#2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 6.4 
+\end_layout
+
+\begin_layout Standard
+a) Prove that 
+\begin_inset Formula $[L_{i},x_{j}]=i\hbar\varepsilon_{ijk}x_{k}$
+\end_inset
+
+ where (
+\begin_inset Formula $i,j,k=1,2,3$
+\end_inset
+
+) and 
+\begin_inset Formula $\varepsilon_{ijk}$
+\end_inset
+
+ is the Levi-Cevita antisymmetric symbol.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+[L_{x},x] & = & [yp_{z}-zp_{y},x]=[yp_{z},x]-[zp_{y},x]\\
+ & = & (yp_{z}x-xyp_{z})\Psi-(zp_{y}x-xzp_{y})\Psi\\
+ & = & -i\hbar yx\pdev{\Psi}z+i\hbar yx\pdev{\Psi}z+i\hbar zx\pdev{\Psi}y-i\hbar zx\pdev{\Psi}y=0
+\end{eqnarray*}
+
+\end_inset
+
+Similarly, 
+\begin_inset Formula $[L_{y},y]=[L_{z},z]=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+[L_{x},y]=[yp_{z}-zp_{y},y]=[yp_{z},y]-[zp_{y},y]=-[zp_{y},y]=-z[p_{y},y]=-z(-i\hbar)=i\hbar z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[L_{y},z]=[zp_{x}-xp_{z},z]=[zp_{x},z]-[xp_{z},z]=-[xp_{z},z]=-[xp_{z},z]=-x(-i\hbar)=i\hbar x
+\]
+
+\end_inset
+
+Similarly, 
+\begin_inset Formula $[L_{z},x]=i\hbar y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+[L_{y},x]=[zp_{x}-xp_{z},z,x]=[zp_{x},x]-[xp_{z},x]=[zp_{x},x]=z[p_{x},x]=-i\hbar z=-[L_{x},y]
+\]
+
+\end_inset
+
+Similarly, 
+\begin_inset Formula $[L_{z},y]=-[L_{y},z]$
+\end_inset
+
+ and 
+\begin_inset Formula $[L_{x},z]=-[L_{z},x]$
+\end_inset
+
+.
+ Summarizing these results in a matrix, we see it is antisymmetric:
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+[L_{x},x] & [L_{y},x] & [L_{z},x]\\{}
+[L_{x},y] & [L_{y},y] & [L_{z},y]\\{}
+[L_{x},z] & [L_{y},z] & [L_{z},z]
+\end{array}\right]=\left[\begin{array}{ccc}
+0 & -[L_{x},y] & [L_{z},x]\\{}
+[L_{x},y] & 0 & -[L_{y},z]\\
+-[L_{z},x] & [L_{y},z] & 0
+\end{array}\right]=\left[\begin{array}{ccc}
+0 & -i\hbar z & i\hbar y\\
+i\hbar z & 0 & -i\hbar x\\
+-i\hbar y & i\hbar x & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+This can be summarized as 
+\begin_inset Formula $[L_{i},x_{j}]=i\hbar\varepsilon_{ijk}x_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+b) Prove 
+\begin_inset Formula $[L_{i},p_{j}]=i\hbar\varepsilon_{ijk}p_{k}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+[L_{x},p_{x}]=[yp_{z}-zp_{y},p_{x}]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
