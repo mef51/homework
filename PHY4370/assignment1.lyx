@@ -307,7 +307,43 @@ Since
 .
 \end_layout
 
+\begin_layout Problem
+Problem 6.5
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula $\mathbf{\hat{u}}=(u_{x},u_{y},u_{z})$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\mathbf{v}}=(v_{x},v_{y},v_{z})$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{\hat{w}}=(w_{x},w_{y},w_{z})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{u} & = & \mathbf{\hat{u}\cdot L}=vp_{w}-wp_{v}\\
+L_{v} & = & \mathbf{\hat{v}\cdot L}=wp_{u}-up_{w}\\
+L_{w} & = & \mathbf{\hat{w}\cdot L}=up_{v}-vp_{u}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[L_{u},L_{v}]=[vp_{w}-wp_{v},wp_{u}-up_{w}]=
+\]
+
+\end_inset
+
 
 \end_layout
 
