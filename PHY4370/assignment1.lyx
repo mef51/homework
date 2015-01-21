@@ -202,12 +202,112 @@ b) Prove
 
 .
 \begin_inset Formula 
+\begin{eqnarray*}
+[L_{x},p_{x}] & = & [yp_{z}-zp_{y},p_{x}]=[yp_{z},p_{x}]-[zp_{y},p_{x}]=0\\{}
+[L_{y},p_{y}] & = & [zp_{x}-xp_{z},p_{y}]=0\\{}
+[L_{z},p_{z}] & = & [xp_{y}-yp_{x},p_{z}]=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \[
-[L_{x},p_{x}]=[yp_{z}-zp_{y},p_{x}]=
+[L_{x},p_{y}]=[yp_{z}-zp_{y},p_{y}]=[yp_{z},p_{y}]-z[p_{y},p_{y}]=p_{z}[y,p_{y}]=i\hbar p_{z}
 \]
 
 \end_inset
 
+Similarly, 
+\begin_inset Formula $[L_{y},p_{z}]=i\hbar p_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $[L_{z},p_{x}]=i\hbar p_{y}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+[L_{y},p_{x}]=[zp_{x}-xp_{z},p_{x}]=[zp_{x},p_{x}]-[xp_{z},p_{x}]=-p_{z}[x,p_{x}]=-i\hbar p_{z}=-[L_{x},p_{y}]
+\]
+
+\end_inset
+
+Similarly, 
+\begin_inset Formula $[L_{z},p_{y}]=-i\hbar p_{x}=-[L_{y},p_{z}]$
+\end_inset
+
+ and 
+\begin_inset Formula $[L_{x},p_{z}]=-i\hbar p_{y}=-[L_{z},p_{x}]$
+\end_inset
+
+.
+ Analogous to part (a), these results are summarized by 
+\begin_inset Formula $[L_{i},p_{j}]=i\hbar\varepsilon_{ijk}p_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+c) 
+\begin_inset Formula $\mathbf{L}\cdot\mathbf{r}=0=\mathbf{L\cdot p}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{L}\cdot\mathbf{r} & = & L_{x}x+L_{y}y+L_{z}z=(yp_{z}-zp_{y})x+(zp_{x}-xp_{z})y+(xp_{y}-yp_{x})z\\
+ & = & yp_{z}x-zp_{y}x+zp_{x}y-xp_{z}y+xp_{y}z-yp_{x}z\\
+ & = & yp_{z}x-xp_{z}y-zp_{y}x+xp_{y}z-zp_{x}y-yp_{x}z
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $p_{i}=-i\hbar\partial_{i}$
+\end_inset
+
+ we can do 
+\begin_inset Formula $p_{i}x_{j}=x_{j}p_{i}$
+\end_inset
+
+ so long as 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{L\cdot r}=yp_{z}x-yp_{z}x-zp_{y}x+zp_{y}x-zp_{x}y-zp_{x}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{L\cdot p} & = & L_{x}p_{x}+L_{y}p_{y}+L_{z}p_{z}\\
+ & = & [yp_{z}p_{x}-zp_{y}p_{x}]+[zp_{x}p_{y}-xp_{z}p_{y}]+[xp_{y}p_{z}-yp_{x}p_{z}]\\
+ & = & yp_{z}p_{x}-yp_{x}p_{z}-zp_{y}p_{x}+zp_{x}p_{y}-xp_{z}p_{y}+xp_{y}p_{z}\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $p_{i}p_{j}=-\hbar\partial_{i}\partial_{j}=-\hbar\partial_{j}\partial_{i}=p_{j}p_{i}$
+\end_inset
+
+ when 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
