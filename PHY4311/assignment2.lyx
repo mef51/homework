@@ -1,0 +1,220 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Assignment 2
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma - 6379153
+\begin_inset Newline newline
+\end_inset
+
+January 21, 2015
+\end_layout
+
+\begin_layout Problem
+What is the coherence length for light with a bandwidth of 1MHz and 100THz?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+1 MHz
+\end_layout
+
+\begin_layout Standard
+The coherence time for this light is 
+\begin_inset Formula $\Delta\tau=1/\Delta\nu=1/10^{6}\text{Hz}=1\textmd{\mu s}$
+\end_inset
+
+.
+ So the coherence length is 
+\begin_inset Formula 
+\[
+\Delta z=c\Delta\tau=3\times10^{8}(10^{-6})=300\text{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+100 THz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta z=c\Delta\tau=\frac{c}{\Delta\nu}=\frac{3\times10^{8}}{10^{14}}=3\times10^{-6}\textmd{m}=3\text{\mu m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Power per solid angle
+\end_layout
+
+\begin_layout Standard
+a) Estimate the power per solid angle for a 100 Watt light bulb.
+\end_layout
+
+\begin_layout Standard
+Let's assume that the electrical power gets converted to light power with
+ 60% efficiency, so the light bulb radiates 60W of light.
+ Imagine a unit sphere surrounding a lightbulb (so the lightbulb is inside
+ the sphere).
+ The light from the lightbulb goes out radially from the lightbulb and by
+ the time it reaches the sphere the light covers an area equal to the surface
+ area of the sphere, or 
+\begin_inset Formula $4\pi(1\text{m})^{2}=4\pi\text{ m}^{2}$
+\end_inset
+
+.
+ So the power per unit area is 
+\begin_inset Formula $60W/4\pi\text{m}^{2}=4.77\text{W/m}^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+To get the power per unit solid angle, we multiply this by the square of
+ the distance between the lightbulb and the surface of the sphere, which
+ is 1 m.
+ Our estimate for power per unit solid angle (radiant intensity) is then
+ 
+\begin_inset Formula 
+\[
+I=\frac{60}{4\pi}(1)^{2}=4.77\frac{\text{W}}{\text{sr}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) Do the same for a 1mW laser.
+\end_layout
+
+\begin_layout Standard
+Take a laser and put it inside a unit sphere like with the lightbulb.
+ The laser is much sharper than a lightbulb and based on a laser pointer
+ you might buy from a hardware store, the laser beam diverges to a width
+ (diameter) of 0.5cm by the time it reaches the sphere.
+ The beam covers a circular area of 
+\begin_inset Formula $A=\pi(0.25\times10^{-2})^{2}=1.96\times10^{-5}\text{m}^{2}$
+\end_inset
+
+ on the sphere.
+ We'll take the power emitted by the laser and divide it by the area the
+ beam covers at the unit sphere and get 
+\begin_inset Formula 
+\[
+1\times10^{-3}/1.96\times10^{-5}=51.02\frac{\text{W}}{\text{m}^{2}}
+\]
+
+\end_inset
+
+The radiant intensity is obtained by multiplying by 1m
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=51.02\frac{\text{W}}{\text{sr}}
+\]
+
+\end_inset
+
+which is a lot higher than the lightbulb.
+\end_layout
+
+\end_body
+\end_document
