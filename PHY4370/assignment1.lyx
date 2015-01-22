@@ -531,7 +531,279 @@ J_{y} & = & \frac{1}{2i}(J_{+}-J_{-})=\frac{\hbar}{2i}\left[\begin{array}{cccc}
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Problem
+Problem 6.20
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{\hat{n}}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{n}=\mathbf{\hat{n}}\cdot\mathbf{S}=\sin\theta\cos\phi S_{x}+\sin\theta\sin\phi S_{y}+\cos\theta S_{z}
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $s=1$
+\end_inset
+
+, 
+\begin_inset Formula $m_{s}=1,0,-1$
+\end_inset
+
+.
+ The eigenvectors of 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ are given by 
+\begin_inset Formula $s(s+1)\hbar|sm_{s}\rangle$
+\end_inset
+
+ and are 
+\begin_inset Formula 
+\[
+2\hbar^{2}|1,1\rangle,\qquad2\hbar^{2}|1,0\rangle,\qquad2\hbar^{2}|1,-1\rangle
+\]
+
+\end_inset
+
+Use these as basis vectors (they are also basis vectors for 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\chi_{1,1}=\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)\qquad\chi_{1,0}=\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)\qquad\chi_{1,-1}=\left(\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right)
+\]
+
+\end_inset
+
+We can write 
+\begin_inset Formula $\mathbf{S}^{2}$
+\end_inset
+
+ as this matrix:
+\begin_inset Formula 
+\[
+\mathbf{S}^{2}=2\hbar^{2}\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+The eigenvectors of 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+ are given by 
+\begin_inset Formula $m_{s}\hbar|sm_{s}\rangle$
+\end_inset
+
+ and are 
+\begin_inset Formula 
+\[
+\hbar|1,1\rangle,\qquad0|1,0\rangle,\qquad-\hbar|1,-1\rangle
+\]
+
+\end_inset
+
+As a matrix (where the columns are the eigenvectors) this is 
+\begin_inset Formula 
+\[
+S_{z}=\hbar\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & -1
+\end{array}\right]
+\]
+
+\end_inset
+
+From page 300 of Bransden and Joachain, 
+\begin_inset Formula $S_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{y}$
+\end_inset
+
+ for a particle of spin 1 are given by
+\begin_inset Formula 
+\[
+S_{x}=\frac{\hbar}{\sqrt{2}}\left[\begin{array}{ccc}
+0 & 1 & 0\\
+1 & 0 & 1\\
+0 & 1 & 0
+\end{array}\right]\qquad S_{y}=\frac{\hbar}{\sqrt{2}}\left[\begin{array}{ccc}
+0 & -i & 0\\
+i & 0 & -i\\
+0 & i & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+So 
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{n} & = & \frac{\hbar}{\sqrt{2}}\sin\theta\cos\phi\left[\begin{array}{ccc}
+0 & 1 & 0\\
+1 & 0 & 1\\
+0 & 1 & 0
+\end{array}\right]+\frac{\hbar}{\sqrt{2}}\sin\theta\sin\phi\left[\begin{array}{ccc}
+0 & -i & 0\\
+i & 0 & -i\\
+0 & i & 0
+\end{array}\right]+\hbar\cos\theta\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & -1
+\end{array}\right]\\
+ & = & \frac{\hbar}{\sqrt{2}}\Bigg(\sin\theta\cos\phi\left[\begin{array}{ccc}
+0 & 1 & 0\\
+1 & 0 & 1\\
+0 & 1 & 0
+\end{array}\right]+\sin\theta\sin\phi\left[\begin{array}{ccc}
+0 & -i & 0\\
+i & 0 & -i\\
+0 & i & 0
+\end{array}\right]+\sqrt{2}\cos\theta\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & -1
+\end{array}\right]\Bigg)\\
+ & = & \frac{\hbar}{\sqrt{2}}\left[\begin{array}{ccc}
+\sqrt{2}\cos\theta & e^{-i\phi}\sin\theta & 0\\
+e^{i\phi}\sin\theta & 0 & e^{-i\phi}\sin\theta\\
+0 & e^{i\phi}\sin\theta & -\sqrt{2}\cos\theta
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+To get the eigenvalues and eigenvectors of 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ we solve 
+\begin_inset Formula $S_{n}\chi=\frac{\hbar}{\sqrt{2}}\lambda\chi$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\chi=\left(\begin{array}{c}
+a\\
+b\\
+c
+\end{array}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+S_{n}\chi=\frac{\hbar}{\sqrt{2}}\left(\begin{array}{c}
+a\sqrt{2}\cos\theta+be^{-i\phi}\sin\theta\\
+ae^{i\phi}\sin\theta+ce^{-i\phi}\sin\theta\\
+be^{i\phi}\sin\theta-c\sqrt{2}\cos\theta
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{n}\chi & = & \frac{\hbar}{\sqrt{2}}\lambda\chi\\
+\frac{\hbar}{\sqrt{2}}\left(\begin{array}{c}
+a\sqrt{2}\cos\theta+be^{-i\phi}\sin\theta\\
+ae^{i\phi}\sin\theta+ce^{-i\phi}\sin\theta\\
+be^{i\phi}\sin\theta-c\sqrt{2}\cos\theta
+\end{array}\right) & = & \frac{\hbar}{\sqrt{2}}\left(\begin{array}{c}
+\lambda a\\
+\lambda b\\
+\lambda c
+\end{array}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+a(\sqrt{2}\cos\theta-\lambda)+be^{-i\phi}\sin\theta\\
+ae^{i\phi}\sin\theta+ce^{-i\phi}\sin\theta-b\lambda\\
+be^{i\phi}\sin\theta-c(\sqrt{2}\cos\theta-\lambda)
+\end{array}\right)=\left[\begin{array}{ccc}
+\sqrt{2}\cos\theta-\lambda & e^{-i\phi}\sin\theta & 0\\
+e^{i\phi}\sin\theta & -\lambda & e^{-i\phi}\sin\theta\\
+0 & e^{i\phi}\sin\theta & \sqrt{2}\cos\theta-\lambda
+\end{array}\right]\left(\begin{array}{c}
+a\\
+b\\
+c
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The determinant of this matrix must be 0 for non-trivial solutions.
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\begin{array}{ccc}
+\sqrt{2}\cos\theta-\lambda & e^{-i\phi}\sin\theta & 0\\
+e^{i\phi}\sin\theta & -\lambda & e^{-i\phi}\sin\theta\\
+0 & e^{i\phi}\sin\theta & \sqrt{2}\cos\theta-\lambda
+\end{array}\right| & = & 0\\
+\sqrt{2}\cos\theta-\lambda\left|\begin{array}{cc}
+-\lambda & e^{-i\phi}\sin\theta\\
+e^{i\phi}\sin\theta & \sqrt{2}\cos\theta-\lambda
+\end{array}\right|-e^{-i\phi}\sin\theta\left|\begin{array}{cc}
+e^{i\phi}\sin\theta & e^{-i\phi}\sin\theta\\
+0 & \sqrt{2}\cos\theta-\lambda
+\end{array}\right| & = & 0\\
+(\sqrt{2}\cos\theta-\lambda)(-\lambda(\sqrt{2}\cos\theta-\lambda)-\sin^{2}\theta)-e^{-i\phi}\sin\theta(e^{i\phi}\sin\theta(\sqrt{2}\cos\theta-\lambda)) & = & 0\\
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
