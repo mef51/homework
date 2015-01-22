@@ -172,12 +172,12 @@ Similarly,
 \begin_inset Formula 
 \[
 \left[\begin{array}{ccc}
-[L_{x},x] & [L_{y},x] & [L_{z},x]\\{}
-[L_{x},y] & [L_{y},y] & [L_{z},y]\\{}
-[L_{x},z] & [L_{y},z] & [L_{z},z]
+[L_{x},x] & [L_{y},x] & [L_{z},x]\\
+{}[L_{x},y] & [L_{y},y] & [L_{z},y]\\
+{}[L_{x},z] & [L_{y},z] & [L_{z},z]
 \end{array}\right]=\left[\begin{array}{ccc}
-0 & -[L_{x},y] & [L_{z},x]\\{}
-[L_{x},y] & 0 & -[L_{y},z]\\
+0 & -[L_{x},y] & [L_{z},x]\\
+{}[L_{x},y] & 0 & -[L_{y},z]\\
 -[L_{z},x] & [L_{y},z] & 0
 \end{array}\right]=\left[\begin{array}{ccc}
 0 & -i\hbar z & i\hbar y\\
@@ -203,9 +203,9 @@ b) Prove
 .
 \begin_inset Formula 
 \begin{eqnarray*}
-[L_{x},p_{x}] & = & [yp_{z}-zp_{y},p_{x}]=[yp_{z},p_{x}]-[zp_{y},p_{x}]=0\\{}
-[L_{y},p_{y}] & = & [zp_{x}-xp_{z},p_{y}]=0\\{}
-[L_{z},p_{z}] & = & [xp_{y}-yp_{x},p_{z}]=0
+[L_{x},p_{x}] & = & [yp_{z}-zp_{y},p_{x}]=[yp_{z},p_{x}]-[zp_{y},p_{x}]=0\\
+{}[L_{y},p_{y}] & = & [zp_{x}-xp_{z},p_{y}]=0\\
+{}[L_{z},p_{z}] & = & [xp_{y}-yp_{x},p_{z}]=0
 \end{eqnarray*}
 
 \end_inset
@@ -324,27 +324,214 @@ Problem 6.5
 \end_inset
 
 .
-\end_layout
+ 
+\begin_inset Formula $\mathbf{L}=(L_{x},L_{y},L_{z})$
+\end_inset
 
-\begin_layout Standard
+.
 \begin_inset Formula 
 \begin{eqnarray*}
-L_{u} & = & \mathbf{\hat{u}\cdot L}=vp_{w}-wp_{v}\\
-L_{v} & = & \mathbf{\hat{v}\cdot L}=wp_{u}-up_{w}\\
-L_{w} & = & \mathbf{\hat{w}\cdot L}=up_{v}-vp_{u}
+L_{u} & = & \mathbf{\hat{u}\cdot L}=u_{x}L_{x}+u_{y}L_{y}+u_{z}L_{z}\\
+L_{v} & = & \mathbf{\hat{v}\cdot L}=v_{x}L_{x}+v_{y}L_{y}+v_{z}L_{z}\\
+L_{w} & = & \mathbf{\hat{w}\cdot L}=w_{x}L_{x}+w_{y}L_{y}+w_{z}L_{z}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{\hat{w}}=\mathbf{\hat{u}}\times\mathbf{\hat{v}}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\[
+w_{x}=u_{y}v_{z}-u_{z}v_{y},\qquad w_{y}=u_{z}v_{x}-u_{x}v_{z}\qquad w_{z}=u_{x}v_{y}-u_{y}v_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+[L_{u},L_{v}] & = & [u_{x}L_{x}+u_{y}L_{y}+u_{z}L_{z},v_{x}L_{x}+v_{y}L_{y}+v_{z}L_{z}]\\
+ & = & [u_{x}L_{x},v_{x}L_{x}]+[u_{x}L_{x},v_{y}L_{y}]+[u_{x}L_{x},v_{z}L_{z}]\\
+ &  & +[u_{y}L_{y},v_{x}L_{x}]+[u_{y}L_{y},v_{y}L_{y}]+[u_{y}L_{y},v_{z}L_{z}]\\
+ &  & +[u_{z}L_{z},v_{x}L_{x}]+[u_{z}L_{z},v_{y}L_{y}]+[u_{z}L_{z},v_{z}L_{z}]\\
+ & = & [u_{x}L_{x},v_{y}L_{y}]+[u_{x}L_{x},v_{z}L_{z}]+[u_{y}L_{y},v_{x}L_{x}]+[u_{y}L_{y},v_{z}L_{z}]+[u_{z}L_{z},v_{x}L_{x}]+[u_{z}L_{z},v_{y}L_{y}]\\
+ & = & u_{x}v_{y}[L_{x},L_{y}]+u_{x}v_{z}[L_{x},L_{z}]+u_{y}v_{x}[L_{y},L_{x}]+u_{y}v_{z}[L_{y},L_{z}]+u_{z}v_{x}[L_{z},L_{x}]+u_{z}v_{y}[L_{z},L_{y}]\\
+ & = & i\hbar u_{x}v_{y}L_{z}-i\hbar u_{x}v_{z}L_{y}-i\hbar u_{y}v_{x}L_{z}+i\hbar u_{y}v_{z}L_{x}+i\hbar u_{z}v_{x}L_{y}-i\hbar u_{z}v_{y}L_{x}\\
+ & = & i\hbar\Big((u_{y}v_{z}-u_{z}v_{y})L_{x}+(u_{z}v_{x}-u_{x}v_{z})L_{y}+(u_{x}v_{y}-u_{y}v_{x})L_{z}\Big)\\
+ & = & i\hbar(w_{x}L_{x}+w_{y}L_{y}+w_{z}L_{z})\\
+ & = & i\hbar L_{w}
 \end{eqnarray*}
 
 \end_inset
 
 
 \begin_inset Formula 
-\[
-[L_{u},L_{v}]=[vp_{w}-wp_{v},wp_{u}-up_{w}]=
-\]
+\begin{eqnarray*}
+[L_{v},L_{w}] & = & [v_{x}L_{x}+v_{y}L_{y}+v_{z}L_{z},w_{x}L_{x}+w_{y}L_{y}+w_{z}L_{z}]\\
+ & = & [v_{x}L_{x},w_{y}L_{y}]+[v_{x}L_{x},w_{z}L_{z}]+[v_{y}L_{y},w_{x}L_{x}]+[v_{y}L_{y},w_{z}L_{z}]+[v_{z}L_{z},w_{x}L_{x}]+[v_{z}L_{z},w_{y}L_{y}]\\
+ & = & v_{x}w_{y}[L_{x},L_{y}]+v_{x}w_{z}[L_{x},L_{z}]+v_{y}w_{x}[L_{y},L_{x}]+v_{y}w_{z}[L_{y},L_{z}]+v_{z}w_{x}[L_{z},L_{x}]+v_{z}w_{y}[L_{z},L_{y}]\\
+ & = & i\hbar(v_{x}w_{y}L_{z}-v_{x}w_{z}L_{y}-v_{y}w_{x}L_{z}+v_{y}w_{z}L_{x}+v_{z}w_{x}L_{y}-v_{z}w_{y}L_{x})\\
+ & = & i\hbar\Big((v_{y}w_{z}-v_{z}w_{y})L_{x}+(v_{z}w_{x}-v_{x}w_{z})L_{y}+(v_{x}w_{y}-v_{y}w_{x})L_{z}\Big)\\
+ & = & i\hbar(u_{x}L_{x}+u_{y}L_{y}+u_{z}L_{z})\\
+ & = & i\hbar L_{u}
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\mathbf{\hat{u}}=\mathbf{\hat{v}}\times\mathbf{\hat{w}}$
+\end_inset
+
+.
+ Last one:
+\begin_inset Formula 
+\begin{eqnarray*}
+[L_{w},L_{u}] & = & [w_{x}L_{x}+w_{y}L_{y}+w_{z}L_{z},u_{x}L_{x}+u_{y}L_{y}+u_{z}L_{z}]\\
+ & = & w_{x}u_{y}[L_{x},L_{y}]+w_{x}u_{z}[L_{x},L_{z}]+w_{y}u_{x}[L_{y},L_{x}]+w_{y}u_{z}[L_{y},L_{z}]+w_{z}u_{x}[L_{z},L_{x}]+w_{z}u_{y}[L_{z},L_{y}]\\
+ & = & i\hbar\Big((w_{y}u_{z}-w_{z}u_{y})L_{x}+(w_{z}u_{x}-w_{x}u_{z})L_{y}+(w_{x}u_{y}-w_{y}u_{x})L_{z}\Big)\\
+ & = & i\hbar(v_{x}L_{x}+v_{y}L_{y}+v_{z}L_{z})\\
+ & = & i\hbar L_{v}
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\mathbf{\hat{v}}=\mathbf{\hat{w}}\times\mathbf{\hat{u}}$
+\end_inset
+
+.
+ QED
+\end_layout
+
+\begin_layout Problem
+Problem 6.14
+\end_layout
+
+\begin_layout Standard
+The eigenvalues belonging to the eigenvector 
+\begin_inset Formula $|jm\rangle$
+\end_inset
+
+ of 
+\begin_inset Formula $\mathbf{J}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{z}$
+\end_inset
+
+ are 
+\begin_inset Formula $j(j+1)\hbar^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $m\hbar$
+\end_inset
+
+ respectively.
+ If 
+\begin_inset Formula $j=\frac{3}{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $m=-\frac{3}{2},-\frac{1}{2},\frac{1}{2},\frac{3}{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+(\mathbf{J}^{2})_{j'm',jm} & = & j(j+1)\hbar^{2}\delta_{jj'}\delta_{mm'}\\
+ & = & \frac{3}{2}\Big(\frac{3}{2}+1\Big)\hbar^{2}I_{4}=\frac{15}{4}\hbar^{2}\left[\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]
+\end{eqnarray*}
 
 \end_inset
 
 
+\begin_inset Formula 
+\begin{eqnarray*}
+(J_{z})_{j'm',jm} & = & m\hbar\delta_{jj'}\delta_{mm'}\\
+ & = & \frac{\hbar}{2}\left[\begin{array}{cccc}
+3 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -3
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+We need the matrix representations of 
+\begin_inset Formula $J_{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{-}$
+\end_inset
+
+ to find 
+\begin_inset Formula $J_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{y}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+(J_{+})_{j'm',jm} & = & \hbar\sqrt{j(j+1)-m(m+1)}\delta_{jj'}\delta_{m'm+1}\\
+ & = & \hbar\left[\begin{array}{cccc}
+0 & \sqrt{3} & 0 & 0\\
+0 & 0 & 2 & 0\\
+0 & 0 & 0 & \sqrt{3}\\
+0 & 0 & 0 & 0
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+(J_{-})_{j'm',jm} & = & \hbar\sqrt{j(j+1)-m(m-1)}\delta_{jj'}\delta_{m'm-1}\\
+ & = & \hbar\left[\begin{array}{cccc}
+0 & 0 & 0 & 0\\
+\sqrt{3} & 0 & 0 & 0\\
+0 & 2 & 0 & 0\\
+0 & 0 & \sqrt{3} & 0
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+J_{x} & = & \frac{1}{2}(J_{+}+J_{-})=\frac{\hbar}{2}\left[\begin{array}{cccc}
+0 & \sqrt{3} & 0 & 0\\
+\sqrt{3} & 0 & 2 & 0\\
+0 & 2 & 0 & \sqrt{3}\\
+0 & 0 & \sqrt{3} & 0
+\end{array}\right]\\
+J_{y} & = & \frac{1}{2i}(J_{+}-J_{-})=\frac{\hbar}{2i}\left[\begin{array}{cccc}
+0 & \sqrt{3} & 0 & 0\\
+-\sqrt{3} & 0 & 2 & 0\\
+0 & -2 & 0 & \sqrt{3}\\
+0 & 0 & -\sqrt{3} & 0
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+ 
 \end_layout
 
 \end_body
