@@ -784,6 +784,9 @@ c
 
 \begin_layout Standard
 The determinant of this matrix must be 0 for non-trivial solutions.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \left|\begin{array}{ccc}
@@ -799,11 +802,19 @@ e^{i\phi}\sin\theta & e^{-i\phi}\sin\theta\\
 0 & \sqrt{2}\cos\theta-\lambda
 \end{array}\right| & = & 0\\
 (\sqrt{2}\cos\theta-\lambda)(-\lambda(\sqrt{2}\cos\theta-\lambda)-\sin^{2}\theta)-e^{-i\phi}\sin\theta(e^{i\phi}\sin\theta(\sqrt{2}\cos\theta-\lambda)) & = & 0\\
+(\sqrt{2}\cos\theta-\lambda)(-\lambda(\sqrt{2}\cos\theta-\lambda)-\sin^{2}\theta)-\sin^{2}\theta(\sqrt{2}\cos\theta-\lambda) & = & 0\\
+(\sqrt{2}\cos\theta-\lambda)(-\lambda(\sqrt{2}\cos\theta-\lambda)-\sin^{2}\theta-\sin^{2}\theta) & = & 0\\
+(\sqrt{2}\cos\theta-\lambda)(-\lambda(\sqrt{2}\cos\theta-\lambda)-2\sin^{2}\theta) & = & 0\\
+-\lambda(\sqrt{2}\cos\theta-\lambda)^{2}-2(\sqrt{2}\cos\theta-\lambda)\sin^{2}\theta & = & 0\\
+-\lambda(2\cos^{2}\theta-2\sqrt{2}\lambda\cos\theta+\lambda^{2})-2\sqrt{2}\cos\theta\sin^{2}\theta+2\lambda\sin^{2}\theta & = & 0\\
+-2\lambda\cos^{2}\theta+2\sqrt{2}\lambda^{2}\cos\theta-\lambda^{3}-2\sqrt{2}\cos\theta\sin^{2}\theta+2\lambda\sin^{2}\theta & = & 0\\
+-2\lambda(\cos^{2}\theta-\sin^{2}\theta)+2\sqrt{2}\cos\theta(\lambda^{2}-\sin^{2}\theta)-\lambda^{3} & = & 0\\
+-2\lambda(1-2\sin^{2}\theta)+2\sqrt{2}\cos\theta(\lambda^{2}-\sin^{2}\theta)-\lambda^{3} & = & 0
 \end{eqnarray*}
 
 \end_inset
 
-
+unfinished.
 \end_layout
 
 \end_body
