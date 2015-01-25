@@ -1,0 +1,346 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311
+\begin_inset Newline newline
+\end_inset
+
+Assignment 3
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma - 6379153
+\begin_inset Newline newline
+\end_inset
+
+January 25 2015
+\end_layout
+
+\begin_layout Problem
+A laser has a 60cm long gain medium and lossless mirrors with reflectivity
+ of 
+\begin_inset Formula $r_{1}=$
+\end_inset
+
+100% and 
+\begin_inset Formula $r_{2}=$
+\end_inset
+
+90%
+\end_layout
+
+\begin_layout Standard
+a) What is the threshold gain per unit length?
+\end_layout
+
+\begin_layout Standard
+At the beginning the light of frequency 
+\begin_inset Formula $\nu$
+\end_inset
+
+.
+ enters the medium from the left with intensity 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+.
+ After passing through the medium of length 
+\begin_inset Formula $z=60cm$
+\end_inset
+
+ the light has an intensity 
+\begin_inset Formula $I_{0}e^{gz}$
+\end_inset
+
+ where 
+\begin_inset Formula $g$
+\end_inset
+
+ is the gain coefficient of the medium.
+ After reflecting off the right mirror the intensity drops and is 
+\begin_inset Formula $r_{2}I_{0}e^{gz}$
+\end_inset
+
+.
+ The light then passes through the medium again and the intensity once it
+ leaves the medium is now 
+\begin_inset Formula $r_{2}I_{0}e^{gz}e^{gz}$
+\end_inset
+
+.
+ After reflecting off the mirror on the left, the round trip is completed
+ and the light now has intensity 
+\begin_inset Formula $r_{1}r_{2}I_{0}e^{2gz}$
+\end_inset
+
+.
+ For what gain 
+\begin_inset Formula $g$
+\end_inset
+
+ do we have that the intensity is unchanged? 
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{0} & = & r_{1}r_{2}I_{0}e^{2gz}\\
+g & = & -\frac{1}{2z}\ln(r_{1}r_{2})\\
+ & = & -\frac{1}{2(0.6m)}\ln(1.0(0.9))=0.0878\text{m}^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) If the laser has normal incidence windows, each surface reflecting 4%
+ of the light that is incident on it per pass, what is the threshold gain?
+\end_layout
+
+\begin_layout Standard
+The light goes from Start 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Medium 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Right mirror 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Medium 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Window 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Left mirror.
+\end_layout
+
+\begin_layout Standard
+So the light's intensity through each step, using 
+\begin_inset Formula $t=1-0.4=0.96$
+\end_inset
+
+ as the transmission coefficient through each window surface,
+\begin_inset Formula 
+\[
+I_{0}\rightarrow tI_{0}\rightarrow t^{2}I_{0}\rightarrow t^{2}I_{0}e^{gz}\rightarrow t^{3}I_{0}e^{gz}\rightarrow t^{4}I_{0}e^{gz}\rightarrow r_{2}t^{4}I_{0}e^{gz}
+\]
+
+\end_inset
+
+Now on the way back
+\begin_inset Formula 
+\[
+r_{2}t^{4}I_{0}e^{gz}\rightarrow r_{2}t^{5}I_{0}e^{gz}\rightarrow r_{2}t^{6}I_{0}e^{gz}\rightarrow r_{2}t^{6}I_{0}e^{gz}e^{gz}\rightarrow r_{2}t^{8}I_{0}e^{2gz}\rightarrow r_{1}r_{2}t^{8}I_{0}e^{2gz}
+\]
+
+\end_inset
+
+So we want 
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{0} & = & r_{1}r_{2}t^{8}I_{0}e^{2gz}\\
+r_{1}r_{2}t^{8}e^{2gz} & = & 1\\
+2gz & = & -\ln(r_{1}r_{2}t^{8})\\
+g & = & -\frac{1}{2z}\ln(r_{1}r_{2}t^{8})\\
+ & = & -\frac{1}{2(0.6m)}\ln(1.0(0.9)(0.96)^{8})\\
+ & = & 0.36\text{m}^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+What this means is that to get a laser to work with these silly windows
+ in the way, we would need a medium whose threshold gain needs to be much
+ higher so the light does not lose intensity.
+\end_layout
+
+\begin_layout Problem
+A typical gain cross section of an atom or molecule usually ranges from
+ 
+\begin_inset Formula $10^{-18}$
+\end_inset
+
+ to 
+\begin_inset Formula $10^{-20}$
+\end_inset
+
+cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+a) Using 
+\begin_inset Formula $10^{-18}$
+\end_inset
+
+cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+, calculate the maximum gain coefficient if the inversion is equal to the
+ number density of air at STP.
+\end_layout
+
+\begin_layout Standard
+The number density of air at STP (according to Wikipedia) is 
+\begin_inset Formula $0.02504\times10^{21}$
+\end_inset
+
+cm
+\begin_inset Formula $^{-3}$
+\end_inset
+
+.
+ Assuming the inversion is the number density, 
+\begin_inset Formula $\Delta N=0.02504\times10^{21}$
+\end_inset
+
+cm
+\begin_inset Formula $^{-3}$
+\end_inset
+
+.
+ The gain coefficient would be 
+\begin_inset Formula 
+\[
+g=\sigma\Delta N=10^{-18}\text{cm}^{2}(0.02504\times10^{21}\text{cm}^{-3})=25.04\text{cm}^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) Same thing with a solid.
+ Let's use diamond, whose number density (and so it's inversion in this
+ case) is 
+\begin_inset Formula $\Delta N=176.2\times10^{21}\text{cm}^{-3}$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\[
+g=\sigma\Delta N=10^{-18}\text{cm}^{2}(176.2\times10^{21}\text{cm}^{-3})=176200\text{cm}^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
