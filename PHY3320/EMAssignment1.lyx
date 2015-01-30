@@ -1,0 +1,192 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 0cm
+\headsep 1.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY3320 Assignment 1
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\end_layout
+
+\begin_layout Problem
+A parallel plate capacitor is immersed in sea water and driven by a voltage
+ 
+\begin_inset Formula $V=V_{0}\cos(2\pi\nu t)$
+\end_inset
+
+ where 
+\begin_inset Formula $\nu=4\times10^{8}\,\text{Hz}$
+\end_inset
+
+.
+ The sea water has permittivity 
+\begin_inset Formula $\varepsilon=81\varepsilon_{0}$
+\end_inset
+
+, permeability 
+\begin_inset Formula $\mu=\mu_{0}$
+\end_inset
+
+, and resistivity 
+\begin_inset Formula $\rho=0.23\,\Omega\cdot\text{m}$
+\end_inset
+
+.
+ What is the ratio of conduction current to displacement current?
+\end_layout
+
+\begin_layout Standard
+Assume the plates of the capacitor are separated by a distance 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ The plates have an area 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Since water is conductive there is some current that flows across the plates.
+ The electric field between the plates is 
+\begin_inset Formula 
+\[
+E(t)=\frac{V(t)}{d}=\frac{V_{0}}{d}\cos(2\pi\nu t)
+\]
+
+\end_inset
+
+The current density is related to the resistivity of the sea water 
+\begin_inset Formula 
+\[
+J(t)=\frac{E(t)}{\rho}=\frac{V_{0}}{d\rho}\cos(2\pi\nu t)
+\]
+
+\end_inset
+
+The conduction current is then 
+\begin_inset Formula 
+\[
+I_{c}=\int J(t)\cdot da=AJ(t)=\frac{AV_{0}}{d\rho}\cos(2\pi\nu t)
+\]
+
+\end_inset
+
+The displacement current density is 
+\begin_inset Formula 
+\begin{eqnarray*}
+J_{D}(t) & = & \varepsilon\frac{\partial E}{\partial t}=\varepsilon\frac{V_{0}}{d}(-2\pi\nu)\sin(2\pi\nu t)\\
+ & = & -\frac{2\pi\nu\varepsilon V_{0}}{d}\sin(2\pi\nu t)
+\end{eqnarray*}
+
+\end_inset
+
+So the displacement current is 
+\begin_inset Formula 
+\[
+I_{D}=AJ_{D}(t)=\frac{-2\pi\nu A\varepsilon V_{0}}{d}\sin(2\pi\nu t)
+\]
+
+\end_inset
+
+The ratio is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{I_{c}}{I_{D}} & = & \frac{AV_{0}\cos(2\pi\nu t)d}{d\rho(-2\pi\nu A\varepsilon V_{0})\sin(2\pi\nu t)}=-\cot(2\pi\nu t)\frac{1}{2\pi\nu\rho\varepsilon}\\
+ & = & -\cot(2\pi\nu t)\frac{1}{2\pi\nu\rho81\varepsilon_{0}}\\
+ & = & -\cot(2\pi\nu t)\frac{1}{2\pi(0.4\times10^{9}Hz)(0.23\Omega m)(81)(8.85\times10^{-12}F/m)}\\
+ & = & -2.41\cot(2\pi\nu t)
+\end{eqnarray*}
+
+\end_inset
+
+The ratio of the amplitudes is 2.41.
+ This is unitless because
+\begin_inset Formula 
+\[
+\frac{\Omega m}{s}\frac{F}{m}=\frac{V}{A}\frac{F}{s}=\frac{VC}{AVs}=\frac{C}{As}=\frac{Cs}{Cs}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
