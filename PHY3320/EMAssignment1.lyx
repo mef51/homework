@@ -193,11 +193,39 @@ The ratio of the amplitudes is 2.41.
 \end_layout
 
 \begin_layout Problem
-Something something 
+Two large metal plates are held a distance 
+\begin_inset Formula $d$
+\end_inset
+
+ apart, one at 
+\begin_inset Formula $V=0$
+\end_inset
+
+ and the other at 
+\begin_inset Formula $V=V_{0}$
+\end_inset
+
+.
+ A metal sphere of radius 
+\begin_inset Formula $a<<d$
+\end_inset
+
+ is placed on the grounded 
+\begin_inset Formula $V=0$
+\end_inset
+
+ plate (and so is also grounded).
+ The region between the plates is filled with a weakly conducting material
+ of uniform conductivity 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ What current flows to the hemisphere?
 \end_layout
 
 \begin_layout Standard
-blah blah
+blah blah Page 333 of Griffiths Problem 7.38
 \end_layout
 
 \begin_layout Problem
