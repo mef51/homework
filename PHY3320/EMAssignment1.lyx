@@ -83,6 +83,10 @@ PHY3320 Assignment 1
 
 \begin_layout Author
 Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+February 2nd 2015
 \end_layout
 
 \begin_layout Problem
@@ -181,6 +185,410 @@ The ratio of the amplitudes is 2.41.
 \begin_inset Formula 
 \[
 \frac{\Omega m}{s}\frac{F}{m}=\frac{V}{A}\frac{F}{s}=\frac{VC}{AVs}=\frac{C}{As}=\frac{Cs}{Cs}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Something something 
+\end_layout
+
+\begin_layout Standard
+blah blah
+\end_layout
+
+\begin_layout Problem
+In a perfect conductor the conductivity is infinite, so 
+\begin_inset Formula $\mathbf{E}=0$
+\end_inset
+
+ and any net charge resides on the surface.
+\end_layout
+
+\begin_layout Standard
+(a) Show that the magnetic field is constant inside a perfect conductor
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\mathbf{E}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\nabla\times\mathbf{E}=0$
+\end_inset
+
+.
+ But Faraday's law says
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}$
+\end_inset
+
+, so
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{B}}{\partial t}=0
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\frac{\partial\mathbf{B}}{\partial t}=0$
+\end_inset
+
+, the magnetic field is constant.
+\end_layout
+
+\begin_layout Standard
+(b) Show that the magnetic flux through a perfectly conducting loop is constant.
+\end_layout
+
+\begin_layout Standard
+Faraday's law in integral form is 
+\begin_inset Formula $\oint\mathbf{E}\cdot d\mathbf{l}=-\frac{\partial\Phi}{\partial t}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\mathbf{E}=0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{\partial\Phi}{\partial t}=-\oint\mathbf{E}\cdot d\mathbf{l}=-\oint0\cdot d\mathbf{l}=0
+\]
+
+\end_inset
+
+So the magnetic flux through a perfectly conducting loop is constant.
+\end_layout
+
+\begin_layout Standard
+(c) Show that the current in a superconductor is confined to the surface.
+ A superconductor is a perfect conductor where 
+\begin_inset Formula $E=B=0$
+\end_inset
+
+ inside.
+\end_layout
+
+\begin_layout Standard
+Ampere's Law says 
+\begin_inset Formula $\nabla\times\mathbf{B}=\mu_{0}\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t}$
+\end_inset
+
+.
+ Inside the superconductor, we have 
+\begin_inset Formula $\mathbf{B=E=}0$
+\end_inset
+
+ so 
+\begin_inset Formula $\nabla\times\mathbf{B}=0=\frac{\partial\mathbf{E}}{\partial t}$
+\end_inset
+
+.
+ Therefore, inside the superconductor
+\begin_inset Formula 
+\[
+\mathbf{J}=0
+\]
+
+\end_inset
+
+Since the current density is always 0 inside the superconductor, there is
+ no current inside the superconductor.
+\end_layout
+
+\begin_layout Problem
+Derive the continuity equation starting from Maxwell's equations.
+\end_layout
+
+\begin_layout Standard
+Start from Ampere's Law with Maxwell's Correction and take the divergence
+ of both sides:
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla\times\mathbf{B} & = & \mu_{0}\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t}\\
+\nabla\cdot(\nabla\times\mathbf{B}) & = & \nabla\cdot(\mu_{0}\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t})
+\end{eqnarray*}
+
+\end_inset
+
+Use the vector identity 
+\begin_inset Formula $\nabla\cdot(\nabla\times\mathbf{A})=0$
+\end_inset
+
+ to get a 0 on the left side
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & \nabla\cdot(\mu_{0}\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t})\\
+ & = & \nabla\cdot\mu_{0}\mathbf{J}+\nabla\cdot\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t}\\
+ & = & \mu_{0}\nabla\cdot\mathbf{J}+\mu_{0}\epsilon_{0}\nabla\cdot\frac{\partial\mathbf{E}}{\partial t}\\
+ & = & \mu_{0}\nabla\cdot\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial}{\partial t}\nabla\cdot\mathbf{E}
+\end{eqnarray*}
+
+\end_inset
+
+Use Gauss's Law: 
+\begin_inset Formula $\nabla\cdot\mathbf{E}=\frac{1}{\epsilon_{0}}\rho$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & \mu_{0}\nabla\cdot\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial}{\partial t}\nabla\cdot\mathbf{E}\\
+ & = & \mu_{0}\nabla\cdot\mathbf{J}+\mu_{0}\epsilon_{0}\frac{1}{\epsilon_{0}}\frac{\partial\rho}{\partial t}\\
+ & = & \mu_{0}\nabla\cdot\mathbf{J}+\mu_{0}\frac{\partial\rho}{\partial t}\\
+\mu_{0}\nabla\cdot\mathbf{J} & = & -\mu_{0}\frac{\partial\rho}{\partial t}\\
+\nabla\cdot\mathbf{J} & = & -\frac{\partial\rho}{\partial t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Done!
+\end_layout
+
+\begin_layout Problem
+For a conductive material the conduction current density is much greater
+ than the displacement current density.
+\end_layout
+
+\begin_layout Standard
+(a) Show that Maxwell's equations imply a sort of diffusion equation for
+ 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Start from Ampere's law.
+\begin_inset Formula 
+\[
+\nabla\times\mathbf{B}=\mu_{0}\mathbf{J}+\mu_{0}\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t}
+\]
+
+\end_inset
+
+Ignoring the displacement current term...
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla\times\mathbf{B} & \approx & \mu_{0}\mathbf{J}\\
+ & = & \mu_{0}\sigma\mathbf{E}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is the conductivity of the material.
+ Take the curl of both sides
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla\times(\nabla\times\mathbf{B}) & = & \mu_{0}\sigma\nabla\times\mathbf{E}\\
+ & = & -\mu_{0}\sigma\frac{\partial\mathbf{B}}{\partial t}\qquad\text{(Faraday's Law)}\\
+\nabla(\nabla\cdot\mathbf{B})-\nabla^{2}\mathbf{B} & = & -\mu_{0}\sigma\frac{\partial\mathbf{B}}{\partial t}\qquad\text{(Vector identity on LS)}\\
+-\nabla^{2}\mathbf{B} & = & -\mu_{0}\sigma\frac{\partial\mathbf{B}}{\partial t}\qquad(\nabla\cdot\mathbf{B}=0)\\
+\nabla^{2}\mathbf{B} & = & \mu_{0}\sigma\frac{\partial\mathbf{B}}{\partial t}\\
+\frac{\partial\mathbf{B}}{\partial t} & = & \frac{1}{\mu_{0}\sigma}\nabla^{2}\mathbf{B}
+\end{eqnarray*}
+
+\end_inset
+
+The last line is a diffusion equation.
+\end_layout
+
+\begin_layout Standard
+(b) Solve the diffusion equation for the case of the magnetic flux density
+ 
+\begin_inset Formula $B_{x}(z,t)$
+\end_inset
+
+ near a planar vacuum-copper interface, assuming for copper 
+\begin_inset Formula $\mu=\mu_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma=5.8\times10^{7}S/m$
+\end_inset
+
+.
+ Assume that a 60Hz time-harmonic EM signal is applied.
+\end_layout
+
+\begin_layout Standard
+Let the positive z-direction be normal to the boundary and increasing towards
+ the vacuum.
+ Plug 
+\begin_inset Formula $B_{x}(z,t)$
+\end_inset
+
+ into the diffusion equation
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla^{2}B_{x}(z,t) & = & \mu_{0}\sigma\frac{\partial B_{x}(z,t)}{\partial t}\\
+\frac{\partial^{2}B_{x}(z,t)}{\partial x^{2}}+\frac{\partial^{2}B_{x}(z,t)}{\partial y^{2}}+\frac{\partial^{2}B_{x}(z,t)}{\partial z^{2}} & = & \mu_{0}\sigma\frac{\partial B_{x}(z,t)}{\partial t}
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $B_{x}$
+\end_inset
+
+ only depends on 
+\begin_inset Formula $z$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+, the other derivatives are 0
+\begin_inset Formula 
+\[
+\frac{\partial^{2}B_{x}(z,t)}{\partial z^{2}}=\mu_{0}\sigma\frac{\partial B_{x}(z,t)}{\partial t}
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\nu=60Hz$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega=2\pi\nu$
+\end_inset
+
+.
+ The harmonic time variation can be represented by 
+\begin_inset Formula $e^{i\omega t}$
+\end_inset
+
+ and we can separate variables:
+\begin_inset Formula 
+\[
+B_{x}(z,t)=B_{x}(z)e^{i\omega t}
+\]
+
+\end_inset
+
+Substituting into out differential equation,
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial^{2}B_{x}(z)e^{i\omega t}}{\partial z^{2}} & = & \mu_{0}\sigma\frac{\partial B_{x}(z)e^{i\omega t}}{\partial t}\\
+e^{i\omega t}\frac{\partial^{2}B_{x}(z)}{\partial z^{2}} & = & \mu_{0}\sigma B_{x}(z)\frac{\partial e^{i\omega t}}{\partial t}\\
+e^{i\omega t}\frac{\partial^{2}B_{x}(z)}{\partial z^{2}} & = & i\omega\mu_{0}\sigma B_{x}(z)e^{i\omega t}\\
+\frac{\partial^{2}B_{x}(z)}{\partial z^{2}} & = & i\omega\mu_{0}\sigma B_{x}(z)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A solution to this is of the form 
+\begin_inset Formula $B_{x}(z)=B_{0}e^{-\gamma z}$
+\end_inset
+
+ since 
+\begin_inset Formula $\frac{\partial^{2}B_{0}e^{-\gamma z}}{\partial z^{2}}=B_{0}\gamma^{2}e^{-\gamma z}=\gamma^{2}B_{x}(z)$
+\end_inset
+
+.
+ This solution requires that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\gamma^{2} & = & i\omega\mu_{0}\sigma\\
+\gamma & = & \sqrt{i\omega\mu_{0}\sigma}
+\end{eqnarray*}
+
+\end_inset
+
+The positive square root of 
+\begin_inset Formula $i$
+\end_inset
+
+ is 
+\begin_inset Formula $\sqrt{i}=\frac{1}{\sqrt{2}}(1+i)$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\begin{eqnarray*}
+\gamma & = & \sqrt{i}\cdot\sqrt{\omega\mu_{0}\sigma}\\
+ & = & \frac{1}{\sqrt{2}}(1+i)\sqrt{\omega\mu_{0}\sigma}\\
+ & = & \frac{1}{\sqrt{2}}\sqrt{\omega\mu_{0}\sigma}+i\sqrt{\omega\mu_{0}\sigma}\\
+ & = & \sqrt{\frac{\omega\mu_{0}\sigma}{2}}+i\sqrt{\omega\mu_{0}\sigma}
+\end{eqnarray*}
+
+\end_inset
+
+We can only use the real part in physics so we'll denote the real part of
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ by 
+\begin_inset Formula $\alpha=\sqrt{\frac{\omega\mu_{0}\sigma}{2}}=\sqrt{2\pi\nu\mu_{0}\sigma/2}=\sqrt{\pi\nu\mu_{0}\sigma}$
+\end_inset
+
+ and the solution is 
+\begin_inset Formula 
+\[
+B_{x}(z)=B_{0}e^{-\alpha z}
+\]
+
+\end_inset
+
+With 
+\begin_inset Formula 
+\[
+\alpha=\sqrt{\pi(60s^{-1})(4\pi\times10^{-7}N/A^{2})(5.8\times10^{7}\Omega^{-1}/m)}=117m^{-1}
 \]
 
 \end_inset
