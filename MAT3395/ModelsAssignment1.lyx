@@ -1,0 +1,306 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MAT3395 Assignment 1
+\end_layout
+
+\begin_layout Problem
+A company produces paper.
+ It has two papermills in Ontario and wants to ship to three locations:
+ Ottawa, London, and Toronto.
+ 
+\end_layout
+
+\begin_layout Problem
+* Mill 1 has a maximal output of 
+\begin_inset Formula $o_{1}=$
+\end_inset
+
+120 boxes/week and Mill 2 has a maximal output of 
+\begin_inset Formula $o_{2}=80$
+\end_inset
+
+ boxes/week
+\end_layout
+
+\begin_layout Problem
+* Ottawa has to receive at least 
+\begin_inset Formula $m_{O}=70$
+\end_inset
+
+ boxes/week, London 
+\begin_inset Formula $m_{L}=30$
+\end_inset
+
+ boxes/week, Toronto 
+\begin_inset Formula $m_{T}=100$
+\end_inset
+
+ boxes/week.
+\end_layout
+
+\begin_layout Problem
+* Shipping costs from Mill 1 to Ottawa
+\begin_inset Formula $C_{1O}=40\$/box$
+\end_inset
+
+, Mill 1 to London 
+\begin_inset Formula $C_{1L}=50\$/box$
+\end_inset
+
+, and Mill 1 to Toronto 
+\begin_inset Formula $C_{1T}=\$70/box$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+* Shipping costs from Mill 2 to Ottawa 
+\begin_inset Formula $C_{2O}=60\$/box$
+\end_inset
+
+, Mill 2 to London 
+\begin_inset Formula $C_{2L}=20\$/box$
+\end_inset
+
+, Mill 2 to Toronto 
+\begin_inset Formula $C_{2T}=50\$/box$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+How many boxes should each mill send to each city to minimize costs?
+\end_layout
+
+\begin_layout Standard
+Mill 1 ships 
+\begin_inset Formula $x_{O}$
+\end_inset
+
+ boxes/week to Ottawa, 
+\begin_inset Formula $x_{L}$
+\end_inset
+
+ boxes/week to London, and 
+\begin_inset Formula $x_{T}$
+\end_inset
+
+ boxes/week to Toronto.
+\end_layout
+
+\begin_layout Standard
+Mill 2 ships 
+\begin_inset Formula $y_{O}$
+\end_inset
+
+ boxes/week to Ottawa, 
+\begin_inset Formula $y_{L}$
+\end_inset
+
+ boxes/week to London, and 
+\begin_inset Formula $y_{T}$
+\end_inset
+
+ boxes/week to Toronto.
+ Henceforth 'boxes/week' is abbreviated 'b/w'.
+\end_layout
+
+\begin_layout Standard
+Customer Constraints:
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{O}+y_{O} & \geq & m_{O}=70b/w\\
+x_{L}+y_{L} & \geq & m_{L}=30b/w\\
+x_{T}+y_{T} & \geq & m_{T}=100b/w
+\end{eqnarray*}
+
+\end_inset
+
+Mill Constraints:
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{O}+x_{L}+x_{T} & \leq & o_{1}=120b/w\\
+y_{O}+y_{L}+y_{T} & \leq & o_{2}=80b/w
+\end{eqnarray*}
+
+\end_inset
+
+The shipping costs per week is calculated as the sum of the shipping costs
+ per mill
+\begin_inset Formula 
+\begin{eqnarray*}
+C_{1} & = & C_{1O}x_{O}+C_{1L}x_{L}+C_{1T}x_{T}\\
+C_{2} & = & C_{2O}y_{O}+C_{2L}y_{L}+C_{2T}y_{T}\\
+C & = & C_{1}+C_{2}\\
+ & = & C_{1O}x_{O}+C_{1L}x_{L}+C_{1T}x_{T}+C_{2O}y_{O}+C_{2L}y_{L}+C_{2T}y_{T}\\
+C & = & 40x_{O}+50x_{L}+70x_{T}+60y_{O}+20y_{L}+50y_{T}
+\end{eqnarray*}
+
+\end_inset
+
+This is linear, so we'll use linear programming to solve it.
+ We'll use this program to solve it:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\sffamily},numbers=left,numberstyle={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Minimize C = 40x + 50y + 70z + 60a + 20b + 50c subject to 
+\end_layout
+
+\begin_layout Plain Layout
+
+x + a >= 70 
+\end_layout
+
+\begin_layout Plain Layout
+
+y + b >= 30 
+\end_layout
+
+\begin_layout Plain Layout
+
+z + c >= 100 
+\end_layout
+
+\begin_layout Plain Layout
+
+x + y + z <= 120 
+\end_layout
+
+\begin_layout Plain Layout
+
+a + b + c <= 80
+\end_layout
+
+\end_inset
+
+And the solution is given as
+\begin_inset listings
+lstparams "basicstyle={\small\sffamily},numbers=left,numberstyle={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Optimal Solution: c = 9400; x = 70, y = 0, z = 50, a = 0, b = 30, c = 50
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means, Mill 1 should send 
+\begin_inset Formula $x_{O}=70b/w$
+\end_inset
+
+ to Ottawa and 
+\begin_inset Formula $x_{T}=50b/w$
+\end_inset
+
+ to Toronto.
+ Mill 2 should send 
+\begin_inset Formula $y_{L}=30b/w$
+\end_inset
+
+ to London and 
+\begin_inset Formula $y_{T}=50b/w$
+\end_inset
+
+ to Toronto.
+ The cost of this is 
+\begin_inset Formula $9400\$/week$
+\end_inset
+
+.
+ We see that the constraints are satisfied: Mill 1 produces 
+\begin_inset Formula $x_{O}+x_{T}=120b/w$
+\end_inset
+
+ and Mill 2 produces 
+\begin_inset Formula $y_{L}+y_{T}=80b/w$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
