@@ -4,6 +4,8 @@
 \begin_header
 \textclass amsart
 \begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
 \usepackage[cm]{fullpage}
 \end_preamble
 \use_default_options true
@@ -76,6 +78,73 @@ PHY4370 Assignment 2
 Mohammed Chamma 6379153
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\braket}[1]{\langle lm|#1|lm\rangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\expect}[1]{\langle#1\rangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ket}[1]{|#1\rangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\c}[1]{\cos#1}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\s}[1]{\sin#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 6.22 
+\begin_inset Formula $\chi_{0,0}=\frac{1}{\sqrt{2}}(\alpha(1)\beta(2)-\beta(1)\alpha(2))$
+\end_inset
+
+ for singlet and 
+\begin_inset Formula $\chi_{1,1}=\alpha(1)\alpha(2)$
+\end_inset
+
+, 
+\begin_inset Formula $\chi_{1,0}=\frac{1}{\sqrt{2}}(\alpha(1)\beta(2)+\beta(1)\alpha(2))$
+\end_inset
+
+, 
+\begin_inset Formula $\chi_{1,-1}=\beta(1)\beta(2)$
+\end_inset
+
+ for triplets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\expect{\mathbf{S}_{1}\mathbf{S}_{2}}=\braket{}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 6.23
+\end_layout
+
+\begin_layout Standard
+Todo.
+\end_layout
+
 \begin_layout Problem
 \begin_inset Quotes eld
 \end_inset
@@ -142,11 +211,469 @@ Since
 \begin_inset Formula 
 \begin{eqnarray*}
 (\Delta L_{x})^{2}+(\Delta L_{y})^{2}+(\Delta L_{z})^{2} & = & \langle\mathbf{L}^{2}\rangle-\langle L_{z}\rangle^{2}\\
- & = & \langle l'm'|\mathbf{L}^{2}|lm\rangle-\langle l'm'|L_{z}|lm\rangle^{2}\\
- & = & l(l+1)\hbar^{2}\langle l'm'|lm\rangle-(m\hbar\langle l'm'|lm\rangle)^{2}\\
+ & = & \langle lm|\mathbf{L}^{2}|lm\rangle-\langle lm|L_{z}|lm\rangle^{2}\\
+ & = & l(l+1)\hbar^{2}\langle lm|lm\rangle-(m\hbar\langle lm|lm\rangle)^{2}\\
  & = & l(l+1)\hbar^{2}-m^{2}\hbar^{2}\\
- & = & (l(l+1)-m^{2})\hbar^{2}
+ & = & \hbar^{2}(l(l+1)-m^{2})
 \end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $l$
+\end_inset
+
+ is fixed, we see that 
+\begin_inset Formula $\hbar^{2}(l(l+1)-m^{2})$
+\end_inset
+
+ is minimal when 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ is maximal, so when 
+\begin_inset Formula $m=-l,l$
+\end_inset
+
+ (since 
+\begin_inset Formula $-l\leq m\leq l$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{eqnarray*}
+\hbar^{2}(l(l+1)-m^{2}) & = & \hbar^{2}(l(l+1)-l^{2})\\
+ & = & \hbar^{2}(l^{2}+l-l^{2})\\
+ & = & l\hbar^{2}
+\end{eqnarray*}
+
+\end_inset
+
+So the states for which the sum is minimal are 
+\begin_inset Formula $|l,-l\rangle$
+\end_inset
+
+, and 
+\begin_inset Formula $|l,l\rangle$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Imagine a unit vector defined by polar coordinates 
+\begin_inset Formula $\hat{\mathbf{n}}(\theta,\phi)=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$
+\end_inset
+
+.
+ A unit vector at an angle 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to the z-axis is
+\begin_inset Formula 
+\[
+\mathbf{\hat{n}}(\alpha,0)=(\sin\alpha,0,\cos\alpha)
+\]
+
+\end_inset
+
+The component of the angular momentum 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ along the unit vector at an angle 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to the z-axis would be
+\begin_inset Formula 
+\[
+L_{\alpha}=\mathbf{L}\cdot\mathbf{\hat{n}}=\sin\alpha L_{x}+\cos\alpha L_{z}
+\]
+
+\end_inset
+
+Now, for 
+\begin_inset Formula $m=-l,l$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+(\Delta L_{\alpha})^{2} & = & \langle L_{\alpha}^{2}\rangle-\langle L_{\alpha}\rangle^{2}\\
+ & = & \langle lm|L_{\alpha}^{2}|lm\rangle-\langle lm|L_{\alpha}|lm\rangle^{2}\\
+ & = & \langle lm|\sin^{2}\alpha L_{x}^{2}+\sin\alpha\cos\alpha L_{x}L_{z}+\sin\alpha\cos\alpha L_{z}L_{x}+\cos^{2}\alpha L_{z}^{2}|lm\rangle\\
+ &  & -\langle lm|\sin\alpha L_{x}+\cos\alpha L_{z}|lm\rangle^{2}\\
+ & = & \sin^{2}\alpha\braket{L_{x}^{2}}+\sin\alpha\cos\alpha\braket{L_{x}L_{z}+L_{z}L_{x}}+\cos^{2}\alpha\braket{L_{z}^{2}}\\
+ &  & -(\sin^{2}\alpha\braket{L_{x}}^{2}+\cos^{2}\alpha\braket{L_{z}}^{2})\\
+ & = & \sin^{2}\alpha\braket{L_{x}^{2}}+\sin\alpha\cos\alpha\braket{L_{x}L_{z}+L_{z}L_{x}}+\cos^{2}\alpha\braket{L_{z}^{2}}\\
+ &  & -\cos^{2}\alpha\braket{L_{z}}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+We need to simplify.
+ We already know 
+\begin_inset Formula $\braket{L_{z}}^{2}=\hbar^{2}l^{2}$
+\end_inset
+
+.
+ Further,
+\begin_inset Formula 
+\begin{eqnarray*}
+\braket{L_{x}^{2}} & = & \langle L_{x}^{2}\rangle=\frac{\hbar^{2}}{2}(l(l+1)-m^{2})=\frac{\hbar^{2}l}{2}
+\end{eqnarray*}
+
+\end_inset
+
+also, 
+\begin_inset Formula 
+\begin{eqnarray*}
+\expect{L_{x}^{2}} & = & \frac{1}{2}\expect{\mathbf{L}^{2}-L_{z}^{2}}\implies\expect{L_{z}^{2}}=\expect{\mathbf{L}^{2}}-2\expect{L_{x}^{2}}\\
+\braket{L_{z}^{2}} & = & \expect{L_{z}^{2}}\\
+ & = & l(l+1)\hbar^{2}-2(\frac{\hbar^{2}l}{2})=\hbar^{2}(l(l+1)-l)\\
+ & = & \hbar^{2}l^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Need to deal with the
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\braket{L_{x}L_{z}+L_{z}L_{x}}$
+\end_inset
+
+ term
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+ First notice:
+\begin_inset Formula 
+\begin{eqnarray*}
+[L_{z},L_{x}] & = & i\hbar L_{y}\\
+L_{x}L_{z} & = & L_{z}L_{x}-i\hbar L_{y}
+\end{eqnarray*}
+
+\end_inset
+
+And now we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\braket{L_{x}L_{z}+L_{z}L_{x}} & = & \braket{L_{z}L_{x}-i\hbar L_{y}+L_{z}L_{x}}\\
+ & = & \braket{2L_{z}L_{x}}-i\hbar\braket{L_{y}}\\
+ & = & 2\braket{L_{z}L_{x}}
+\end{eqnarray*}
+
+\end_inset
+
+Use the identity 
+\begin_inset Formula $L_{x}=\frac{1}{2}(L_{+}+L_{-})$
+\end_inset
+
+ and we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\braket{L_{x}L_{z}+L_{z}L_{x}} & = & \braket{L_{z}(L_{+}+L_{-})}\\
+ & = & \braket{L_{z}L_{+}}+\braket{L_{z}L_{-}}\\
+ & = & \hbar\sqrt{l(l+1)-m(m+1)}\langle lm|L_{z}|l(m+1)\rangle\\
+ &  & +\hbar\sqrt{l(l+1)-m(m-1)}\langle lm|L_{z}|l(m-1)\rangle\\
+ & = & m\hbar^{2}\sqrt{l(l+1)-m(m+1)}\langle lm|l(m+1)\rangle\\
+ &  & +m\hbar^{2}\sqrt{l(l+1)-m(m-1)}\langle lm|l(m-1)\rangle\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Ok, now putting this back into 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $(\Delta L_{\alpha})^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+(\Delta L_{\alpha})^{2} & = & \sin^{2}\alpha\frac{\hbar^{2}l}{2}+\cos^{2}\alpha h^{2}l^{2}-\cos^{2}\alpha h^{2}l^{2}\\
+ & = & \hbar^{2}\frac{l}{2}\sin^{2}\alpha\\
+\Delta L_{\alpha} & = & \hbar\sqrt{\frac{l}{2}}\sin\alpha
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) 
+\end_layout
+
+\begin_layout Standard
+(i) Show that the state 
+\begin_inset Formula $\ket{\psi_{0}}$
+\end_inset
+
+of the system for which 
+\begin_inset Formula $(\Delta L_{x})^{2}+(\Delta L_{y})^{2}+(\Delta L_{z})^{2}$
+\end_inset
+
+ is minimal is such that 
+\begin_inset Formula $(L_{x}+iL_{y})\ket{\psi_{0}}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{z}\ket{\psi_{0}}=l\hbar\ket{\psi_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The state we're dealing with is 
+\begin_inset Formula $\ket{\psi_{0}}=\ket{ll}$
+\end_inset
+
+ where 
+\begin_inset Formula $m=l$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+L_{z}\ket{\psi_{0}}=m\hbar\ket{\psi_{0}}=l\hbar\ket{\psi_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+(L_{x}+iL_{y})\ket{\psi_{0}} & = & L_{+}\ket{\psi_{0}}\\
+ & = & L_{+}\ket{l,l}\\
+ & = & \ket{l,l+1}=0\qquad\text{(cuz can't raise \ensuremath{m} past \ensuremath{l})}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(ii) Let 
+\begin_inset Formula $\theta_{0}$
+\end_inset
+
+ be the angle between 
+\begin_inset Formula $Oz$
+\end_inset
+
+ and 
+\begin_inset Formula $OZ$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{0}$
+\end_inset
+
+ be the angle between 
+\begin_inset Formula $Oy$
+\end_inset
+
+ and 
+\begin_inset Formula $OY$
+\end_inset
+
+, prove the relations 
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{X}+iL_{Y} & = & \cos^{2}\frac{\theta_{0}}{2}e^{-i\phi_{0}}L_{+}-\sin^{2}\frac{\theta_{0}}{2}e^{i\phi_{0}}L_{-}-\sin\theta_{0}L_{z}\\
+L_{Z} & = & \sin\frac{\theta_{0}}{2}\cos\frac{\theta_{0}}{2}e^{-i\phi_{0}}L_{+}+\sin\frac{\theta_{0}}{2}\cos\frac{\theta_{0}}{2}e^{i\phi_{0}}L_{-}+\cos\theta_{0}L_{z}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Okay we'll use 
+\begin_inset Formula $L_{x}=\frac{1}{2}(L_{+}+L_{-})$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{y}=\frac{1}{2i}(L_{+}-L_{-})$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+OZ=\mathbf{\hat{n}}(\theta_{0},\phi_{0})=(\sin\theta_{0}\cos\phi_{0},\sin\theta_{0}\sin\phi_{0},\c{\theta_{0}})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{Z} & = & \mathbf{L}\cdot OZ=\sin\theta_{0}\cos\phi_{0}L_{x}+\sin\theta_{0}\sin\phi_{0}L_{y}+\cos\theta_{0}L_{z}\\
+ & = & \frac{1}{2}\sin\theta_{0}\cos\phi_{0}(L_{+}+L_{-})+\frac{1}{2i}\sin\theta_{0}\sin\phi_{0}(L_{+}-L_{-})+\cos\theta_{0}L_{z}\\
+ & = & \frac{1}{2}\sin\theta_{0}\Big((\cos\phi_{0}+\frac{1}{i}\sin\phi_{0})L_{+}+(\cos\phi_{0}-\frac{1}{i}\sin\phi_{0})L_{-}\Big)+\cos\theta_{0}L_{z}\\
+ & = & \frac{1}{2}\s{\theta_{0}}\Big((\c{\phi_{0}}-i\s{\phi_{0}})L_{+}+(\c{\phi_{0}}+i\s{\phi_{0}})L_{-}\Big)+\c{\theta_{0}}L_{z}\\
+ & = & \frac{1}{2}\s{\theta_{0}}(e^{-i\phi_{0}}L_{+}+e^{i\phi_{0}}L_{-})+\c{\theta_{0}}L_{z}\\
+ & = & \s{\frac{\theta_{0}}{2}}\c{\frac{\theta_{0}}{2}}e^{-i\phi_{0}}L_{+}+\s{\frac{\theta_{0}}{2}}\c{\frac{\theta_{0}}{2}}e^{i\phi_{0}}L_{-}+\c{\theta_{0}}L_{z}
+\end{eqnarray*}
+
+\end_inset
+
+Now find 
+\begin_inset Formula $OY$
+\end_inset
+
+.
+ 
+\begin_inset Formula $OY$
+\end_inset
+
+ is like 
+\begin_inset Formula $\hat{\varphi}$
+\end_inset
+
+ in spherical coords:
+\begin_inset Formula 
+\[
+OY=(-\s{\phi_{0}},\c{\phi_{0}},0)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{Y}=\mathbf{L}\cdot OY=-\s{\phi_{0}}L_{x}+\c{\phi_{0}}L_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+OX & = & OY\times OZ\\
+ & = & (\c{\phi_{0}}\c{\theta_{0}},\s{\phi_{0}}\c{\theta_{0}},-\s{^{2}\phi_{0}}\s{\theta_{0}}-\s{\theta_{0}}\c{^{2}\phi_{0}})\\
+ & = & (\c{\phi_{0}}\c{\theta_{0}},\s{\phi_{0}}\c{\theta_{0}},-\s{\theta_{0}})
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{X}=\mathbf{L}\cdot OX=\c{\phi_{0}}\c{\theta_{0}}L_{x}+\s{\phi_{0}}\c{\theta_{0}}L_{y}-\s{\theta_{0}}L_{z}
+\]
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\[
+L_{X}+iL_{Y}=(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}})L_{x}+(\s{\phi_{0}}\c{\theta_{0}}+i\c{\phi_{0}})L_{y}-\s{\theta_{0}}L_{z}
+\]
+
+\end_inset
+
+Expanding the 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ term:
+\begin_inset Formula 
+\begin{eqnarray*}
+(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}})L_{x} & = & \frac{1}{2}(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}})(L_{+}+L_{-})\\
+ & = & \frac{1}{2}(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}})L_{+}+\frac{1}{2}(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}})L_{-}
+\end{eqnarray*}
+
+\end_inset
+
+Expanding the 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+ term:
+\begin_inset Formula 
+\begin{eqnarray*}
+(\s{\phi_{0}}\c{\theta_{0}}+i\c{\phi_{0}})L_{y} & = & \frac{1}{2i}(\s{\phi_{0}}\c{\theta_{0}}+i\c{\phi_{0}})(L_{+}-L_{-})\\
+ & = & \frac{1}{2i}(\s{\phi_{0}}\c{\theta_{0}}+i\c{\phi_{0}})L_{+}-\frac{1}{2i}(\s{\phi_{0}}\c{\theta_{0}}+i\c{\phi_{0}})L_{-}\\
+ & = & \frac{1}{2}(-i\s{\phi_{0}}\c{\theta_{0}}+\c{\phi_{0}})L_{+}+\frac{1}{2}(i\s{\phi_{0}}\c{\theta_{0}}-\c{\phi_{0}})L_{-}
+\end{eqnarray*}
+
+\end_inset
+
+Grouping the 
+\begin_inset Formula $L_{+}$
+\end_inset
+
+ terms:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{2}L_{+}(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}}-i\s{\phi_{0}}\c{\theta_{0}}+\c{\phi_{0}}) & = & \frac{1}{2}L_{+}(\cos\theta_{0}(\c{\phi_{0}}-i\s{\phi_{0}})+\c{\phi_{0}}-i\s{\phi_{0}})\\
+ & = & \frac{1}{2}L_{+}(\cos\theta_{0}(e^{-i\phi_{0}})+e^{-i\phi_{0}})\\
+ & = & \frac{1}{2}L_{+}e^{-i\phi_{0}}(\c{\theta_{0}}+1)\\
+ & = & \frac{1}{2}L_{+}e^{-i\phi_{0}}(2\c{^{2}\frac{\theta_{0}}{2}}-1+1)\\
+ & = & \c{^{2}\frac{\theta_{0}}{2}}e^{-i\phi_{0}}L_{+}
+\end{eqnarray*}
+
+\end_inset
+
+Group the 
+\begin_inset Formula $L_{-}$
+\end_inset
+
+ terms:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{2}L_{-}(\c{\phi_{0}}\c{\theta_{0}}-i\s{\phi_{0}}+i\s{\phi_{0}}\c{\theta_{0}}-\c{\phi_{0}}) & = & \frac{1}{2}L_{-}(\c{\theta_{0}}(\c{\phi_{0}}+i\s{\phi_{0}})-(\c{\phi_{0}}+i\s{\phi_{0}}))\\
+ & = & \frac{1}{2}L_{-}(\c{\theta_{0}}(e^{i\phi_{0}})-e^{i\phi_{0}})\\
+ & = & \frac{1}{2}L_{-}e^{i\phi_{0}}(\c{\theta_{0}}-1)\\
+ & = & \frac{1}{2}L_{-}e^{i\phi_{0}}(1-2\s{^{2}\frac{\theta_{0}}{2}}-1)\\
+ & = & -\s{^{2}\frac{\theta_{0}}{2}}e^{i\phi_{0}}L_{-}
+\end{eqnarray*}
+
+\end_inset
+
+And we get 
+\begin_inset Formula 
+\[
+L_{X}+iL_{Y}=\c{^{2}\frac{\theta_{0}}{2}}e^{-i\phi_{0}}L_{+}-\s{^{2}\frac{\theta_{0}}{2}}e^{i\phi_{0}}L_{-}-\s{\theta_{0}}L_{z}
+\]
 
 \end_inset
 
