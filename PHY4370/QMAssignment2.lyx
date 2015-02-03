@@ -76,6 +76,10 @@ PHY4370 Assignment 2
 
 \begin_layout Author
 Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+February 3rd 2015
 \end_layout
 
 \begin_layout Standard
@@ -104,11 +108,21 @@ Mohammed Chamma 6379153
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\bra}[1]{\langle#1|}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sbraket}[3]{\bra{#1}#2\ket{#3}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
 Problem 6.22 
-\begin_inset Formula $\chi_{0,0}=\frac{1}{\sqrt{2}}(\alpha(1)\beta(2)-\beta(1)\alpha(2))$
+\begin_inset Formula $\chi_{0,0}=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)-\beta(1)\alpha(2)]$
 \end_inset
 
  for singlet and 
@@ -116,7 +130,7 @@ Problem 6.22
 \end_inset
 
 , 
-\begin_inset Formula $\chi_{1,0}=\frac{1}{\sqrt{2}}(\alpha(1)\beta(2)+\beta(1)\alpha(2))$
+\begin_inset Formula $\chi_{1,0}=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)+\beta(1)\alpha(2)]$
 \end_inset
 
 , 
@@ -127,10 +141,150 @@ Problem 6.22
 \end_layout
 
 \begin_layout Standard
+First the singlet state 
+\begin_inset Formula $\ket{0,0}=\frac{1}{\sqrt{2}}[\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}]$
+\end_inset
+
+.
+ Since 
+\series bold
+
+\begin_inset Formula $\mathbf{S}=\mathbf{S}_{1}+\mathbf{S}_{2}$
+\end_inset
+
+ 
+\series default
+and 
+\begin_inset Formula $\mathbf{S}_{1}$
+\end_inset
+
+ and 
+\series bold
+
+\begin_inset Formula $\mathbf{S}_{2}$
+\end_inset
+
+ 
+\series default
+commute,
 \begin_inset Formula 
 \[
-\expect{\mathbf{S}_{1}\mathbf{S}_{2}}=\braket{}
+\mathbf{S}_{1}\cdot\mathbf{S}_{2}=\frac{1}{2}(\mathbf{S}^{2}-\mathbf{S}_{1}^{2}-\mathbf{S}_{2}^{2})
 \]
+
+\end_inset
+
+So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\expect{\mathbf{S}_{1}\cdot\mathbf{S}_{2}} & = & \sbraket{0,0}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{0,0}\\
+ & = & \frac{1}{2}\sbraket{0,0}{\mathbf{S}^{2}-\mathbf{S}_{1}^{2}-\mathbf{S}_{2}^{2}}{0,0}\\
+ & = & \frac{1}{2}\sbraket{0,0}{\mathbf{S}^{2}}{0,0}-\frac{1}{2}\sbraket{0,0}{\mathbf{S}_{1}^{2}}{0,0}-\frac{1}{2}\sbraket{0,0}{\mathbf{S}_{2}^{2}}{0,0}
+\end{eqnarray*}
+
+\end_inset
+
+Looking at each part individually
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{S}_{1}^{2}\ket{0,0} & = & \frac{1}{\sqrt{2}}\Big(\mathbf{S}_{1}^{2}\ket{\uparrow\downarrow}-\mathbf{S}_{1}^{2}\ket{\downarrow\uparrow}\Big)\qquad(\mathbf{S}_{1}^{2}\text{ only affects first particle)}\\
+ & = & \frac{1}{\sqrt{2}}\Big(\frac{3}{4}\hbar^{2}\ket{\uparrow\downarrow}-\frac{3}{4}\hbar^{2}\ket{\downarrow\uparrow}\Big)\\
+ & = & \frac{3}{4}\hbar^{2}\ket{0,0}\\
+\sbraket{0,0}{\mathbf{S}_{1}^{2}}{0,0} & = & \frac{3}{4}\hbar^{2}\langle0,0|0,0\rangle=\frac{3}{4}\hbar^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Cool.
+ Rinse, repeat
+\begin_inset Formula 
+\[
+\sbraket{0,0}{\mathbf{S}_{2}^{2}}{0,0}=\frac{3}{4}\hbar^{2}\langle0,0|0,0\rangle=\frac{3}{4}\hbar^{2}
+\]
+
+\end_inset
+
+Last one.
+ The total spin number is 
+\begin_inset Formula $S=0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\[
+\sbraket{0,0}{\mathbf{S}^{2}}{0,0}=S(S+1)\hbar^{2}\langle0,0|0,0\rangle=0
+\]
+
+\end_inset
+
+Therefore
+\begin_inset Formula 
+\[
+\expect{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}=\frac{1}{2}(0)-\frac{1}{2}(\frac{3}{4}\hbar^{2})-\frac{1}{2}(\frac{3}{4}\hbar^{2})=-\frac{3}{4}\hbar^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we do the triplet states.
+ The total spin number is 
+\begin_inset Formula $S=1$
+\end_inset
+
+.
+ The states are
+\begin_inset Formula 
+\begin{eqnarray*}
+\ket{1,1} & = & \ket{\uparrow\uparrow}\\
+\ket{1,0} & = & \frac{1}{\sqrt{2}}[\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}\\
+\ket{1,-1} & = & \ket{\downarrow\downarrow}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first one we'll calculate is 
+\begin_inset Formula $\sbraket{1,1}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{1,1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sbraket{1,1}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{1,1} & = & \frac{1}{2}\sbraket{1,1}{\mathbf{S}^{2}}{1,1}-\frac{1}{2}\sbraket{1,1}{\mathbf{S}_{1}^{2}}{1,1}-\frac{1}{2}\sbraket{1,1}{\mathbf{S}_{2}^{2}}{1,1}\\
+ & = & \frac{1}{2}\sbraket{1,1}{\mathbf{S}^{2}}{1,1}-\frac{1}{2}(2)(\frac{3}{4}\hbar^{2})\\
+ & = & \frac{1}{2}\sbraket{1,1}{\mathbf{S}^{2}}{1,1}-\frac{3}{4}\hbar^{2}\\
+ & = & \frac{1}{2}S(S+1)\hbar^{2}-\frac{3}{4}\hbar^{2}=\frac{1}{2}(2)\hbar^{2}-\frac{3}{4}\hbar^{2}\\
+ & = & \frac{1}{4}\hbar^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Now we'll do 
+\begin_inset Formula $\sbraket{1,0}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{1,0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sbraket{1,0}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{1,0} & = & \frac{1}{2}\sbraket{1,0}{\mathbf{S}^{2}}{1,0}-\frac{1}{2}\sbraket{1,0}{\mathbf{S}_{1}^{2}}{1,0}-\frac{1}{2}\sbraket{1,0}{\mathbf{S}_{2}^{2}}{1,0}\\
+ & = & \frac{1}{4}\hbar^{2}
+\end{eqnarray*}
+
+\end_inset
+
+They're all the same
+\begin_inset Formula 
+\begin{eqnarray*}
+\sbraket{1,-1}{\mathbf{S}_{1}\cdot\mathbf{S}_{2}}{1,-1} & = & \frac{1}{2}\sbraket{1,-1}{\mathbf{S}^{2}}{1,-1}-\frac{1}{2}\sbraket{1,-1}{\mathbf{S}_{1}^{2}}{1,-1}-\frac{1}{2}\sbraket{1,-1}{\mathbf{S}_{2}^{2}}{1,-1}\\
+ & = & \frac{1}{4}\hbar^{2}
+\end{eqnarray*}
 
 \end_inset
 
@@ -142,7 +296,72 @@ Problem 6.23
 \end_layout
 
 \begin_layout Standard
-Todo.
+Treat the two particle system as a single system with spin 
+\begin_inset Formula $S'=0,1$
+\end_inset
+
+.
+ With a third spin 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ particle, the system's total spin number is 
+\begin_inset Formula $S=S'+\frac{1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If the two-particle system is in the singlet state, the spin number for
+ the whole system is 
+\begin_inset Formula $S=0+\frac{1}{2}=\frac{1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Conversely if it's in the triplet state then the spin number for the whole
+ system is 
+\begin_inset Formula $S=1+\frac{1}{2}=\frac{3}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The possible states for 
+\begin_inset Formula $S=\frac{1}{2}$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\[
+\chi_{\frac{1}{2},\frac{1}{2}},\chi_{\frac{1}{2},-\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The possible states for 
+\begin_inset Formula $S=\frac{3}{2}$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\[
+\chi_{\frac{3}{2},\frac{3}{2}},\chi_{\frac{3}{2},\frac{1}{2}},\chi_{\frac{3}{2},-\frac{1}{2}},\chi_{\frac{3}{2},-\frac{3}{2}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -172,9 +391,6 @@ Quantum Mechanics
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 (\Delta L_{x})^{2}+(\Delta L_{y})^{2}+(\Delta L_{z})^{2} & = & \langle L_{x}^{2}\rangle-\langle L_{x}\rangle^{2}+\langle L_{y}^{2}\rangle-\langle L_{y}\rangle^{2}+\langle L_{z}^{2}\rangle-\langle L_{z}\rangle^{2}\\
@@ -480,7 +696,7 @@ L_{z}\ket{\psi_{0}}=m\hbar\ket{\psi_{0}}=l\hbar\ket{\psi_{0}}
 \begin{eqnarray*}
 (L_{x}+iL_{y})\ket{\psi_{0}} & = & L_{+}\ket{\psi_{0}}\\
  & = & L_{+}\ket{l,l}\\
- & = & \ket{l,l+1}=0\qquad\text{(cuz can't raise \ensuremath{m} past \ensuremath{l})}
+ & = & \ket{l,l+1}=0\qquad\text{(cuz can't raise \ensuremath{m}past \ensuremath{l})}
 \end{eqnarray*}
 
 \end_inset
@@ -678,6 +894,27 @@ L_{X}+iL_{Y}=\c{^{2}\frac{\theta_{0}}{2}}e^{-i\phi_{0}}L_{+}-\s{^{2}\frac{\theta
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula 
+\[
+\ket{\psi_{0}}=\sum_{m=-l}^{l}d_{m}\ket{l,m}\,\text{and show that }d_{m}=\tan\frac{\theta_{0}}{2}e^{i\phi_{0}}\sqrt{\frac{l+m+1}{l-m}}d_{m+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Work out 
+\begin_inset Formula $\mathbf{r'}=\exp(\alpha\mathbf{\hat{n}\times r)}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
