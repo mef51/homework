@@ -1,0 +1,237 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Assignment 5
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+February 4th 2015
+\end_layout
+
+\begin_layout Standard
+You are given a 
+\begin_inset Formula $CO_{2}$
+\end_inset
+
+ laser which will be used in a manufacturing plant to weld the frame of
+ cars.
+ You are told that the laser has a small signal gain of 
+\begin_inset Formula $3\%/cm$
+\end_inset
+
+ and a cavity with 
+\begin_inset Formula $L=1m$
+\end_inset
+
+ with one cavity mirror.
+ The laser mirrors are as follows: one mirror has 
+\begin_inset Formula $(r_{1},s_{1},t_{1})=(0.95,0.1,0.04)$
+\end_inset
+
+ and the other has 
+\begin_inset Formula $(r_{2},s_{2},t_{2})=(1.0,0,0)$
+\end_inset
+
+.
+ The saturation intensity you are told is 
+\begin_inset Formula $I_{s}=100W/cm^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Please calculate the output power per unit area of the laser
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I^{out} & = & \frac{t}{2}I_{sat}\Big(\frac{2g_{0}\ell}{t+s}-1\Big)\\
+ & = & \frac{0.04}{2}(100W/cm^{2})\Big(\frac{2(0.03cm^{-1})(100cm)}{0.04+0.01}-1\Big)\\
+ & = & 238W/cm^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+How much power is deposited in the output window? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I^{window} & = & sI^{+}=\frac{s}{2}I_{sat}\Big(\frac{2g_{0}\ell}{t+s}-1\Big)\\
+ & = & \frac{0.01}{2}(100W/cm^{2})\Big(\frac{2(0.03cm^{-1})(100cm)}{0.04+0.01}-1\Big)\\
+ & = & 59.5W/cm^{2}
+\end{eqnarray*}
+
+\end_inset
+
+That's a lot!
+\end_layout
+
+\begin_layout Standard
+Another way to get this is to notice 
+\begin_inset Formula $s=\frac{1}{4}t$
+\end_inset
+
+ so
+\begin_inset Formula 
+\[
+I^{window}=sI^{+}=\frac{1}{4}tI^{+}=\frac{1}{4}I^{out}=\frac{238}{4}=59.5W/cm^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Please compare the power deposited in the window with a reasonable estimate
+ of that deposited in a window by a 100W lightbulb.
+\end_layout
+
+\begin_layout Standard
+The 100W lightbulb gives about 10W of light power.
+ If the window is a meter away the lightbulb deposits 
+\begin_inset Formula 
+\[
+P_{L}=\frac{10W}{4\pi(1m)^{2}}=\frac{10W}{4\pi(100cm)^{2}}=7.96\times10^{-5}W/cm^{2}
+\]
+
+\end_inset
+
+Over a million times weaker than the laser!
+\end_layout
+
+\begin_layout Problem
+For the laser just described, assume the loss is always 1%.
+ Find the transmission coefficient for the mirror that will optimize the
+ light output (highest power per unit area) and find this optimum output.
+\end_layout
+
+\begin_layout Standard
+The optimal transmission coefficient is 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{opt} & = & \sqrt{2g_{0}\ell s}-s\\
+ & = & \sqrt{2(0.03cm^{-1})(100cm)(0.01)}-0.01\\
+ & = & 0.23
+\end{eqnarray*}
+
+\end_inset
+
+But we need to make sure that the gain at this transmission coefficient
+ is larger than the small signal gain.
+ This is equivalent to checking
+\begin_inset Formula 
+\begin{eqnarray*}
+g_{0} & > & \frac{s}{2\ell}\\
+0.03cm^{-1} & > & \frac{0.01}{2(100cm)}\\
+0.03cm^{-1} & > & 0.00005cm^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+and indeed it is.
+ This means the laser can operate at the optimal transmission of 
+\begin_inset Formula $t=0.23$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The optimal output is
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{max}^{out} & = & I_{sat}g_{o}\ell\\
+ & = & 100W/cm^{2}(0.03cm^{-1})(100cm)\\
+ & = & 300W/cm^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
