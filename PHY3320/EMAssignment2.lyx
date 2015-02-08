@@ -4,6 +4,8 @@
 \begin_header
 \textclass amsart
 \begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
 \usepackage[cm]{fullpage}
 \end_preamble
 \use_default_options true
@@ -117,7 +119,126 @@ Problem 8.12 P.
 \end_layout
 
 \begin_layout Standard
-Todo
+Place the charge 
+\begin_inset Formula $q_{e}$
+\end_inset
+
+ at the origin and the magnetic monopole 
+\begin_inset Formula $q_{m}$
+\end_inset
+
+ a distance 
+\begin_inset Formula $d$
+\end_inset
+
+ away on the z-axis.
+ A vector 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ points from the origin to an arbitrary observation point.
+ A vector 
+\begin_inset Formula $\mathbf{r'}$
+\end_inset
+
+ points from the origin (where 
+\begin_inset Formula $q_{e}$
+\end_inset
+
+ is) to the monopole 
+\begin_inset Formula $q_{m}$
+\end_inset
+
+ with a length 
+\begin_inset Formula $d$
+\end_inset
+
+ along the z-axis.
+ The angle between 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{r'}$
+\end_inset
+
+ is 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ The vector 
+\begin_inset Formula $\mathbf{r-r'}$
+\end_inset
+
+ points from the monopole to the observation point.
+\end_layout
+
+\begin_layout Standard
+The density of angular momentum is
+\begin_inset Formula 
+\[
+\mathbf{\ell_{em}}=\epsilon_{0}(\mathbf{r}\times(\mathbf{E}\times\mathbf{B}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{E}\times\mathbf{B} & = & \frac{1}{4\pi\epsilon_{0}}\frac{q_{e}}{r^{2}}\mathbf{\hat{r}}\times\frac{\mu_{0}}{4\pi}\frac{q_{m}}{|\mathbf{r}-\mathbf{r}'|^{2}}(\hat{\mathbf{r-r'}})\\
+ & = & \frac{\mu_{0}}{(4\pi)^{2}\epsilon_{0}}\frac{q_{e}q_{m}}{r^{3}|\mathbf{r-r'}|^{3}}[\mathbf{r}\times(\mathbf{r}-\mathbf{r'})]
+\end{eqnarray*}
+
+\end_inset
+
+Note that 
+\begin_inset Formula $\mathbf{r}\times(\mathbf{r}-\mathbf{r'})=\mathbf{r\times r}-\mathbf{r\times r'}=-\mathbf{r}\times\mathbf{r'}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\[
+\mathbf{E}\times\mathbf{B}=-\frac{\mu_{0}}{(4\pi)^{2}\epsilon_{0}}\frac{q_{e}q_{m}}{r^{3}|\mathbf{r-r'}|^{3}}(\mathbf{r}\times\mathbf{r'})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{\ell_{em}} & = & \epsilon_{0}(\mathbf{r}\times(\mathbf{E}\times\mathbf{B}))\\
+ & = & -\frac{\mu_{0}\epsilon_{0}}{(4\pi)^{2}\epsilon_{0}}\frac{q_{e}q_{m}}{r^{3}|\mathbf{r-r'}|^{3}}(\mathbf{r}\times(\mathbf{r}\times\mathbf{r'}))
+\end{eqnarray*}
+
+\end_inset
+
+Use the identity 
+\begin_inset Formula $\mathbf{A}\times(\mathbf{B}\times\mathbf{C})=\mathbf{B}(\mathbf{A}\cdot\mathbf{C})-\mathbf{C}(\mathbf{A}\cdot\mathbf{B})$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{r}\times(\mathbf{r}\times\mathbf{r'}) & = & \mathbf{r}(\mathbf{r}\cdot\mathbf{r'})-\mathbf{r'}(\mathbf{r}\cdot\mathbf{r})\\
+ & = & \mathbf{r}(rd\cos\theta)-\mathbf{r'}(r^{2})=rd\cos\theta\mathbf{r}-r^{2}\mathbf{r'}
+\end{eqnarray*}
+
+\end_inset
+
+So now we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{\ell_{em}} & = & -\frac{\mu_{0}}{(4\pi)^{2}}\frac{q_{e}q_{m}}{r^{3}|\mathbf{r-r'}|^{3}}[rd\cos\theta\mathbf{r}-r^{2}\mathbf{r'}]\\
+ & = & \frac{\mu_{0}q_{e}q_{m}}{(4\pi)^{2}}\frac{[r^{2}\mathbf{r'}-rd\cos\theta\mathbf{r}]}{r^{3}|\mathbf{r-r'}|^{3}}
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
