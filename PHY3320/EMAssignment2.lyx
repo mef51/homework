@@ -83,16 +83,129 @@ February 5th 2015
 \end_layout
 
 \begin_layout Problem
-Cable stuff
+Problem 8.1.
+ A long coaxial cable of length 
+\begin_inset Formula $L$
+\end_inset
+
+ carries current 
+\begin_inset Formula $I$
+\end_inset
+
+, which flows down the surface of the inner cylinder of radius 
+\begin_inset Formula $a$
+\end_inset
+
+, and back along the outer cylinder of radius 
+\begin_inset Formula $b$
+\end_inset
+
+ as shown.
+ Calculate the power (energy per unit time) transported down the cables.
+ Assume the two conductors are held at a potential difference 
+\begin_inset Formula $V$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Todo
+Since the Poynting vector 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ is the energy per unit time per unit area, the power through an area 
+\begin_inset Formula $d\mathbf{a}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+P=\int\mathbf{S}\cdot d\mathbf{a}
+\]
+
+\end_inset
+
+Since we're interested in power down the wire, 
+\begin_inset Formula $d\mathbf{a}$
+\end_inset
+
+ points down the wire and it's magnitude is the area of the crossection
+ of a cylindrical shell (in between the two conducting cylinders).
+ The shell spans from a radius 
+\begin_inset Formula $s$
+\end_inset
+
+ to 
+\begin_inset Formula $s+ds$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\begin{eqnarray*}
+d\mathbf{a} & = & \pi(s+ds)^{2}-\pi s^{2}=\pi(s^{2}+2sds+ds^{2}-s^{2})\\
+ & = & \pi(2sds+ds^{2})\\
+ & = & 2\pi sds\mathbf{\hat{z}}\qquad(ds^{2}\approx0)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Example 7.13 pg.
- 319
+The Poynting vector is given by 
+\begin_inset Formula $\mathbf{S}=\frac{1}{\mu_{0}}(\mathbf{E}\times\mathbf{B})$
+\end_inset
+
+.
+ The magnetic field between the cylinders is given by 
+\begin_inset Formula 
+\[
+\mathbf{B}=\frac{\mu_{0}I}{2\pi s}\mathbf{\hat{\phi}}
+\]
+
+\end_inset
+
+(In this case the z-axis points down the cable).
+ The electric field is given by
+\begin_inset Formula 
+\[
+\mathbf{E}=\frac{\lambda}{2\pi\epsilon_{0}s}\mathbf{\hat{s}}
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $\mathbf{\hat{s}}$
+\end_inset
+
+ points in the radial direction, and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the uniform charge per unit length.
+ So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{S} & = & \frac{1}{\mu_{0}}(\frac{\lambda}{2\pi\epsilon_{0}s}\mathbf{\hat{s}}\times\frac{\mu_{0}I}{2\pi s}\mathbf{\hat{\phi}})\\
+ & = & \frac{1}{\mu_{0}}\frac{\mu_{0}\lambda I}{4\pi^{2}\epsilon_{0}s^{2}}\mathbf{\hat{z}}=\frac{\lambda I}{4\pi^{2}\epsilon_{0}s^{2}}\mathbf{\hat{z}}
+\end{eqnarray*}
+
+\end_inset
+
+Now the power is just
+\begin_inset Formula 
+\begin{eqnarray*}
+P & = & \int\mathbf{S}\cdot d\mathbf{a}=\frac{\lambda I}{4\pi^{2}\epsilon_{0}}\int\frac{1}{s^{2}}2\pi sds\\
+ & = & \frac{\lambda I}{2\pi\epsilon_{0}}\int_{a}^{b}\frac{1}{s}ds\\
+ & = & \frac{\lambda I}{2\pi\epsilon_{0}}\ln(\frac{b}{a})
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -100,7 +213,7 @@ Plane between two charges
 \end_layout
 
 \begin_layout Standard
-Todo
+
 \end_layout
 
 \begin_layout Problem
@@ -443,10 +556,6 @@ There is no dependence on
 \end_inset
 
 !
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body
