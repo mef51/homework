@@ -209,21 +209,550 @@ P & = & \int\mathbf{S}\cdot d\mathbf{a}=\frac{\lambda I}{4\pi^{2}\epsilon_{0}}\i
 \end_layout
 
 \begin_layout Problem
-Plane between two charges
+Consider two equal point charges 
+\begin_inset Formula $q$
+\end_inset
+
+, separated by a distance 
+\begin_inset Formula $2a$
+\end_inset
+
+.
+ Construct the plane equidistant from the two charges.
+ By integrating Maxwell's stress tensor over this plane, determine the force
+ of one charge on the other.
+ Do the same for charges that are opposite in sign.
 \end_layout
 
 \begin_layout Standard
+Place one charge 
+\begin_inset Formula $q$
+\end_inset
+
+ on the z-axis at 
+\begin_inset Formula $z=a$
+\end_inset
+
+ and the other at 
+\begin_inset Formula $z=-a$
+\end_inset
+
+.
+ The force is given by 
+\begin_inset Formula 
+\[
+\mathbf{F}=\oint_{S}\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a}
+\]
+
+\end_inset
+
+Since the charges are on the z-axis the force only has a z-component.
+ So we only need to find 
+\begin_inset Formula 
+\[
+\mathbf{F}_{z}=\oint_{S}(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z}=T_{xz}d\mathbf{a}_{x}+T_{yz}d\mathbf{a}_{y}+T_{zz}d\mathbf{a}_{z}
+\]
+
+\end_inset
+
+Say we want to find the force on the upper charge.
+ The force comes from the second charge, which is below the plane.
+ The surface we consider must face the source of the force, so the surface
+ element should point downwards.
+ So we put a negative sign in front of 
+\begin_inset Formula $d\mathbf{a}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+d\mathbf{a}=-rdrd\phi\mathbf{\hat{z}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z} & = & T_{zz}d\mathbf{a}_{z}\\
+ & = & -\epsilon_{0}\Big(E_{z}E_{z}-\frac{1}{2}E^{2}\Big)rdrd\phi
+\end{eqnarray*}
+
+\end_inset
+
+The electric field at a point on the plane is given by a superposition of
+ the fields from each charge.
+ Because any non-radial components of the field from one charge are cancelled
+ out by the other charge, only the radial component of the field from each
+ charge contributes.
+ So the total electric field on the plane is radial.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathbf{E}_{1}$
+\end_inset
+
+ be the field from the top charge and 
+\begin_inset Formula $\mathbf{E}_{2}$
+\end_inset
+
+ be the field from the bottom charge.
+ The radial component of each field is 
+\begin_inset Formula $\mathbf{E}_{r}=E\cos\theta\mathbf{\hat{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{E} & = & \mathbf{E}_{1r}+\mathbf{E}_{2r}\\
+ & = & \frac{1}{4\pi\epsilon_{0}}\frac{q}{d^{2}}\cos\theta\mathbf{\hat{r}}+\frac{1}{4\pi\epsilon_{0}}\frac{q}{d^{2}}\cos\theta\mathbf{\hat{r}}=\frac{1}{2\pi\epsilon_{0}}\frac{q}{d^{2}}\cos\theta\mathbf{\hat{r}}
+\end{eqnarray*}
+
+\end_inset
+
+The distance from one of the charges to a point on the plane is 
+\begin_inset Formula 
+\[
+d=\sqrt{r^{2}+a^{2}}
+\]
+
+\end_inset
+
+The angle between 
+\begin_inset Formula $d$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\cos\theta=\frac{r}{d}
+\]
+
+\end_inset
+
+So the field is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{E} & = & \frac{1}{2\pi\epsilon_{0}}\frac{q}{d^{2}}\cos\theta\mathbf{\hat{r}}\\
+ & = & \frac{1}{2\pi\epsilon_{0}}\frac{rq}{d(r^{2}+a^{2})}\mathbf{\hat{r}}\\
+ & = & \frac{1}{2\pi\epsilon_{0}}\frac{rq}{(r^{2}+a^{2})^{3/2}}\mathbf{\hat{r}}
+\end{eqnarray*}
+
+\end_inset
+
+Which means 
+\begin_inset Formula $E_{z}=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z} & = & -\epsilon_{0}\Big(-\frac{1}{2}E^{2}\Big)rdrd\phi\\
+ & = & \frac{\epsilon_{0}}{2}E^{2}rdrd\phi\\
+ & = & \frac{\epsilon_{0}}{2}\Big(\frac{1}{2\pi\epsilon_{0}}\Big)^{2}\frac{r^{3}q^{2}}{(r^{2}+a^{2})^{3}}drd\phi
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{F}_{z} & = & \oint_{S}(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z}\\
+ & = & \frac{q^{2}}{8\pi^{2}\epsilon_{0}}\int_{0}^{2\pi}d\phi\int_{0}^{\infty}\frac{r^{3}}{(r^{2}+a^{2})^{3}}dr\\
+ & = & \frac{q^{2}}{4\pi\epsilon_{0}}\int_{0}^{\infty}\frac{r^{3}}{(r^{2}+a^{2})^{3}}dr\\
+ & = & \frac{q^{2}}{4\pi\epsilon_{0}}\Bigg[-\frac{a^{2}+2r^{2}}{4(a^{2}+r^{2})^{2}}\Bigg]_{0}^{\infty}\\
+ & = & \frac{q^{2}}{4\pi\epsilon_{0}}\Bigg[-\frac{r^{2}}{r^{4}}+\frac{a^{2}}{4(a^{2})^{2}}\Bigg]\\
+ & = & \frac{q^{2}}{4\pi\epsilon_{0}}\Bigg[-\frac{1}{\infty^{2}}+\frac{1}{4a^{2}}\Bigg]\\
+ & = & \frac{q^{2}}{4\pi\epsilon_{0}}\frac{1}{4a^{2}}=\frac{q^{2}}{16\pi\epsilon_{0}a^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a charge of opposite sign we expect the force to be equal and opposite
+ to what we found.
+ The field at a point in the plane now has only a z-component.
+ The z-component of the field is given by 
+\begin_inset Formula $\mathbf{E}_{z}=E\sin\theta\mathbf{\hat{z}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{E} & = & \mathbf{E}_{1z}\mathbf{\hat{z}}+\mathbf{E}_{2z}\mathbf{\hat{z}}\\
+ & = & -\frac{1}{4\pi\epsilon_{0}}\frac{q}{d^{2}}\sin\theta\mathbf{\hat{z}}-\frac{1}{4\pi\epsilon_{0}}\frac{q}{d^{2}}\sin\theta\mathbf{\hat{z}}=-\frac{1}{2\pi\epsilon_{0}}\frac{q}{d^{2}}\sin\theta\mathbf{\hat{z}}
+\end{eqnarray*}
+
+\end_inset
+
+With 
+\begin_inset Formula 
+\[
+\sin\theta=\frac{a}{d}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{z} & = & -\frac{1}{2\pi\epsilon_{0}}\frac{q}{d^{2}}\sin\theta\\
+ & = & -\frac{1}{2\pi\epsilon_{0}}\frac{qa}{(r^{2}+a^{2})^{3/2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+(\overleftrightarrow{\mathbf{T}}\cdot d\mathbf{a})_{z} & = & -\epsilon_{0}\Big(E_{z}E_{z}-\frac{1}{2}E^{2}\Big)rdrd\phi\\
+ & = & -\epsilon_{0}\Big(\frac{1}{2}E_{z}^{2}\Big)rdrd\phi\\
+ & = & -\frac{\epsilon_{0}}{2}\Big(\frac{qa}{2\pi\epsilon_{0}}\Big)^{2}\frac{r}{(r^{2}+a^{2})^{3}}drd\phi
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{F}_{z} & = & -\frac{\epsilon_{0}}{2}\Big(\frac{qa}{2\pi\epsilon_{0}}\Big)^{2}\int_{0}^{2\pi}d\phi\int_{0}^{\infty}\frac{r}{(r^{2}+a^{2})^{3}}dr\\
+ & = & -\frac{q^{2}a^{2}}{4\pi\epsilon_{0}}\int_{0}^{\infty}\frac{r}{(r^{2}+a^{2})^{3}}dr\\
+ & = & -\frac{q^{2}a^{2}}{4\pi\epsilon_{0}}\frac{1}{4a^{4}}=-\frac{q^{2}}{16\pi\epsilon_{0}a^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
 \begin_layout Problem
-A fat wire
+A fat wire of radius 
+\begin_inset Formula $a$
+\end_inset
+
+ carries a constant 
+\begin_inset Formula $I$
+\end_inset
+
+, uniformly distributed over its cross section.
+ A narrow gap in the wire, of width 
+\begin_inset Formula $w<<a$
+\end_inset
+
+, forms a parallel plate capacitor.
 \end_layout
 
 \begin_layout Standard
-Todo.
- Problem 7.31 pg.
- 324
+(a) Find the electric and magnetic field in the gap, as functions of distance
+ s from the axis and time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ (assume charge is 0 at 
+\begin_inset Formula $t=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Place the z-axis so that it is pointing along the wire in the direction
+ of flowing current.
+ The gap forms a capacitor so the electric field does not depend on 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ It is given by 
+\begin_inset Formula 
+\[
+\mathbf{E}=\frac{\sigma}{\epsilon_{0}}\mathbf{\hat{z}}
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is the surface charge per unit area over the crossection.
+ This means
+\begin_inset Formula 
+\[
+\sigma=\frac{q}{\pi a^{2}}
+\]
+
+\end_inset
+
+But since 
+\begin_inset Formula $q$
+\end_inset
+
+ depends on the time, 
+\begin_inset Formula $q(t)=It$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\[
+\sigma=\frac{It}{\pi a^{2}}
+\]
+
+\end_inset
+
+Therefore the field is 
+\begin_inset Formula 
+\[
+\mathbf{E}=\frac{It}{\pi a^{2}\epsilon_{0}}\mathbf{\hat{z}}
+\]
+
+\end_inset
+
+There is no current density, but there is a displacement current density
+ in the gap, which by Ampere's law means there is a 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ field.
+\begin_inset Formula 
+\[
+\mathbf{J}_{d}=\epsilon_{0}\frac{\partial\mathbf{E}}{\partial t}=\frac{I}{\pi a^{2}}
+\]
+
+\end_inset
+
+Drawing a circle of radius 
+\begin_inset Formula $s$
+\end_inset
+
+ from the axis in between the gap, and integrating over it, we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\oint\mathbf{B}\cdot d\mathbf{l} & = & B2\pi s=\mu_{0}I_{enc}=\mu_{0}I\Big(\frac{\pi s^{2}}{\pi a^{2}}\Big)\\
+ & = & \mu_{0}I\frac{s^{2}}{a^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\begin{eqnarray*}
+B & = & \mu_{0}I\frac{s^{2}}{a^{2}}\frac{1}{2\pi s}\\
+ & = & \frac{\mu_{0}Is}{2\pi a^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+The 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ field goes in circles around the wire so 
+\begin_inset Formula 
+\[
+\mathbf{B}=\frac{\mu_{0}Is}{2\pi a^{2}}\mathbf{\hat{\phi}}
+\]
+
+\end_inset
+
+The 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ field doesn't seem to depend on time.
+\end_layout
+
+\begin_layout Standard
+(b) Find the energy density 
+\begin_inset Formula $u_{em}$
+\end_inset
+
+ and Poynting vector 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ in the gap.
+ Check if the continuity equation for energy is satisfied or not.
+\end_layout
+
+\begin_layout Standard
+The energy density 
+\begin_inset Formula $u_{em}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{em} & = & \frac{1}{2}\Big(\epsilon_{0}E^{2}+\frac{1}{\mu_{0}}B^{2}\Big)\\
+ & = & \frac{1}{2}\Big(\epsilon_{0}\frac{I^{2}t^{2}}{\pi^{2}a^{4}\epsilon_{0}^{2}}+\frac{1}{\mu_{0}}\frac{\mu_{0}^{2}I^{2}s^{2}}{4\pi^{2}a^{4}}\Big)\\
+ & = & \frac{1}{2}\Big(\frac{I^{2}t^{2}}{\pi^{2}a^{4}\epsilon_{0}}+\frac{\mu_{0}I^{2}s^{2}}{4\pi^{2}a^{4}}\Big)\\
+ & = & \frac{I^{2}}{2\pi^{2}a^{4}}\Big(\frac{t^{2}}{\epsilon_{0}}+\frac{\mu_{0}s^{2}}{4}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+Now the Poynting vector is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{S} & = & \frac{1}{\mu_{0}}(\mathbf{E}\times\mathbf{B})\\
+ & = & \frac{1}{\mu_{0}}\Big(\frac{It}{\pi a^{2}\epsilon_{0}}\mathbf{\hat{z}}\Big)\times\Big(\frac{\mu_{0}Is}{2\pi a^{2}}\mathbf{\hat{\phi}}\Big)\\
+ & = & -\frac{I^{2}ts}{2\pi^{2}a^{4}\epsilon_{0}}\mathbf{\hat{s}}
+\end{eqnarray*}
+
+\end_inset
+
+The Poynting vector points inward radially! Energy flows inward to the center.
+\end_layout
+
+\begin_layout Standard
+We want to check that 
+\begin_inset Formula $\frac{\partial}{\partial t}(u_{mech}+u_{em})=-\nabla\cdot\mathbf{S}$
+\end_inset
+
+ is satisfied, with 
+\begin_inset Formula $u_{mech}=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\frac{\partial u_{em}}{\partial t}=\frac{2tI^{2}}{2\pi^{2}a^{4}\epsilon_{0}}=\frac{tI^{2}}{\pi^{2}a^{4}\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla\cdot\mathbf{S} & = & \frac{\partial\mathbf{S}}{\partial s}+\frac{\partial\mathbf{S}}{\partial\phi}+\frac{\partial\mathbf{S}}{\partial z}=\frac{\partial\mathbf{S}}{\partial s}\\
+ & = & -\frac{tI^{2}}{2\pi^{2}a^{4}\epsilon_{0}}
+\end{eqnarray*}
+
+\end_inset
+
+We see that 
+\begin_inset Formula 
+\[
+\frac{\partial u_{em}}{\partial t}=-\frac{1}{2}\nabla\cdot\mathbf{S}
+\]
+
+\end_inset
+
+Where did that 
+\begin_inset Formula $1/2$
+\end_inset
+
+ come from?
+\end_layout
+
+\begin_layout Standard
+(c) Determine the total energy in the gap as a function of time.
+ Calculate the total power flowing into the gap by integrating the Poynting
+ vector over the appropriate surface.
+\end_layout
+
+\begin_layout Standard
+The total power is 
+\begin_inset Formula 
+\begin{eqnarray*}
+P & = & -\frac{d}{dt}\int_{V}u_{em}d\tau-\oint_{S}\mathbf{S}\cdot d\mathbf{a}
+\end{eqnarray*}
+
+\end_inset
+
+The volume of the gap is 
+\begin_inset Formula $\tau=\pi s^{2}w$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $d\tau=2\pi swds$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{V}u_{em}d\tau & = & \int_{0}^{a}u_{em}2\pi swds\\
+ & = & 2\pi w\int_{0}^{a}u_{em}sds\\
+ & = & 2\pi w\int_{0}^{a}\frac{I^{2}}{2\pi^{2}a^{4}}\Big(\frac{t^{2}}{\epsilon_{0}}+\frac{\mu_{0}s^{2}}{4}\Big)sds\\
+ & = & 2\pi w\frac{I^{2}}{2\pi^{2}a^{4}}\int_{0}^{a}(\frac{st^{2}}{\epsilon_{0}}+\frac{\mu_{0}s^{3}}{4})ds\\
+ & = & \frac{wI^{2}}{\pi a^{4}}\Big(\frac{t^{2}}{\epsilon_{0}}[\frac{1}{2}s^{2}]_{0}^{a}+\frac{\mu_{0}}{4}[\frac{1}{4}s^{4}]_{0}^{a}\Big)\\
+ & = & \frac{wI^{2}}{\pi a^{4}}\Big(\frac{a^{2}t^{2}}{2\epsilon_{0}}+\frac{\mu_{0}a^{4}}{16}\Big)\\
+ & = & \frac{wI^{2}}{2\pi a^{2}\epsilon_{0}}\Big(t^{2}+\frac{\mu_{0}\epsilon_{0}a^{2}}{8}\Big)=U_{em}
+\end{eqnarray*}
+
+\end_inset
+
+Now for the time derivative
+\begin_inset Formula 
+\[
+\frac{dU_{em}}{dt}=\frac{2twI^{2}}{2\pi a^{2}\epsilon_{0}}=\frac{twI^{2}}{\pi a^{2}\epsilon_{0}}
+\]
+
+\end_inset
+
+Since the Poynting vector is pointing radially we have to integrate over
+ the curved surface of a cylinder.
+ Let the cylinder have a radius 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+d\mathbf{a}=2\pi bw\mathbf{\hat{s}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+P_{in} & = & \oint_{S}\mathbf{S}\cdot d\mathbf{a}=-\frac{I^{2}ts}{2\pi^{2}a^{4}\epsilon_{0}}\mathbf{\hat{s}}\cdot2\pi bw\mathbf{\hat{s}}\\
+ & = & -\frac{2\pi bwI^{2}ts}{2\pi^{2}a^{4}\epsilon_{0}}\\
+ & = & -\frac{bwI^{2}ts}{\pi a^{4}\epsilon_{0}}
+\end{eqnarray*}
+
+\end_inset
+
+So the total power is 
+\begin_inset Formula 
+\begin{eqnarray*}
+P & = & -\frac{dU_{em}}{dt}-P_{in}\\
+ & = & -\frac{twI^{2}}{\pi a^{2}\epsilon_{0}}+\frac{bwI^{2}ts}{\pi a^{4}\epsilon_{0}}\\
+ & = & -\frac{twI^{2}}{\pi a^{2}\epsilon_{0}}(1-bs)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -556,6 +1085,104 @@ There is no dependence on
 \end_inset
 
 !
+\end_layout
+
+\begin_layout Problem
+A charged parralel plate capacitor with uniform electric field 
+\begin_inset Formula $\mathbf{E}=E(z)$
+\end_inset
+
+ is placed in a uniform magnetic field 
+\begin_inset Formula $\mathbf{B}=B(x)$
+\end_inset
+
+ as shown in the figure on the question sheet.
+\end_layout
+
+\begin_layout Standard
+(a) Find the EM Momentum in the space between the plates 
+\end_layout
+
+\begin_layout Standard
+The density of momentum is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{\wp_{em}} & = & \mu_{0}\epsilon_{0}\mathbf{S}=\epsilon_{0}(\mathbf{E}\times\mathbf{B})\\
+ & = & \epsilon_{0}EB\mathbf{\hat{y}}
+\end{eqnarray*}
+
+\end_inset
+
+So the total EM momentum is the density times the volume
+\begin_inset Formula 
+\begin{eqnarray*}
+P_{em} & = & \mathbf{\wp_{em}}V\\
+ & = & \epsilon_{0}EBAd\mathbf{\hat{y}}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $A$
+\end_inset
+
+ is the area of the plate and 
+\begin_inset Formula $d$
+\end_inset
+
+ is the space between the plates.
+\end_layout
+
+\begin_layout Standard
+(b) Now a resistive wire is connected between the plates along the z-axis
+ so that the capacitor slowly discharges.
+ The current through the wire will experience a magnetic force.
+ What is the total impulse delivered to the system during the discharge?
+\end_layout
+
+\begin_layout Standard
+The wire has a resistivity 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ The current flowing through it is 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ The current flows downward so 
+\begin_inset Formula $\mathbf{I}=-Id\mathbf{\hat{z}}$
+\end_inset
+
+.
+ It experiences a magnetic force equal to
+\begin_inset Formula 
+\[
+\mathbf{F}=\mathbf{I}\times\mathbf{B}
+\]
+
+\end_inset
+
+The total impulse is given by a time integral of the force from 0 to infinity:
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{J} & = & \int_{0}^{\infty}Fdt\\
+ & = & \int_{0}^{\infty}\mathbf{I}\times\mathbf{B}dt\\
+ & = & \int_{0}^{\infty}-IB(\mathbf{\hat{z}}\times\mathbf{\hat{x}})dt\\
+ & = & B\mathbf{\hat{y}}\int_{0}^{\infty}-Idt\\
+ & = & B\mathbf{\hat{y}}\int_{0}^{\infty}\Big(-\frac{dQ}{dt}\Big)dt\\
+ & = & -B\mathbf{\hat{y}}Q|_{0}^{\infty}\\
+ & = & Q_{0}B\mathbf{\hat{y}}\qquad(\text{since }Q(\infty)=0)
+\end{eqnarray*}
+
+\end_inset
+
+QED
 \end_layout
 
 \end_body
