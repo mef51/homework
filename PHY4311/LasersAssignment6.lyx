@@ -1,0 +1,323 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Assignment 6
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+February 11 2015
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $\frac{N_{2}}{N_{T}}\sim1$
+\end_inset
+
+.
+ Assume a cavity with 
+\begin_inset Formula $r_{1}=1$
+\end_inset
+
+ (
+\begin_inset Formula $t_{1}=0$
+\end_inset
+
+) and 
+\begin_inset Formula $r_{2}=0.99$
+\end_inset
+
+ (
+\begin_inset Formula $t_{2}=0.01$
+\end_inset
+
+) with no losses.
+ Assume finally that the cavity is 
+\begin_inset Formula $L=50\text{cm}$
+\end_inset
+
+ long and the gain medium filles the cavity length (
+\begin_inset Formula $\ell=L$
+\end_inset
+
+) having a small signalr gain of 
+\begin_inset Formula $g_{0}=0.01\text{cm}^{-1}$
+\end_inset
+
+ and a saturation intensity of 
+\begin_inset Formula $10^{4}\text{W/cm}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Please calculate the output intensity in 
+\begin_inset Formula $\text{W/cm}^{2}$
+\end_inset
+
+ of the laser.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I^{out} & = & tI^{+}=\frac{t_{2}}{2}I^{sat}\Big(\frac{g_{0}}{g_{t}}-1\Big)\\
+ & = & \frac{t_{2}}{2}I^{sat}\Big(\frac{2\ell g_{0}}{1-r_{2}}-1\Big)\\
+ & = & \frac{0.01}{2}(10^{4})\Big(\frac{2(50)(0.01)}{1-0.99}-1\Big)\\
+ & = & 4950\text{W/cm}^{2}\equiv P
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Please calculate the photon cavity lifetime and the cavity linewidth.
+\end_layout
+
+\begin_layout Standard
+The cavity linewidth is
+\begin_inset Formula 
+\begin{eqnarray*}
+\delta\nu_{c} & = & \frac{1}{2\pi}\frac{c\ell g_{t}}{2L}\\
+ & = & \frac{1}{2\pi}\frac{cg_{t}}{2}\\
+ & = & \frac{1}{2\pi}\frac{c(1-r_{2})}{4\ell}\qquad(g_{t}=\frac{1}{2\ell}(1-r_{2}))\\
+ & = & \frac{1}{2\pi}\frac{3\times10^{8}(1-0.99)}{4(0.5)}=2.39\times10^{5}\text{Hz}
+\end{eqnarray*}
+
+\end_inset
+
+The photon cavity lifetime is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\tau_{c} & = & \frac{L}{\ell cg_{t}}\qquad(\ell=L)\\
+ & = & \frac{1}{cg_{t}}=\frac{2\ell}{c(1-r_{2})}\\
+ & = & \frac{2(0.5)}{3\times10^{8}(1-0.99)}=330\text{ns}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ Assuming 
+\begin_inset Formula $\lambda=500\text{nm}$
+\end_inset
+
+, please calculate the Townes-Schawlow Limit 
+\begin_inset Formula $\Delta\nu$
+\end_inset
+
+ of the laser.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta\nu & = & \frac{h\nu N_{u}}{\Delta N}\frac{4\pi(\delta\nu_{c})^{2}}{P}\\
+ & = & h\nu\frac{4\pi\delta\nu_{c}}{P}\qquad\Big(\frac{N_{u}}{\Delta N}=\frac{N_{u}}{N_{u}-N_{l}}=1\,\text{since}\, N_{l}=0\Big)\\
+ & = & h\frac{4\pi c\delta\nu_{c}}{P\lambda}\\
+ & = & 6.63\times10^{-34}\frac{4\pi(3\times10^{8})(2.39\times10^{5})^{2}}{4950\times10^{4}\text{W/m}^{2}(500\times10^{-9})}\\
+ & = & 5.77\times10^{-15}\text{Hz}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d)
+\series default
+ How far 
+\begin_inset Formula $\delta L$
+\end_inset
+
+ would you have to shift one mirror to move the cavity mode frequency by
+ the Townes-Schawlow linewidth?
+\end_layout
+
+\begin_layout Standard
+The change in length 
+\begin_inset Formula $\delta L$
+\end_inset
+
+ is the difference between the length 
+\begin_inset Formula $L$
+\end_inset
+
+ of the cavity that gives 
+\begin_inset Formula $\lambda=500\text{nm}$
+\end_inset
+
+ with frequency 
+\begin_inset Formula $\nu$
+\end_inset
+
+ and the length 
+\begin_inset Formula $L'$
+\end_inset
+
+ of the cavity that gives frequency 
+\begin_inset Formula $\nu'=\nu+\Delta\nu$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\delta L=|L'-L|
+\]
+
+\end_inset
+
+We know that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda & = & \frac{2L}{n}\\
+n & = & \frac{2L}{\lambda}\\
+ & = & \frac{2(0.5)}{500\times10^{-9}}\\
+ & = & 2\times10^{6}
+\end{eqnarray*}
+
+\end_inset
+
+So now 
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda & = & \frac{c}{\nu}=\frac{2L}{n}\\
+\nu & = & \frac{cn}{2L}
+\end{eqnarray*}
+
+\end_inset
+
+And the new length can be found
+\begin_inset Formula 
+\begin{eqnarray*}
+\nu' & = & \frac{cn}{2L'}\\
+L' & = & \frac{cn}{2\nu'}\\
+ & = & \frac{cn}{2(\nu+\Delta\nu)}\\
+ & = & \frac{3\times10^{8}(2\times10^{6})}{2(\frac{3\times10^{8}}{500\times10^{-9}}+5.77\times10^{-15})}\\
+ & = & 0.5
+\end{eqnarray*}
+
+\end_inset
+
+The difference is so small my calculator can't handle it
+\begin_inset Formula 
+\[
+\delta L=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(e)
+\series default
+ How does 
+\begin_inset Formula $\delta L$
+\end_inset
+
+ compare with an atom
+\end_layout
+
+\begin_layout Standard
+It's a loooot smaller than an atom
+\end_layout
+
+\end_body
+\end_document
