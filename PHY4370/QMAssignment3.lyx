@@ -1,0 +1,477 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4370 Assignment 3
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+February 24 2015
+\end_layout
+
+\begin_layout Problem
+Problem 7.1.
+ Consider a particle of mass 
+\begin_inset Formula $\mu$
+\end_inset
+
+ confined within a box with impenetrable walls of sides 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $L_{1}=L_{2}$
+\end_inset
+
+, obtain the allowed energies and discuss the degeneracy of the first few
+ energy levels.
+\end_layout
+
+\begin_layout Standard
+The wavefunction of the particle confined in the box is (page 332)
+\begin_inset Formula 
+\[
+\psi_{n_{x}n_{y}n_{z}}(x,y,z)=\Big(\frac{8}{L_{1}L_{2}L_{3}}\Big)^{1/2}\sin\Big(\frac{n_{x}\pi x}{L_{1}}\Big)\sin\Big(\frac{n_{y}\pi y}{L_{2}}\Big)\sin\Big(\frac{n_{z}\pi z}{L_{3}}\Big)
+\]
+
+\end_inset
+
+The allowed energies are 
+\begin_inset Formula 
+\[
+E_{n_{x}n_{y}n_{z}}=\frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{n_{x}^{2}}{L_{1}^{2}}+\frac{n_{y}^{2}}{L_{2}^{2}}+\frac{n_{z}^{2}}{L_{3}^{2}}\Big)
+\]
+
+\end_inset
+
+Now if two of the sides are the same 
+\begin_inset Formula $L_{1}=L_{2}$
+\end_inset
+
+ then the allowed energies become
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{n_{x}n_{y}n_{z}} & = & \frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{n_{x}^{2}}{L_{1}^{2}}+\frac{n_{y}^{2}}{L_{1}^{2}}+\frac{n_{z}^{2}}{L_{3}^{2}}\Big)\\
+ & = & \frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{1}{L_{1}^{2}}(n_{x}^{2}+n_{y}^{2})+\frac{n_{z}^{2}}{L_{3}^{2}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+This introduces degeneracy through the 
+\begin_inset Formula $n_{x}^{2}+n_{y}^{2}$
+\end_inset
+
+ term.
+ The ground state energy is 
+\begin_inset Formula 
+\[
+E_{111}=\frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{2}{L_{1}^{2}}+\frac{1}{L_{3}^{2}}\Big)
+\]
+
+\end_inset
+
+Another energy level is
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{121} & = & \frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{1}{L_{1}^{2}}(1+4)+\frac{1}{L_{3}^{2}}\Big)\\
+ & = & \frac{\hbar^{2}\pi^{2}}{2\mu}\Big(\frac{5}{L_{1}^{2}}+\frac{1}{L_{3}^{2}}\Big)\\
+ & = & E_{211}
+\end{eqnarray*}
+
+\end_inset
+
+So this energy level is two-fold degenerate.
+ Looking at a few more:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(n_{x},n_{y},n_{z})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degeneracy
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,1,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,1,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,2,1), (2,1,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,2,2), (2,1,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(2,2,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(2,2,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,1,3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,3,1), (3,1,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(3,1,3), (1,3,3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(3,3,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1,2,3), (2,1,3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(2,3,1), (3,2,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(3,1,2), (1,3,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I cannot find an example where the degeneracy is more than 2.
+ 
+\end_layout
+
+\begin_layout Problem
+Problem 7.16
+\end_layout
+
+\end_body
+\end_document
