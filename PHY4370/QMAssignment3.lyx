@@ -975,8 +975,8 @@ For
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-[(1-s)(1-t)]^{-3+1}\sum_{q=0}^{\infty}\frac{(2l-3+2+q)!}{q!}(st)^{2l+1+q} & = & \sum_{q=2l+1}^{\infty}\sum_{\tilde{q}=2l+1}^{\infty}\frac{s^{q}t^{\tilde{q}}}{q!\tilde{q!}}\int_{0}^{\infty}\rho^{2l-3+2}e^{-\rho}L_{q}^{2l+1}(\rho)L_{\tilde{q}}^{2l+1}(\rho)d\rho\\{}
-[(1-s)(1-t)]^{-2}\sum_{q=0}^{\infty}\frac{(2l-1+q)!}{q!}(st)^{2l+1+q} & = & \sum_{q=2l+1}^{\infty}\sum_{\tilde{q}=2l+1}^{\infty}\frac{s^{q}t^{\tilde{q}}}{q!\tilde{q!}}\int_{0}^{\infty}\rho^{2l-1}e^{-\rho}L_{q}^{2l+1}(\rho)L_{\tilde{q}}^{2l+1}(\rho)d\rho
+[(1-s)(1-t)]^{-3+1}\sum_{q=0}^{\infty}\frac{(2l-3+2+q)!}{q!}(st)^{2l+1+q} & = & \sum_{q=2l+1}^{\infty}\sum_{\tilde{q}=2l+1}^{\infty}\frac{s^{q}t^{\tilde{q}}}{q!\tilde{q!}}\int_{0}^{\infty}\rho^{2l-3+2}e^{-\rho}L_{q}^{2l+1}(\rho)L_{\tilde{q}}^{2l+1}(\rho)d\rho\\
+{}[(1-s)(1-t)]^{-2}\sum_{q=0}^{\infty}\frac{(2l-1+q)!}{q!}(st)^{2l+1+q} & = & \sum_{q=2l+1}^{\infty}\sum_{\tilde{q}=2l+1}^{\infty}\frac{s^{q}t^{\tilde{q}}}{q!\tilde{q!}}\int_{0}^{\infty}\rho^{2l-1}e^{-\rho}L_{q}^{2l+1}(\rho)L_{\tilde{q}}^{2l+1}(\rho)d\rho
 \end{eqnarray*}
 
 \end_inset
@@ -1013,8 +1013,677 @@ For
 which is not quite right either.
 \end_layout
 
+\begin_layout Problem
+Problem 7.20 A two dimensional harmonic oscillator has the Hamiltonian 
+\begin_inset Formula 
+\[
+H=-\frac{\hbar^{2}}{2\mu}\Bigg[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\Bigg]+\frac{1}{2}k_{1}x^{2}+\frac{1}{2}k_{2}y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
+\series bold
+(a)
+\series default
+ Find the energy levels
+\end_layout
+
+\begin_layout Standard
+The Hamiltonian can be written as
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)\\
+ & = & H_{x}+H_{y}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting into Schrödinger we see
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H\psi & = & E\psi\\
+\Bigg[\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)\Bigg]\psi & = & E\psi
+\end{eqnarray*}
+
+\end_inset
+
+Since each term in brackets on the left side is just a function of 
+\begin_inset Formula $x$
+\end_inset
+
+ or 
+\begin_inset Formula $y$
+\end_inset
+
+, respectively, and the right side 
+\begin_inset Formula $E$
+\end_inset
+
+ is a constant, 
+\begin_inset Formula $E$
+\end_inset
+
+ must be a sum of constants
+\begin_inset Formula 
+\[
+\Bigg[\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)\Bigg]\psi=(E_{x}+E_{y})\psi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution is a product of functions of a single variable 
+\begin_inset Formula $\psi(x,y)=\psi_{x}(x)\psi_{y}(y)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\Bigg[\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)\Bigg]\psi_{x}\psi_{y} & = & (E_{x}+E_{y})\psi_{x}\psi_{y}\\
+\Big(-\frac{\hbar^{2}}{2\mu}\psi_{y}\frac{\partial^{2}\psi_{x}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\psi_{x}\psi_{y}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\psi_{x}\frac{\partial^{2}\psi_{y}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big) & = & E_{x}\psi_{x}\psi_{y}+E_{y}\psi_{x}\psi_{y}
+\end{eqnarray*}
+
+\end_inset
+
+Divide both sides by 
+\begin_inset Formula $\psi$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Big(-\frac{\hbar^{2}}{2\mu}\frac{1}{\psi_{x}}\frac{\partial^{2}\psi_{x}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)+\Big(-\frac{\hbar^{2}}{2\mu}\frac{1}{\psi_{y}}\frac{\partial^{2}\psi_{y}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)=E_{x}+E_{y}
+\]
+
+\end_inset
+
+This gives us two ordinary differential equations
+\begin_inset Formula 
+\begin{eqnarray*}
+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}k_{1}x^{2}\Big)\psi_{x} & = & E_{x}\psi_{x}\qquad(\text{multiply by }\psi_{x})\\
+\Big(-\frac{\hbar^{2}}{2\mu}\frac{\partial^{2}}{\partial y^{2}}+\frac{1}{2}k_{2}y^{2}\Big)\psi_{y} & = & E_{y}\psi_{y}\qquad(\text{multiply by }\psi_{y})
+\end{eqnarray*}
+
+\end_inset
+
+Each of these are linear harmonic oscillators in one dimension, whose solution
+ is given by Section 4.7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\psi_{x} & = & \psi_{n_{x}}(x)=\Big(\frac{\alpha_{1}}{\sqrt{\pi}2^{n_{x}}n_{x}!}\Big)^{1/2}e^{-\alpha_{1}^{2}x^{2}}H_{n_{x}}(\alpha_{1}x)\\
+\psi_{y} & = & \psi_{n_{y}}(y)=\Big(\frac{\alpha_{2}}{\sqrt{\pi}2^{n_{y}}n_{y}!}\Big)^{1/2}e^{-\alpha_{2}^{2}y^{2}}H_{n_{y}}(\alpha_{2}y)
+\end{eqnarray*}
+
+\end_inset
+
+Where 
+\begin_inset Formula $n_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{y}$
+\end_inset
+
+ are integers and 
+\begin_inset Formula 
+\[
+\alpha_{1}=\Big(\frac{\mu k_{1}}{\hbar^{2}}\Big)^{1/4}\qquad\alpha_{2}=\Big(\frac{\mu k_{2}}{\hbar^{2}}\Big)^{1/4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The energy levels corresponding to 
+\begin_inset Formula $\psi_{n_{x}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{n_{y}}$
+\end_inset
+
+ are also given:
+\begin_inset Formula 
+\[
+E_{x}=(n_{x}+\frac{1}{2})\hbar\omega_{1}\qquad E_{y}=(n_{y}+\frac{1}{2})\hbar\omega_{2}
+\]
+
+\end_inset
+
+So the energy levels of the 2d system are
+\begin_inset Formula 
+\begin{eqnarray*}
+E & = & E_{x}+E_{y}\\
+ & = & (n_{x}+\frac{1}{2})\hbar\omega_{1}+(n_{y}+\frac{1}{2})\hbar\omega_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Assuming the oscillator is isotropic (
+\begin_inset Formula $k_{1}=k_{2}=k$
+\end_inset
+
+) what is the degeneracy of each energy level?
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $k_{1}=k_{2}=k$
+\end_inset
+
+, 
+\begin_inset Formula $\omega_{1}=\omega_{2}=\omega$
+\end_inset
+
+.
+ The energy levels are 
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{n_{x}n_{y}} & = & (n_{x}+\frac{1}{2})\hbar\omega+(n_{y}+\frac{1}{2})\hbar\omega\\
+ & = & \hbar\omega(n_{x}+n_{y}+1)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $n=n_{x}+n_{y}$
+\end_inset
+
+ then when 
+\begin_inset Formula $n=0$
+\end_inset
+
+, 
+\begin_inset Formula $(n_{x},n_{y})=(0,0)$
+\end_inset
+
+ and the energy level is non-degenerate.
+ When 
+\begin_inset Formula $n=1$
+\end_inset
+
+, the combinations 
+\begin_inset Formula $(n_{x},n_{y})=(1,0),\,(0,1)$
+\end_inset
+
+ would give the same energy level so the energy level is 2-fold degenerate.
+ When 
+\begin_inset Formula $n=2$
+\end_inset
+
+, 
+\begin_inset Formula $(n_{x},n_{y})=(2,0),\,(0,2),\,(1,1)$
+\end_inset
+
+ give the same energy level and it is 3-fold degenerate.
+ When 
+\begin_inset Formula $n=3$
+\end_inset
+
+, 
+\begin_inset Formula $(n_{x},n_{y})=(3,0),\,(0,3),\,(2,1),\,(1,2)$
+\end_inset
+
+ give the same energy level so it is 4-fold degenerate.
+ 
+\end_layout
+
+\begin_layout Standard
+In general, 
+\begin_inset Formula $E_{n_{x}}E_{n_{y}}$
+\end_inset
+
+ is 
+\begin_inset Formula $(n+1)=(n_{x}+n_{y}+1)$
+\end_inset
+
+-fold degenerate.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ Solve the Schrödinger equation for the two-dimensional isotropic oscillator
+ in plane polar coordinates 
+\begin_inset Formula $(r,\varphi)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The Laplacian in these coordinates is 
+\begin_inset Formula 
+\[
+\nabla^{2}=\frac{\partial^{2}}{\partial r^{2}}+\frac{1}{r}\frac{\partial}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}}{\partial\varphi^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The potential is 
+\begin_inset Formula 
+\[
+V(r)=\frac{1}{2}kr^{2}=\frac{1}{2}\mu\omega^{2}r^{2}
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $\omega=(k/\mu)^{1/2}$
+\end_inset
+
+.
+ The Hamiltonian is
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & -\frac{\hbar^{2}}{2\mu}\nabla^{2}+V(r)=-\frac{\hbar^{2}}{2\mu}\nabla^{2}+\frac{1}{2}\mu\omega^{2}r^{2}\\
+ & = & -\frac{\hbar^{2}}{2\mu}\Bigg[\frac{\partial^{2}}{\partial r^{2}}+\frac{1}{r}\frac{\partial}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}}{\partial\varphi^{2}}\Bigg]+\frac{1}{2}\mu\omega^{2}r^{2}
+\end{eqnarray*}
+
+\end_inset
+
+So the Schrödinger equation for the two dimensional isotropic oscillator
+ in these coordinates is 
+\begin_inset Formula 
+\[
+\Bigg(-\frac{\hbar^{2}}{2\mu}\Bigg[\frac{\partial^{2}}{\partial r^{2}}+\frac{1}{r}\frac{\partial}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}}{\partial\varphi^{2}}\Bigg]+\frac{1}{2}\mu\omega^{2}r^{2}\Bigg)\psi(r,\varphi)=E\psi(r,\varphi)
+\]
+
+\end_inset
+
+According to the book the solution to this is separable so
+\begin_inset Formula 
+\[
+\psi(r,\varphi)=R_{El}(r)\Phi(\varphi)
+\]
+
+\end_inset
+
+The 
+\begin_inset Formula $\Phi(\varphi)$
+\end_inset
+
+ function is the same as the one from the spherical harmonic function 
+\begin_inset Formula $Y_{lm}(\theta,\varphi)=\Theta_{lm}(\theta)\Phi_{m}(\phi)$
+\end_inset
+
+ so 
+\begin_inset Formula 
+\[
+\Phi(\varphi)=\Phi_{m}(\varphi)=e^{im\varphi}
+\]
+
+\end_inset
+
+with some normalization constant.
+ So the solution 
+\begin_inset Formula $\psi(r,\varphi)$
+\end_inset
+
+ has the form 
+\begin_inset Formula 
+\[
+\psi_{lm}=R_{El}(r)e^{im\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The radial part 
+\begin_inset Formula $R_{El}$
+\end_inset
+
+ of the wavefunction must satisfy (page 337)
+\begin_inset Formula 
+\[
+\Bigg(-\frac{\hbar^{2}}{2\mu}\Big(\frac{d^{2}}{dr^{2}}+\frac{2}{r}\frac{d}{dr}\Big)+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}+\frac{1}{2}\mu\omega^{2}r^{2}\Bigg)R_{El}(r)=ER_{El}(r)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $u_{El}(r)=rR_{El}(r)$
+\end_inset
+
+.
+ The radial equation for 
+\begin_inset Formula $u_{El}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{eqnarray*}
+-\frac{\hbar^{2}}{2\mu}\frac{d^{2}u_{El}}{dr^{2}}+\Big(\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}+\frac{1}{2}\mu\omega^{2}r^{2}\Big)u_{El} & = & Eu_{El}\\
+\Big(-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dr^{2}}+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}+\frac{1}{2}\mu\omega^{2}r^{2}-E\Big)u_{El} & = & 0\\
+\Big(\frac{d^{2}}{dr^{2}}-\frac{l(l+1)}{r^{2}}-\frac{\mu^{2}\omega^{2}r^{2}}{\hbar^{2}}+\frac{2\mu E}{\hbar^{2}}\Big)u_{El} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\rho=\alpha r$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=\frac{2E}{\hbar\omega}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha=\Big(\frac{\mu k}{\hbar^{2}}\Big)^{1/4}=\Big(\frac{\mu\omega}{\hbar}\Big)^{1/2}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+d\rho & = & \alpha dr\implies dr=\frac{d\rho}{\alpha}\implies dr^{2}=\frac{d\rho^{2}}{\alpha^{2}}\\
+r & = & \frac{\rho}{\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+So
+\begin_inset Formula 
+\begin{eqnarray*}
+\Big(\alpha^{2}\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)\alpha^{2}}{\rho^{2}}-\frac{\mu^{2}\omega^{2}\rho^{2}}{\hbar^{2}\alpha^{2}}+\frac{2\mu E}{\hbar^{2}}\Big)u_{El} & = & 0\\
+\Big(\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)}{\rho^{2}}-\frac{\mu^{2}\omega^{2}\rho^{2}}{\hbar^{2}\alpha^{4}}+\frac{2\mu E}{\hbar^{2}\alpha^{2}}\Big)u_{El} & = & 0\\
+\Big(\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)}{\rho^{2}}-\frac{\mu^{2}\omega^{2}\rho^{2}\hbar^{2}}{\hbar^{2}\mu k}+\frac{2\mu E\hbar}{\hbar^{2}\sqrt{\mu k}}\Big)u_{El} & = & 0\\
+\Big(\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)}{\rho^{2}}-\frac{\mu\omega^{2}\rho^{2}}{k}+\frac{2E}{\hbar\omega}\Big)u_{El} & = & 0\\
+\Big(\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)}{\rho^{2}}-\rho^{2}+\lambda\Big)u_{El} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $\rho\rightarrow\infty$
+\end_inset
+
+, two of the terms become very small compared to 
+\begin_inset Formula $\rho^{2}$
+\end_inset
+
+ and we get 
+\begin_inset Formula 
+\[
+\Big(\frac{d^{2}}{d\rho^{2}}-\rho^{2}\Big)u_{El}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solutions to this are of the form 
+\begin_inset Formula $u_{El}(\rho)=e^{\pm\rho^{2}/2}f(\rho)$
+\end_inset
+
+, but we don't want 
+\begin_inset Formula $u_{El}$
+\end_inset
+
+ to explode so we take the negative sign.
+ 
+\begin_inset Formula $u_{El}(\rho)=e^{-\rho^{2}/2}f(\rho)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Substitute this back into the unitless radial equation for 
+\begin_inset Formula $u_{El}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Big(\frac{d^{2}}{d\rho^{2}}-\frac{l(l+1)}{\rho^{2}}-\rho^{2}+\lambda\Big)e^{-\rho^{2}/2}f(\rho)=0
+\]
+
+\end_inset
+
+???
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $f(\rho)$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $f(\rho)=\rho^{|m|+1}g(\rho)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(\rho)$
+\end_inset
+
+ must satisfy 
+\begin_inset Formula 
+\[
+\frac{d^{2}g}{d\rho^{2}}+\Big(\frac{2|m|+1}{\rho}-2\rho\Big)\frac{dg}{d\rho}-[2(|m|+1)-\lambda]g=0
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula $u_{El}=e^{-\rho^{2}/2}\rho^{|m|+1}g(\rho)$
+\end_inset
+
+ and so 
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{El}(\rho) & = & \frac{u_{El}}{r}=\alpha\frac{u_{El}}{\rho}=\alpha e^{-\rho^{2}/2}\rho^{|m|}g(\rho)\\
+\psi_{lm} & = & R_{El}(\rho)e^{im\varphi}\\
+ & = & \alpha e^{-\rho^{2}/2}\rho^{|m|}g(\rho)e^{im\varphi}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $v=\rho^{2}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $dv=2\rho d\rho$
+\end_inset
+
+ and 
+\begin_inset Formula $d\rho=\frac{dv}{2\rho}=\frac{dv}{2\sqrt{v}}$
+\end_inset
+
+.
+ Substitute into the equation on 
+\begin_inset Formula $g(\rho)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+4v\frac{d^{2}g}{dv^{2}}+\Big(\frac{2|m|+1}{v^{1/2}}-2v^{1/2}\Big)2v^{1/2}\frac{dg}{dv}-[2(|m|+1)-\lambda]g & = & 0\\
+4v\frac{d^{2}g}{dv^{2}}+2(2|m|+1-2v)\frac{dg}{dv}-[2(|m|+1)-\lambda]g & = & 0\\
+4v\frac{d^{2}g}{dv^{2}}+4(|m|+\frac{1}{2}-v)\frac{dg}{dv}-2[(|m|+1)-\frac{\lambda}{2}]g & = & 0\\
+v\frac{d^{2}g}{dv^{2}}+(|m|+\frac{1}{2}-v)\frac{dg}{dv}-\frac{1}{2}[(|m|+1)-\frac{\lambda}{2}]g & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The radial quantization condition is 
+\begin_inset Formula 
+\begin{eqnarray*}
+n_{r} & = & -\frac{1}{2}\Big((|m|+1)-\frac{\lambda}{2}\Big)=0,1,2...\\
+-2n_{r} & = & |m|+1-\frac{\lambda}{2}\\
+\frac{\lambda}{2} & = & 2n_{r}+|m|+1
+\end{eqnarray*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $n\equiv2n_{r}+|m|$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda=2(n+1)
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\lambda=\frac{2E}{\hbar\omega}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{2E}{\hbar\omega} & = & 2(n+1)\\
+E_{n} & = & \hbar\omega(n+1)
+\end{eqnarray*}
+
+\end_inset
+
+These energy levels are 
+\begin_inset Formula $(n+1)(n+2)/2$
+\end_inset
+
+-fold degenerate.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d)
+\series default
+ The overall wave function is 
+\begin_inset Formula 
+\[
+\psi_{nm}(r,\varphi)=N\rho^{|m|}e^{-\rho^{2}/2}e^{im\varphi}L_{n_{r}+|m|}^{|m|}(\rho^{2})=N\rho^{|m|}e^{-\rho^{2}/2}e^{im\varphi}L_{(n+|m|)/2}^{|m|}(\rho^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to find the normalization constant 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+1=\int|\psi(r,\varphi)|^{2}d\mathbf{r}
+\]
+
+\end_inset
+
+Ignore the radial part.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & \int|N|^{2}\rho^{2|m|}e^{-\rho^{2}}\Big(L_{(n+|m|)/2}^{|m|}(\rho^{2})\Big)^{2}r^{2}dr\\
+ & = & \frac{|N|^{2}}{\alpha^{3}}\int_{0}^{\infty}\rho^{2|m|}e^{-\rho^{2}}\Big(L_{(n+|m|)/2}^{|m|}(\rho^{2})\Big)^{2}\rho^{2}d\rho\\
+ & = & \frac{|N|^{2}}{\alpha^{3}}\int_{0}^{\infty}\rho^{2|m|+2}e^{-\rho^{2}}\Big(L_{(n+|m|)/2}^{|m|}(\rho^{2})\Big)^{2}d\rho
+\end{eqnarray*}
+
+\end_inset
+
+Let 
+\begin_inset Formula 
+\begin{eqnarray*}
+U_{|m|}(\rho^{2},s) & = & \frac{(-s)^{|m|}}{(1-s)^{|m|+1}}\exp\Big(-\rho^{2}\frac{s}{1-s}\Big)=\sum_{q=|m|}^{\infty}\frac{s^{q}}{q!}L_{q}^{|m|}(\rho^{2})\\
+U_{|m|}(\rho^{2},t) & = & \frac{(-t)^{|m|}}{(1-t)^{|m|+1}}\exp\Big(-\rho^{2}\frac{t}{1-t}\Big)=\sum_{\tilde{q}=|m|}^{\infty}\frac{t^{\tilde{q}}}{\tilde{q}!}L_{\tilde{q}}^{|m|}(\rho^{2})
+\end{eqnarray*}
+
+\end_inset
+
+Now
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\rho^{2|m|+2}e^{-\rho^{2}}U_{|m|}(\rho^{2},s)U_{|m|}(\rho^{2},t)d\rho
+\]
+
+\end_inset
+
+Then do the same thing as before goodnight
 \end_layout
 
 \end_body
