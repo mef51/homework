@@ -1,0 +1,651 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY3320 Assignment 3
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+March 2 2015
+\end_layout
+
+\begin_layout Problem
+Show that the Brewster's angle does not exist for S-polarized light for
+ any 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{2}$
+\end_inset
+
+.
+ Sketch the ratios of reflected and transmitted fields with incident field
+ as a function of the incident angle.
+\end_layout
+
+\begin_layout Standard
+S-polarized light means the 
+\begin_inset Formula $E$
+\end_inset
+
+ field is perpendicular to the plane of incidence (the 
+\begin_inset Formula $xz$
+\end_inset
+
+-plane) so it is pointing in the 
+\begin_inset Formula $y$
+\end_inset
+
+ direction.
+ The 
+\begin_inset Formula $B$
+\end_inset
+
+ field lies in the 
+\begin_inset Formula $xz$
+\end_inset
+
+-plane.
+ We want the Fresnel equations for S-polarized light.
+ The boundary conditions are 
+\begin_inset Formula 
+\begin{eqnarray*}
+(\text{i})\qquad(E_{0I}+E_{0R})_{y} & = & (E_{0T})_{y}\\
+(\text{ii})\qquad(B_{0I}+B_{0R})_{z} & = & (B_{0T})_{z}\\
+(\text{iii})\qquad\frac{1}{\mu_{1}}(B_{0I}+B_{0R})_{x} & = & \frac{1}{\mu_{2}}(B_{0T})_{x}
+\end{eqnarray*}
+
+\end_inset
+
+From (ii), since 
+\begin_inset Formula $B_{0}=E_{0}/v$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+B_{0I}\sin\theta_{I}+B_{0R}\sin\theta_{R} & = & B_{0T}\sin\theta_{T}\\
+\sin\theta_{I}(B_{0I}+B_{0R}) & = & B_{0T}\sin\theta_{T}\qquad(\theta_{R}=\theta_{I})\\
+B_{0I}+B_{0R} & = & B_{0T}\frac{\sin\theta_{T}}{\sin\theta_{I}}\\
+\frac{E_{0I}}{v_{1}}+\frac{E_{0R}}{v_{1}} & = & \frac{E_{0T}}{v_{2}}\frac{v_{2}}{v_{1}}\qquad(\text{Snell's Law})\\
+E_{0I}+E_{0R} & = & E_{0T}
+\end{eqnarray*}
+
+\end_inset
+
+From (iii)
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{\mu_{1}}(-\frac{E_{0I}}{v_{1}}\cos\theta_{I}+\frac{E_{0R}}{v_{1}}\cos\theta_{R}) & = & -\frac{1}{\mu_{2}v_{2}}E_{0T}\cos\theta_{T}\\
+-\frac{\cos\theta_{I}}{\mu_{1}v_{1}}(E_{0I}-E_{0R}) & = & -\frac{\cos\theta_{T}}{\mu_{2}v_{2}}E_{0T}\\
+E_{0I}-E_{0R} & = & \frac{\mu_{1}v_{1}}{\mu_{2}v_{2}}\frac{\cos\theta_{T}}{\cos\theta_{I}}E_{0T}\\
+ & = & \frac{\mu_{1}n_{2}}{\mu_{2}n_{1}}\frac{\cos\theta_{T}}{\cos\theta_{I}}E_{0T}\\
+ & = & \beta\alpha E_{0T}
+\end{eqnarray*}
+
+\end_inset
+
+So now, substitute 
+\begin_inset Formula $E_{0R}=E_{0T}-E_{0I}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{0I}-E_{0T}+E_{0I} & = & \alpha\beta E_{0T}\\
+E_{0T} & = & \frac{2}{1+\alpha\beta}E_{0I}
+\end{eqnarray*}
+
+\end_inset
+
+This means 
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{0R} & = & (\frac{2}{1+\alpha\beta}-1)E_{0I}\\
+ & = & \frac{1-\alpha\beta}{1+\alpha\beta}E_{0I}
+\end{eqnarray*}
+
+\end_inset
+
+These are the Fresnel equations:
+\begin_inset Formula 
+\[
+E_{0T}=\frac{2}{1+\alpha\beta}E_{0I}\qquad E_{0R}=\frac{1-\alpha\beta}{1+\alpha\beta}E_{0I}
+\]
+
+\end_inset
+
+Brewster's angle is the angle of incidence where 
+\begin_inset Formula $E_{0R}=0$
+\end_inset
+
+.
+ So we want 
+\begin_inset Formula $1-\alpha\beta=0$
+\end_inset
+
+ or 
+\begin_inset Formula $\alpha\beta=1$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & \alpha\beta\\
+ & = & \beta\frac{\cos\theta_{T}}{\cos\theta_{I}}\\
+ & = & \beta\frac{\sqrt{1-\sin^{2}\theta_{T}}}{\cos\theta_{I}}\\
+ & = & \beta\frac{\sqrt{1-(\frac{n_{1}}{n_{2}})^{2}\sin^{2}\theta_{I}}}{\cos\theta_{I}}
+\end{eqnarray*}
+
+\end_inset
+
+Now if 
+\begin_inset Formula $\mu_{1}\approx\mu_{2}$
+\end_inset
+
+ then 
+\begin_inset Formula $\frac{n_{1}}{n_{2}}\approx\frac{1}{\beta}$
+\end_inset
+
+, so this condition becomes:
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & \frac{\sqrt{\beta^{2}-\sin^{2}\theta_{I}}}{\cos\theta_{I}}\\
+\beta^{2} & = & \cos^{2}\theta_{I}+\sin^{2}\theta_{I}=1\\
+\beta & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+But this will only happen if 
+\begin_inset Formula $n_{1}=n_{2}$
+\end_inset
+
+..
+ which means there is no interface.
+ So there is no Brewster's angle for S-polarized light reflecting off an
+ interface.
+\end_layout
+
+\begin_layout Standard
+We want to plot 
+\begin_inset Formula $\frac{E_{0T}}{E_{0I}}=\frac{2}{1+\alpha\beta}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{E_{0R}}{E_{0I}}=\frac{1-\alpha\beta}{1+\alpha\beta}$
+\end_inset
+
+ as functions of 
+\begin_inset Formula $\theta_{I}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Calculate the reflection coefficient for light at an air-to-silver interface
+ (
+\begin_inset Formula $\mu_{1}=\mu_{2}=\mu_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon=\epsilon_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma=6\times10^{7}(\Omega\text{m})^{-1}$
+\end_inset
+
+ at 
+\begin_inset Formula $\nu=4\times10^{15}\text{Hz}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R & = & \Big(\frac{E_{0R}}{E_{0I}}\Big)^{2}\\
+ & = & \Big|\frac{1-\tilde{\beta}}{1+\tilde{\beta}}\Big|^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\beta} & = & \frac{\mu_{1}v_{1}}{\mu_{2}\omega}\tilde{k_{2}}\\
+ & = & \frac{c}{\omega}\tilde{k}_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{k}=k+i\kappa
+\]
+
+\end_inset
+
+Since silver is a good conductor the real parts and imaginary parts are
+ basically the same.
+\begin_inset Formula 
+\[
+\tilde{k}=k+ik
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k=\sqrt{\frac{\sigma\mu_{0}\omega}{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\beta} & = & \frac{c}{\omega}(k+ik)\\
+ & = & \frac{c}{\omega}\sqrt{\frac{\sigma\mu_{0}\omega}{2}}+i\frac{c}{\omega}\sqrt{\frac{\sigma\mu_{0}\omega}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{c}{\omega}\sqrt{\frac{\sigma\mu_{0}\omega}{2}} & = & c\sqrt{\frac{\sigma\mu_{0}}{2\omega}}\\
+ & = & 3\times10^{8}\sqrt{\frac{6\times10^{7}(1.26\times10^{-6})}{2(2\pi)(4\times10^{15})}}\\
+ & \approx & 11.63
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+R & = & \Big|\frac{1-11.63-11.63i}{1+11.63+11.63i}\Big|^{2}\\
+ & = & \frac{10.63^{2}+11.63^{2}}{12.63^{2}+11.63^{2}}\\
+ & = & 84\%
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+A 5W beam of light with circular cross section is incident in air upon the
+ plane boundary of a dielectric medium with index of refraction of 5.
+ If the angle of incidence is 60 degrees and the incident wave is parallel
+ polarized, determine the powers contained in the reflected and transmitted
+ beams.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha & = & \frac{\sqrt{1-(\frac{n_{1}}{n_{2}})^{2}\sin^{2}\theta_{I}}}{\cos\theta_{I}}\\
+ & = & \frac{\sqrt{1-(\frac{1}{5})^{2}\sin^{2}60}}{\cos60}\\
+ & = & 0.97/\cos60\\
+ & = & 1.94
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\beta & = & \frac{\mu_{1}n_{2}}{\mu_{2}n_{1}}\\
+ & \approx & \frac{n_{2}}{n_{1}}\\
+ & = & 5
+\end{eqnarray*}
+
+\end_inset
+
+The Reflection and Transmission coefficients are 
+\begin_inset Formula 
+\begin{eqnarray*}
+R & = & \Big(\frac{\alpha-\beta}{\alpha+\beta}\Big)^{2}\\
+ & = & \Big(\frac{1.94-5}{1.94+5}\Big)^{2}\\
+ & = & 0.194
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & 1-R\\
+ & = & 0.806
+\end{eqnarray*}
+
+\end_inset
+
+These are related to the intensities which are related to the powers.
+\begin_inset Formula 
+\begin{eqnarray*}
+R+T & = & 1\\
+\frac{I_{R}}{I_{I}}+\frac{I_{T}}{I_{I}} & = & 1\\
+RI_{I}+TI_{I} & = & I_{I}
+\end{eqnarray*}
+
+\end_inset
+
+The reflected beam has 
+\begin_inset Formula 
+\[
+I_{R}=RI_{I}=0.194(5\text{W/m}^{2})=0.97\text{W/m}^{2}
+\]
+
+\end_inset
+
+The transmitted beam has 
+\begin_inset Formula 
+\[
+I_{T}=TI_{I}=0.806(5)=4.03\text{W/m}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+The resistivity of glass, silver and copper are 
+\begin_inset Formula $10^{12}$
+\end_inset
+
+, 
+\begin_inset Formula $1.59\times10^{-8}$
+\end_inset
+
+, and 
+\begin_inset Formula $1.68\times10^{-8}$
+\end_inset
+
+ 
+\begin_inset Formula $\Omega$
+\end_inset
+
+m respectively.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ If free charges are embedded in a piece of glass how long would it take
+ for the charge to flow to the surface?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\tau & = & \epsilon/\sigma\\
+ & = & 4.7\epsilon_{0}\rho\\
+ & = & 4.7(8.85\times10^{-12})10^{12}\\
+ & = & 41.6\text{s}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) 
+\series default
+How thick should silver coating be to operate at a frequency of 
+\begin_inset Formula $10^{10}$
+\end_inset
+
+Hz?
+\end_layout
+
+\begin_layout Standard
+The skin depth in a conductor is (assume 
+\begin_inset Formula $\mu=\mu_{0}$
+\end_inset
+
+) 
+\begin_inset Formula 
+\begin{eqnarray*}
+d & = & \frac{1}{k}\\
+ & = & \sqrt{\frac{2}{\sigma\omega\mu}}\\
+ & = & \sqrt{\frac{2(1.59\times10^{-8})}{2\pi(10^{10})(1.26\times10^{-6})}}\\
+ & = & 633\text{nm}
+\end{eqnarray*}
+
+\end_inset
+
+The waves will not penetrate very much beyond 633nm so the thickness should
+ be thinner than that.
+ Very thin?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ Find the wavelength and propagation speed in copper for radio waves at
+ 1MHz 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+k & = & \sqrt{\frac{\sigma\omega\mu}{2}}\\
+ & = & \sqrt{\frac{(1.68\times10^{-8})2\pi(10^{6})(1.26\times10^{-6})}{2}}\\
+ & = & 2.58\times10^{-4}\text{m}^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda & = & \frac{2\pi}{k}\\
+ & = & \frac{2\pi}{2.58\times10^{-4}}\\
+ & = & 2.43\times10^{4}\text{m}\qquad(\text{whaaaat})
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+v & = & \frac{\omega}{k}\\
+ & = & \frac{2\pi(10^{6})}{2.58\times10^{-4}}\\
+ & = & 2.44\times10^{10}m/s\qquad(\text{???})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Assume a monochromatic plane wave strikes a thick slab of glass of an aquarium
+ at normal incidence.
+ Find the minimum and maximum transmission coefficients.
+ The water has 
+\begin_inset Formula $n_{1}=4/3$
+\end_inset
+
+, glass 
+\begin_inset Formula $n_{2}=1.5$
+\end_inset
+
+, air 
+\begin_inset Formula $n_{3}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+An incident beam goes from the water to the glass.
+ The transmitted amplitude is given by 
+\begin_inset Formula 
+\[
+E_{0T}=\Big(\frac{2n_{1}}{n_{1}+n_{2}}\Big)E_{0I}
+\]
+
+\end_inset
+
+This transmitted wave then becomes an incident wave on the boundary between
+ the glass and air.
+ So the transmitted wave in the air is 
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{0T}' & = & \Big(\frac{2n_{2}}{n_{2}+n_{3}}\Big)E_{0T}\\
+ & = & \Big(\frac{2n_{2}}{n_{2}+n_{3}}\Big)\Big(\frac{2n_{1}}{n_{1}+n_{2}}\Big)E_{0I}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The transmission coefficient from water to air is 
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & \frac{\epsilon_{3}v_{3}}{\epsilon_{1}v_{1}}\Big(\frac{E_{0T}'}{E_{0I}}\Big)^{2}\\
+ & = & \frac{n_{3}}{n_{1}}\Big(\frac{2n_{2}}{n_{2}+n_{3}}\Big)^{2}\Big(\frac{2n_{1}}{n_{1}+n_{2}}\Big)^{2}\\
+ & = & \frac{16n_{3}n_{1}n_{2}^{2}}{(n_{2}+n_{3})^{2}(n_{1}+n_{2})^{2}}\\
+ & = & \frac{16(1)(4/3)(1.5)^{2}}{(1.5+1)^{2}(4/3+1.5)^{2}}\\
+ & = & 0.96
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
