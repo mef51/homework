@@ -440,5 +440,117 @@ So
  
 \end_layout
 
+\begin_layout Standard
+Note that for 
+\begin_inset Formula $V$
+\end_inset
+
+ between 0 and 1, 
+\begin_inset Formula $\dot{V}$
+\end_inset
+
+ is positive.
+ For 
+\begin_inset Formula $V>1$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{V}$
+\end_inset
+
+ is negative.
+ The phase diagram is given below (it is basically the same as the one we
+ did in class).
+ It shows that the steady state 
+\begin_inset Formula $V=0$
+\end_inset
+
+ is unstable, which means that a tiny tumour will likely grow, and the steady
+ state around 
+\begin_inset Formula $V=1$
+\end_inset
+
+ is stable, which means that a tumour will grow very slowly after it reaches
+ this size.
+ The 
+\begin_inset Formula $1$
+\end_inset
+
+ here is probably supposed to be some constant, not actually 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename phaseDiagramA4Q3.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Phase Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(g)
+\series default
+ Compare the Gompertz model 
+\begin_inset Formula $\dot{V}=V(a-b\ln V)$
+\end_inset
+
+ with the logistic model 
+\begin_inset Formula $\dot{V}=rV(1-\frac{V}{k})$
+\end_inset
+
+ with 
+\begin_inset Formula $r=2$
+\end_inset
+
+ and 
+\begin_inset Formula $k=100$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
