@@ -1,0 +1,444 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Consider a spherical tumour with volume 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ We want to find an equation for 
+\begin_inset Formula $\dot{V}$
+\end_inset
+
+.
+ Cells at the surface have access to resources and grow well.
+ Cells in the center stop proliferating since they lack oxygen and other
+ essential resources.
+ Assume that the tumour volume grows, but that the growth rate decreases.
+ We get the system of equations 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{V} & = & r(t)V\\
+\dot{r} & = & -kr\qquad k>0\,\text{\,\ constant}
+\end{eqnarray*}
+
+\end_inset
+
+Here 
+\begin_inset Formula $r$
+\end_inset
+
+ is the growth rate.
+ This is a system of two equations but it can be reduced to a single equation.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Show that the surface to volume ratio in a sphere of radius 
+\begin_inset Formula $R$
+\end_inset
+
+ is 
+\begin_inset Formula $\frac{3}{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The volume is 
+\begin_inset Formula $V=\frac{4}{3}\pi R^{3}$
+\end_inset
+
+.
+ The surface area is 
+\begin_inset Formula $S=4\pi R^{2}$
+\end_inset
+
+.
+ So the ratio is 
+\begin_inset Formula 
+\[
+\frac{S}{V}=\frac{4\pi R^{2}}{\frac{4}{3}\pi R^{3}}=\frac{3}{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Solve the equation on 
+\begin_inset Formula $r$
+\end_inset
+
+ and insert the solution into the equation on 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{r} & = & -kr\\
+r(t) & = & r_{0}e^{-kt}\qquad\text{where}\,\, r_{0}=r(0)
+\end{eqnarray*}
+
+\end_inset
+
+We can check that this is the solution:
+\begin_inset Formula 
+\[
+\dot{r}=\frac{dr}{dt}=-kr_{0}e^{-kt}=-kr
+\]
+
+\end_inset
+
+as required.
+ So now 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{V} & = & r(t)V\\
+\dot{V} & = & r_{0}e^{-kt}V
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ Show that 
+\begin_inset Formula $\ln V$
+\end_inset
+
+ satisfies the equation 
+\begin_inset Formula $\frac{d}{dt}(\ln V)=r_{0}e^{-kt}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From the equation on 
+\begin_inset Formula $V$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{V} & = & r_{0}e^{-kt}V\\
+\frac{\dot{V}}{V} & = & r_{0}e^{-kt}
+\end{eqnarray*}
+
+\end_inset
+
+Now 
+\begin_inset Formula 
+\[
+\frac{d(\ln V)}{dt}=\frac{1}{V}\dot{V}=\frac{\dot{V}}{V}
+\]
+
+\end_inset
+
+by the chain rule.
+ This means 
+\begin_inset Formula 
+\[
+\frac{d(\ln V)}{dt}=r_{0}e^{-kt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d)
+\series default
+ Solve the equation above, isolate for 
+\begin_inset Formula $e^{-kt}$
+\end_inset
+
+ and insert it into the equation on 
+\begin_inset Formula $V$
+\end_inset
+
+ (this is to eliminate the time variable)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{r_{0}}\frac{d(\ln V)}{dt} & = & e^{-kt}\\
+\frac{1}{r_{0}}\int\frac{d(\ln V)}{dt}dt & = & \int e^{-kt}dt\\
+\frac{1}{r_{0}}\ln V & = & -\frac{1}{k}e^{-kt}\\
+e^{-kt} & = & -\frac{k}{r_{0}}\ln V
+\end{eqnarray*}
+
+\end_inset
+
+Now 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{V} & = & r_{0}e^{-kt}V\\
+ & = & r_{0}\Big(-\frac{k}{r_{0}}\ln V\Big)V\\
+\dot{V} & = & -kV\ln V
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(e)
+\series default
+ Solve this equation for 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Okay
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dV}{dt} & = & -kV\ln V\\
+\frac{dV}{V\ln V} & = & -kdt\qquad(\text{assuming }V\neq1\text{ and }V\neq0)\\
+\int\frac{dV}{V\ln V} & = & -k\int dt\\
+\int\frac{dV}{V\ln V} & = & -k(t+c)\qquad(\text{some constant }c)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To solve the 
+\begin_inset Formula $V$
+\end_inset
+
+ integral make the substitution 
+\begin_inset Formula $u=\ln V$
+\end_inset
+
+.
+ This means 
+\begin_inset Formula $dV=Vdu$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\int\frac{dV}{V\ln V} & = & \int\frac{Vdu}{Vu}=\int\frac{du}{u}\\
+ & = & \ln u\\
+ & = & \ln(\ln(V))
+\end{eqnarray*}
+
+\end_inset
+
+So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ln(\ln(V)) & = & -k(t+c)\\
+\ln(V) & = & e^{-kt-kc}=e^{-kc}e^{-kt}\\
+V & = & e^{e^{-kc}e^{-kt}}\\
+V(t) & = & \Big(e^{e^{-kc}}\Big)^{e^{-kt}}
+\end{eqnarray*}
+
+\end_inset
+
+Notice that 
+\begin_inset Formula $V(0)=V_{0}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+V(0)=\Big(e^{e^{-kc}}\Big)^{1}=e^{e^{-kc}}
+\]
+
+\end_inset
+
+So the solution can be written as 
+\begin_inset Formula 
+\[
+V(t)=V_{0}^{e^{-kt}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $V_{0}$
+\end_inset
+
+ is less than 1, then 
+\begin_inset Formula $V(t)$
+\end_inset
+
+ is sigmoidal.
+ Otherwise 
+\begin_inset Formula $V$
+\end_inset
+
+ decays exponentially.
+ The units here don't make sense.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(f) 
+\series default
+Draw the phase-line diagram and identify steady states and stability.
+\end_layout
+
+\begin_layout Standard
+The steady states are the values of 
+\begin_inset Formula $V$
+\end_inset
+
+ for which 
+\begin_inset Formula $\dot{V}=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{V} & = & -kV\ln V=0\\
+0 & = & -kV\ln V
+\end{eqnarray*}
+
+\end_inset
+
+One steady state is 
+\begin_inset Formula $V=0$
+\end_inset
+
+.
+ Is there another steady state? Assume 
+\begin_inset Formula $V\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & -kV\ln V\\
+0 & = & \ln V\\
+V & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+So 
+\begin_inset Formula $\dot{V}=0$
+\end_inset
+
+ at 
+\begin_inset Formula $V=0$
+\end_inset
+
+ or 
+\begin_inset Formula $V=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document
