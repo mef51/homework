@@ -54,7 +54,7 @@ figs-within-sections
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip bigskip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -545,10 +545,418 @@ Phase Diagram
 \end_inset
 
 .
+ Choose 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ so that the positive steady state for the two equations are the same, and
+ that the slopes of the right hand sides at the steady state are the same.
+\end_layout
+
+\begin_layout Standard
+The positive steady state (
+\begin_inset Formula $V\neq0$
+\end_inset
+
+) of the Gompertz equation is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & V(a-b\ln V)\\
+0 & = & a-b\ln V\\
+\ln V & = & \frac{a}{b}\\
+V & = & e^{a/b}
+\end{eqnarray*}
+
+\end_inset
+
+The positive steady state of the logistic equation is given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & rV(1-\frac{V}{k})\\
+0 & = & 1-\frac{V}{k}\\
+V & = & k
+\end{eqnarray*}
+
+\end_inset
+
+We want these steady states to be the same so
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{a/b} & = & k\\
+a & = & b\ln k
+\end{eqnarray*}
+
+\end_inset
+
+Now we want the slopes of the right hand sides of both equations to be the
+ same so we take the derivative with respect to 
+\begin_inset Formula $V$
+\end_inset
+
+ of both.
+\end_layout
+
+\begin_layout Standard
+The derivative of the Gompertz equation is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ddot{V} & = & (a-b\ln V)+V(-\frac{b}{V})=a-b\ln V-b
+\end{eqnarray*}
+
+\end_inset
+
+The derivative of the logistic equation is 
+\begin_inset Formula 
+\[
+\ddot{V}=r(1-\frac{V}{k})+rV(-\frac{1}{k})=r(1-\frac{V}{k})-\frac{rV}{k}
+\]
+
+\end_inset
+
+Setting these derivatives equal to each other and using the fact that the
+ steady state is 
+\begin_inset Formula $V=k$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+r(1-\frac{k}{k})-\frac{rk}{k} & = & a-b\ln k-b\\
+-r & = & a-a-b\qquad(b\ln k=a)\\
+r & = & b
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $b=r$
+\end_inset
+
+, 
+\begin_inset Formula $a=b\ln k=r\ln k$
+\end_inset
+
+.
+ Using these values of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ the two equations should have the same positive steady state and slopes
+ at the steady state.
+\end_layout
+
+\begin_layout Standard
+We use matlab to plot the two equations and solve them.
  
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GompertzAndLogistic.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gompertz and Logistic Equation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the positive steady states and the slopes are indeed the same.
+ The Gompertz equation peaks earlier and higher than the logistic equation,
+ and we see the corresponding effect in the solutions: both are sigmoidal,
+ but the solution to the Gompertz equation grows and reaches the asymptote
+ much more quickly.
+ The asymptote is at the positive steady state of 
+\begin_inset Formula $V=100=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The code to produce these plots is pasted below.
+ A copyable version can be found here: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://pastebin.com/bE8yXxbF"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\sffamily},numbers=left,numberstyle={\footnotesize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% MAT3395
+\end_layout
+
+\begin_layout Plain Layout
+
+% Mohammed Chamma, Stewart Clelland, Alex Commeau
+\end_layout
+
+\begin_layout Plain Layout
+
+% Assignment 4 Question 3
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\noindent
+
+function y = A4Q3
+\end_layout
+
+\begin_layout Plain Layout
+
+    fprintf('===');
+\end_layout
+
+\begin_layout Plain Layout
+
+    % plot the logistic equation
+\end_layout
+
+\begin_layout Plain Layout
+
+    % dV/dt = rV(1-V/k) r = 2, k = 100
+\end_layout
+
+\begin_layout Plain Layout
+
+    V = [0:0.1:110];
+\end_layout
+
+\begin_layout Plain Layout
+
+    r = 2;
+\end_layout
+
+\begin_layout Plain Layout
+
+    k = 100;
+\end_layout
+
+\begin_layout Plain Layout
+
+    logistic = r * (V .* (1 - V/k));
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    % plot the gompertz equation
+\end_layout
+
+\begin_layout Plain Layout
+
+    % dV/dt = V(a-b*ln(V))
+\end_layout
+
+\begin_layout Plain Layout
+
+    b = r;
+\end_layout
+
+\begin_layout Plain Layout
+
+    a = r*log(k);
+\end_layout
+
+\begin_layout Plain Layout
+
+    gompertz = V.*(a - b*log(V));
+\end_layout
+
+\begin_layout Plain Layout
+
+    subplot(1, 2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+    plot(V, gompertz, 'k--', V, logistic, 'k', V, 0*V, 'k:');
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel('Volume (V)');
+\end_layout
+
+\begin_layout Plain Layout
+
+    ylabel('Derivative of V');
+\end_layout
+
+\begin_layout Plain Layout
+
+    title('Gompertz and Logistic Equation');
+\end_layout
+
+\begin_layout Plain Layout
+
+    legend('Gompertz Equation', 'Logistic Equation', 'Location', 'southeast');
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+    function dV = gompertzEq(t, V)
+\end_layout
+
+\begin_layout Plain Layout
+
+        dV = zeros(1,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+        dV(1) = V(1)*(a - b*log(V(1)));
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    function dy = logisticEq(t, y)
+\end_layout
+
+\begin_layout Plain Layout
+
+        dy = zeros(1,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+        dy(1) = r * y(1) * (1 - y(1)/k);
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+    timespan=[0:0.01:4];  
+\end_layout
+
+\begin_layout Plain Layout
+
+    initial=[1];        
+\end_layout
+
+\begin_layout Plain Layout
+
+    [T, gompertzSol] = ode45(@gompertzEq,timespan,initial);
+\end_layout
+
+\begin_layout Plain Layout
+
+    [T2, logisticSol] = ode45(@logisticEq,timespan,initial);
+\end_layout
+
+\begin_layout Plain Layout
+
+    subplot(1, 2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+    plot(T, gompertzSol, 'k--', T2, logisticSol, 'k');
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel('Time (arbitrary units)');
+\end_layout
+
+\begin_layout Plain Layout
+
+    ylabel('Tumour Volume (arbitrary units)');
+\end_layout
+
+\begin_layout Plain Layout
+
+    title('Solutions to Gompertz and Logistic Equations');
+\end_layout
+
+\begin_layout Plain Layout
+
+    legend('Gompertz Solution', 'Logistic Solution', 'Location', 'southeast');
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
