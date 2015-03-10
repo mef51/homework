@@ -1,0 +1,568 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4370 Assignment 4
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+March 10 2015
+\end_layout
+
+\begin_layout Problem
+Problem 8.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pert}[3]{#1_{#2}^{(#3)}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sandw}[3]{\langle#1|#2|#3\rangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\braket}[2]{\langle#1|#2\rangle}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that
+\begin_inset Formula 
+\[
+|\pert{\psi}n1\rangle=\sum_{p\neq n}\frac{H'_{pn}}{(\pert En0-\pert Ep0)}|\pert{\psi}p0\rangle
+\]
+
+\end_inset
+
+Substitute into 
+\begin_inset Formula 
+\begin{eqnarray*}
+-\sandw{\pert{\psi}n1}{H_{0}-\pert En0}{\pert{\psi}n1} & = & \sandw{\pert{\psi}n1}{\pert En0-H_{0}}{\pert{\psi}n1}\\
+ & = & \sandw{\pert{\psi}n1}{(\pert En0-H_{0})\sum_{p\neq n}\frac{H'_{pn}}{(\pert En0-\pert Ep0)}}{\pert{\psi}p0}\\
+ & = & \sum_{p\neq n}\frac{H'_{pn}}{(\pert En0-\pert Ep0)}\sandw{\pert{\psi}n1}{\pert En0-H_{0}}{\pert{\psi}p0}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's open up the sandwich
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sandw{\pert{\psi}n1}{\pert En0-H_{0}}{\pert{\psi}p0} & = & \sandw{\pert{\psi}n1}{\pert En0}{\pert{\psi}p0}-\sandw{\pert{\psi}n1}{H_{0}}{\pert{\psi}p0}\\
+ & = & \pert En0\braket{\pert{\psi}n1}{\pert{\psi}p0}-\pert Ep0\braket{\pert{\psi}n1}{\pert{\psi}p0}\\
+ & = & (\pert En0-\pert Ep0)\braket{\pert{\psi}n1}{\pert{\psi}p0}\\
+ & = & (\pert En0-\pert Ep0)(\pert a{pn}1)^{*}\\
+ & = & (\pert En0-\pert Ep0)\pert a{np}1\\
+ & = & (\pert En0-\pert Ep0)\frac{(H'_{pn})^{*}}{(\pert En0-\pert Ep0)}\\
+ & = & H'_{np}
+\end{eqnarray*}
+
+\end_inset
+
+Back into the original equation
+\begin_inset Formula 
+\begin{eqnarray*}
+\sum_{p\neq n}\frac{H'_{pn}}{(\pert En0-\pert Ep0)}\sandw{\pert{\psi}n1}{\pert En0-H_{0}}{\pert{\psi}p0} & = & \sum_{p\neq n}\frac{H'_{pn}}{(\pert En0-\pert Ep0)}H_{np}^{'}\\
+ & = & \sum_{p\neq n}\frac{H'_{pn}H'_{np}}{(\pert En0-\pert Ep0)}\\
+ & = & \sum_{p\neq n}\frac{|H'_{pn}|^{2}}{(\pert En0-\pert Ep0)}\\
+ & = & \pert En2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 8.4 
+\end_layout
+
+\begin_layout Standard
+Todo.
+\end_layout
+
+\begin_layout Problem
+Problem 8.5
+\end_layout
+
+\begin_layout Standard
+Expanding to third order in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, the coefficients of 
+\begin_inset Formula $\lambda^{3}$
+\end_inset
+
+ are (given by 8.12 on page 377)
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0}\pert{\psi}n3+H'\pert{\psi}n2 & = & \pert En0\pert{\psi}n3+\pert En1\pert{\psi}n2+\pert En2\pert{\psi}n1+\pert En3\pert{\psi}n0\\
+0 & = & (H_{0}-\pert En0)\pert{\psi}n3+(H'-\pert En1)\pert{\psi}n2-\pert En2\pert{\psi}n1-\pert En3\pert{\psi}n0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Premultiply by 
+\begin_inset Formula $(\pert{\psi}n0)^{*}$
+\end_inset
+
+ and integrate
+\begin_inset Formula 
+\[
+0=\sandw{\pert{\psi}n0}{H_{0}-\pert En0}{\pert{\psi}n3}+\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}n2}-\pert En2\braket{\pert{\psi}n0}{\pert{\psi}n1}-\pert En3\braket{\pert{\psi}n0}{\pert{\psi}n0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to solve for 
+\begin_inset Formula $\pert En3$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\braket{\pert{\psi}n0}{\pert{\psi}n1}=\pert a{nn}1=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pert En3=\sandw{\pert{\psi}n0}{H_{0}-\pert En0}{\pert{\psi}n3}+\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}n2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dealing with the first term:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sandw{\pert{\psi}n0}{H_{0}-\pert En0}{\pert{\psi}n3} & = & \sandw{\pert{\psi}n0}{H_{0}}{\pert{\psi}n3}-\pert En0\braket{\pert{\psi}n0}{\pert{\psi}n3}\\
+ & = & \sandw{\pert{\psi}n3}{H_{0}}{\pert{\psi}n0}^{*}-\pert En0\braket{\pert{\psi}n0}{\pert{\psi}n3}\\
+ & = & \pert En0\braket{\pert{\psi}n3}{\pert{\psi}n0}^{*}-\pert En0\braket{\pert{\psi}n0}{\pert{\psi}n3}\\
+ & = & \pert En0\braket{\pert{\psi}n0}{\pert{\psi}n3}-\pert En0\braket{\pert{\psi}n0}{\pert{\psi}n3}\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we see 
+\begin_inset Formula 
+\[
+\pert En3=\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}n2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An expression for 
+\begin_inset Formula $|\pert{\psi}n2\rangle$
+\end_inset
+
+ is obtained from the book on pg.
+ 381 eq.
+ 8.36b
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+|\pert{\psi}n2\rangle & = & \sum_{l\neq n}\Bigg[\sum_{k\neq n}\frac{H'_{lk}H'_{kn}}{(\pert En0-\pert El0)(\pert En0-\pert Ek0)}-\frac{H'_{nn}H'_{ln}}{(\pert En0-\pert El0)^{2}}\Bigg]|\pert{\psi}l0\rangle-\frac{1}{2}\sum_{k\neq n}\frac{|H'_{kn}|^{2}}{(\pert En0-\pert Ek0)^{2}}|\pert{\psi}n0\rangle
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute this into the expression for 
+\begin_inset Formula $\pert En3$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pert En3 & = & \sum_{l\neq n}\Bigg[\sum_{k\neq n}\frac{H'_{lk}H'_{kn}}{(\pert En0-\pert El0)(\pert En0-\pert Ek0)}-\frac{H'_{nn}H'_{ln}}{(\pert En0-\pert El0)^{2}}\Bigg]\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}l0}\\
+ &  & -\frac{1}{2}\sum_{k\neq n}\frac{|H'_{kn}|^{2}}{(\pert En0-\pert Ek0)^{2}}\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}n0}
+\end{eqnarray*}
+
+\end_inset
+
+The second term is 0 because:
+\begin_inset Formula 
+\[
+\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}n0}=H'_{nn}-H'_{nn}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dealing with the sandwich in the first term: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sandw{\pert{\psi}n0}{H'-\pert En1}{\pert{\psi}l0} & = & \sandw{\pert{\psi}n0}{H'}{\pert{\psi}l0}-\pert En1\braket{\pert{\psi}n0}{\pert{\psi}l0}\\
+ & = & \sandw{\pert{\psi}n0}{H'}{\pert{\psi}l0}\qquad(\text{since }\braket{\pert{\psi}n0}{\pert{\psi}l0}=0\text{ for }l\neq n)\\
+ & = & H'_{nl}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting this result back in
+\begin_inset Formula 
+\begin{eqnarray*}
+\pert En3 & = & \sum_{l\neq n}\Bigg[\sum_{k\neq n}\frac{H'_{lk}H'_{kn}}{(\pert En0-\pert El0)(\pert En0-\pert Ek0)}-\frac{H'_{nn}H'_{ln}}{(\pert En0-\pert El0)^{2}}\Bigg]H'_{nl}\\
+ & = & \sum_{l\neq n}\sum_{k\neq n}\frac{H'_{lk}H'_{kn}H'_{nl}}{(\pert En0-\pert El0)(\pert En0-\pert Ek0)}-H'_{nn}\sum_{l\neq n}\frac{H'_{ln}H'_{nl}}{(\pert En0-\pert El0)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+Note that 
+\begin_inset Formula $H'_{ln}H'_{nl}=|H'_{ln}|^{2}$
+\end_inset
+
+.
+ Rename the indices so that 
+\begin_inset Formula $l=k$
+\end_inset
+
+ and 
+\begin_inset Formula $k=m$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pert En3=\sum_{k\neq n}\sum_{m\neq n}\frac{H'_{km}H'_{mn}H'_{nk}}{(\pert En0-\pert Ek0)(\pert En0-\pert Em0)}-H'_{nn}\sum_{k\neq n}\frac{|H'_{kn}|^{2}}{(\pert En0-\pert Ek0)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 8.6
+\end_layout
+
+\begin_layout Standard
+We want to find the first order energy correction to the ground state energy
+ (
+\begin_inset Formula $n=0$
+\end_inset
+
+) and the first excited state (
+\begin_inset Formula $n=1$
+\end_inset
+
+) of the linear harmonic oscillator perturbed by 
+\begin_inset Formula $H'=\lambda e^{-ax^{2}}$
+\end_inset
+
+.
+ The ground state and first excited state are given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+\psi_{0}(x) & = & \Big(\frac{\alpha}{\sqrt{\pi}}\Big)^{1/2}e^{-\alpha^{2}x^{2}/2}\\
+\psi_{1}(x) & = & \Big(\frac{\alpha}{2\sqrt{\pi}}\Big)^{1/2}2\alpha xe^{-\alpha^{2}x^{2}/2}
+\end{eqnarray*}
+
+\end_inset
+
+Where 
+\begin_inset Formula $\alpha=\Big(\frac{m\omega}{\hbar}\Big)^{1/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega=\Big(\frac{k}{m}\Big)^{1/2}$
+\end_inset
+
+.
+ We need to calculate 
+\begin_inset Formula $\pert En1=\sandw{\pert{\psi}n0}{H'}{\pert{\psi}n0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Using the ground state:
+\begin_inset Formula 
+\begin{eqnarray*}
+\pert E01 & = & \sandw{\pert{\psi}00}{H'}{\pert{\psi}00}\\
+ & = & \sandw{\pert{\psi}00}{\lambda e^{-ax^{2}}}{\pert{\psi}00}\\
+ & = & \lambda\sandw{\pert{\psi}00}{e^{-ax^{2}}}{\pert{\psi}00}\\
+ & = & \lambda\int_{-\infty}^{\infty}\psi_{0}^{*}e^{-ax^{2}}\psi_{0}dx\\
+ & = & \lambda\Big(\frac{\alpha}{\sqrt{\pi}}\Big)\int_{-\infty}^{\infty}e^{-\alpha^{2}x^{2}-a^{2}x^{2}}dx=\lambda\Big(\frac{\alpha}{\sqrt{\pi}}\Big)\int_{-\infty}^{\infty}e^{-(\alpha^{2}+a)x^{2}}dx\\
+ & = & \lambda\Big(\frac{\alpha}{\sqrt{\pi}}\Big)\sqrt{\frac{\pi}{\alpha^{2}+a}}\qquad\Big(\int_{-\infty}^{\infty}e^{-ax^{2}}=\sqrt{\frac{\pi}{a}}\Big)\\
+\pert E01 & = & \lambda\frac{\alpha}{\sqrt{\alpha^{2}+a}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now the same for the first excited state
+\begin_inset Formula 
+\begin{eqnarray*}
+\pert E11 & = & \lambda\sandw{\pert{\psi}10}{e^{-ax^{2}}}{\pert{\psi}10}\\
+ & = & \lambda\int_{-\infty}^{\infty}\Big(\frac{\alpha}{2\sqrt{\pi}}\Big)(2\alpha xe^{-\alpha^{2}x^{2}/2})^{2}e^{-ax^{2}}dx\\
+ & = & \lambda\Big(\frac{\alpha}{2\sqrt{\pi}}\Big)(4\alpha^{2})\int_{-\infty}^{\infty}x^{2}e^{-(\alpha^{2}+a)x^{2}}dx\\
+ & = & \lambda\frac{2\alpha^{3}}{\sqrt{\pi}}\frac{1}{2(\alpha^{2}+a)}\sqrt{\frac{\pi}{\alpha^{2}+a}}\qquad\Big(\int_{-\infty}^{\infty}x^{2}e^{-ax^{2}}dx=\frac{1}{2a}\sqrt{\frac{\pi}{a}}\Big)\\
+\pert E11 & = & \lambda\frac{\alpha^{3}}{(\alpha^{2}+a)^{3/2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Problem 8.13
+\end_layout
+
+\begin_layout Standard
+The trial function is 
+\begin_inset Formula 
+\[
+\phi_{0}(x)=\begin{cases}
+(c^{2}-x^{2})^{2} & |x|<c\\
+0 & |x|\geq c
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Hamiltonian of the linear harmonic oscillator is 
+\begin_inset Formula 
+\[
+H=-\frac{\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}+\frac{1}{2}m\omega^{2}x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we compute the energy functional as a function of the parameter 
+\begin_inset Formula $c$
+\end_inset
+
+ and then minimize it.
+ 
+\begin_inset Formula $E[\phi]=E(c)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+E(c)=\frac{\int\phi^{*}H\phi dx}{\int\phi^{*}\phi dx}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Doing the denominator:
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{-\infty}^{\infty}\phi^{*}\phi dx & = & \int_{-c}^{c}(c^{2}-x^{2})^{4}dx\\
+ & = & \int_{-c}^{c}c^{8}+4c^{6}x^{2}+6c^{4}x^{4}+4c^{2}x^{6}+x^{8}dx\\
+ & = & c^{8}x+\frac{4}{3}c^{6}x^{3}+\frac{6}{5}c^{4}x^{5}+\frac{4}{7}c^{2}x^{7}+\frac{1}{9}x^{9}\Big|_{-c}^{c}\\
+ & = & c^{8}(2c)+\frac{4}{3}c^{6}(2c^{3})+\frac{6}{5}c^{4}(2c^{5})+\frac{4}{7}c^{2}(2c^{7})+\frac{1}{9}(2c^{9})\\
+ & = & \Big(2+\frac{8}{3}+\frac{12}{5}+\frac{8}{7}+\frac{2}{9}\Big)c^{9}\\
+ & = & \frac{2656}{315}c^{9}
+\end{eqnarray*}
+
+\end_inset
+
+Now the numerator:
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\phi^{*}H\phi dx=\int_{-c}^{c}(c^{2}-x^{2})^{2}\Big(-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}(c^{2}-x^{2})^{2}+\frac{1}{2}m\omega^{2}x^{2}(c^{2}-x^{2})^{2}\Big)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d}{dx}(c^{2}-x^{2})^{2} & = & -4x(c^{2}-x^{2})\\
+\frac{d^{2}}{dx^{2}}(c^{2}-x^{2})^{2} & = & -4(c^{2}-3x^{2})
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{-\infty}^{\infty}\phi^{*}H\phi dx & = & \int_{-c}^{c}(c^{2}-x^{2})^{2}\Big(-\frac{\hbar^{2}}{2m}(-4(c^{2}-3x^{2}))+\frac{1}{2}m\omega^{2}x^{2}(c^{2}-x^{2})^{4}\Big)dx\\
+ & = & \int_{-c}^{c}\frac{4\hbar^{2}}{2m}(c^{2}-x^{2})^{2}(c^{2}-3x^{2})dx+\frac{1}{2}m\omega^{2}\int_{-c}^{c}x^{2}(c^{2}-x^{2})^{4}dx\\
+ & = & \frac{4\hbar^{2}}{2m}\Big(c^{6}x-\frac{5c^{4}x^{3}}{3}+\frac{7c^{2}x^{5}}{5}-\frac{3x^{7}}{7}\Big)_{-c}^{c}+\frac{1}{2}m\omega^{2}\Big(\frac{c^{8}x^{3}}{3}-\frac{4c^{6}x^{5}}{5}+\frac{6c^{4}x^{7}}{7}-\frac{4c^{2}x^{9}}{9}+\frac{x^{11}}{11}\Big)_{-c}^{c}\\
+ & = & \frac{4\hbar^{2}c^{7}}{2m}\Big(2-\frac{10}{3}+\frac{14}{5}-\frac{6}{7}\Big)+\frac{1}{2}m\omega^{2}c^{11}\Big(\frac{2}{3}-\frac{8}{3}+\frac{12}{7}-\frac{8}{9}+\frac{2}{11}\Big)\\
+ & = & \frac{128\hbar^{2}}{105m}c^{7}+\frac{128}{3465}m\omega^{2}c^{11}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Back into the functional:
+\begin_inset Formula 
+\begin{eqnarray*}
+E(c) & = & \Big(\frac{2656}{315}c^{9}\Big)^{-1}\Big(\frac{128\hbar^{2}}{105m}c^{7}+\frac{128}{3465}m\omega^{2}c^{11}\Big)\\
+ & = & \frac{315}{2656}\Big(\frac{128\hbar^{2}}{105mc^{2}}+\frac{128}{3465}m\omega^{2}c^{2}\Big)\\
+ & = & \frac{40320}{2656}\Big(\frac{\hbar^{2}}{105mc^{2}}+\frac{m\omega^{2}c^{2}}{3465}\Big)\\
+ & = & \frac{40320}{2656}\Big(\frac{3465\hbar^{2}+105m^{2}\omega^{2}c^{4}}{363825mc^{2}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now to minimize it 
+\begin_inset Formula 
+\begin{eqnarray*}
+0=\frac{dE}{dc} & = & -\frac{40320}{2656(363825mc^{2})^{2}}(3465\hbar^{2}+105m^{2}\omega^{2}c^{4})+\frac{40320}{2656(363825mc^{2})}(4c^{3}(105m^{2}\omega^{2}))\\
+ & = & -\frac{(1.1\times10^{-10})(3465\hbar^{2}+105m^{2}\omega^{2}c^{4})}{m^{2}c^{4}}+(4.2\times10^{-5})(4c(105m\omega^{2}))\\
+ & =
+\end{eqnarray*}
+
+\end_inset
+
+Out of time.
+\end_layout
+
+\begin_layout Problem
+Problem 8.12
+\end_layout
+
+\begin_layout Standard
+Todo.
+\end_layout
+
+\end_body
+\end_document
