@@ -1,0 +1,795 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY3320 Assignment 4
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+March 15 2015
+\end_layout
+
+\begin_layout Problem
+For a hollow rectangular waveguide with dimensions 
+\begin_inset Formula $a=0.03$
+\end_inset
+
+m and 
+\begin_inset Formula $b=0.02$
+\end_inset
+
+m determine the cutoff frequencies for all modes up to 20GHz and show them
+ schematically.
+ Over what frequency range will the guide support the propagation of a single
+ dominant mode?
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\cutoff}[2]{\frac{c}{2}\sqrt{\Big(\frac{#1}{a}\Big)^{2}+\Big(\frac{#2}{b}\Big)^{2}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The angular cutoff frequency is given by 
+\begin_inset Formula $\omega_{mn}=c\pi\sqrt{\Big(\frac{m}{a}\Big)^{2}+\Big(\frac{n}{b}\Big)^{2}}$
+\end_inset
+
+, so the cutoff frequency is 
+\begin_inset Formula $f_{mn}=\frac{\omega}{2\pi}=\frac{c}{2}\sqrt{\Big(\frac{m}{a}\Big)^{2}+\Big(\frac{n}{b}\Big)^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{01} & = & \cutoff 01=\frac{3\times10^{8}}{2}\sqrt{\Big(\frac{1}{0.02}\Big)^{2}}=7.5\text{GHz}\\
+f_{10} & = & \cutoff 10=5.0\text{GHz}\\
+f_{11} & = & \cutoff 11=9.0\text{GHz}\\
+f_{12} & = & \cutoff 12=15.8\text{GHz}\\
+f_{21} & = & \cutoff 21=12.5\text{GHz}\\
+f_{22} & = & \cutoff 22=18.0\text{GHz}\\
+f_{32} & = & \cutoff 32=21.2\text{GHz}
+\end{eqnarray*}
+
+\end_inset
+
+If you wanted the 
+\begin_inset Formula $10$
+\end_inset
+
+ mode to be the single dominant mode then a frequency range of 
+\begin_inset Formula $|f_{01}-f_{10}|=7.5-5=2.5$
+\end_inset
+
+GHz would allow for the propagation of a single mode.
+\end_layout
+
+\begin_layout Standard
+In general the range would be given by 
+\begin_inset Formula $|f_{mn}-f_{nm}|$
+\end_inset
+
+ since the 
+\begin_inset Formula $nm$
+\end_inset
+
+ mode is always the closest in frequency to the 
+\begin_inset Formula $mn$
+\end_inset
+
+ mode.
+\end_layout
+
+\begin_layout Problem
+A TM wave propagating in a dielectric filled waveguide of unknown permittivity
+ has a magnetic field with y-component given by 
+\begin_inset Formula $B_{y}=6\cos(25\pi x)\sin(100\pi y)\sin(1.5\pi\times10^{10}t-109\pi z)$
+\end_inset
+
+.
+ The guide dimensions are 
+\begin_inset Formula $a=2$
+\end_inset
+
+cm and 
+\begin_inset Formula $b=4$
+\end_inset
+
+cm.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Determine the mode numbers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+k_{x} & = & 25\pi=\frac{m\pi}{a}\\
+m & = & 25a=25(2)=50
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+k_{y} & = & 100\pi=\frac{n\pi}{b}\\
+n & = & 100b=100(4)=400
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Determine the relative permittivity of the material in the guide.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $k=\frac{\omega}{c}\sqrt{\varepsilon_{r}}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{r}=\frac{k^{2}c^{2}}{\omega^{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{r} & = & \frac{k^{2}c^{2}}{\omega^{2}}=\frac{(109\pi)^{2}(3\times10^{8})^{2}}{(1.5\pi\times10^{10})^{2}}\\
+\varepsilon_{r} & = & 4.75
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ Determine the phase velocity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v=\frac{\omega}{k}=\frac{1.5\pi\times10^{10}}{109\pi}=1.38\times10^{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d)
+\series default
+ Obtain an expression for 
+\begin_inset Formula $E_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that the tangential components are related
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{t}^{0} & = & -\frac{ck_{g}}{k_{0}}(\hat{z}\times B_{t}^{0})\\
+E_{x}^{0}\hat{x}+E_{y}^{0}\hat{y} & = & -\frac{c^{2}k_{g}}{\omega}(B_{x}^{0}\hat{y}-B_{y}^{0}\hat{x})
+\end{eqnarray*}
+
+\end_inset
+
+Since this is a TM wave, 
+\begin_inset Formula $E_{y}^{0}=B_{x}^{0}=0$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{x} & = & -\frac{c^{2}k_{g}}{\omega}B_{y}\\
+ & = & -\frac{(3\times10^{8})^{2}(109\pi)}{1.5\pi\times10^{10}}B_{y}\\
+ & = & -6.54\times10^{8}B_{y}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Work out the theory of TM modes for a rectangular waveguide.
+ Find all the field components, cut-off frequencies, and wave group velocities.
+ Find the ratio of the lowest TM cut-off frequency to the lowest TE cut-off
+ frequency for a given wave guide.
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula $E_{z}^{0}(x,y)$
+\end_inset
+
+ completely determines the field.
+ We need to solve 
+\begin_inset Formula 
+\[
+(\nabla_{t}^{2}+k_{c}^{2})E_{z}^{0}=0
+\]
+
+\end_inset
+
+under the boundary conditions 
+\begin_inset Formula $E_{z}^{0}|_{s}=0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $E_{z}^{0}(x,y)=X(x)Y(y)$
+\end_inset
+
+.
+ Substituting,
+\begin_inset FormulaMacro
+\newcommand{\sdev}[2]{\frac{\partial^{2}#1}{\partial#2^{2}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+Y\sdev Xx+X\sdev Yy+k_{c}^{2}XY & = & 0\\
+\frac{1}{X}\sdev Xx+\frac{1}{Y}\sdev Yy+k_{c}^{2} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $k_{c}^{2}=k_{x}^{2}+k_{y}^{2}$
+\end_inset
+
+.
+ We have 
+\begin_inset Formula 
+\[
+\frac{1}{X}\sdev Xx=-k_{x}^{2}\qquad\text{and}\qquad\frac{1}{Y}\sdev Yy=-k_{y}^{2}
+\]
+
+\end_inset
+
+The general solution for 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+X(x)=A\sin(k_{x}x)+B\cos(k_{x}x)
+\]
+
+\end_inset
+
+Since the boundary condition is 
+\begin_inset Formula $E_{z}^{0}|_{s}=0$
+\end_inset
+
+, 
+\begin_inset Formula $X(a)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $X(0)=0$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $X(0)=0$
+\end_inset
+
+, we need 
+\begin_inset Formula $B=0$
+\end_inset
+
+ since 
+\begin_inset Formula $\cos(0)=1$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $X(a)=0$
+\end_inset
+
+, we need 
+\begin_inset Formula 
+\begin{eqnarray*}
+k_{x}a & = & m\pi\qquad m=0,1,2...\\
+k_{x} & = & \frac{m\pi}{a}
+\end{eqnarray*}
+
+\end_inset
+
+Similarly, for 
+\begin_inset Formula $Y$
+\end_inset
+
+, (which has the same general solution) we need 
+\begin_inset Formula $Y(0)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $Y(b)=0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\[
+Y(y)=A'\sin(k_{y}y)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k_{y}=\frac{n\pi}{b}\qquad n=0,1,2...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the solution for 
+\begin_inset Formula $E_{z}^{0}$
+\end_inset
+
+ writing 
+\begin_inset Formula $AA'\equiv E_{0}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{z}^{0}(x,y) & = & X(x)Y(y)\\
+E_{z}^{0}(x,y) & = & E_{0}\sin(\frac{m\pi x}{a})\sin(\frac{n\pi y}{b})
+\end{eqnarray*}
+
+\end_inset
+
+Which is the 
+\begin_inset Formula $\text{TM}_{mn}$
+\end_inset
+
+ mode.
+\end_layout
+
+\begin_layout Standard
+To find 
+\begin_inset Formula $k_{g}$
+\end_inset
+
+ we use 
+\begin_inset Formula $k_{c}^{2}=k_{0}^{2}-k_{g}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{c}^{2}=k_{x}^{2}+k_{y}^{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+k_{g}^{2} & = & \frac{\omega^{2}}{c^{2}}-k_{x}^{2}-k_{y}^{2}\\
+ & = & \frac{\omega^{2}}{c^{2}}-\pi^{2}\Big[\Big(\frac{m}{a}\Big)^{2}+\Big(\frac{n}{b}\Big)^{2}\Big]\\
+k_{g} & = & \sqrt{\frac{\omega^{2}}{c^{2}}-\pi^{2}\Big[\Big(\frac{m}{a}\Big)^{2}+\Big(\frac{n}{b}\Big)^{2}\Big]}
+\end{eqnarray*}
+
+\end_inset
+
+The cutoff frequency is the same as the TE mode.
+ 
+\begin_inset Formula 
+\[
+\omega_{mn}=c\pi\sqrt{\Big(\frac{m}{a}\Big)^{2}+\Big(\frac{n}{b}\Big)^{2}}
+\]
+
+\end_inset
+
+This means the wave velocity and the group velocity are the same as the
+ TE mode.
+\begin_inset Formula 
+\begin{eqnarray*}
+v & = & \frac{\omega}{k}=\frac{c}{\sqrt{1-(\omega_{mn}/\omega)^{2}}}\\
+v_{g} & = & \frac{1}{dk/d\omega}=c\sqrt{1-(\omega_{mn}/\omega)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to find the other components.
+ Since this is TM mode, 
+\begin_inset Formula $B_{x}=E_{y}=0$
+\end_inset
+
+ so we don't need to find those.
+ To get 
+\begin_inset Formula $E_{x}$
+\end_inset
+
+ we use the fact that 
+\begin_inset Formula $\nabla E_{z}^{0}=-\frac{ik_{c}^{2}}{k_{g}}E_{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{t}=E_{x}\hat{x}+E_{y}\hat{y}=E_{x}\hat{x}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{x} & = & -\frac{k_{g}}{ik_{c}^{2}}(\nabla E_{z}^{0})_{x}=\frac{ik_{g}}{k_{c}^{2}}\frac{\partial E_{z}^{0}}{\partial x}\\
+ & = & \frac{ik_{g}}{k_{c}^{2}}E_{0}\frac{m\pi}{a}\sin(\frac{m\pi x}{a})\cos(\frac{m\pi x}{a})\sin(\frac{n\pi x}{b})\\
+ & = & \frac{ik_{g}}{k_{c}^{2}}\frac{m\pi}{a}\cos(\frac{m\pi x}{a})E_{z}
+\end{eqnarray*}
+
+\end_inset
+
+To get 
+\begin_inset Formula $B_{y}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{t} & = & -\frac{ck_{g}}{k_{0}}(\hat{z}\times B_{t})\\
+E_{x} & = & -\frac{ck_{g}}{k_{0}}(-B_{y})\\
+ & = & \frac{ck_{g}}{k_{0}}B_{y}
+\end{eqnarray*}
+
+\end_inset
+
+so 
+\begin_inset Formula 
+\[
+B_{y}=\frac{k_{0}}{ck_{g}}E_{x}
+\]
+
+\end_inset
+
+Now to find the ratio of the lowest TM cut-off frequency (TM
+\begin_inset Formula $_{11}$
+\end_inset
+
+) to the lowest TE cut-off frequency (TE
+\begin_inset Formula $_{10}$
+\end_inset
+
+) suppose we have a waveguide with 
+\begin_inset Formula $a>b$
+\end_inset
+
+.
+ The ratio is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\omega_{11}}{\omega_{10}} & = & \frac{\sqrt{\Big(\frac{1}{a}\Big)^{2}+\Big(\frac{1}{b}\Big)^{2}}}{\sqrt{\Big(\frac{1}{a}\Big)^{2}}}\\
+ & = & \sqrt{1+a^{2}/b^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Show that the TE
+\begin_inset Formula $_{00}$
+\end_inset
+
+ mode cannot occur in a rectangular waveguide by showing that 
+\begin_inset Formula $B_{z}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In a TE mode 
+\begin_inset Formula $k$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+k=\sqrt{(\omega/c)^{2}-\pi^{2}[(m/a)^{2}+(n/b)^{2}]}
+\]
+
+\end_inset
+
+If we're talking about TE
+\begin_inset Formula $_{00}$
+\end_inset
+
+ then 
+\begin_inset Formula $k$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+k=\frac{\omega}{c}
+\]
+
+\end_inset
+
+Now we look at Maxwell's equations (9.179 in Griffiths) and we apply the
+ fact that 
+\begin_inset Formula $E_{z}=0$
+\end_inset
+
+ (since TE mode) and 
+\begin_inset Formula $k=\omega/c$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+From 
+\begin_inset Formula $\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}$
+\end_inset
+
+ we have
+\begin_inset FormulaMacro
+\newcommand{\pdev}[2]{\frac{\partial#1}{\partial#2}}
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pdev{E_{y}}x-\pdev{E_{x}}y & = & i\omega B_{z}\\
+-ikE_{y} & = & i\omega B_{x}\implies E_{y}=-cB_{x}\\
+ikE_{x} & = & i\omega B_{y}\implies E_{x}=cB_{y}
+\end{eqnarray*}
+
+\end_inset
+
+From 
+\begin_inset Formula $\nabla\times\mathbf{B}=\frac{1}{c^{2}}\pdev{\mathbf{E}}t$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pdev{B_{y}}x & = & \pdev{B_{x}}y\\
+\pdev{B_{z}}y-ikB_{y} & = & -\frac{i\omega}{c^{2}}E_{x}=-i\frac{\omega}{c}B_{y}=-ikB_{y}\implies\pdev{B_{z}}y=0\\
+ikB_{x}-\pdev{B_{z}}x & = & -\frac{i\omega}{c^{2}}E_{y}=i\frac{\omega}{c}B_{x}=ikB_{x}\implies\pdev{B_{z}}x=0
+\end{eqnarray*}
+
+\end_inset
+
+This shows that 
+\begin_inset Formula $B_{z}$
+\end_inset
+
+ is constant over the 
+\begin_inset Formula $x-y$
+\end_inset
+
+ plane.
+ 
+\end_layout
+
+\begin_layout Standard
+Now, Faraday's law in integral form is 
+\begin_inset Formula 
+\[
+\oint\mathbf{E}\cdot d\mathbf{l}=-\pdev{}t\int\mathbf{B}\cdot d\mathbf{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we choose an area transverse to the rectangular waveguide (on the x-y
+ plane) and just inside the metal where 
+\begin_inset Formula $E=0$
+\end_inset
+
+, then we get 
+\begin_inset Formula 
+\[
+0=-ab\pdev{B_{z}}t=-ab(-i\omega B_{z})=i\omega abB_{z}\implies B_{z}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $B_{z}$
+\end_inset
+
+ is zero, then it is a TEM mode, but we already know that TEM waves cannot
+ propagate in a waveguide.
+\end_layout
+
+\begin_layout Problem
+A hollow rectangular waveguide is to be used to transmit signals at a carrier
+ frequency of 6GHz.
+ Choose its dimensions so that the cutoff frequency of the dominant TE mode
+ is lower than the carrier by 25% and that of the next mode is at least
+ 25% higher than the carrier.
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $a>b$
+\end_inset
+
+ and assume we're dealing with the lowest two modes, 
+\begin_inset Formula $f_{10}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{01}$
+\end_inset
+
+ where 
+\begin_inset Formula $f_{10}<f_{01}$
+\end_inset
+
+ since 
+\begin_inset Formula $a>b$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f_{10}=\cutoff 10=\frac{c}{2a}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{01}=\cutoff 01=\frac{c}{2b}
+\]
+
+\end_inset
+
+Since we want the cutoff of the dominant mode to be 25% less, and that of
+ the next mode to be 25% higher, 
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{10} & = & 6\times10^{9}(0.75)=4.5\times10^{9}\text{Hz}\\
+f_{01} & = & 6\times10^{9}(1.25)=7.5\times10^{9}\text{Hz}
+\end{eqnarray*}
+
+\end_inset
+
+So the required dimensions are 
+\begin_inset Formula 
+\[
+a=\frac{c}{2f_{10}}=\frac{3\times10^{8}}{2(4.5\times10^{9})}=0.033\text{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=\frac{c}{2f_{01}}=\frac{3\times10^{8}}{2(7.5\times10^{9})}=0.02\text{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
