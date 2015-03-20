@@ -504,7 +504,352 @@ Problem 9.12 from Bransden and Joachain
 \end_layout
 
 \begin_layout Standard
+Take the fourier transform of 
+\begin_inset Formula $\Psi$
+\end_inset
 
+ to get the wavefunction in momentum space.
+\end_layout
+
+\begin_layout Problem
+Explore the symmetric gauge vector potential 
+\begin_inset Formula $\mathbf{A}_{S}=\frac{1}{2}\mathbf{B}\times\mathbf{r}$
+\end_inset
+
+ in the presence of a uniform magnetic field 
+\begin_inset Formula $\mathbf{B}=B\hat{z}$
+\end_inset
+
+.
+ The Hamiltonian is 
+\begin_inset Formula $H=\frac{1}{2m}(\mathbf{P}-q\mathbf{A}_{S})^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Prove 
+\begin_inset Formula $\mathbf{B}=\nabla\times\mathbf{A}_{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbf{B}=B\hat{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{r}=x\hat{x}+y\hat{y}+z\hat{z}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{A}_{S} & = & \frac{1}{2}\mathbf{B}\times\mathbf{r}\\
+ & = & \frac{1}{2}(-By,Bx,0)\\
+ & = & \frac{1}{2}B(-y,x,0)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now take the curl where 
+\begin_inset Formula $\nabla=(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z})$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla\times\mathbf{A}_{S} & = & \frac{1}{2}B\Big(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\Big)\times(-y,x,0)\\
+ & = & \frac{1}{2}B\Big(\frac{\partial x}{\partial z},-\frac{\partial y}{\partial z},\frac{\partial x}{\partial x}+\frac{\partial y}{\partial y}\Big)\\
+ & = & \frac{1}{2}B(0,0,2)\\
+ & = & B\hat{z}\\
+ & = & \mathbf{B}
+\end{eqnarray*}
+
+\end_inset
+
+as needed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Prove the Hamiltonian is 
+\begin_inset Formula $H=\frac{1}{2m}\Big(\mathbf{P}^{2}+\frac{q^{2}}{4}(B^{2}r^{2}-(\mathbf{B}\cdot\mathbf{r})^{2})-q\mathbf{B}\cdot\mathbf{L}\Big)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \frac{1}{2m}(\mathbf{P}-q\mathbf{A}_{S})^{2}\\
+ & = & \frac{1}{2m}(\mathbf{P}^{2}+q^{2}\mathbf{A}_{S}^{2}-2q\mathbf{P}\cdot\mathbf{A}_{S})
+\end{eqnarray*}
+
+\end_inset
+
+Notice
+\begin_inset Formula 
+\[
+\mathbf{A}_{S}^{2}=\frac{1}{4}(\mathbf{B}\times\mathbf{r})\cdot(\mathbf{B}\times\mathbf{r})
+\]
+
+\end_inset
+
+Use the vector identity 
+\begin_inset Formula $(\mathbf{A}\times\mathbf{B})\cdot(\mathbf{C}\times\mathbf{D})=(\mathbf{A}\cdot\mathbf{C})(\mathbf{B}\cdot\mathbf{D})-(\mathbf{B}\cdot\mathbf{C})(\mathbf{A}\cdot\mathbf{D})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{A}_{S}^{2} & = & \frac{1}{4}((\mathbf{B}\cdot\mathbf{B})(\mathbf{r}\cdot\mathbf{r})-(\mathbf{r}\cdot\mathbf{B})(\mathbf{B}\cdot\mathbf{r}))\\
+ & = & \frac{1}{4}(B^{2}r^{2}-(\mathbf{B}\cdot\mathbf{r})^{2})
+\end{eqnarray*}
+
+\end_inset
+
+Now 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{P}\cdot\mathbf{A}_{S} & = & \frac{1}{2}\mathbf{P}\cdot(\mathbf{B}\times\mathbf{r})\\
+ & = & \frac{1}{2}\mathbf{B}\cdot(\mathbf{r}\times\mathbf{P})\qquad(\text{by }\mathbf{A}\cdot(\mathbf{B}\times\mathbf{C})=\mathbf{B}\cdot(\mathbf{C}\times\mathbf{A}))\\
+ & = & \frac{1}{2}\mathbf{B}\cdot\mathbf{L}
+\end{eqnarray*}
+
+\end_inset
+
+Substituting these results back in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \frac{1}{2m}(\mathbf{P}^{2}+q^{2}\mathbf{A}_{S}^{2}-2q\mathbf{P}\cdot\mathbf{A}_{S})\\
+ & = & \frac{1}{2m}\Big(\mathbf{P}^{2}+q^{2}(\frac{1}{4}(B^{2}r^{2}-(\mathbf{B}\cdot\mathbf{r})^{2}))-2q(\frac{1}{2}\mathbf{B}\cdot\mathbf{L})\Big)\\
+ & = & \frac{1}{2m}\Big(\mathbf{P}^{2}+\frac{q^{2}}{4}(B^{2}r^{2}-(\mathbf{B}\cdot\mathbf{r})^{2})-q\mathbf{B}\cdot\mathbf{L}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+If you substitute 
+\begin_inset Formula $\mathbf{B}=B\hat{z}$
+\end_inset
+
+ you get
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \frac{1}{2m}\Big(\mathbf{P}^{2}+\frac{q^{2}}{4}(B^{2}r^{2}-(B^{2}z^{2}))-qBL_{z}\Big)\\
+ & = & \frac{1}{2m}\Big(\mathbf{P}^{2}+\frac{q^{2}}{4}(B^{2}(r^{2}-z^{2}))-qBL_{z}\Big)\\
+ & = & \frac{1}{2m}\Big(\mathbf{P}^{2}+\frac{q^{2}B^{2}}{4}(x^{2}+y^{2})-qBL_{z}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+A hydrogen atom is placed in a time dependent electric field given by 
+\begin_inset Formula 
+\[
+\mathbf{E}(t)=\begin{cases}
+0 & t<0\\
+E_{0}e^{-\gamma t}\hat{z} & t>0
+\end{cases}
+\]
+
+\end_inset
+
+What is the probability to first order as 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+ the atom has made a transition from the ground state to the 2
+\begin_inset Formula $p$
+\end_inset
+
+ state?
+\end_layout
+
+\begin_layout Standard
+The transition probability to first order from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+P_{ba}^{(1)}(\infty)=\frac{1}{\hbar^{2}}\Big|\int_{0}^{\infty}H'_{ba}(t)\exp(i\omega_{ba}t)dt\Big|^{2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\omega_{ba}=\frac{E_{b}^{(0)}-E_{a}^{(0)}}{\hbar}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+H'_{ba}(t)=\langle\psi_{b}^{(0)}|H'(t)|\psi_{a}^{(0)}\rangle
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The position vector in spherical polar coordinates is 
+\begin_inset Formula $\mathbf{r}=r\sin\theta\cos\phi\hat{x}+r\sin\theta\sin\phi\hat{y}+r\cos\theta\hat{z}$
+\end_inset
+
+.
+ So the perturbed Hamiltonian is 
+\begin_inset Formula 
+\begin{eqnarray*}
+H'(t) & = & e\mathbf{r}\cdot\mathbf{E}(t)\\
+ & = & eE_{0}r\cos\theta\exp(-\gamma t)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now the ground state corresponds to the quantum numbers 
+\begin_inset Formula $(n,l,m)=(1,0,0)$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $2p$
+\end_inset
+
+ state can be either 
+\begin_inset Formula $(n,l,m)=(2,1,-1)$
+\end_inset
+
+, 
+\begin_inset Formula $(2,1,0)$
+\end_inset
+
+, or 
+\begin_inset Formula $(2,1,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the case 
+\begin_inset Formula $m=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+H'_{1s2p1} & = & \langle\psi_{1,0,0}|eE_{0}r\cos\theta\exp(-\gamma t)|\psi_{2,1,1}\rangle\\
+ & = & eE_{0}\int\psi_{1,0,0}^{*}r\cos\theta\exp(-\gamma t)\psi_{2,1,1}d\mathbf{r}\\
+ & = & eE_{0}\frac{1}{\sqrt{\pi a_{0}^{3}}}\frac{1}{8\sqrt{\pi a_{0}^{5}}}\int e^{-r/a_{0}}r\cos\theta e^{-\gamma t}re^{-r/2a_{0}}\sin\theta e^{i\phi}d\mathbf{r}\\
+ & = & eE_{0}\frac{1}{8\pi a_{0}^{4}}e^{-\gamma t}\int e^{-3r/2a_{0}}r^{2}\cos\theta\sin\theta e^{i\phi}d\mathbf{r}\\
+ & = & eE_{0}\frac{1}{8\pi a_{0}^{4}}e^{-\gamma t}\int_{0}^{\infty}e^{-3r/2a_{0}}r^{4}dr\int_{0}^{\pi}\cos\theta\sin^{2}\theta d\theta\int_{0}^{2\pi}e^{i\phi}d\phi\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Because 
+\begin_inset Formula $\int_{0}^{2\pi}e^{i\phi d\phi}=\frac{1}{i}(e^{2i\pi}-e^{0})=\frac{1}{i}(1-1)=0$
+\end_inset
+
+.
+ This is also true for 
+\begin_inset Formula $m=-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For the case 
+\begin_inset Formula $m=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+H'_{1s2p} & = & eE_{0}\int\psi_{1,0,0}^{*}r\cos\theta\exp(-\gamma t)\psi_{2,1,1}d\mathbf{r}\\
+ & = & eE_{0}\frac{1}{\sqrt{\pi a_{0}^{3}}}\frac{1}{\sqrt{32\pi a_{0}^{5}}}e^{-\gamma t}\int e^{-r/a_{0}}r^{2}\cos^{2}\theta e^{-r/2a_{0}}d\mathbf{r}\\
+ & = & eE_{0}\frac{1}{\pi a_{0}^{4}\sqrt{32}}e^{-\gamma t}\int_{0}^{\infty}e^{-3r/2a_{0}}r^{4}dr\int_{0}^{\pi}\cos^{2}\theta\sin\theta d\theta\int_{0}^{2\pi}d\phi\\
+ & = & eE_{0}\frac{1}{\pi a_{0}^{4}\sqrt{32}}e^{-\gamma t}\Big(\frac{24(2^{5})a_{0}^{5}}{3^{5}}\Big)\Big(\frac{2}{3}\Big)(2\pi)\\
+ & = & eE_{0}\frac{4}{3\sqrt{32}}\frac{768a_{0}}{243}e^{-\gamma t}
+\end{eqnarray*}
+
+\end_inset
+
+The transition probability is 
+\begin_inset Formula 
+\begin{eqnarray*}
+P_{1s2p}^{(1)} & = & \frac{1}{\hbar^{2}}\Big|\int_{0}^{\infty}H'_{ba}(t)\exp(i\omega_{ba}t)dt\Big|^{2}\\
+ & = & \frac{1}{\hbar^{2}}\Big|\int_{0}^{\infty}eE_{0}\frac{4}{3\sqrt{32}}\frac{768a_{0}}{243}e^{-\gamma t}e^{i\omega_{1s2p}t}dt\Big|^{2}\\
+ & = & \frac{16e^{2}E_{0}^{2}a_{0}^{2}}{9(32)\hbar^{2}}\Big(\frac{768a_{0}}{243}\Big)^{2}\Big|\int_{0}^{\infty}e^{-\gamma t}e^{i\omega_{1s2p}t}dt\Big|^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Now, the energy levels are given by 
+\begin_inset Formula $E_{n}=-\frac{e^{2}}{4\pi\epsilon_{0}a_{0}}\frac{1}{2n^{2}}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\omega_{1s2p} & = & \frac{E_{2}-E_{1}}{\hbar}\\
+ & = & -\frac{e^{2}}{4\pi\epsilon_{0}a_{0}\hbar}(\frac{1}{32}-\frac{1}{2})\\
+ & = & \frac{63}{64}\frac{e^{2}}{4\pi\epsilon_{0}a_{0}\hbar}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+unfinished.
 \end_layout
 
 \end_body
