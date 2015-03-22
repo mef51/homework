@@ -1,0 +1,339 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Assignment 11
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+March 23 2015
+\end_layout
+
+\begin_layout Problem
+A short pulse amplifier has a gain of 20%/cm and a gain length of 10cm.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Assuming an input fluence of 
+\begin_inset Formula $F_{in}=1$
+\end_inset
+
+mJ/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ and a saturation fluence of 
+\begin_inset Formula $F_{sat}=1$
+\end_inset
+
+J/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+, determine the total output fluence of the amplifier.
+\end_layout
+
+\begin_layout Standard
+The gain is 
+\begin_inset Formula $g_{0}=0.2$
+\end_inset
+
+cm
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ and the gain length is 
+\begin_inset Formula $z=10$
+\end_inset
+
+cm.
+ The output fluence is given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+F_{out} & = & F_{sat}\ln(1+e^{g_{0}z}[e^{F_{in}/F_{sat}}-1])\\
+ & = & (1)\ln(1+e^{(0.2*10)}[e^{1\times10^{-3}/1}-1])\\
+ & = & 7\text{mJ/cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ If the input fluence was 
+\begin_inset Formula $F_{in}=1$
+\end_inset
+
+ J/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ what is the output fluence? 
+\begin_inset Formula $F_{in}=F_{sat}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+F_{out} & = & F_{sat}\ln(1+e^{g_{0}z}[e^{F_{in}/F_{sat}}-1])\\
+ & = & (1)\ln(1+e^{2}[e-1])\\
+ & = & 2.6\text{J/cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ In Europe a 10 PetaWatt laser is being built with these values.
+ If the pulse duration of the amplified pulse is 10 femtoseconds about how
+ large an area will they need for an amplifier?
+\end_layout
+
+\begin_layout Standard
+I assume that the output power is 
+\begin_inset Formula $P_{out}=10\times10^{15}$
+\end_inset
+
+W, 
+\begin_inset Formula $F_{out}=2.6$
+\end_inset
+
+J/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $F_{in}=1$
+\end_inset
+
+J/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $F_{sat}=1$
+\end_inset
+
+J/cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ The amplified pulse duration is 
+\begin_inset Formula $\tau=10\times10^{-15}$
+\end_inset
+
+s.
+\end_layout
+
+\begin_layout Standard
+The output intensity is related to the output fluence by
+\begin_inset Formula 
+\[
+F_{out}=\int_{-\infty}^{\infty}I(t)dt=I_{out}\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ denote the area the pulse covers after it emerges from the amplifier.
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{out} & = & \frac{P_{out}}{A}\\
+A & = & \frac{P_{out}}{I_{out}}=\frac{P_{out}\tau}{F_{out}}\\
+ & = & \frac{(10\times10^{15})(10\times10^{-15})}{2.6}\\
+ & = & 38.5\text{cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+So I guess this means that since the output pulse will cover an area of
+ 38.5cm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ after it leaves the amplifier, the amplifier should at least have a cross-secti
+onal area of that much to be able to hold the pulse, otherwise the pulse
+ will hit the edges of the amplifier and leave.
+ Is that what was mean by the question how large an area will be needed?
+ The gain length required for this pulse is already known.
+\end_layout
+
+\begin_layout Problem
+The noise equivalent input is the effective input power due to spontaneous
+ emission.
+ For a Ti:Sapphire laser operating at 800nm, with a linewidth of 150nm and
+ with a solid angle of 0.01str, what is the noise equivalent input?
+\end_layout
+
+\begin_layout Standard
+The noise equivalent input is 
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{noise} & = & \frac{hc^{2}\pi\Omega}{\lambda^{5}}\Delta\lambda\\
+ & = & \frac{6.63\times10^{-34}(3\times10^{8})^{2}\pi(0.01)}{(800\times10^{-9})^{5}}(150\times10^{-9})\\
+ & = & 8.6\times10^{5}\text{W/m}^{2}=86\text{W/cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Excimer lasers are important for lithography.
+ The most important of these operates at 
+\begin_inset Formula $248$
+\end_inset
+
+nm.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Assuming a bandwith of 
+\begin_inset Formula $1$
+\end_inset
+
+nm, what is the noise equivalent input? I'm gonna assume the solid angle
+ is 0.01str again.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{noise} & = & \frac{hc^{2}\pi\Omega}{\lambda^{5}}\Delta\lambda\\
+ & = & \frac{6.63\times10^{-34}(3\times10^{8})^{2}\pi(0.01)}{(248\times10^{-9})^{5}}(1\times10^{-9})\\
+ & = & 2.0\times10^{6}\text{W/m}^{2}=2.0\times10^{2}\text{W/cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ An X-ray laser operates at 10nm and has a bandwidth of 0.1nm.
+ With the same solid angle what is the noise equivalent input?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{noise} & = & \frac{hc^{2}\pi\Omega}{\lambda^{5}}\Delta\lambda\\
+ & = & \frac{6.63\times10^{-34}(3\times10^{8})^{2}\pi(0.01)}{(10\times10^{-9})^{5}}(0.1\times10^{-9})\\
+ & = & 1.87\times10^{12}\text{W/m}^{2}=1.87\times10^{8}\text{W/cm}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
