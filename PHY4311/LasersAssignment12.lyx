@@ -1,0 +1,173 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Autocorrelation Assignment
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+March 25 2015
+\end_layout
+
+\begin_layout Problem
+A short pulse has a Gaussian shape 
+\begin_inset Formula $I(t)=I_{0}\exp(-\frac{t^{2}}{T^{2}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Please write the functional form of the autocorrelation trace.
+ The form is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+G(\tau) & = & \int_{-\infty}^{\infty}I(t)I(t-\tau)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(-\frac{t^{2}}{T^{2}}-\frac{(t-\tau)^{2}}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(\frac{-t^{2}-t^{2}+2t\tau-\tau^{2}}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(\frac{-2(t^{2}-t\tau+\frac{1}{2}\tau^{2})}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(\frac{-2(t^{2}-t\tau+\frac{1}{4}\tau^{2}+\frac{1}{4}\tau^{2})}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(\frac{-2((t-\frac{1}{2}\tau)^{2}+\frac{1}{4}\tau^{2})}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(\frac{-2(t-\frac{1}{2}\tau)^{2}-\frac{1}{2}\tau^{2}}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\int_{-\infty}^{\infty}\exp\Big(-\frac{2}{T^{2}}(t-\frac{1}{2}\tau)^{2}\Big)\exp\Big(-\frac{1}{2}\frac{\tau^{2}}{T^{2}}\Big)dt\\
+ & = & I_{0}^{2}\exp\Big(-\frac{1}{2}\frac{\tau^{2}}{T^{2}}\Big)\int_{-\infty}^{\infty}\exp\Big(-\frac{2}{T^{2}}(t-\frac{1}{2}\tau)^{2}\Big)dt
+\end{eqnarray*}
+
+\end_inset
+
+To do the integral note that its a bell shape and shifting it doesn't change
+ the area.
+ So
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{-\infty}^{\infty}\exp\Big(-\frac{2}{T^{2}}(t-\frac{1}{2}\tau)^{2}\Big)dt & = & \int_{-\infty}^{\infty}\exp\Big(-\frac{2}{T^{2}}t^{2}\Big)dt=T\sqrt{\frac{\pi}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\int_{-\infty}^{\infty}\exp(-ax^{2})dx=\sqrt{\pi/a}$
+\end_inset
+
+.
+ Substituting this back in 
+\begin_inset Formula 
+\begin{eqnarray*}
+G(\tau) & = & I_{0}^{2}\exp\Big(-\frac{1}{2}\frac{\tau^{2}}{T^{2}}\Big)(T\sqrt{\frac{\pi}{2}})\\
+G(\tau) & = & \sqrt{\frac{\pi}{2}}I_{0}^{2}T\exp\Big(-\frac{1}{2}\frac{\tau^{2}}{T^{2}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ What is the FWHM of the correlation trace?
+\end_layout
+
+\begin_layout Standard
+The peak is at 
+\begin_inset Formula $\tau_{0}=0$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $G(\tau_{0})=\frac{1}{\pi\delta\tau_{0}}$
+\end_inset
+
+ the FWHM is 
+\begin_inset Formula 
+\[
+2\delta\tau_{0}=\frac{2}{\pi G(0)}=\frac{2}{\pi}\sqrt{\frac{2}{\pi}}\frac{1}{I_{0}^{2}T}=\Big(\frac{2}{\pi}\Big)^{3/2}\frac{1}{I_{0}^{2}T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
