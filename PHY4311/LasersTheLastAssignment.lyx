@@ -1,0 +1,669 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4311 Last Assignment 
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+April 2nd 2015
+\end_layout
+
+\begin_layout Problem
+Show that 
+\begin_inset Formula $\varepsilon(r)=\frac{A}{r}\exp(ikr)$
+\end_inset
+
+ is a solution of the Helmholtz Equation.
+\end_layout
+
+\begin_layout Standard
+The Helmholtz equation is 
+\begin_inset Formula $\nabla^{2}\varepsilon(r)+k^{2}\varepsilon(r)=0$
+\end_inset
+
+ where 
+\begin_inset Formula $k^{2}=\omega^{2}/c^{2}$
+\end_inset
+
+.
+ We need to use the Laplacian in spherical coordinates (
+\begin_inset Formula $r,\theta,\phi$
+\end_inset
+
+).
+ Since our function has no 
+\begin_inset Formula $\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependance, the 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ derivatives are zero and we neglect them.
+\begin_inset FormulaMacro
+\newcommand{\pdev}[1]{\frac{\partial}{\partial#1}}
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\nabla^{2}=\frac{1}{r^{2}}\frac{\partial}{\partial r}\Big(r^{2}\frac{\partial}{\partial r}\Big)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla^{2}\varepsilon(r) & = & \frac{1}{r^{2}}\frac{\partial}{\partial r}\Big(r^{2}\pdev r\varepsilon(r)\Big)\\
+ & = & \frac{1}{r^{2}}\frac{\partial}{\partial r}\Big(r^{2}\Big(-\frac{A}{r^{2}}\exp(ikr)+\frac{A}{r}ik\exp(ikr)\Big)\Big)\\
+ & = & \frac{1}{r^{2}}\frac{\partial}{\partial r}\Big(-A\exp(ikr)+ikrA\exp(ikr)\Big)\\
+ & = & \frac{1}{r^{2}}\Big(-Aik\exp(ikr)+Aik\exp(ikr)-k^{2}rA\exp(ikr)\Big)\\
+ & = & -k^{2}\frac{A}{r}\exp(ikr)\\
+ & = & -k^{2}\varepsilon(r)
+\end{eqnarray*}
+
+\end_inset
+
+This means that 
+\begin_inset Formula 
+\[
+\nabla^{2}\varepsilon(r)+k^{2}\varepsilon(r)=-k^{2}\varepsilon(r)+k^{2}\varepsilon(r)=0
+\]
+
+\end_inset
+
+as required.
+\end_layout
+
+\begin_layout Problem
+A 
+\begin_inset Formula $\lambda=$
+\end_inset
+
+500nm Gaussian beam emerges from a laser with a beam waist of
+\begin_inset Formula $w_{0}=1$
+\end_inset
+
+mm and with a plane wave front.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ How far does the beam wave propagate before its area increases by a factor
+ of 2?
+\end_layout
+
+\begin_layout Standard
+The radius of the spot size at 
+\begin_inset Formula $z$
+\end_inset
+
+ is 
+\begin_inset Formula $w(z)=w_{0}\sqrt{1+z^{2}/z_{0}^{2}}$
+\end_inset
+
+.
+ The area of the spot size at the waist is 
+\begin_inset Formula $\pi w_{0}^{2}$
+\end_inset
+
+ and the area at 
+\begin_inset Formula $z$
+\end_inset
+
+ is 
+\begin_inset Formula $\pi w_{0}^{2}(1+z^{2}/z_{0}^{2})$
+\end_inset
+
+.
+ We want 
+\begin_inset Formula $z$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\begin{eqnarray*}
+2\pi w_{0}^{2} & = & \pi w_{0}^{2}(1+z^{2}/z_{0}^{2})\\
+2 & = & 1+\frac{z^{2}}{z_{0}^{2}}\\
+z^{2} & = & z_{0}^{2}\\
+z & = & z_{0}=\frac{\pi w_{0}^{2}}{\lambda}=\frac{\pi(1\times10^{-3})^{2}}{500\times10^{-9}}=6.28\text{m}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ How does this distance relate to 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+? They're the same!
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ If there's a plane 1km away how big is the spot size on the plane when
+ you shine a laser pointer at it?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=1000$
+\end_inset
+
+m
+\begin_inset Formula 
+\begin{eqnarray*}
+\pi w^{2} & = & \pi w_{0}^{2}(1+z^{2}/z_{0}^{2})\\
+ & = & \pi(10^{-6})(1+10^{6}/(6.28)^{2})\\
+ & = & 0.08\text{m}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d)
+\series default
+ Same question, with 
+\begin_inset Formula $w_{0}=3$
+\end_inset
+
+mm:
+\end_layout
+
+\begin_layout Standard
+The Rayleigh range changes to 
+\begin_inset Formula 
+\[
+z_{0}=\frac{\pi w_{0}^{2}}{\lambda}=\frac{\pi(9)(10^{-6})}{500\times10^{-9}}=56.5\text{m}
+\]
+
+\end_inset
+
+The area is now 
+\begin_inset Formula 
+\begin{eqnarray*}
+\pi w^{2} & = & \pi w_{0}^{2}(1+z^{2}/z_{0}^{2})\\
+ & = & \pi(9)(10^{-6})(1+10^{6}/(56.5)^{2})\\
+ & = & 0.009\text{m}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Gouy Phase
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Show that a beam experiences a phase shift of 180
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+ as it passes through it's focus at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose the beam starts at 
+\begin_inset Formula $z_{i}=-\infty$
+\end_inset
+
+ and passes through 
+\begin_inset Formula $z=0$
+\end_inset
+
+ on its way to 
+\begin_inset Formula $z_{f}=\infty$
+\end_inset
+
+.
+ The phase is given by 
+\begin_inset Formula $\phi(z)=\tan^{-1}(z/z_{0})$
+\end_inset
+
+.
+ The difference is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi(z_{f})-\phi(z_{i}) & = & \tan^{-1}(\infty)-\tan^{-1}(-\infty)\\
+ & = & \frac{\pi}{2}-(-\frac{\pi}{2})\\
+ & = & \pi=180^{\circ}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ How much Gouy phase is accumulated by propagating from the position where
+ the beam has its minimum waist to where its waist is increased by 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+The position where the beam has its minimum waist is 
+\begin_inset Formula $z_{i}=0$
+\end_inset
+
+.
+ The position where it's waist is increased by 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $z_{f}=z_{0}$
+\end_inset
+
+ since 
+\begin_inset Formula $w(z_{0})=w_{0}\sqrt{1+z_{0}^{2}/z_{0}^{2}}=w_{0}\sqrt{2}$
+\end_inset
+
+.
+ So the phase difference is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi(z_{f})-\phi(z_{i}) & = & \tan^{-1}(1)-\tan^{-1}(0)\\
+ & = & \frac{\pi}{4}-0=\frac{\pi}{4}=90^{\circ}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+If we double the frequency of a Gaussian pulse (beam?) the waist gets smaller.
+ Assume a plane wavefront.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ By what ratio does the beam waist decrease?
+\end_layout
+
+\begin_layout Standard
+Since we double the frequency, we halve the wavelength.
+ Let 
+\begin_inset Formula $w_{0i}$
+\end_inset
+
+ denote the waist before it's doubled and 
+\begin_inset Formula $w_{0f}$
+\end_inset
+
+ denote the waist after it's doubled.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{0}=\frac{\pi w_{0}^{2}}{\lambda}\implies w_{0}^{2}=\frac{\lambda z_{0}}{\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{w_{0i}^{2}}{w_{0f}^{2}} & = & \frac{\lambda z_{0i}}{\pi}\frac{2\pi}{\lambda z_{0f}}==2\frac{z_{0i}}{z_{0f}}\\
+\frac{w_{0i}}{w_{0f}} & = & \sqrt{2}\sqrt{\frac{z_{0i}}{z_{0f}}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Show that the Rayleigh range of both beams are the same
+\end_layout
+
+\begin_layout Standard
+I don't know how to show this.
+ I know that if 
+\begin_inset Formula $w_{0i}=\sqrt{2}w_{0f}$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+z_{0i}=\frac{\pi w_{0i}^{2}}{\lambda}=\frac{2\pi w_{0f}^{2}}{\lambda}=\frac{\pi w_{0f}^{2}}{\lambda/2}=z_{0f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I keep going in circles
+\end_layout
+
+\begin_layout Problem
+A beam with wavelength of 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+micron emerges from a laser with 
+\begin_inset Formula $R=\infty$
+\end_inset
+
+ and with 
+\begin_inset Formula $w_{0}=0.1$
+\end_inset
+
+cm.
+ The beam propagates 
+\begin_inset Formula $z=$
+\end_inset
+
+3m before encountering a lens with 
+\begin_inset Formula $f=50$
+\end_inset
+
+cm.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ What is the Rayleigh range of the beam leaving the laser?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{0}=\frac{\pi w_{0}^{2}}{\lambda}=\frac{\pi(1\times10^{-3})^{2}}{1\times10^{-6}}=\pi\text{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ What is 
+\begin_inset Formula $w(z)$
+\end_inset
+
+ at the lens?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+w(3) & = & w_{0}\sqrt{1+9/z_{0}^{2}}\\
+ & = & 10^{-3}\sqrt{1+9/\pi^{2}}\\
+ & = & 1.4\times10^{-3}\text{m}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c)
+\series default
+ After passing through the lens what is the new beam waist?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+w_{0}' & = & \frac{\lambda f}{\pi w_{0}}\frac{1}{\sqrt{1+f^{2}/z_{0}^{2}}}\\
+ & = & \frac{10^{-6}(5)(10^{-1})}{\pi(10^{-3})}\frac{1}{\sqrt{1+(5\times10^{-1})^{2}/\pi^{2}}}\\
+ & = & 1.6\times10^{-4}\text{m}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Consider a Gaussian beam at its waist.
+ Show that only 86.5% of beam's power passes through an aperture with radius
+ 
+\begin_inset Formula $r=w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The intensity of the beam is 
+\begin_inset Formula 
+\[
+I(x,y,z)=\frac{\frac{1}{2}c\epsilon_{0}|A|^{2}}{1+z^{2}/z_{0}^{2}}e^{-2(x^{2}+y^{2})/w^{2}(z)}
+\]
+
+\end_inset
+
+Since we're at the beam waist 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I(x,y)=\frac{1}{2}c\epsilon_{0}|A|^{2}e^{-2(x^{2}+y^{2})/w_{0}^{2}}=I_{0}e^{-2(x^{2}+y^{2})/w_{0}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The area of the aperture is 
+\begin_inset Formula $\pi w_{0}^{2}$
+\end_inset
+
+ so the power through the aperture is 
+\begin_inset Formula 
+\[
+P=\pi w_{0}^{2}I_{0}e^{-2(x^{2}+y^{2})/w_{0}^{2}}
+\]
+
+\end_inset
+
+The total beam power falling on the plane at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ is given by (7.5.27) in Eberly as 
+\begin_inset Formula 
+\[
+P_{0}=\frac{1}{2}I_{0}\pi w_{0}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I know that defining 
+\begin_inset Formula $r=w_{0}\equiv x^{2}+y^{2}$
+\end_inset
+
+ gives me the right answer but I'm confused because I think 
+\begin_inset Formula $r$
+\end_inset
+
+ is fixed while 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ vary.
+ I think there's an integral to get to this part: 
+\begin_inset Formula 
+\[
+P=\pi w_{0}^{2}I_{0}e^{-2(r^{2})/w_{0}^{2}}=\pi w_{0}^{2}I_{0}e^{-2}=2P_{0}e^{-2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now I know that defining the power through the hole as 
+\begin_inset Formula $P_{hole}=P_{0}-P$
+\end_inset
+
+ gives me the right answer but I'm confused because I think 
+\begin_inset Formula $P$
+\end_inset
+
+ is the power through the hole...
+ Anyways it gives me the right answer because 
+\begin_inset Formula 
+\begin{eqnarray*}
+P_{hole} & = & P_{0}-P=P_{0}-2P_{0}e^{-2}\\
+ & = & P_{0}(1-2e^{-2})\\
+\frac{P_{hole}}{P_{0}} & = & 1-2e^{-2}=73\%
+\end{eqnarray*}
+
+\end_inset
+
+oh shit
+\end_layout
+
+\end_body
+\end_document
