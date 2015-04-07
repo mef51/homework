@@ -1,0 +1,1596 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage[cm]{fullpage}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ae
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY4370 Assignment 6
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+April 6 2015
+\end_layout
+
+\begin_layout Problem
+Bransden and Joachain Problem 10.4
+\end_layout
+
+\begin_layout Standard
+The average energy is given by
+\begin_inset FormulaMacro
+\newcommand{\swich}[3]{\langle#1|#2|#3\rangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\braket}[2]{\langle#1|#2\rangle}
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+E=\frac{\swich{\phi}H{\phi}}{\braket{\phi}{\phi}}=\swich{\phi}H{\phi}
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is normalised.
+ We want to compute 
+\begin_inset Formula $\int\phi^{*}H\phi d\mathbf{r}_{1}d\mathbf{r}_{2}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\phi$
+\end_inset
+
+ has no angular dependence we can focus on only the 
+\begin_inset Formula $r$
+\end_inset
+
+ part of 
+\begin_inset Formula $\nabla^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\nabla_{1}^{2}\phi & = & \frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{3}\nabla_{1}^{2}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\\
+ & = & \frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{3}\frac{1}{r_{1}^{2}}\frac{\partial}{\partial r_{1}}\Big(r_{1}^{2}\frac{\partial}{\partial r_{1}}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & \frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{3}\frac{1}{r_{1}^{2}}\frac{\partial}{\partial r_{1}}\Big(r_{1}^{2}(\frac{-\lambda}{a_{0}})e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & -\frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{4}\frac{1}{r_{1}^{2}}\frac{\partial}{\partial r_{1}}\Big(r_{1}^{2}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & -\frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{4}\frac{1}{r_{1}^{2}}\Big(2r_{1}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}-\frac{\lambda}{a_{0}}r_{1}^{2}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & -\frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{4}\Big(2\frac{1}{r_{1}}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}-\frac{\lambda}{a_{0}}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & -\frac{\lambda}{a_{0}}\Big(2\frac{1}{r_{1}}\frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{3}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}-\frac{\lambda}{a_{0}}\frac{1}{\pi}\Big(\frac{\lambda}{a_{0}}\Big)^{3}e^{-\frac{\lambda}{a_{0}}(r_{1}+r_{2})}\Big)\\
+ & = & -\frac{\lambda}{a_{0}}\Big(2\frac{1}{r_{1}}\phi-\frac{\lambda}{a_{0}}\phi\Big)=-\frac{2\lambda}{a_{0}}\phi\frac{1}{r_{1}}+\frac{\lambda^{2}}{a_{0}^{2}}\phi
+\end{eqnarray*}
+
+\end_inset
+
+Similarly 
+\begin_inset Formula 
+\[
+\nabla_{2}^{2}\phi=-\frac{2\lambda}{a_{0}}\phi\frac{1}{r_{2}}+\frac{\lambda^{2}}{a_{0}^{2}}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now 
+\begin_inset Formula 
+\begin{eqnarray*}
+H\phi & = & -\frac{\hbar^{2}}{2m}\nabla_{1}^{2}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}r_{1}}\phi-\frac{\hbar^{2}}{2m}\nabla_{2}^{2}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}r_{2}}\phi+\frac{e^{2}}{4\pi\epsilon_{0}r_{12}}\phi\\
+ & = & -\frac{\hbar^{2}}{2m}(-\frac{2\lambda}{a_{0}})\phi\frac{1}{r_{1}}-\frac{\hbar^{2}}{2m}\frac{\lambda^{2}}{a_{0}^{2}}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}}\frac{1}{r_{1}}\phi-\frac{\hbar^{2}}{2m}(-\frac{2\lambda}{a_{0}})\phi\frac{1}{r_{2}}-\frac{\hbar^{2}}{2m}\frac{\lambda^{2}}{a_{0}^{2}}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}}\frac{1}{r_{2}}\phi+\frac{e^{2}}{4\pi\epsilon_{0}r_{12}}\phi\\
+ & = & \frac{\hbar^{2}\lambda}{ma_{0}}\frac{1}{r_{1}}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}}\frac{1}{r_{1}}\phi+\frac{\hbar^{2}\lambda}{ma_{0}}\frac{1}{r_{2}}\phi-\frac{Ze^{2}}{4\pi\epsilon_{0}}\frac{1}{r_{2}}\phi+\frac{e^{2}}{4\pi\epsilon_{0}r_{12}}\phi-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\phi\\
+ & = & \Big(\frac{\hbar^{2}\lambda}{ma_{0}}-\frac{Ze^{2}}{4\pi\epsilon_{0}}\Big)\Big(\frac{1}{r_{1}}\phi+\frac{1}{r_{2}}\phi\Big)+\frac{e^{2}}{4\pi\epsilon_{0}r_{12}}\phi-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\phi
+\end{eqnarray*}
+
+\end_inset
+
+Multiplying by 
+\begin_inset Formula $\phi^{*}=\phi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\phi^{*}H\phi=\Big(\frac{\hbar^{2}\lambda}{ma_{0}}-\frac{Ze^{2}}{4\pi\epsilon_{0}}\Big)\Big(\frac{1}{r_{1}}\phi^{2}+\frac{1}{r_{2}}\phi^{2}\Big)+\frac{e^{2}}{4\pi\epsilon_{0}r_{12}}\phi^{2}-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\phi^{2}
+\]
+
+\end_inset
+
+Integrating,
+\begin_inset Formula 
+\[
+E=\swich{\phi}H{\phi}=\Big(\frac{\hbar^{2}\lambda}{ma_{0}}-\frac{Ze^{2}}{4\pi\epsilon_{0}}\Big)\Big(\swich{\phi}{\frac{1}{r_{1}}}{\phi}+\swich{\phi}{\frac{1}{r_{2}}}{\phi}\Big)+\frac{e^{2}}{4\pi\epsilon_{0}}\swich{\phi}{\frac{1}{r_{12}}}{\phi}-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\braket{\phi}{\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate each integral.
+ 
+\begin_inset Formula $\braket{\phi}{\phi}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\swich{\phi}{\frac{1}{r_{1}}}{\phi} & = & \int\phi^{2}\frac{1}{r_{1}}d\mathbf{r}_{1}d\mathbf{r}_{2}\\
+ & = & \int_{0}^{\infty}\int_{0}^{\infty}\phi^{2}\frac{1}{r_{1}}r_{1}^{2}r_{2}^{2}dr_{1}dr_{2}\int_{0}^{\pi}\sin\theta_{1}d\theta_{1}\int_{0}^{\pi}\sin\theta_{2}d\theta_{2}\int_{0}^{2\pi}d\phi_{1}\int_{0}^{2\pi}d\phi_{2}\\
+ & = & \int_{0}^{\infty}r_{2}^{2}\int_{0}^{\infty}\phi^{2}r_{1}dr_{1}dr_{2}(2)(2)(2\pi)(2\pi)\\
+ & = & 16\pi^{2}\int_{0}^{\infty}r_{2}^{2}\int_{0}^{\infty}\phi^{2}r_{1}dr_{1}dr_{2}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{2}^{2}\int_{0}^{\infty}r_{1}e^{-\frac{2\lambda}{a_{0}}(r_{1}+r_{2})}dr_{1}dr_{2}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\int_{0}^{\infty}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}dr_{1}dr_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To solve these integrals we can use the gamma function since 
+\begin_inset Formula $\Gamma(x)=\int_{0}^{\infty}u^{x-1}e^{-u}du$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $u=\frac{2\lambda}{a_{0}}r_{1}$
+\end_inset
+
+ which implies 
+\begin_inset Formula $r_{1}=\frac{a_{0}}{2\lambda}u$
+\end_inset
+
+ and 
+\begin_inset Formula $dr_{1}=\frac{a_{0}}{2\lambda}du$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{\infty}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}dr_{1} & = & \Big(\frac{a_{0}}{2\lambda}\Big)^{2}\int_{0}^{\infty}ue^{-u}du=\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Gamma(2)=\Big(\frac{a_{0}}{2\lambda}\Big)^{2}1!=\Big(\frac{a_{0}}{2\lambda}\Big)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\Gamma(n+1)=n!$
+\end_inset
+
+.
+ Similarly,
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}=\int_{0}^{\infty}\Big(\frac{a_{0}}{2\lambda}\Big)^{3}u^{2}e^{-u}du=\Big(\frac{a_{0}}{2\lambda}\Big)^{3}\int_{0}^{\infty}u^{2}e^{-u}du=\Big(\frac{a_{0}}{2\lambda}\Big)^{3}\Gamma(3)=\Big(\frac{a_{0}}{2\lambda}\Big)^{3}2!=2\Big(\frac{a_{0}}{2\lambda}\Big)^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting this back in
+\begin_inset Formula 
+\[
+\swich{\phi}{\frac{1}{r_{1}}}{\phi}=16\Big(\frac{\lambda}{a_{0}}\Big)^{6}2\Big(\frac{a_{0}}{2\lambda}\Big)^{3}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}=\frac{32}{8(4)}\frac{\lambda}{a_{0}}=\frac{\lambda}{a_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now since 
+\begin_inset Formula $\phi(r_{1},r_{2})=\phi(r_{2},r_{1})$
+\end_inset
+
+, the 
+\begin_inset Formula $\swich{\phi}{\frac{1}{r_{2}}}{\phi}$
+\end_inset
+
+ integral goes exactly the same way and we have 
+\begin_inset Formula 
+\[
+\swich{\phi}{\frac{1}{r_{2}}}{\phi}=\frac{\lambda}{a_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\begin_inset Formula $\swich{\phi}{\frac{1}{r_{12}}}{\phi}=\int\phi^{2}\frac{1}{r_{12}}d\mathbf{r}_{1}d\mathbf{r}_{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $r_{12}=|\mathbf{r}_{1}-\mathbf{r}_{2}|$
+\end_inset
+
+ following the way they did it in the book (p.489 eqs 10.75-10.80).
+ The factor 
+\begin_inset Formula $\frac{1}{r_{12}}$
+\end_inset
+
+ can be expanded as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{r_{12}}=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{4\pi}{2l+1}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}Y_{lm}^{*}(\theta_{1},\phi_{1})Y_{lm}(\theta_{2},\phi_{2})
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r_{<}$
+\end_inset
+
+ is the smaller of 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{>}$
+\end_inset
+
+ is the larger of 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $Y_{lm}(\theta,\phi)$
+\end_inset
+
+ is the spherical harmonic function.
+ Substitute this expansion and we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\swich{\phi}{\frac{1}{r_{12}}}{\phi} & = & \sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{4\pi}{2l+1}\int\phi^{2}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}Y_{lm}^{*}(\theta_{1},\phi_{1})Y_{lm}(\theta_{2},\phi_{2})d\mathbf{r}_{1}d\mathbf{r}_{2}\\
+ & = & \sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{4\pi}{2l+1}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}\phi^{2}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}dr_{2}dr_{1}\int Y_{lm}^{*}(\theta_{1},\phi_{1})d\Omega_{1}\int Y_{lm}(\theta_{2},\phi_{2})d\Omega_{2}\\
+ & = & \sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{4\pi}{2l+1}\frac{4\pi}{4\pi}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}\phi^{2}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}dr_{2}dr_{1}\int Y_{lm}^{*}(\theta_{1},\phi_{1})d\Omega_{1}\int Y_{lm}(\theta_{2},\phi_{2})d\Omega_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $Y_{00}(\theta,\phi)=\frac{1}{\sqrt{4\pi}}$
+\end_inset
+
+.
+ So
+\begin_inset Formula 
+\[
+\swich{\phi}{\frac{1}{r_{12}}}{\phi}=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{16\pi^{2}}{2l+1}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}\phi^{2}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}dr_{2}dr_{1}\int Y_{lm}^{*}(\theta_{1},\phi_{1})Y_{00}d\Omega_{1}\int Y_{00}Y_{lm}(\theta_{2},\phi_{2})d\Omega_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the spherical harmonic functions are orthogonal we have 
+\begin_inset Formula 
+\[
+\swich{\phi}{\frac{1}{r_{12}}}{\phi}=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\frac{16\pi^{2}}{2l+1}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}\phi^{2}\frac{(r_{<})^{l}}{(r_{>})^{l+1}}dr_{2}dr_{1}\delta_{0l}\delta_{0m}
+\]
+
+\end_inset
+
+Which means that 
+\begin_inset Formula $l=m=0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\swich{\phi}{\frac{1}{r_{12}}}{\phi} & = & 16\pi^{2}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}\phi^{2}\frac{1}{r_{>}}dr_{2}dr_{1}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{1}^{2}\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}(r_{1}+r_{2})}\frac{1}{r_{>}}dr_{2}dr_{1}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{1}^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\frac{1}{r_{>}}dr_{2}dr_{1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\frac{1}{r_{>}}dr_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\frac{1}{r_{>}}dr_{2} & = & \int_{0}^{r_{1}}\frac{1}{r_{1}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}+\int_{r_{1}}^{\infty}\frac{1}{r_{2}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}\\
+ & = & \frac{1}{r_{1}}\int_{0}^{r_{1}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}+\int_{r_{1}}^{\infty}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These can be solved by integrating by parts.
+ For 
+\begin_inset Formula $\int_{r_{1}}^{\infty}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}$
+\end_inset
+
+ use 
+\begin_inset Formula $u=r_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $dv=e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{r_{1}}^{\infty}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2} & = & -\frac{a_{0}}{2\lambda}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}+\frac{a_{0}}{2\lambda}\int_{r_{1}}^{\infty}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}\\
+ & = & -\frac{a_{0}}{2\lambda}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\Big|_{r_{1}}^{\infty}\\
+ & = & \frac{a_{0}}{2\lambda}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\qquad\text{since }\lim_{x\rightarrow\infty}xe^{-x}=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\int_{0}^{r_{1}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}$
+\end_inset
+
+ use 
+\begin_inset Formula $u=r_{2}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $dv=e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{r_{1}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2} & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}+\frac{a_{0}}{\lambda}\int_{0}^{r_{1}}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2}\\
+ & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}+\frac{a_{0}}{\lambda}\Big[-\frac{a_{0}}{2\lambda}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\Big]\Big|_{0}^{r_{1}}\\
+ & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}-\frac{1}{2}\Big(\frac{a_{0}}{\lambda}\Big)^{2}r_{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}e^{-\frac{2\lambda}{a_{0}}r_{2}}\Big|_{0}^{r_{1}}\\
+ & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{1}^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{2}\Big(\frac{a_{0}}{\lambda}\Big)^{2}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\\
+\frac{1}{r_{1}}\int_{0}^{r_{1}}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}dr_{2} & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{2}\Big(\frac{a_{0}}{\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\frac{1}{r_{1}}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\frac{1}{r_{1}}\Big(\frac{a_{0}}{\lambda}\Big)^{3}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Putting it together
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\frac{1}{r_{>}}dr_{2} & = & -\Big(\frac{a_{0}}{2\lambda}\Big)r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{2}\Big(\frac{a_{0}}{\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\frac{1}{r_{1}}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\frac{1}{r_{1}}\Big(\frac{a_{0}}{\lambda}\Big)^{3}+\frac{a_{0}}{2\lambda}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}\\
+ &  & +\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\\
+ & = & -\frac{1}{2}\Big(\frac{a_{0}}{\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\frac{1}{r_{1}}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\frac{1}{r_{1}}\Big(\frac{a_{0}}{\lambda}\Big)^{3}+\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\\
+ & = & -\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\frac{1}{r_{1}}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\frac{1}{r_{1}}\Big(\frac{a_{0}}{\lambda}\Big)^{3}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Continuing on
+\begin_inset Formula 
+\begin{eqnarray*}
+\swich{\phi}{\frac{1}{r_{12}}}{\phi} & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{1}^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\int_{0}^{\infty}r_{2}^{2}e^{-\frac{2\lambda}{a_{0}}r_{2}}\frac{1}{r_{>}}dr_{2}dr_{1}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\int_{0}^{\infty}r_{1}^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}\Big(-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}e^{-\frac{2\lambda}{a_{0}}r_{1}}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\frac{1}{r_{1}}e^{-\frac{2\lambda}{a_{0}}r_{1}}+\frac{1}{4}\frac{1}{r_{1}}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big)dr_{1}\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Bigg[-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\int_{0}^{\infty}r_{1}^{2}e^{-\frac{4\lambda}{a_{0}}r_{1}}dr_{1}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\int_{0}^{\infty}r_{1}e^{-\frac{4\lambda}{a_{0}}r_{1}}dr_{1}+\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\int_{0}^{\infty}r_{1}e^{-\frac{2\lambda}{a_{0}}r_{1}}dr_{1}\Bigg]
+\end{eqnarray*}
+
+\end_inset
+
+For each integral subsitute 
+\begin_inset Formula $u$
+\end_inset
+
+ for the positive part of the exponent and then use the Gamma function.
+\begin_inset Formula 
+\begin{eqnarray*}
+\swich{\phi}{\frac{1}{r_{12}}}{\phi} & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Bigg[-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Big(\frac{a_{0}}{4\lambda}\Big)^{3}\int_{0}^{\infty}u^{2}e^{-u}du-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{4\lambda}\Big)^{2}\int_{0}^{\infty}ue^{-u}du+\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\int_{0}^{\infty}ue^{-u}du\Bigg]\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Bigg[-\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Big(\frac{a_{0}}{4\lambda}\Big)^{3}\Gamma(3)-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{4\lambda}\Big)^{2}\Gamma(2)+\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Gamma(2)\Bigg]\\
+ & = & 16\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Bigg[-2\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Big(\frac{a_{0}}{4\lambda}\Big)^{3}-\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{4\lambda}\Big)^{2}+\frac{1}{4}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Bigg]\\
+ & = & 16\Bigg[-2\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Big(\frac{a_{0}}{4\lambda}\Big)^{3}-\frac{1}{4}\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{4\lambda}\Big)^{2}+\frac{1}{4}\Big(\frac{\lambda}{a_{0}}\Big)^{6}\Big(\frac{a_{0}}{\lambda}\Big)^{3}\Big(\frac{a_{0}}{2\lambda}\Big)^{2}\Bigg]\\
+ & = & 16\Bigg[-\frac{2}{4(4^{3})}\frac{\lambda}{a_{0}}-\frac{1}{4(16)}\frac{\lambda}{a_{0}}+\frac{1}{4(4)}\frac{\lambda}{a_{0}}\Bigg]\\
+ & = & -\frac{2}{16}\frac{\lambda}{a_{0}}-\frac{1}{4}\frac{\lambda}{a_{0}}+\frac{\lambda}{a_{0}}=(1-\frac{1}{8}-\frac{1}{4})\frac{\lambda}{a_{0}}=\frac{5}{8}\frac{\lambda}{a_{0}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We've evaluated all the integrals we wanted.
+ Now 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E & = & \Big(\frac{\hbar^{2}\lambda}{ma_{0}}-\frac{Ze^{2}}{4\pi\epsilon_{0}}\Big)\Big(\swich{\phi}{\frac{1}{r_{1}}}{\phi}+\swich{\phi}{\frac{1}{r_{2}}}{\phi}\Big)+\frac{e^{2}}{4\pi\epsilon_{0}}\swich{\phi}{\frac{1}{r_{12}}}{\phi}-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\braket{\phi}{\phi}\\
+ & = & \Big(\frac{\hbar^{2}\lambda}{ma_{0}}-\frac{Ze^{2}}{4\pi\epsilon_{0}}\Big)\Big(\frac{2\lambda}{a_{0}}\Big)+\frac{e^{2}}{4\pi\epsilon_{0}}\frac{5}{8}\frac{\lambda}{a_{0}}-\frac{\hbar^{2}}{m}\frac{\lambda^{2}}{a_{0}^{2}}\\
+ & = & \frac{\lambda}{a_{0}}\Big(\frac{2\hbar^{2}\lambda}{ma_{0}}-2Z\frac{e^{2}}{4\pi\epsilon_{0}}+\frac{5}{8}\frac{e^{2}}{4\pi\epsilon_{0}}-\frac{\hbar^{2}\lambda}{ma_{0}}\Big)\\
+ & = & \frac{\lambda}{a_{0}}\Big(\frac{\hbar^{2}\lambda}{ma_{0}}-2Z\frac{e^{2}}{4\pi\epsilon_{0}}+\frac{5}{8}\frac{e^{2}}{4\pi\epsilon_{0}}\Big)\\
+ & = & \frac{\lambda}{a_{0}}\Big(\lambda\frac{e^{2}}{4\pi\epsilon_{0}}-2Z\frac{e^{2}}{4\pi\epsilon_{0}}+\frac{5}{8}\frac{e^{2}}{4\pi\epsilon_{0}}\Big)\qquad\text{using }a_{0}=\frac{4\pi\epsilon_{0}\hbar^{2}}{me^{2}}\\
+ & = & \frac{e^{2}}{4\pi\epsilon_{0}(a_{0})}\Big(\lambda^{2}-2Z\lambda+\frac{5}{8}\lambda\Big)
+\end{eqnarray*}
+
+\end_inset
+
+as wanted.
+\end_layout
+
+\begin_layout Standard
+Now we want to find 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ such that 
+\begin_inset Formula $E$
+\end_inset
+
+ is minimized.
+ This is given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & \frac{dE}{d\lambda}=\frac{e^{2}}{4\pi\epsilon_{0}(a_{0})}\Big(2\lambda-2Z+\frac{5}{8}\Big)\\
+0 & = & 2\lambda-2Z+\frac{5}{8}\\
+\lambda & = & Z+\frac{5}{16}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+QED
+\end_layout
+
+\begin_layout Problem
+Energy Levels of a multi-particle system.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Consider a system of three independent electrons whose Hamiltonian can
+ be written 
+\begin_inset Formula $H=h_{0}(1)+h_{0}(2)+h_{0}(3)$
+\end_inset
+
+.
+ Find the energy levels of 
+\begin_inset Formula $H$
+\end_inset
+
+ and their degrees of degeneracy.
+\end_layout
+
+\begin_layout Standard
+I assume the electrons are distinguishable, and I find the degrees of degeneracy
+ in orbital space.
+\end_layout
+
+\begin_layout Standard
+The wavefunction for the system is the product of the individual wavefunctions
+ of each particle (since the particles are distinguishable) and the energy
+ levels of 
+\begin_inset Formula $H$
+\end_inset
+
+ are the sums of the individual energies of the particles.
+ There are three non-degenerate eigenstates 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $c$
+\end_inset
+
+, each electron can be in, and the energies of the three states are 0, 
+\begin_inset Formula $\hbar\omega_{0}$
+\end_inset
+
+, and 
+\begin_inset Formula $2\hbar\omega_{0}$
+\end_inset
+
+, respectively.
+ Since the electrons are independent they can occupy the same state without
+ violating the Pauli Exclusion principle.
+ Moreover we can distinguish which particle is in which state.
+ So there are 
+\begin_inset Formula $3^{3}=27$
+\end_inset
+
+ possible states.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energy Level of 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Possible State (
+\begin_inset Formula $e_{1}e_{2}e_{3}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degeneracy in Orbital Space
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(ccc)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(bcc),(cbc),(ccb)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(acc),(bbc),(bcb),(cbb),(cac),(cca)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(abc),(acb),(bac),(bbb),(bca),(cab),(cba)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(aac),(abb),(aca),(bab),(bba),(caa)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(aab),(aba),(baa)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(aaa)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Independent Electrons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b)
+\series default
+ Same question for a system of three identical bosons of spin 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here the bosons are indistinguishable.
+ Their wavefunction is the totally symmetric wavefunction.
+ Because they are bosons they can share the same state (there is no exclusion
+ principle).
+ We cannot distinguish which particle is in which state, so for example
+ the system states 
+\begin_inset Formula $bcc,\, cbc,\, ccb$
+\end_inset
+
+ are indistinguishable and count as 1 state.
+ In this case I'll write 
+\begin_inset Formula $1b2c$
+\end_inset
+
+ to mean 1 particle is in the 
+\begin_inset Formula $b$
+\end_inset
+
+ state while the other two are in the 
+\begin_inset Formula $c$
+\end_inset
+
+ state.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energy Level of 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Possible State (
+\begin_inset Formula $e_{1}e_{2}e_{3}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degeneracy in Orbital Space
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1b2c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1a2c,\,1c2b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1a1b1c,\,3b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2a1c,\,1a2b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2a1b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\hbar\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Identical Bosons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Two-Electron System 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a)
+\series default
+ Construct a properly normalized two-electron wave function.
+ Both electrons share the same spin state.
+\end_layout
+
+\begin_layout Standard
+Since electrons are fermions the system is described by a totally antisymmetric
+ wavefunction.
+ The problem is 1dimensional so the two electrons are described by a position
+ 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\psi(x_{1},x_{2})=\frac{1}{\sqrt{2}}[u_{\alpha}(x_{1})u_{\beta}(x_{2})-u_{\alpha}(x_{2})u_{\beta}(x_{1})]
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $u_{\alpha}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{\beta}$
+\end_inset
+
+ are the individual wavefunctions, given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{\alpha}(x_{1}) & = & \sqrt{\frac{\mu}{\pi}}e^{-\frac{\mu}{2}(x_{1}-a)^{2}}\\
+u_{\beta}(x_{2}) & = & \sqrt{\frac{\mu}{\pi}}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant.
+ So
+\begin_inset Formula 
+\[
+\psi(x_{1},x_{2})=A\frac{1}{\sqrt{2}}\frac{\mu}{\pi}\Big(e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}-e^{-\frac{\mu}{2}(x_{2}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}\Big)
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $A$
+\end_inset
+
+ is a normalization constant.
+\end_layout
+
+\begin_layout Standard
+To normalize it,
+\begin_inset Formula 
+\begin{eqnarray*}
+|\psi|^{2} & = & A^{2}\frac{\mu^{2}}{2\pi^{2}}\Big(e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}-e^{-\frac{\mu}{2}(x_{2}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}\Big)^{2}\\
+ & = & A^{2}\frac{\mu^{2}}{2\pi^{2}}\Big(e^{-\mu(x_{1}-a)^{2}}e^{-\mu(x_{2}+a)^{2}}+e^{-\mu(x_{2}-a)^{2}}e^{-\mu(x_{1}+a)^{2}}-e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}e^{-\frac{\mu}{2}(x_{2}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}\Big)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}|\psi^{2}|dx_{1}dx_{2}\\
+ & = & A^{2}\frac{\mu^{2}}{2\pi^{2}}\Bigg[\int_{-\infty}^{\infty}e^{-\mu(x_{1}-a)^{2}}dx_{1}\int_{-\infty}^{\infty}e^{-\mu(x_{2}+a)^{2}}dx_{2}+\int_{-\infty}^{\infty}e^{-\mu(x_{2}-a)^{2}}dx_{1}\int_{-\infty}^{\infty}e^{-\mu(x_{1}+a)^{2}}dx_{2}\\
+ &  & -\int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}dx_{1}\int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}e^{-\frac{\mu}{2}(x_{2}-a)^{2}}dx_{2}\Bigg]\\
+ & = & A^{2}\frac{\mu^{2}}{2\pi^{2}}\Bigg[\frac{\pi}{\mu}+\frac{\pi}{\mu}-\int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}dx_{1}\int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}e^{-\frac{\mu}{2}(x_{2}-a)^{2}}dx_{2}\Bigg]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The exponents in the last two integrals work out to a gaussian:
+\begin_inset Formula 
+\[
+-\frac{\mu}{2}\Big((x_{1}-a)^{2}+(x_{1}+a)^{2}\Big)=-\frac{\mu}{2}(x_{1}^{2}-2ax_{1}+a^{2}+x_{1}^{2}+2ax_{1}+a^{2})=-\mu(x_{1}^{2}+a^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}dx_{1} & = & \int_{-\infty}^{\infty}e^{-\mu(x_{1}^{2}+a^{2})}dx_{1}\\
+ & = & e^{-\mu a^{2}}\int_{-\infty}^{\infty}e^{-\mu x_{1}^{2}}dx_{1}\\
+ & = & e^{-\mu a^{2}}\sqrt{\frac{\pi}{\mu}}\\
+ & = & \int_{-\infty}^{\infty}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}e^{-\frac{\mu}{2}(x_{2}-a)^{2}}dx_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & A^{2}\frac{\mu^{2}}{2\pi^{2}}\Big(2\frac{\pi}{\mu}-e^{-2\mu a^{2}}\frac{\pi}{\mu}\Big)\\
+1 & = & A^{2}\frac{1}{2}\frac{\mu}{\pi}(2-e^{-2\mu a^{2}})\\
+A^{2} & = & \frac{2\pi}{\mu}\frac{1}{2-e^{-2\mu a^{2}}}\\
+A & = & \sqrt{\frac{2\pi}{\mu(2-e^{-2\mu a^{2}})}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the wavefunction is 
+\begin_inset Formula 
+\[
+\psi(x_{1},x_{2})=\sqrt{\frac{\mu}{\pi(2-e^{-2\mu a^{2}})}}\Big(e^{-\frac{\mu}{2}(x_{1}-a)^{2}}e^{-\frac{\mu}{2}(x_{2}+a)^{2}}-e^{-\frac{\mu}{2}(x_{2}-a)^{2}}e^{-\frac{\mu}{2}(x_{1}+a)^{2}}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) 
+\series default
+Calculate the probability that the separation between the two electrons
+ is in the range (
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $x+dx)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The center of mass variable is 
+\begin_inset Formula $X=(x_{1}+x_{2})/2$
+\end_inset
+
+ and the separation is 
+\begin_inset Formula $x=x_{1}-x_{2}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{1} & = & \frac{x}{2}+X\\
+x_{2} & = & -\frac{x}{2}+X
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute these values into 
+\begin_inset Formula $\psi(x_{1},x_{2})$
+\end_inset
+
+ to get 
+\begin_inset Formula $\psi(x,X)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\psi(x_{1},x_{2}) & = & \sqrt{\frac{\mu}{\pi(2-e^{-2\mu a^{2}})}}\Big(e^{-\frac{\mu}{2}(\frac{x}{2}+X-a)^{2}}e^{-\frac{\mu}{2}(X-\frac{x}{2}+a)^{2}}-e^{-\frac{\mu}{2}(X-\frac{x}{2}-a)^{2}}e^{-\frac{\mu}{2}(\frac{x}{2}+X+a)^{2}}\Big)\\
+ & = & \psi(x,X)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The probability is given by 
+\begin_inset Formula $|\psi(x,X)|^{2}dx$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+|\psi(x,X)|^{2}dx & = & \frac{\mu}{\pi(2-e^{-2\mu a^{2}})}\Big(e^{-\frac{\mu}{2}(\frac{x}{2}+X-a)^{2}}e^{-\frac{\mu}{2}(X-\frac{x}{2}+a)^{2}}-e^{-\frac{\mu}{2}(X-\frac{x}{2}-a)^{2}}e^{-\frac{\mu}{2}(\frac{x}{2}+X+a)^{2}}\Big)^{2}dx\\
+ & = & \frac{\mu}{\pi(2-e^{-2\mu a^{2}})}\Big(e^{-\mu(\frac{x}{2}+X-a)^{2}}e^{-\mu(X-\frac{x}{2}+a)^{2}}+e^{-\mu(X-\frac{x}{2}-a)^{2}}e^{-\mu(\frac{x}{2}+X+a)^{2}}\\
+ &  & -e^{-\frac{\mu}{2}(\frac{x}{2}+X-a)^{2}}e^{-\frac{\mu}{2}(X-\frac{x}{2}+a)^{2}}e^{-\frac{\mu}{2}(X-\frac{x}{2}-a)^{2}}e^{-\frac{\mu}{2}(\frac{x}{2}+X+a)^{2}}\Big)dx
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
