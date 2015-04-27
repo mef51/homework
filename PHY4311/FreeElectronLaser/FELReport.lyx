@@ -70,8 +70,35 @@ figs-within-sections
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Title
+PHY4311
+\begin_inset Newline newline
+\end_inset
 
+Free Electron Lasers
+\end_layout
+
+\begin_layout Author
+Mohammed Chamma 6379153
+\begin_inset Newline newline
+\end_inset
+
+April 29 2015
+\end_layout
+
+\begin_layout Enumerate
+Physical Principles, Theory, Ponderomotive Force, Undulators, Electron Bunching,
+ Emitted Wavelength formula.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Designs, Examples of existing FELs, Helical magnets, laser cavity
+\end_layout
+
+\begin_layout Enumerate
+Applications, experiments that can be done with FELs, molecular imaging,
+ Xray FELs, pulses
 \end_layout
 
 \end_body
