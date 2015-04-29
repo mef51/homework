@@ -34,7 +34,7 @@ figs-within-sections
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -86,19 +86,1158 @@ Mohammed Chamma 6379153
 April 29 2015
 \end_layout
 
-\begin_layout Enumerate
-Physical Principles, Theory, Ponderomotive Force, Undulators, Electron Bunching,
- Emitted Wavelength formula.
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Free-Electron lasers are a class of modern lasers that open many avenues
+ of scientific research and push the limits of current technology.
+ This report will attempt to give an overview of the field of Free Electron
+ lasers.
  
 \end_layout
 
-\begin_layout Enumerate
-Designs, Examples of existing FELs, Helical magnets, laser cavity
+\begin_layout Standard
+We first list basic properties and characteristics of free electron lasers.
+ These properties and characteristics are what differentiate the free electron
+ laser from other classes of laser.
+ We will then describe the basic operating principles and physical theory
+ behind the operation of the free electron laser, including basic cavity
+ configurations, wigglers and undulators, the ponderomotive force, the formula
+ for the emitted wavelength of the free electron laser, the mechanism of
+ light amplification and the phenomenon of electron bunching in free electron
+ lasers.
+ After we have understood the basic principles that make a free electron
+ laser possible we give an overview of the Xray free electron laser.
+ Specifically we explain how Self Amplified Spontaneous Emission (or just
+ SASE, pronounced sass-y) allows for laser like emission without a cavity,
+ and we explain the limitations that arise from SASE free electron lasers.
+ We then examine how these limitations are overcome by looking at the Linear
+ Coherent Light Source (LCLS) as an example, as well as understanding the
+ idea of bunch compressors.
+ Finally we look at some applications of the free electron laser, like molecular
+ imaging.
 \end_layout
 
-\begin_layout Enumerate
-Applications, experiments that can be done with FELs, molecular imaging,
- Xray FELs, pulses
+\begin_layout Section
+Properties and Characteristics
+\end_layout
+
+\begin_layout Standard
+We first examine the properties and characteristics of free electron lasers
+ that differentiate it from other traditional lasers.
+ Free electron lasers have no medium, and do not rely on the discrete transition
+ states of electrons bound to atoms.
+ Instead, the source of radiation in free electron lasers (FELs) comes from
+ the phenomenon of magnetic bremsstrahlung.
+ That is, electrons (or any charges) that experience deceleration will emit
+ photons, or radiation.
+ In FELs, electrons pass through a spatially periodic, and constant magnetic
+ field that is transverse to the direction of propagation of the electrons.
+ The magnetic field is produced by an apparatus called the wiggler, also
+ known as the undulator.
+ The source of the electrons is a linear accelerator and the electrons are
+ accelerated to relativistic speeds.
+ Because the electrons are free, they are able to emit radiation in a continuum
+ and are not limited to the difference in energy levels of two states like
+ traditional lasers.
+ Traditional lasers will rely on some transition in a molecule to produce
+ radiation at a fixed frequency.
+ This medium can be, for example CO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ or ruby.
+ If one wants a wavelength other than the transitions available in the atoms
+ of the medium, a different medium must be used.
+ However with FELs, the electrons are free to emit at any level because
+ they are unbound particles, and so changing the emitted wavelength of the
+ free electron laser can amount to simply changing the propagation velocity
+ of the electrons.
+ This allows the FEL to be tunable to a huge range of wavelengths.
+ 
+\end_layout
+
+\begin_layout Standard
+This property of tunability has spurred a lot of interest in their development
+ because of their potential to be used as general purpose lasers and sources
+ of arbitrary wavelengths of radiation.
+\end_layout
+
+\begin_layout Standard
+The figure below gives an example of the design of free electron laser.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/lect4313_fig27.gif
+	lyxscale 80
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+An example design of a Free Electron Laser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe in the figure that the FEL depicted consists of an electron gun,
+ an accelerator, the undulator, and mirrors.
+ The electron gun is the source of the electrons and can be, for example,
+ a copper plate that is struck by pulses or beams of UV radiation.
+ When the copper plate is struck by the UV radiation, electrons are ejected
+ from the copper plate and enter the accelerator.
+ The accelerator is a series of magnets and/or electrically charged plates
+ that accelerate the electron.
+ To reach relativistic speeds close to the speed of light, the length of
+ the accelerator can reach kilometers long.
+ Through a series of bending magnets, the beam of electrons can be guided
+ to the wiggler.
+ The wiggler depicted in the figure consists of alternating permanent magnets
+ arranged periodically through space.
+ The period of these magnets, the distance before the field repeats itself
+ 
+\begin_inset Formula $\lambda_{u}$
+\end_inset
+
+ is an important parameter of free electron lasers and is a factor in the
+ emitted wavelength of radiation.
+ Electrons entering the wiggler start to wiggle back and forth, and radiation
+ is emitted.
+ Each time an electron decelerates, the energy lost by the electron is released
+ in the form of photons, or electromagnetic radiation, which propagate in
+ parallel to the propagation direction of the electrons.
+ In the figure, when electrons leave the wiggler, bending magnets can be
+ used once more to direct the electron beam away from the cavity.
+ The light radiation is unaffected by the magnets.
+ Mirrors can be placed to contain the light and to redirect it back towards
+ the electrons in the wiggler, further amplifying the radiation.
+ By using a mirror with a small transmission coefficient we have an output
+ coupling and in this way we can obtain output laser radiation.
+ 
+\end_layout
+
+\begin_layout Standard
+We will see that there are other ways to amplify radiation without cavity
+ mirrors and we will also see that alternating magnets are not the only
+ possible configuration for a wiggler.
+ 
+\end_layout
+
+\begin_layout Section
+Operating Principles and Physical Theory
+\end_layout
+
+\begin_layout Standard
+We will now look more closely at the components of a free electron laser
+ and understand the physics behind them.
+ 
+\end_layout
+
+\begin_layout Standard
+The successful operation of the first free electron laser was reported in
+ 1976 by Deacon, Elias, Madey, Ramian, Schwettman, and Smith at the High
+ Energy Physics Laboratory in Stanford University.
+ The figure below shows the setup they used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/firstlaser.PNG
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagram of the first operational free-electron laser.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that the wiggler is a helical magnet, and not a series of alternating
+ permanent magnets.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Wigglers
+\end_layout
+
+\begin_layout Standard
+The purpose of a wiggler is to create a spatially periodic magnetic field.
+ We have already seen two different configurations of wigglers.
+ The first wiggler used in an operational FEL consists of a helical wire
+ wrapped around an evacuated tube that is occupied by electrons and radiation.
+ Current is passed through the helical wire and a magnetic arises due to
+ the Biot-Savart law.
+ From the Biot-Savart law we know the direction the magnetic field points
+ is in the direction of 
+\begin_inset Formula 
+\[
+\mathbf{B}\propto Id\mathbf{l}\times\mathbf{r}
+\]
+
+\end_inset
+
+Alterntively we curl the fingers of our right hands around a section of
+ wire and point our thumbs along the direction of the current.
+ Imagining doing this with the helical wire pictured above, we see that
+ the components of the magnetic field pointing along the direction of propagatio
+n of the electrons cancel out and only the tranverse components, that is,
+ the components pointing perpendicular to the direction of propagation,
+ are left.
+ Moreover, we see that in between windings, the magnetic field oscillates
+ between pointing into the page and out of the page.
+ If we do this more carefully, we see that the magnetic field rotates around
+ the axis of propagation in a circular motion.
+ The spatial period of this rotation is 
+\begin_inset Formula $\lambda_{u}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+To get an idea of the trajectory of the electron as it passes through the
+ wiggler we simply note that the magnetic force on the electron is given
+ by 
+\begin_inset Formula 
+\[
+\mathbf{F}_{M}=e(\mathbf{v\times}\mathbf{B})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that the magnetic field of the helical wiggler oscillates between
+ pointing into the page and out of the page.
+ Suppose the electrons in the beam are travelling to the left.
+ Then when the electron is in a region of the wiggler where the magnetic
+ field is pointing into the page, we compute the cross product and see that
+ the the force on the electron is pointing down.
+ So in this region the electron will tend downwards.
+ When the electron is in a region of the wiggler where the magnetic field
+ is pointing out of the page, we compute the cross product again and see
+ that the magnetic force on the electron is now pointing upwards, the opposite
+ of before.
+ Thus the electron experiences a 'wiggling' force and so its trajectory
+ is correspondingly wiggly.
+ Doing this more carefully, we see that that the trajectory of the electron
+ in the helical magnet is in fact helical, as shown in the following figure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/helicalTrajectory.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Wiggler.jpg
+	lyxscale 30
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Trajectory in a Helical Wiggler and a Linear Wiggler, respectively.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the image of the helical trajectory, the solid line denotes the trajectory
+ and the outline of the arrow on the sheet denotes the direction of the
+ magnetic field.
+ 
+\end_layout
+
+\begin_layout Standard
+Also depicted is a linear wiggler.
+ This wiggler is the more common wiggler in use today and is a periodic
+ arrangement of alternating permanent magnets.
+ The field inside the linear wiggler is much simpler; instead of a magnetic
+ field vector that rotates in a circle about the propagation axis like in
+ the helical wiggler, the magnetic field spatiall oscillates sinusoidally
+ in a plane, pointing towards one side of the wiggler to the other, still
+ transverse to the direction of the propagation.
+ Thus the electron trajectory is much simpler, it also oscillates in a plane
+ perpendicular to the plane of the wiggler magnetic field.
+\end_layout
+
+\begin_layout Standard
+As the electron passes through the wiggler it interacts with the magnetic
+ field of the wiggler (as we have seen) and the field of the radiation already
+ present in the cavity.
+ It is this interaction that gives rise to light amplification.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ponderomotive Wave
+\end_layout
+
+\begin_layout Standard
+The ponderomotive force is the force an electron feels inside an oscillating
+ electric field, like an electromagnetic wave.
+ It can be thought of as the force the electron feels due to the intensity
+ of light.
+ As a reference, its form is given here for reference:
+\begin_inset Formula 
+\[
+\mathbf{F}_{p}=-\frac{e^{2}}{4m\omega}\nabla E^{2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $m$
+\end_inset
+
+ is the mass of the electron, 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is the angular frequency of oscillation of the electric field and 
+\begin_inset Formula $E$
+\end_inset
+
+ is the amplitude of the electric field.
+ Note that the intensity 
+\begin_inset Formula $I$
+\end_inset
+
+ is proportional to 
+\begin_inset Formula $E^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the free electron laser, the radiation field of the light in the wiggler
+ combines with the magnetic field of the wiggler by superposition.
+ This combination is called the 
+\series bold
+ponderomotive wave
+\series default
+.
+ The ponderomotive wave travels slower than the speed of light 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ This is because the magnetic field of the wiggler is constant in time and
+ has no time evolution (
+\begin_inset Formula $\omega_{u}=0$
+\end_inset
+
+), while the light field has both a spatial evolution and a time evolution.
+ Thus in the superposition of these waves, the resulting wave has a wavenumber
+ that is equal to the sum of the wavenumbers of the two waves (
+\begin_inset Formula $k+k_{u}$
+\end_inset
+
+) and the frequency is just the frequency of the light field (
+\begin_inset Formula $\omega$
+\end_inset
+
+).
+ Thus the phase velocity of the ponderomotive wave is less than 
+\begin_inset Formula $c$
+\end_inset
+
+, since:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{p}=\frac{\omega}{k+k_{u}}<\frac{\omega}{k}=c\qquad\text{where }k_{u}=\frac{2\pi}{\lambda_{u}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the ponderomotive wave is slower than 
+\begin_inset Formula $c$
+\end_inset
+
+, and since the electrons are relativistic, it is more than the plausible
+ that the electrons can travel at the same speed and near the same speed
+ as the ponderomotive wave.
+ In addition to electrons travelling slower than the ponderomotive wave,
+ there can be electrons that travel faster than it.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Light Amplification
+\end_layout
+
+\begin_layout Standard
+Suppose we match the speed of the electrons to close to the speed of the
+ ponderomotive wave.
+ We can do this because we know can know 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{u}$
+\end_inset
+
+ independently of the electrons and calculate what electron speed 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ we want so that 
+\begin_inset Formula $v_{e}\approx v_{p}$
+\end_inset
+
+.
+ The electrons feel the ponderomotive force due to the field of the ponderomotiv
+e wave.
+ This force pushes electrons away from the antinodes of the ponderomotive
+ wave towards the nodes of the wave where the electrons can form bunches
+ and travel with the wave in resonance.
+ Electrons that are moving slightly faster than the ponderomotive wave are
+ slowed down and lose kinetic energy.
+ This kinetic energy goes to the wave and the wave is amplified.
+ Electrons that are moving slightly slower than the ponderomotive wave are
+ sped up and gain kinetic energy at the expense of the wave.
+ Thus if the beam is mostly composed of electrons that are faster than the
+ ponderomotive wave, then the wave will be steal energy from the electron
+ beam and be amplified.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Emitted Wavelength
+\end_layout
+
+\begin_layout Standard
+To understand the wavelength that gets emitted we note that there are two
+ phenomena at play in addition to the process of bremsstrahlung that the
+ electron undergoes.
+ The first is that the electrons are travelling close to the speed of light
+ and so as they pass through the wiggler they experience a spatial magnetic
+ period of 
+\begin_inset Formula $\lambda_{u}/\gamma$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\lambda_{u}$
+\end_inset
+
+ because of length contraction.
+ Here 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is the relativistic factor and is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma=\Big(1+\frac{v^{2}}{c^{2}}\Big)^{-1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition to the length contraction that the electrons experience, the
+ light is emitted by a relativistic source and then measured in the lab
+ frame.
+ This means there will be a relativistic doppler shift, and we get a second
+ factor of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The equation that gives the value of the emitted wavelength, derived starting
+ from Maxwell's equations and keeping in mind the relativistic phenomena,
+ is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=\frac{\lambda_{u}}{2\gamma^{2}}\Big(1+K^{2}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The parameter 
+\begin_inset Formula $K^{2}$
+\end_inset
+
+ is called the strength parameter and characterizes the strength of the
+ magnetic field of the wiggler.
+ It is given by 
+\begin_inset Formula 
+\[
+K^{2}=\frac{1}{4\pi^{2}}\Big(\frac{\lambda_{u}^{2}r_{0}B^{2}}{mc^{2}}\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ is the classical radius of the electron, 
+\begin_inset Formula $B$
+\end_inset
+
+ is the strength of the magnetic field of the wiggler, and 
+\begin_inset Formula $mc^{2}$
+\end_inset
+
+ is the rest energy of the electron.
+ 
+\end_layout
+
+\begin_layout Standard
+From the equation for 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ we see explicitly how free electron lasers are tuned.
+ Normally 
+\begin_inset Formula $\lambda_{u}$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are chosen during the design and construction of the free electron laser.
+ Thus it is the 
+\begin_inset Formula $\gamma mc^{2}$
+\end_inset
+
+ term that we control to tune the laser during normal operation.
+ One can easily pick a desired wavelength 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and then calculate for the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ required to emit the desired wavelength.
+\begin_inset Formula 
+\[
+\gamma=\sqrt{\frac{\lambda_{u}}{2\lambda}\Big(1+K^{2}\Big)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this one know the necessary speed of the electrons and the energy of
+ the electrons.
+ 
+\end_layout
+
+\begin_layout Section
+Xray Free Electron Lasers
+\end_layout
+
+\begin_layout Standard
+Free electron lasers can be tuned to many wavelengths but the hard Xray
+ wavelengths (0.01 to 0.2nm) pose a special challenge.
+ Mirrors for these wavelengths do not exist and so a cavity cannot be constructe
+d.
+ Without a cavity the light cannot be fed back into the wiggler for further
+ amplification.
+ 
+\end_layout
+
+\begin_layout Standard
+To get around this, Xray free electron lasers are designed with extremely
+ long wigglers that can reach the length of over a hundred meters (compare
+ this to the 5.2m wiggler used in the first free electron laser).
+ The question still remains, how does the light become coherent without
+ a cavity?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+SASE Free Electron Lasers
+\end_layout
+
+\begin_layout Standard
+The mechanism of self-amplified spontaneous emission is what allows the
+ xray radiation to be amplified and coherent.
+ As an example we look at the operation of the free electron laser at the
+ LCLS.
+\end_layout
+
+\begin_layout Standard
+The process begins with an ultraviolet pulse that bombards a copper plate.
+ After each pulse hits the copper plate, a burst of electrons packed together
+ into a bunch leave the copper plate and enter the accelerator.
+ The electron bunches are accelerated and then enter the especially long
+ wiggler.
+ In the wiggler the electrons begin to emit xray radiation.
+ The electrons travel with the radiation and amplify it by the mechanism
+ described above.
+ Moreover, the ponderomotive force pushes the electrons away from the antinodes
+ of the radiation and the electrons in the bunches form thin sheets of electrons
+ separated by the wavelength of the radiation.
+ These are called microbunches.
+ When the electrons are in microbunches they continue to emit radiation
+ and because the electrons are equally spaced by the wavelength of radiation
+ from each other the radiation they emit is in phase and coherent, and very
+ intense.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bunch Compressors
+\end_layout
+
+\begin_layout Standard
+As part of the acceleration stage of the electrons, the electrons go through
+ a series of bunch compressors.
+ Bunch compressors decrease the spacing between the bunches of electrons
+ and in so doing can control the the duration of time between pulses.
+ The bunch compressor (also called a chicane) works by introducing a slight
+ s-curve in the path of the electrons.
+ Much as an s-curve in a road, the electron bunch that reache the s-curve
+ first must slow down to make the turn.
+ This allows the electron bunches behind the first bunch to close the distance
+ between the two.
+ With careful tweaking the bunches after leaving the bunch compressor can
+ be made to be closer together.
+ The following figure shows an example of a bunch compressor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/chicane.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Bunch Compressor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Temporal Coherence Limitation and Self-Seeding
+\end_layout
+
+\begin_layout Standard
+The mechanism of SASE leads to noise in the output pulse because the electrons
+ initiall start off in large bunches and are emitting incoherent radiation
+ that travels along with the electrons along the whole length of the undulator.
+ This causes the temporal coherence of the beam to be limited and noise.
+ 
+\end_layout
+
+\begin_layout Standard
+A possible solution to this is to filter out the noisy frequencies to decrease
+ the bandwith.
+ The main disadvantage to this is that by filtering out these noise frequencies
+ the beam loses a lot of its intensity.
+ Another solution is to inject a temporally coherent pulse that is tuned
+ to the resonance of the free electron laser (to the speed of the electrons
+ and period of ther wiggler) and then the electrons in the laser amplify
+ this pulse.
+ This is called 
+\series bold
+seeding
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Though seeding is an effective solution that preserves the intensity of
+ the beam as well as the temporal coherence, finding a seed pulse in the
+ Xray range is difficult because conventional xray lasers don't exist.
+ 
+\end_layout
+
+\begin_layout Standard
+In 2012, researchers at LCLS developped a mechanism by which the xray free
+ electron laser could seed itself.
+ This process of self-seeding works in the following way.
+ Use the first half of the undulator to generate xray pulses.
+ Then, pass the xray pulses through a diamond monochromator.
+ The monochromator selects a very narrow bandwith of frequencies and so
+ what comes out of the monochromator is a highly temporally coherent xray
+ pulse.
+ Then, use this pulse as a seed for the second half of the undulator.
+ As the pulse passes through the undulator, it gets amplified, and because
+ the pulse is composed of a very pure color of xray, the output pulse has
+ a very sharp bandwidth and increased intensity.
+ The figure below compares LCLS's measurements of the spectral intensity
+ using SASE operation and LCLS's measurements of the spectral intensity
+ using self-seeding.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/SelfSeedingBeforenAfter.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Spectral Profile in SASE mode and in Self-Seeding mode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The spectral profile in SASE mode is characterized by multiple noisy peaks
+ of varying intensity, while the spectral profile in the self-seeding mode
+ is an almost perfect and pure singular pulse.
+ Moreover, The intensity is orders of magnitude more powerful.
+ The improvement is almost astronomical, and many free electron lasers around
+ the world are incorporating the self-seeding mode into their own apparatus.
+\end_layout
+
+\begin_layout Section
+Applications
+\end_layout
+
+\begin_layout Standard
+Free electron lasers can have many applications in various sectors including,
+ surgery, biology and military applications.
+ In surgery, infrared FELs can be used to cut or ablate soft tissues like
+ the skin, the cornea and brain tissue without causing collateral damage
+ to surrounding tissue.
+ Military applications include an active research and development program
+ into the use of FELs as an antiaircraft anti-missile weapon, vaporizing
+ materials with a 100kW beam.
+ 
+\end_layout
+
+\begin_layout Standard
+The xray free electron laser has unique applications in biology due to its
+ extremely short pulses and high intensity.
+ Using xray diffraction, a biological sample (like a cell or virus) can
+ be bombarded by a pulse of xray photons.
+ The intensity of the pulse is more than enough to completely obliterate
+ the biological sample, but because of the extreme shortness of the pulse,
+ the photons are bunched together very closely in space, and all the photons
+ in the pulse have a chance to scatter off the material ahead of the damage
+ before the sample is destroyed.
+ This is referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+diffract before destroy
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This is done multiple times on multiple samples and a collection of diffraction
+ patterns are collected to form a 3d representation of the sample.
+ From this one can infer electron densities and other structures in the
+ material.
+ Below is an example of data collected for the mimivirus using this method
+ showing a single image of xray diffraction, a 3d combination of multiple
+ diffraction patterns of the same sample from different angles, and the
+ inferred electron density distribution in the mimivirus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/20110202-virus-diffraction-300.jpg
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/mimi1.jpg
+	lyxscale 25
+	scale 10
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/mimivirus.PNG
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Xray Diffraction Data of Mimivirus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+In this report we gave an overview of the free electron laser.
+ We explained the basic operating principles and physical theory behind
+ its functioning, including the mechanism of amplification and the interaction
+ between the electrons and the radiation wave in the undulator.
+ We also explained the operation of an xray free electron laser, highlighting
+ the SASE mode and the self-seeding mode.
+ We saw that self-seeding was a solution to the noise and temporal coherence
+ problems that arose from self-amplified spontaneous emission.
+ Finally we gave an overview of the different applications that free electron
+ lasers can be used for with a focus on the application of xray free electron
+ lasers to molecular imaging.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+First Operation of a Free-Electron Laser
+\begin_inset Quotes erd
+\end_inset
+
+.
+ D.A.G.
+ Deacon et al.
+ 
+\emph on
+Physical Review Letters
+\emph default
+ Volume 38, 1977.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Stimulated Emission of Bremsstrahlung in a Periodic Magnetic Field
+\begin_inset Quotes erd
+\end_inset
+
+.
+ John Madey.
+ 
+\emph on
+Journal of Applied Physics
+\emph default
+ Volume 42, 1971.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+X-ray free-electron lasers
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Brian W.
+ J.
+ McNeil et al.
+ 
+\emph on
+Nature Photonics 
+\emph default
+November 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Demonstration of self-seeding in a hard-X-ray free-electron laser
+\begin_inset Quotes erd
+\end_inset
+
+.
+ J.
+ Amann et al.
+ 
+\emph on
+Nature Photonics
+\emph default
+ August 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+ 
+\emph on
+Principles of Free-Electron Lasers.
+
+\emph default
+ H.
+ P.
+ Freund and T.
+ M.
+ Antonsen Jr.
+ Chapman & Hall, 1996.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+X-ray Laser Animated Fly-through
+\begin_inset Quotes erd
+\end_inset
+
+.
+ SLAC National Accelerator Laboratory.
+ Youtube.
+ 
+\begin_inset Newline newline
+\end_inset
+
+https://www.youtube.com/watch?v=pgaG7f96SKM
 \end_layout
 
 \end_body
